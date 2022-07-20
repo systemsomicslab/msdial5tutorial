@@ -1,7 +1,24 @@
 ---
-title: "msdial5tutorial"
+title: "MS-DIAL5 tutorial"
+abstract: MS-DIAL was launched as a universal program for untargeted metabolomics that supports multiple instruments (GC/MS, GC/MS/MS, LC/MS, and LC/MS/MS) and MS vendors (Agilent, Bruker, LECO, Sciex, Shimadzu, Thermo, and Waters). Common data formats such as netCDF (AIA) and mzML, can also be managed in our project. In addition, we released several MSP files including both EI- and MS/MS spectra as a ‘start-up kit’. Moreover, MS-DIAL internally has a version of Fiehn lab’s GC/MS database (oriented by FAME RI index), and in silico retention time- and MS/MS database for LC/MS/MS based lipidomics. The isotope labeled tracking can also be executed in LC/MS project.
 ---
 
-This is a Quarto website.
+## General introduction of MS-DIAL5
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+### Start up a project of MS-DIAL5
+
+### Centroid or Profile?
+
+### Database (MSP or Text) for compound identification
+
+#### MSP format for precursor- and MS/MS library
+
+#### Adduct ion format
+
+#### Text format library for retention time and accurate mass search (post identification)
+
+#### MSP format as GC/MS library
+
+#### Alkane- or FAME retention time dictionary for the calculation of retention index
+
+**FAQ**
