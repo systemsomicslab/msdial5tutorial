@@ -1,7 +1,25 @@
 ---
-title: "msdial5tutorial"
+title: "MS-DIAL tutorial"
 ---
 
-This is a Quarto website.
+## ABSTRACT
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+## General introduction of MS-DIAL
+
+### Start up a project of MS-DIAL
+
+### Centroid or Profile?
+
+### Database (MSP or Text) for compound identification
+
+#### MSP format for precursor- and MS/MS library
+
+#### Adduct ion format
+
+#### Text format library for retention time and accurate mass search (post identification)
+
+#### MSP format as GC/MS library
+
+#### Alkane- or FAME retention time dictionary for the calculation of retention index
+
+**FAQ**
