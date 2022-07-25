@@ -17,7 +17,9 @@ After data processing which includes peak picking, deconvolution, compound ident
 
 ### Start up a project of MS-DIAL5
 
-This tutorial demonstrates four projects, (1) GC/MS, (2) LC/MS or LC/MS/MS (DDA: data dependent acquisition), (3) LC/MS/MS (data independent acquisition), and (4) LC-Ion mobility for the explanation of parameters and required files. In this section, three projects are summarized and you will find a minimum requirement for these processes. The details for LC/MS/MS (DIA), LC/MS/MS (DDA), GC/MS, and LC-Ion mobility processing are described in Chapter 2, Chapter 3, Chapter 4, and Chapter 10 respectively.
+This tutorial demonstrates four projects, (1) GC/MS, (2) LC/MS or LC/MS/MS (DDA: data dependent acquisition), (3) LC/MS/MS (data independent acquisition), and (4) LC-Ion mobility for the explanation of parameters and required files. In this section, three projects are summarized and you will find a minimum requirement for these processes. The details for LC/MS/MS (DIA), LC/MS/MS (DDA), GC/MS, and LC-Ion mobility processing are described in Chapter 2, Chapter 3, Chapter 4, and Chapter 10 respectively. First you need to start a new project in MS-DIAL5, set up a folder to store your project files and point MS-DIAL5 to the folder where your raw data is stored (Figure 3).
+
+![Figure 3 Startup a project in MS-DIAL5. First select new project to be created (1), next select a location where your project files will be saved (2). You need to direct MS-DIAL5 to your raw data file location and select the corresponding data file format in the scrolling selection list and select the data files you want to process (4).](images/Fig3%20Start%20up%20a%20project%20of%20MS-DIAL5.png)
 
 ### Centroid or Profile?
 
