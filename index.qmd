@@ -21,6 +21,10 @@ This tutorial demonstrates four projects, (1) GC/MS, (2) LC/MS or LC/MS/MS (DDA:
 
 ![Figure 3 Startup a project in MS-DIAL5. First select new project to be created (1), next select a location where your project files will be saved (2). You need to direct MS-DIAL5 to your raw data file location (3) and select the corresponding data file format in the scrolling selection list and select the data files you want to process (4).](images/Fig3%20Start%20up%20a%20project%20of%20MS-DIAL5.png)
 
+After inserting your raw data files, you will be able to further assign identifiers to your measurements by sample type (Sample, Standard, QC, Blank), Class ID (according to your experimental setup), and you can also set the Batch (if you analyzed multiple batches), Analytical order, Dilution factor, or possibly exclude some samples from further data processing.
+
+![Figure 4 Specifications of raw measurement files. An example of assigning identifiers to your raw measurement files (more details will be described in the following sections).](images/Fig4%20Raw%20measurement%20files.png)
+
 ### Centroid or Profile?
 
 ### Database (MSP or Text) for compound identification
