@@ -21,9 +21,15 @@ This tutorial demonstrates four projects, (1) GC/MS, (2) LC/MS or LC/MS/MS (DDA:
 
 ![Figure 3 Startup a project in MS-DIAL5. First select new project to be created (1), next select a location where your project files will be saved (2). You need to direct MS-DIAL5 to your raw data file location (3) and select the corresponding data file format in the scrolling selection list and select the data files you want to process (4).](images/Fig3%20Start%20up%20a%20project%20of%20MS-DIAL5.png)
 
-After inserting your raw data files, you will be able to further assign identifiers to your measurements by sample type (Sample, Standard, QC, Blank), Class ID (according to your experimental setup), and you can also set the Batch (if you analyzed multiple batches), Analytical order, Dilution factor, or possibly exclude some samples from further data processing.
+After inserting your raw data files, you will be able to further assign identifiers to your measurements by sample type (Sample, Standard, QC, Blank), class ID (according to your experimental setup), and you can also set the batch (if you analyzed multiple batches), analytical order, dilution factor, or possibly exclude some samples from further data processing (Figure 4).
 
 ![Figure 4 Specifications of raw measurement files. An example of assigning identifiers to your raw measurement files (more details will be described in the following sections).](images/Fig4%20Raw%20measurement%20files.png)
+
+After assigning identifiers to the raw measurement files, click "Next" to go to the "Measurement parameters" tab. Here you will need to enter the analytical and instrumental parameters that were used to acquire your data (Figure 5).
+
+![Figure 5 Measurement parameters. Overview of the paramaters that need to be set according to your analytical and instrumental setup.](images/Fig5%20Measurement%20parameters.png)
+
+The following sections will contain information about the data type (centroid and profile), the data format of custom user database (MSP file), and information about the types of adducts. The next chapters will then demonstrate case studies of processing different types of publicly available data in MS-DIAL5.
 
 ### Centroid or Profile?
 
