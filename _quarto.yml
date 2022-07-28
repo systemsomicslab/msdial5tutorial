@@ -8,6 +8,14 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+  sidebar:
+    style: "docked"
+    contents:
+      - index.qmd
+      - chapter1.qmd
+      - chapter2.qmd
+      - chapter3.qmd
+      - chapter4.qmd
 
 format:
   html:
