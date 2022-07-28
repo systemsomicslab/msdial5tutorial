@@ -11,4 +11,4 @@ This is the tutorial of MS-DIAL 5 for untargeted mass spec data analysis.
 2. Create a branch
 3. Checkout the branch
 4. Update the `index.qmd`
-5. `cd THISREPOFOLDER` and build the website and check it with `quarto preview or upload changes by quarto publish gh-pages.
+5. `cd THISREPOFOLDER` and build the website and check it with `quarto preview` or upload changes by `quarto publish gh-pages`.
