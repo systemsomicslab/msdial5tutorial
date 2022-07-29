@@ -19,7 +19,7 @@ After data processing which includes peak picking, deconvolution, compound ident
 
 This tutorial demonstrates four projects, (1) GC/MS, (2) LC/MS or LC/MS/MS (DDA: data dependent acquisition), (3) LC/MS/MS (data independent acquisition), and (4) LC-Ion mobility for the explanation of parameters and required files. In this section, three projects are summarized and you will find a minimum requirement for these processes. The details for LC/MS/MS (DIA), LC/MS/MS (DDA), GC/MS, and LC-Ion mobility processing are described in Chapter 2, Chapter 3, Chapter 4, and Chapter 10 respectively. First you need to start a new project in MS-DIAL5, set up a folder to store your project files and point MS-DIAL5 to the folder where your raw data is stored (Figure 3).
 
-![Figure 3 Startup a project in MS-DIAL5. First select new project to be created (1), next select a location where your project files will be saved (2). You need to direct MS-DIAL5 to your raw data file location (3) and select the corresponding data file format in the scrolling selection list and select the data files you want to process (4).](images/Fig3%20Start%20up%20a%20project%20of%20MS-DIAL5.png)
+![Figure 3 Start up a project in MS-DIAL5. First select new project to be created (1), next select a location where your project files will be saved (2). You need to direct MS-DIAL5 to your raw data file location (3) and select the corresponding data file format in the scrolling selection list and select the data files you want to process (4).](images/Fig3%20Start%20up%20a%20project%20of%20MS-DIAL5.png)
 
 After inserting your raw data files, you will be able to further assign identifiers to your measurements by sample type (Sample, Standard, QC, Blank), class ID (according to your experimental setup), and you can also set the batch (if you analyzed multiple batches), analytical order, dilution factor, or possibly exclude some samples from further data processing (Figure 4).
 
@@ -27,11 +27,17 @@ After inserting your raw data files, you will be able to further assign identifi
 
 After assigning identifiers to the raw measurement files, click "Next" to go to the "Measurement parameters" tab. Here you will need to enter the analytical and instrumental parameters that were used to acquire your data (Figure 5).
 
-![Figure 5 Measurement parameters. Overview of the paramaters that need to be set according to your analytical and instrumental setup.](images/Fig5%20Measurement%20parameters.png)
+![Figure 5 Measurement parameters. Overview of the parameters that need to be set according to your analytical and instrumental setup.](images/Fig5%20Measurement%20parameters.png)
 
 The following sections will contain information about the data type (centroid and profile), the data format of custom user database (MSP file), and information about the types of adducts. The next chapters will then demonstrate case studies of processing different types of publicly available data in MS-DIAL5.
 
 ### Centroid or Profile?
+
+In the previous version of MS-DIAL users needed to define the type of imported data (centroid or profile). However in the new version you can choose centroid data by default. MS-DIAL retrieves data as centroid even for vendor formats which were previously considered as profile (e.g. SCIEX or Thermo). The only exception would be regarding Agilent data which can be stored as centroid, profile or both. To make sure what type of data you have, we recommend using our program "raw_data_viewer.exe" (which is available in the MS-DIAL base folder). The raw data viewer shows the spectrum that has been retrieved by the MS-DIAL backend (here you can determine the data type), and users can additionally determine the threshold values for amplitude cut off etc. by looking at the statistics of peak height vs. the frequency (Figure 6 and 7).
+
+![Figure 6 Raw data viewer - data upload. After opening the "Raw data viewer.exe" you can browse to the location of your data (1) and load them (single or multiple files - one by one) (2). Next select the file you want to process (3) and click the "Show" button (4).](images/Fig6%20Raw%20data%20viewer.png)
+
+![Figure 7 Raw data viewer - results. After processing the data you will be shown three histograms (for MS1 and MS2 spectrum intensity and peak height). Additionally you can browse to any ions found in your data (in the table provided at the bottom). You can order the ions by multiple parameters (scan start time, MS level, base peak m/z, base peak intensity, etc.). Using this overview you can also estimate the ideal peak height cut-off for the MS-DIAL processing parameters.](images/Fig7%20Raw%20data%20viewer%20result.png)
 
 ### Database (MSP or Text) for compound identification
 
