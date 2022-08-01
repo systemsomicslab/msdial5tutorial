@@ -269,7 +269,7 @@ ul.task-list{list-style: none;}
 </section>
 <section id="msp-format-as-gcms-library" class="level4">
 <h4 class="anchored" data-anchor-id="msp-format-as-gcms-library">MSP format as GC/MS library</h4>
-<p>MS-DIAL supports the MSP format (<a href="http://www.nist.gov/srd/upload/NIST1a11Ver2-0Man.pdf" class="uri">http://www.nist.gov/srd/upload/NIST1a11Ver2-0Man.pdf</a>) in ASCII text, same as in the “<strong>MSP format for precursor- and MS/MS library</strong>” seciton. MS-DIAL accepts two fields for 'retention' information as the reference: "RETENTIONTIME: " or "RT", and "RETENTIONINDEX" or "RI". Retention time information must be specified in minute [min] scale when possible.</p>
+<p>MS-DIAL supports the MSP format (<a href="http://www.nist.gov/srd/upload/NIST1a11Ver2-0Man.pdf" class="uri">http://www.nist.gov/srd/upload/NIST1a11Ver2-0Man.pdf</a>) in ASCII text, same as in the “<strong>MSP format for precursor- and MS/MS library</strong>” seciton. MS-DIAL accepts two fields for 'retention' information as the reference: "RETENTIONTIME: " or "RT", and "RETENTIONINDEX" or "RI" (<strong>Figure 10</strong>). Retention time information must be specified in minute [min] scale when possible.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Fig10%20MSP%20format%20library%20for%20GC-MS.png" class="img-fluid figure-img"></p>
@@ -279,7 +279,17 @@ ul.task-list{list-style: none;}
 </section>
 <section id="alkane--or-fame-retention-time-dictionary-for-the-calculation-of-retention-index" class="level4">
 <h4 class="anchored" data-anchor-id="alkane--or-fame-retention-time-dictionary-for-the-calculation-of-retention-index">Alkane- or FAME retention time dictionary for the calculation of retention index</h4>
+<p>Retention time and retention index are used for routine identification of metabolites in GC/MS based metabolomics. The current MS-DIAL program has three options for the use of retention information: 1) retention time, 2) alkane mix based retention index, and 3) FAME (fatty acid methyl ester) mix based retention index.</p>
+<p>See the experimental details of alkane and FAME mixtures.<br>
+Alkanes: <a href="http://www.sciencedirect.com/science/article/pii/S1389172311001848" class="uri">http://www.sciencedirect.com/science/article/pii/S1389172311001848</a><br>
+Alkanes: <a href="https://en.wikipedia.org/wiki/Kovats_retention_index" class="uri">https://en.wikipedia.org/wiki/Kovats_retention_index</a><br>
+FAMEs: <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2805091/" class="uri">http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2805091/</a></p>
+<p>In order to calculate the retention indexes of detected peaks, users have to prepare a dictionary including the pairs of the carbon number and its retention time as tab-delimited text (see next page).</p>
 <p><strong>FAQ</strong></p>
+<ul>
+<li><p>By alkane mixture, the calculation of retention index is based on Kovats's method (temperature programmed chromatography).</p></li>
+<li><p>By FAME mixture, the calculation is based on Fiehn's method. Importantly, FAMEs of carbon number C8, C9, C10, C12, C14, C16, C18, C20, C22, C24, C26, C28, and C30 (total 13 FAMEs) must be included in this dictionary to calculate Fiehn's index. A polynomial regression of fifth order is applied to chromatographic peaks between C9 and C28. The peaks between C8 (and its earlier) and C9 and between C28 and C30 (and its later) are interpolated by a linear regression. The original indexes are based on the retention time (sec) * 1000 of authentic standards.</p></li>
+</ul>
 
 
 </section>
