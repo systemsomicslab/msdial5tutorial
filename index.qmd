@@ -6,11 +6,12 @@ abstract: MS-DIAL は、複数の機器 (GC/MS、GC/MS/MS、LC/MS、そして LC
 ## 全体的な MS-DIAL5 のイントロダクション
 
 現在の MS-DIAL は、ノンターゲットメタボロミクス、リピドミクス、およびプロテオミクスのためのストリームパイプラインを提供しています。
-MS-DIAL の最新バージョンでは、新しいグラフィカルインターフェイスによってユーザーエクスペリエンスが大幅に改善されており、異なるベンダーフォーマットから生の MS データを共通の ABF フォーマットに変換する必要がなくなり、直接インポートしていただけるようになりました。(サポートされているファイルフォーマットや分析技術のまとめは Figure 1 になります。)
+MS-DIAL の最新バージョンでは、新しいグラフィカルインターフェイスによってユーザーエクスペリエンスが大幅に改善されており、異なるベンダーフォーマットから生の MS データを共通の ABF フォーマットに変換する必要がなくなり、直接インポートしていただけるようになりました。(サポートされているファイル形式や分析手法のまとめは Figure 1 になります。)
 
-![Figure 1 Overview of supported file formats and analytical techniques](images/Fig1%20Supported%20file%20formats%20and%20analytical%20techniques.png)
+![Figure 1 サポートされているファイル形式と分析手法の概要](images/Fig1%20Supported%20file%20formats%20and%20analytical%20techniques.png)
 
-The latest version of MS-DIAL aims to be the most versatile tool for multiomics data analysis and therefore supports direct injection, many separation (GC, LC, CE, SFC), ionization (EI, ESI, MALDI), fragmentation (CID, HCD, ETD, ECD, EIEIO, EID, OAD) and MS/MS (DDA, SWATH, AIF) datasets (which are summarized in Figure 2). In addition, technological advances in fragmentation mechanisms such as electron-impact excitation of ions from organics (EIEIO) have also been taken into account, making it possible to work with these types of data to offer comprehensive structural identification of metabolites, lipids and proteins.
+The latest version of MS-DIAL aims to be the most versatile tool for multiomics data analysis and therefore supports direct injection, many separation (GC, LC, CE, SFC), ionization (EI, ESI, MALDI), fragmentation (CID, HCD, ETD, ECD, EIEIO, EID, OAD) and MS/MS (DDA, SWATH, AIF) datasets (which are summarized in Figure 2).
+In addition, technological advances in fragmentation mechanisms such as electron-impact excitation of ions from organics (EIEIO) have also been taken into account, making it possible to work with these types of data to offer comprehensive structural identification of metabolites, lipids and proteins.
 
 ![Figure 2 Summary of analytical techniques compatible with MS-DIAL 5](images/Fig2%20MS-DIAL%205%20environment.png)
 
