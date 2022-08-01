@@ -3,7 +3,7 @@ title: "MS-DIAL5 チュートリアル"
 abstract: MS-DIAL は、複数の機器 (GC/MS、GC/MS/MS、LC/MS、そして LC/MS/MS) と複数のMSベンダー (Agilent、Bruker、LECO、Sciex、島津、Thermo、そして Waters) をサポートするノンターゲットメタボロミクスのユニバーサルプログラムとして開発が始められました。
 ---
 
-## General introduction of MS-DIAL5
+## 全体的な MS-DIAL5 のイントロダクション
 
 The current MS-DIAL program provides a stream pipeline for untargeted metabolomics, lipidomics and proteomics. In this latest version, the user experience has been greatly improved with a new graphical interface and also due to the fact it is no longer necessary to convert raw MS data from different vendor formats into a common ABF format (which is still supported), but the data can now be imported directly (supported file formats and analytical techniques are summarized in Figure 1).
 
