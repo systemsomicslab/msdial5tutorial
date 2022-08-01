@@ -16,7 +16,8 @@ MS-DIAL の最新バージョンは、マルチオミクスデータ解析のた
 
 ![Figure 2 MS-DIAL 5 が対応している分析手法のまとめ](images/Fig2%20MS-DIAL%205%20environment.png)
 
-After data processing which includes peak picking, deconvolution, compound identification, and peak alignment, MS-DIAL provides several normalization methods (including LOWESS) and a multivariate analysis by principal component analysis (PCA). Finally, for further analysis by other programs, this program can export your result as table format (for SIMCA-P, MetaboAnalyst, and MetFamily etc.), and as several spectral formats including NIST, MassBank, and Mascot formats for compound identifications by MS-FINDER, CSI:FingerID, CFM-ID, MetFrag, and MetFamily etc. For the parameter explanations including the description of MS-DIAL algorithms, see also 'MS-DIAL mathematics' which can be downloaded at [http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/MS-DIAL%20FAQ-vs2.pdf](http://prime.psc.riken.jp/compms/msdial/download/mathematics/MS-DIAL%20FAQ-vs2.pdf){.uri}
+ピークピッキング、デコンボリューション、化合物同定、およびピークアラインメントを含むデータ処理の後、MS-DIAL はいくつかの正規化方法(LOWESSを含む)と主成分分析(PCA)による多変量解析を提供します。
+Finally, for further analysis by other programs, this program can export your result as table format (for SIMCA-P, MetaboAnalyst, and MetFamily etc.), and as several spectral formats including NIST, MassBank, and Mascot formats for compound identifications by MS-FINDER, CSI:FingerID, CFM-ID, MetFrag, and MetFamily etc. For the parameter explanations including the description of MS-DIAL algorithms, see also 'MS-DIAL mathematics' which can be downloaded at [http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/MS-DIAL%20FAQ-vs2.pdf](http://prime.psc.riken.jp/compms/msdial/download/mathematics/MS-DIAL%20FAQ-vs2.pdf){.uri}
 
 ### Start up a project of MS-DIAL5
 
