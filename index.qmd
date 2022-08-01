@@ -1,5 +1,5 @@
 ---
-title: "MS-DIAL5 tutorial"
+title: "MS-DIAL5 チュートリアル"
 abstract: MS-DIAL は、複数の機器 (GC/MS、GC/MS/MS、LC/MS、そして LC/MS/MS) と複数のMSベンダー (Agilent、Bruker、LECO、Sciex、島津、Thermo、そして Waters) をサポートするノンターゲットメタボロミクスのユニバーサルプログラムとして開発が始められました。
 ---
 
