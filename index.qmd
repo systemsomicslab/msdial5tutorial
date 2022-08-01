@@ -12,7 +12,7 @@ MS-DIAL の最新バージョンでは、新しいグラフィカルインター
 
 MS-DIAL の最新バージョンは、マルチオミクスデータ解析のための最も用途の広いツールを目指しており、
 ダイレクトインジェクション、多くの分離法 (GC、LC、CE、SFC)、イオン化法 (EI、ESI、MALDI)、フラグメンテーション法 (CID、HCD、ETD、ECD、EIEIO、EID、OAD) そして MS/MS (DDA、SWATH、AIF) データセットをサポートしています。(それらは Figure 2 にまとめられています。)
-In addition, technological advances in fragmentation mechanisms such as electron-impact excitation of ions from organics (EIEIO) have also been taken into account, making it possible to work with these types of data to offer comprehensive structural identification of metabolites, lipids and proteins.
+さらに、有機物からのイオンの電子衝撃励起 (EIEIO) などのフラグメンテーション機構の技術的進歩も考慮されており、これらのタイプのデータを使用して、代謝産物、脂質、およびタンパク質の包括的な構造同定を提供することが可能になっています。
 
 ![Figure 2 Summary of analytical techniques compatible with MS-DIAL 5](images/Fig2%20MS-DIAL%205%20environment.png)
 
