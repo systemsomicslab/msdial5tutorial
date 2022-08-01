@@ -20,7 +20,9 @@ MS-DIAL の最新バージョンは、マルチオミクスデータ解析のた
 最後に、他のプログラムでさらに分析するために、MS-DIAL は結果を表形式でエクスポートできます。(SIMCA-P、MetaboAnalyst、そして MetFamily 等用に。)
 また NIST、MassBank、そして Mascot 形式を含む MS-FINDER、CSI:FingerID、CFM-ID、MetFrag、そして MetFamily 等による化合物同定のためのスペクトル形式にもエクスポートできます。
 
-For the parameter explanations including the description of MS-DIAL algorithms, see also 'MS-DIAL mathematics' which can be downloaded at [http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/MS-DIAL%20FAQ-vs2.pdf](http://prime.psc.riken.jp/compms/msdial/download/mathematics/MS-DIAL%20FAQ-vs2.pdf){.uri}
+MS-DIAL のアルゴリズムの記述を含むパラメータの説明については、
+[http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/MS-DIAL%20FAQ-vs2.pdf](http://prime.psc.riken.jp/compms/msdial/download/mathematics/MS-DIAL%20FAQ-vs2.pdf){.uri}
+でダウンロードできる「MS-DIAL mathematics」も参照してください。
 
 ### Start up a project of MS-DIAL5
 
