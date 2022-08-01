@@ -10,7 +10,8 @@ MS-DIAL の最新バージョンでは、新しいグラフィカルインター
 
 ![Figure 1 サポートされているファイル形式と分析手法の概要](images/Fig1%20Supported%20file%20formats%20and%20analytical%20techniques.png)
 
-The latest version of MS-DIAL aims to be the most versatile tool for multiomics data analysis and therefore supports direct injection, many separation (GC, LC, CE, SFC), ionization (EI, ESI, MALDI), fragmentation (CID, HCD, ETD, ECD, EIEIO, EID, OAD) and MS/MS (DDA, SWATH, AIF) datasets (which are summarized in Figure 2).
+MS-DIAL の最新バージョンは、マルチオミクスデータ解析のための最も用途の広いツールを目指しており、
+ダイレクトインジェクション、多くの分離法 (GC、LC、CE、SFC)、イオン化法 (EI、ESI、MALDI)、フラグメンテーション法 (CID、HCD、ETD、ECD、EIEIO、EID、OAD) そして MS/MS (DDA、SWATH、AIF) データセットをサポートしています。(それらは Figure 2 にまとめられています。)
 In addition, technological advances in fragmentation mechanisms such as electron-impact excitation of ions from organics (EIEIO) have also been taken into account, making it possible to work with these types of data to offer comprehensive structural identification of metabolites, lipids and proteins.
 
 ![Figure 2 Summary of analytical techniques compatible with MS-DIAL 5](images/Fig2%20MS-DIAL%205%20environment.png)
