@@ -14,7 +14,7 @@ MS-DIAL の最新バージョンは、マルチオミクスデータ解析のた
 ダイレクトインジェクション、多くの分離法 (GC、LC、CE、SFC)、イオン化法 (EI、ESI、MALDI)、フラグメンテーション法 (CID、HCD、ETD、ECD、EIEIO、EID、OAD) そして MS/MS (DDA、SWATH、AIF) データセットをサポートしています。(それらは Figure 2 にまとめられています。)
 さらに、有機物からのイオンの電子衝撃励起 (EIEIO) などのフラグメンテーション機構の技術的進歩も考慮されており、これらのタイプのデータを使用して、代謝産物、脂質、およびタンパク質の包括的な構造同定を提供することが可能になっています。
 
-![Figure 2 Summary of analytical techniques compatible with MS-DIAL 5](images/Fig2%20MS-DIAL%205%20environment.png)
+![Figure 2 MS-DIAL 5 が対応している分析手法のまとめ](images/Fig2%20MS-DIAL%205%20environment.png)
 
 After data processing which includes peak picking, deconvolution, compound identification, and peak alignment, MS-DIAL provides several normalization methods (including LOWESS) and a multivariate analysis by principal component analysis (PCA). Finally, for further analysis by other programs, this program can export your result as table format (for SIMCA-P, MetaboAnalyst, and MetFamily etc.), and as several spectral formats including NIST, MassBank, and Mascot formats for compound identifications by MS-FINDER, CSI:FingerID, CFM-ID, MetFrag, and MetFamily etc. For the parameter explanations including the description of MS-DIAL algorithms, see also 'MS-DIAL mathematics' which can be downloaded at [http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/MS-DIAL%20FAQ-vs2.pdf](http://prime.psc.riken.jp/compms/msdial/download/mathematics/MS-DIAL%20FAQ-vs2.pdf){.uri}
 
