@@ -168,14 +168,14 @@ ul.task-list{list-style: none;}
 
 <section id="general-introduction-of-ms-dial5" class="level2">
 <h2 class="anchored" data-anchor-id="general-introduction-of-ms-dial5">General introduction of MS-DIAL5</h2>
-<p>The current MS-DIAL program provides a stream pipeline for untargeted metabolomics, lipidomics and proteomics. In this latest version, the user experience has been greatly improved with a new graphical interface and also due to the fact it is no longer necessary to convert raw MS data from different vendor formats into a common ABF format (which is still supported), but the data can now be imported directly (supported file formats and analytical techniques are summarized in Figure 1).</p>
+<p>The current MS-DIAL program provides a stream pipeline for untargeted metabolomics, lipidomics and proteomics. In this latest version, the user experience has been greatly improved with a new graphical interface and also due to the fact it is no longer necessary to convert raw MS data from different vendor formats into a common ABF format (which is still supported), but the data can now be imported directly (supported file formats and analytical techniques are summarized in <strong>Figure 1</strong>).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Fig1%20Supported%20file%20formats%20and%20analytical%20techniques.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Figure 1 Overview of supported file formats and analytical techniques</figcaption><p></p>
 </figure>
 </div>
-<p>The latest version of MS-DIAL aims to be the most versatile tool for multiomics data analysis and therefore supports direct injection, many separation (GC, LC, CE, SFC), ionization (EI, ESI, MALDI), fragmentation (CID, HCD, ETD, ECD, EIEIO, EID, OAD) and MS/MS (DDA, SWATH, AIF) datasets (which are summarized in Figure 2). In addition, technological advances in fragmentation mechanisms such as electron-impact excitation of ions from organics (EIEIO) have also been taken into account, making it possible to work with these types of data to offer comprehensive structural identification of metabolites, lipids and proteins.</p>
+<p>The latest version of MS-DIAL aims to be the most versatile tool for multiomics data analysis and therefore supports direct injection, many separation (GC, LC, CE, SFC), ionization (EI, ESI, MALDI), fragmentation (CID, HCD, ETD, ECD, EIEIO, EID, OAD) and MS/MS (DDA, SWATH, AIF) datasets (which are summarized in <strong>Figure 2</strong>). In addition, technological advances in fragmentation mechanisms such as electron-impact excitation of ions from organics (EIEIO) have also been taken into account, making it possible to work with these types of data to offer comprehensive structural identification of metabolites, lipids and proteins.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Fig2%20MS-DIAL%205%20environment.png" class="img-fluid figure-img"></p>
@@ -185,21 +185,21 @@ ul.task-list{list-style: none;}
 <p>After data processing which includes peak picking, deconvolution, compound identification, and peak alignment, MS-DIAL provides several normalization methods (including LOWESS) and a multivariate analysis by principal component analysis (PCA). Finally, for further analysis by other programs, this program can export your result as table format (for SIMCA-P, MetaboAnalyst, and MetFamily etc.), and as several spectral formats including NIST, MassBank, and Mascot formats for compound identifications by MS-FINDER, CSI:FingerID, CFM-ID, MetFrag, and MetFamily etc. For the parameter explanations including the description of MS-DIAL algorithms, see also ‘MS-DIAL mathematics’ which can be downloaded at <a href="http://prime.psc.riken.jp/compms/msdial/download/mathematics/MS-DIAL%20FAQ-vs2.pdf" class="uri">http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/MS-DIAL%20FAQ-vs2.pdf</a></p>
 <section id="start-up-a-project-of-ms-dial5" class="level3">
 <h3 class="anchored" data-anchor-id="start-up-a-project-of-ms-dial5">Start up a project of MS-DIAL5</h3>
-<p>This tutorial demonstrates four projects, (1) GC/MS, (2) LC/MS or LC/MS/MS (DDA: data dependent acquisition), (3) LC/MS/MS (data independent acquisition), and (4) LC-Ion mobility for the explanation of parameters and required files. In this section, three projects are summarized and you will find a minimum requirement for these processes. The details for LC/MS/MS (DIA), LC/MS/MS (DDA), GC/MS, and LC-Ion mobility processing are described in Chapter 2, Chapter 3, Chapter 4, and Chapter 10 respectively. First you need to start a new project in MS-DIAL5, set up a folder to store your project files and point MS-DIAL5 to the folder where your raw data is stored (Figure 3).</p>
+<p>This tutorial demonstrates four projects, (1) GC/MS, (2) LC/MS or LC/MS/MS (DDA: data dependent acquisition), (3) LC/MS/MS (data independent acquisition), and (4) LC-Ion mobility for the explanation of parameters and required files. In this section, three projects are summarized and you will find a minimum requirement for these processes. The details for LC/MS/MS (DIA), LC/MS/MS (DDA), GC/MS, and LC-Ion mobility processing are described in Chapter 2, Chapter 3, Chapter 4, and Chapter 10 respectively. First you need to start a new project in MS-DIAL5, set up a folder to store your project files and point MS-DIAL5 to the folder where your raw data is stored (<strong>Figure 3</strong>).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Fig3%20Start%20up%20a%20project%20of%20MS-DIAL5.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Figure 3 Start up a project in MS-DIAL5. First select new project to be created (1), next select a location where your project files will be saved (2). You need to direct MS-DIAL5 to your raw data file location (3) and select the corresponding data file format in the scrolling selection list and select the data files you want to process (4).</figcaption><p></p>
 </figure>
 </div>
-<p>After inserting your raw data files, you will be able to further assign identifiers to your measurements by sample type (Sample, Standard, QC, Blank), class ID (according to your experimental setup), and you can also set the batch (if you analyzed multiple batches), analytical order, dilution factor, or possibly exclude some samples from further data processing (Figure 4).</p>
+<p>After inserting your raw data files, you will be able to further assign identifiers to your measurements by sample type (Sample, Standard, QC, Blank), class ID (according to your experimental setup), and you can also set the batch (if you analyzed multiple batches), analytical order, dilution factor, or possibly exclude some samples from further data processing (<strong>Figure 4</strong>).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Fig4%20Raw%20measurement%20files.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Figure 4 Specifications of raw measurement files. An example of assigning identifiers to your raw measurement files (more details will be described in the following sections).</figcaption><p></p>
 </figure>
 </div>
-<p>After assigning identifiers to the raw measurement files, click “Next” to go to the “Measurement parameters” tab. Here you will need to enter the analytical and instrumental parameters that were used to acquire your data (Figure 5).</p>
+<p>After assigning identifiers to the raw measurement files, click “Next” to go to the “Measurement parameters” tab. Here you will need to enter the analytical and instrumental parameters that were used to acquire your data (<strong>Figure 5</strong>).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Fig5%20Measurement%20parameters.png" class="img-fluid figure-img"></p>
@@ -210,7 +210,7 @@ ul.task-list{list-style: none;}
 </section>
 <section id="centroid-or-profile" class="level3">
 <h3 class="anchored" data-anchor-id="centroid-or-profile">Centroid or Profile?</h3>
-<p>In the previous version of MS-DIAL users needed to define the type of imported data (centroid or profile). However in the new version you can choose centroid data by default. MS-DIAL retrieves data as centroid even for vendor formats which were previously considered as profile (e.g.&nbsp;SCIEX or Thermo). The only exception would be regarding Agilent data which can be stored as centroid, profile or both. To make sure what type of data you have, we recommend using our program “raw_data_viewer.exe” (which is available in the MS-DIAL base folder). The raw data viewer shows the spectrum that has been retrieved by the MS-DIAL backend (here you can determine the data type), and users can additionally determine the threshold values for amplitude cut off etc. by looking at the statistics of peak height vs.&nbsp;the frequency (Figure 6 and 7).</p>
+<p>In the previous version of MS-DIAL users needed to define the type of imported data (centroid or profile). However in the new version you can choose centroid data by default. MS-DIAL retrieves data as centroid even for vendor formats which were previously considered as profile (e.g.&nbsp;SCIEX or Thermo). The only exception would be regarding Agilent data which can be stored as centroid, profile or both. To make sure what type of data you have, we recommend using our program “raw_data_viewer.exe” (which is available in the MS-DIAL base folder). The raw data viewer shows the spectrum that has been retrieved by the MS-DIAL backend (here you can determine the data type), and users can additionally determine the threshold values for amplitude cut off etc. by looking at the statistics of peak height vs.&nbsp;the frequency (<strong>Figure 6</strong> and <strong>Figure 7</strong>).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Fig6%20Raw%20data%20viewer.png" class="img-fluid figure-img"></p>
@@ -220,23 +220,62 @@ ul.task-list{list-style: none;}
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Fig7%20Raw%20data%20viewer%20result.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure 7 Raw data viewer - results. After processing the data you will be shown three histograms (for MS1 and MS2 spectrum intensity and peak height). Additionally you can browse to any ions found in your data (in the table provided at the bottom). You can order the ions by multiple parameters (scan start time, MS level, base peak m/z, base peak intensity, etc.). Using this overview you can also estimate the ideal peak height cut-off for the MS-DIAL processing parameters.</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure 7 Raw data viewer - results. After processing the data you will be shown three histograms (for MS1 and MS2 spectrum intensity and peak height). Additionally you can browse to any ions found in your data (in the table provided at the bottom). You can order the ions by multiple parameters (scan start time, MS level, base peak m/z, base peak intensity, etc.). You can zoom the x (<em>m/z</em>) and y (Intensity) axis by using scroll button to inspect if your data are centroid or profile. Using this overview you can also estimate the ideal peak height cut-off for the MS-DIAL processing parameters.</figcaption><p></p>
 </figure>
 </div>
 </section>
 <section id="database-msp-or-text-for-compound-identification" class="level3">
 <h3 class="anchored" data-anchor-id="database-msp-or-text-for-compound-identification">Database (MSP or Text) for compound identification</h3>
+<p>The database formats for GC/MS or LC/MS datasets are described in this section. The main difference between GC/MS (EI-MS) and LC/MS (ESI-MS/MS) is the availability of precursor ion and its MS/MS. While a precursor <em>m/z</em> and its MS/MS are mostly available in ESI (or the other soft ionization)-MS/MS, the molecular ion in EI-MS is difficult to detect owning to the hard ionization. Several MSP files are downloadable as a starter kit for MS-DIAL at <a href="http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/index.html" class="uri">http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/index.html</a>.</p>
 <section id="msp-format-for-precursor--and-msms-library" class="level4">
 <h4 class="anchored" data-anchor-id="msp-format-for-precursor--and-msms-library">MSP format for precursor- and MS/MS library</h4>
+<p>MS-DIAL supports the MSP (<a href="http://www.nist.gov/srd/upload/NIST1a11Ver2-0Man.pdf" class="uri">http://www.nist.gov/srd/upload/NIST1a11Ver2-0Man.pdf</a>) format in ASCII text (<strong>Figure 8</strong>). In addition, the software can utilize "RETENTIONTIME: ", "PRECURSORTYPE: ", and "FORMULA:" information for metabolite identification (cases are ignored). Retention time information must be specified in minutes [min] scale when possible. The adduct ion information, i.e.&nbsp;here 'Precursor type', will be used for the adduct ion search algorithm (see section 7).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Fig8%20MSP%20format.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure 8 An example of MSP format library</figcaption><p></p>
+</figure>
+</div>
 </section>
 <section id="adduct-ion-format" class="level4">
 <h4 class="anchored" data-anchor-id="adduct-ion-format">Adduct ion format</h4>
+<p>Adduct ion information should be formatted as described in this section: [M+Na]+, [M+2H]2+, [M-2H2O+H]+, [2M+FA-H]-, etc.</p>
+<ol type="1">
+<li><p>The parentheses '[' and ']' must be used to bracket the ion information.</p></li>
+<li><p>The char + and - are required after ']' and the number must be written before + or -.</p></li>
+<li><p>When you want to define the organic formula like C6H12O5, you have to write it without any replicate elements or parentheses like [M+C2H5COOH-H] or [M+H+(CH3)3SiOH].</p></li>
+<li><p>The beginning figure of organic formula like '2'H2O is recognized as the H2O × 2. Again, do not use 2(H2O) to specify this.</p></li>
+<li><p>Sequential equations are acceptable: [2M+H-C6H12O5+Na]2+ (very apt.)</p></li>
+<li><p>MS-DIAL accepts some abbreviations or common organic formulas for adduct types as follows.<br>
+  For Acetonitrile: ACN, CH3CN<br>
+  For Methanol: CH3OH<br>
+  For Isopropanol: IsoProp, C3H7OH<br>
+  For Dimethyl sulfoxide: DMSO<br>
+  For Formic acid: FA, HCOOH<br>
+  For Acetic acid: Hac, CH3COOH<br>
+  For Trifluoroacetic acid: TFA, CFCOOH</p></li>
+</ol>
 </section>
 <section id="text-format-library-for-retention-time-and-accurate-mass-search-post-identification" class="level4">
 <h4 class="anchored" data-anchor-id="text-format-library-for-retention-time-and-accurate-mass-search-post-identification">Text format library for retention time and accurate mass search (post identification)</h4>
+<p>MS-DIAL also supports tab-delimited text format library for peak identification by means of retention time and MS1 accurate mass information. The identification process is performed after completing peak identification based on MSP format library. This is why we call this identification processing "post identification". The first row should include header information. The first, second, third, and fourth columns should contain the metabolite name, accurate mass [Da], retention time [min], and adduct ion, respectively (<strong>Figure 9</strong>). This library can be easily created in Microsoft Excel. Save the spreadsheet in "Tab delimited text format". This option is useful for internal standard identifications etc. (Even if you don't have MS/MS libraries, the peak identification based on retention time and accurate mass is available from this option.)</p>
+<p>* The minimum requirement for this text library is just 'metabolite name' and '<em>m/z</em>' information; i.e.&nbsp;the first two columns are required. Retention time and adduct ion fields provide additional information for MS-DIAL in peak identification and adduct ion picking, respectively.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Fig9%20Text%20library.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure 9 An example of a text library</figcaption><p></p>
+</figure>
+</div>
 </section>
 <section id="msp-format-as-gcms-library" class="level4">
 <h4 class="anchored" data-anchor-id="msp-format-as-gcms-library">MSP format as GC/MS library</h4>
+<p>MS-DIAL supports the MSP format (<a href="http://www.nist.gov/srd/upload/NIST1a11Ver2-0Man.pdf" class="uri">http://www.nist.gov/srd/upload/NIST1a11Ver2-0Man.pdf</a>) in ASCII text, same as in the “<strong>MSP format for precursor- and MS/MS library</strong>” seciton. MS-DIAL accepts two fields for 'retention' information as the reference: "RETENTIONTIME: " or "RT", and "RETENTIONINDEX" or "RI". Retention time information must be specified in minute [min] scale when possible.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Fig10%20MSP%20format%20library%20for%20GC-MS.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure 10 An example of MSP format library for GC/MS</figcaption><p></p>
+</figure>
+</div>
 </section>
 <section id="alkane--or-fame-retention-time-dictionary-for-the-calculation-of-retention-index" class="level4">
 <h4 class="anchored" data-anchor-id="alkane--or-fame-retention-time-dictionary-for-the-calculation-of-retention-index">Alkane- or FAME retention time dictionary for the calculation of retention index</h4>
