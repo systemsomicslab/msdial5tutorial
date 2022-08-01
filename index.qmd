@@ -6,7 +6,7 @@ abstract: MS-DIAL は、複数の機器 (GC/MS、GC/MS/MS、LC/MS、そして LC
 ## 全体的な MS-DIAL5 のイントロダクション
 
 現在の MS-DIAL は、ノンターゲットメタボロミクス、リピドミクス、およびプロテオミクスのためのストリームパイプラインを提供しています。
-In this latest version, the user experience has been greatly improved with a new graphical interface and also due to the fact it is no longer necessary to convert raw MS data from different vendor formats into a common ABF format (which is still supported), but the data can now be imported directly (supported file formats and analytical techniques are summarized in Figure 1).
+MS-DIAL の最新バージョンでは、新しいグラフィカルインターフェイスによってユーザーエクスペリエンスが大幅に改善されており、異なるベンダーフォーマットから生の MS データを共通の ABF フォーマットに変換する必要がなくなり、直接インポートしていただけるようになりました。(サポートされているファイルフォーマットや分析技術のまとめは Figure 1 になります。)
 
 ![Figure 1 Overview of supported file formats and analytical techniques](images/Fig1%20Supported%20file%20formats%20and%20analytical%20techniques.png)
 
