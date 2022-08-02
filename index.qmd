@@ -45,7 +45,7 @@ The database formats for GC/MS or LC/MS datasets are described in this section. 
 
 #### MSP format for precursor- and MS/MS library
 
-MS-DIAL supports the MSP (<http://www.nist.gov/srd/upload/NIST1a11Ver2-0Man.pdf>) format in ASCII text (**Figure 8**). In addition, the software can utilize \"RETENTIONTIME: \", \"PRECURSORTYPE: \", and \"FORMULA:\" information for metabolite identification (cases are ignored). Retention time information must be specified in minutes \[min\] scale when possible. The adduct ion information, i.e. here \'Precursor type\', will be used for the adduct ion search algorithm (see section 7).
+MS-DIAL supports the MSP (<http://www.nist.gov/srd/upload/NIST1a11Ver2-0Man.pdf>) format in ASCII text (**Figure 8**). In addition, the software can utilize "RETENTIONTIME: ", "PRECURSORTYPE: ", and "FORMULA:" information for metabolite identification (cases are ignored). Retention time information must be specified in minutes \[min\] scale when possible. The adduct ion information, i.e. here 'Precursor type', will be used for the adduct ion search algorithm (see section 7).
 
 ![Figure 8 An example of MSP format library](images/Fig8%20MSP%20format.png)
 
@@ -53,13 +53,13 @@ MS-DIAL supports the MSP (<http://www.nist.gov/srd/upload/NIST1a11Ver2-0Man.pdf>
 
 Adduct ion information should be formatted as described in this section: \[M+Na\]+, \[M+2H\]2+, \[M-2H2O+H\]+, \[2M+FA-H\]-, etc.
 
-1.  The parentheses \'\[\' and \'\]\' must be used to bracket the ion information.
+1.  The parentheses '\[' and '\]' must be used to bracket the ion information.
 
-2.  The char + and - are required after \'\]\' and the number must be written before + or -.
+2.  The char + and - are required after '\]' and the number must be written before + or -.
 
 3.  When you want to define the organic formula like C6H12O5, you have to write it without any replicate elements or parentheses like \[M+C2H5COOH-H\] or \[M+H+(CH3)3SiOH\].
 
-4.  The beginning figure of organic formula like \'2\'H2O is recognized as the H2O × 2. Again, do not use 2(H2O) to specify this.
+4.  The beginning figure of organic formula like '2'H2O is recognized as the H2O × 2. Again, do not use 2(H2O) to specify this.
 
 5.  Sequential equations are acceptable: \[2M+H-C6H12O5+Na\]2+ (very apt.)
 
@@ -74,15 +74,15 @@ Adduct ion information should be formatted as described in this section: \[M+Na\
 
 #### Text format library for retention time and accurate mass search (post identification)
 
-MS-DIAL also supports tab-delimited text format library for peak identification by means of retention time and MS1 accurate mass information. The identification process is performed after completing peak identification based on MSP format library. This is why we call this identification processing \"post identification\". The first row should include header information. The first, second, third, and fourth columns should contain the metabolite name, accurate mass \[Da\], retention time \[min\], and adduct ion, respectively (**Figure 9**). This library can be easily created in Microsoft Excel. Save the spreadsheet in \"Tab delimited text format\". This option is useful for internal standard identifications etc. (Even if you don\'t have MS/MS libraries, the peak identification based on retention time and accurate mass is available from this option.)
+MS-DIAL also supports tab-delimited text format library for peak identification by means of retention time and MS1 accurate mass information. The identification process is performed after completing peak identification based on MSP format library. This is why we call this identification processing "post identification". The first row should include header information. The first, second, third, and fourth columns should contain the metabolite name, accurate mass \[Da\], retention time \[min\], and adduct ion, respectively (**Figure 9**). This library can be easily created in Microsoft Excel. Save the spreadsheet in "Tab delimited text format". This option is useful for internal standard identifications etc. (Even if you don't have MS/MS libraries, the peak identification based on retention time and accurate mass is available from this option.)
 
-\* The minimum requirement for this text library is just \'metabolite name\' and \'*m/z*\' information; i.e. the first two columns are required. Retention time and adduct ion fields provide additional information for MS-DIAL in peak identification and adduct ion picking, respectively.
+\* The minimum requirement for this text library is just 'metabolite name' and '*m/z*' information; i.e. the first two columns are required. Retention time and adduct ion fields provide additional information for MS-DIAL in peak identification and adduct ion picking, respectively.
 
 ![Figure 9 An example of a text library](images/Fig9%20Text%20library.png)
 
 #### MSP format as GC/MS library
 
-MS-DIAL supports the MSP format (<http://www.nist.gov/srd/upload/NIST1a11Ver2-0Man.pdf>) in ASCII text, same as in the "**MSP format for precursor- and MS/MS library**" seciton. MS-DIAL accepts two fields for \'retention\' information as the reference: \"RETENTIONTIME: \" or \"RT\", and \"RETENTIONINDEX\" or \"RI\" (**Figure 10**). Retention time information must be specified in minute \[min\] scale when possible.
+MS-DIAL supports the MSP format (<http://www.nist.gov/srd/upload/NIST1a11Ver2-0Man.pdf>) in ASCII text, same as in the "**MSP format for precursor- and MS/MS library**" seciton. MS-DIAL accepts two fields for 'retention' information as the reference: "RETENTIONTIME: " or "RT", and "RETENTIONINDEX" or "RI" (**Figure 10**). Retention time information must be specified in minute \[min\] scale when possible.
 
 ![Figure 10 An example of MSP format library for GC/MS](images/Fig10%20MSP%20format%20library%20for%20GC-MS.png)
 
@@ -99,6 +99,6 @@ In order to calculate the retention indexes of detected peaks, users have to pre
 
 **FAQ**
 
--   By alkane mixture, the calculation of retention index is based on Kovats\'s method (temperature programmed chromatography).
+-   By alkane mixture, the calculation of retention index is based on Kovats's method (temperature programmed chromatography).
 
--   By FAME mixture, the calculation is based on Fiehn\'s method. Importantly, FAMEs of carbon number C8, C9, C10, C12, C14, C16, C18, C20, C22, C24, C26, C28, and C30 (total 13 FAMEs) must be included in this dictionary to calculate Fiehn\'s index. A polynomial regression of fifth order is applied to chromatographic peaks between C9 and C28. The peaks between C8 (and its earlier) and C9 and between C28 and C30 (and its later) are interpolated by a linear regression. The original indexes are based on the retention time (sec) \* 1000 of authentic standards.
+-   By FAME mixture, the calculation is based on Fiehn's method. Importantly, FAMEs of carbon number C8, C9, C10, C12, C14, C16, C18, C20, C22, C24, C26, C28, and C30 (total 13 FAMEs) must be included in this dictionary to calculate Fiehn's index. A polynomial regression of fifth order is applied to chromatographic peaks between C9 and C28. The peaks between C8 (and its earlier) and C9 and between C28 and C30 (and its later) are interpolated by a linear regression. The original indexes are based on the retention time (sec) \* 1000 of authentic standards.
