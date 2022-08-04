@@ -45,7 +45,7 @@ The database formats for GC/MS or LC/MS datasets are described in this section. 
 
 #### MSP format for precursor- and MS/MS library
 
-MS-DIAL supports the MSP (<http://www.nist.gov/srd/upload/NIST1a11Ver2-0Man.pdf>) format in ASCII text (**Figure 8**). In addition, the software can utilize "RETENTIONTIME: ", "PRECURSORTYPE: ", and "FORMULA:" information for metabolite identification (cases are ignored). Retention time information must be specified in minutes \[min\] scale when possible. The adduct ion information, i.e. here 'Precursor type', will be used for the adduct ion search algorithm (see section 7).
+MS-DIAL supports the MSP (<http://www.nist.gov/srd/upload/NIST1a11Ver2-0Man.pdf>) format in ASCII text (**Figure 8**). In addition, the software can utilize "RETENTIONTIME:", "PRECURSORTYPE:", and "FORMULA:" information for metabolite identification (cases are ignored). Retention time information must be specified in minutes \[min\] scale when possible. The adduct ion information, i.e. here 'Precursor type', will be used for the adduct ion search algorithm (see section 7).
 
 ![Figure 8 An example of MSP format library](images/Fig8%20MSP%20format.png)
 
@@ -82,7 +82,7 @@ MS-DIAL also supports tab-delimited text format library for peak identification 
 
 #### MSP format as GC/MS library
 
-MS-DIAL supports the MSP format (<http://www.nist.gov/srd/upload/NIST1a11Ver2-0Man.pdf>) in ASCII text, same as in the "**MSP format for precursor- and MS/MS library**" seciton. MS-DIAL accepts two fields for 'retention' information as the reference: "RETENTIONTIME: " or "RT", and "RETENTIONINDEX" or "RI" (**Figure 10**). Retention time information must be specified in minute \[min\] scale when possible.
+MS-DIAL supports the MSP format (<http://www.nist.gov/srd/upload/NIST1a11Ver2-0Man.pdf>) in ASCII text, same as in the "**MSP format for precursor- and MS/MS library**" seciton. MS-DIAL accepts two fields for 'retention' information as the reference: "RETENTIONTIME:" or "RT", and "RETENTIONINDEX" or "RI" (**Figure 10**). Retention time information must be specified in minute \[min\] scale when possible.
 
 ![Figure 10 An example of MSP format library for GC/MS](images/Fig10%20MSP%20format%20library%20for%20GC-MS.png)
 
