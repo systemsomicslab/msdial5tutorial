@@ -1,5 +1,5 @@
 ---
-title: "Overview of supported techniques"
+title: "Overview of supported techniques (temporary)"
 editor: 
   markdown: 
     wrap: 72

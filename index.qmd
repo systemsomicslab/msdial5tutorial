@@ -103,4 +103,4 @@ In order to calculate the retention indexes of detected peaks, users have to pre
 
 -   By FAME mixture, the calculation is based on Fiehn's method. Importantly, FAMEs of carbon number C8, C9, C10, C12, C14, C16, C18, C20, C22, C24, C26, C28, and C30 (total 13 FAMEs) must be included in this dictionary to calculate Fiehn's index. A polynomial regression of fifth order is applied to chromatographic peaks between C9 and C28. The peaks between C8 (and its earlier) and C9 and between C28 and C30 (and its later) are interpolated by a linear regression. The original indexes are based on the retention time (sec) \* 1000 of authentic standards.
 
-![Figure 11 Examples of Alkanes or Fames dictionaries](images/Fig11%20%20Examples%20of%20Alkanes%20or%20Fames%20dictionaries.png)
+![Figure 11 Examples of FAMEs and Alkanes dictionaries](images/Fig11%20%20Examples%20of%20Alkanes%20or%20Fames%20dictionaries.png)

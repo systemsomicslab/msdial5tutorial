@@ -1,6 +1,7 @@
 ---
-title: "TITLE_OF_CHAPTER4"
-author: "AUTHOR_NAME"
+title: "Proteomics"
 ---
 
-## FILLME
+## 1.  LC-MS/MS (data independent MS/MS)
+
+## 2.  LC-MS/MS (EAD)
