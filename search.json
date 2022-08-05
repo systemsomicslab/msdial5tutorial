@@ -9,86 +9,93 @@
   {
     "objectID": "chapter1.html",
     "href": "chapter1.html",
-    "title": "Overview of supported techniques (temporary)",
-    "section": "",
-    "text": "Metabolomics\n1.1. Nominal and accurate GC/MS based metabolic profiling\n1.2. LC/MS or LC/MS/MS (data dependent MS/MS) project with user-defined MS/MS database (MSP format)\n1.3. CE-MS/MS\n1.4. All ion fragmentation with multiple collision energies\n1.5. MS-DIAL isotope tracking function\nLipidomics\n2.1. DI-MS/MS\n2.2. LC-MS/MS (data independent MS/MS) project for lipidomics using in silico retention time and theoretical MS/MS library of lipids\n2.3. LC-MS/MS (EAD) – deep structural lipid annotation\n2.4. SFC-MS/MS\n2.5. DI-IM-MS/MS\n2.6. LC-IM-MS/MS\nProteomics\n3.1. LC-MS/MS (data independent MS/MS)\n3.2. LC-MS/MS (EAD)"
-  },
-  {
-    "objectID": "chapter2.html",
-    "href": "chapter2.html",
     "title": "Metabolomics",
     "section": "",
     "text": "The environment for GC-MS data analysis in MS-DIAL5 is now under construction. Please use version 4 series for which the tutorial is available here: https://mtbinfo-team.github.io/mtbinfo.github.io/MS-DIAL/tutorial.html#chapter-4"
   },
   {
-    "objectID": "chapter2.html#lcms-or-lcmsms-data-dependent-msms-project-with-user-defined-msms-database-msp-format",
-    "href": "chapter2.html#lcms-or-lcmsms-data-dependent-msms-project-with-user-defined-msms-database-msp-format",
+    "objectID": "chapter1.html#lcms-or-lcmsms-data-dependent-msms-project-with-user-defined-msms-database-msp-format",
+    "href": "chapter1.html#lcms-or-lcmsms-data-dependent-msms-project-with-user-defined-msms-database-msp-format",
     "title": "Metabolomics",
     "section": "2. LC/MS or LC/MS/MS (data dependent MS/MS) project with user-defined MS/MS database (MSP format)",
     "text": "2. LC/MS or LC/MS/MS (data dependent MS/MS) project with user-defined MS/MS database (MSP format)"
   },
   {
-    "objectID": "chapter2.html#ce-msms",
-    "href": "chapter2.html#ce-msms",
+    "objectID": "chapter1.html#ce-msms",
+    "href": "chapter1.html#ce-msms",
     "title": "Metabolomics",
     "section": "3. CE-MS/MS",
     "text": "3. CE-MS/MS"
   },
   {
-    "objectID": "chapter2.html#all-ion-fragmentation-with-multiple-collision-energies",
-    "href": "chapter2.html#all-ion-fragmentation-with-multiple-collision-energies",
+    "objectID": "chapter1.html#all-ion-fragmentation-with-multiple-collision-energies",
+    "href": "chapter1.html#all-ion-fragmentation-with-multiple-collision-energies",
     "title": "Metabolomics",
     "section": "4. All ion fragmentation with multiple collision energies",
     "text": "4. All ion fragmentation with multiple collision energies"
   },
   {
-    "objectID": "chapter2.html#ms-dial-isotope-tracking-function",
-    "href": "chapter2.html#ms-dial-isotope-tracking-function",
+    "objectID": "chapter1.html#ms-dial-isotope-tracking-function",
+    "href": "chapter1.html#ms-dial-isotope-tracking-function",
     "title": "Metabolomics",
     "section": "5. MS-DIAL isotope tracking function",
     "text": "5. MS-DIAL isotope tracking function"
   },
   {
-    "objectID": "chapter3.html#lc-msms-data-independent-msms-project-for-lipidomics-using-in-silico-retention-time-and-theoretical-msms-library-of-lipids",
-    "href": "chapter3.html#lc-msms-data-independent-msms-project-for-lipidomics-using-in-silico-retention-time-and-theoretical-msms-library-of-lipids",
+    "objectID": "chapter2.html#lc-msms-data-independent-msms-project-for-lipidomics-using-in-silico-retention-time-and-theoretical-msms-library-of-lipids",
+    "href": "chapter2.html#lc-msms-data-independent-msms-project-for-lipidomics-using-in-silico-retention-time-and-theoretical-msms-library-of-lipids",
     "title": "Lipidomics",
     "section": "2. LC-MS/MS (data independent MS/MS) project for lipidomics using in silico retention time and theoretical MS/MS library of lipids",
     "text": "2. LC-MS/MS (data independent MS/MS) project for lipidomics using in silico retention time and theoretical MS/MS library of lipids"
   },
   {
-    "objectID": "chapter3.html#lc-msms-ead---deep-structural-lipid-annotation",
-    "href": "chapter3.html#lc-msms-ead---deep-structural-lipid-annotation",
+    "objectID": "chapter2.html#lc-msms-ead---deep-structural-lipid-annotation",
+    "href": "chapter2.html#lc-msms-ead---deep-structural-lipid-annotation",
     "title": "Lipidomics",
     "section": "3. LC-MS/MS (EAD) - deep structural lipid annotation",
     "text": "3. LC-MS/MS (EAD) - deep structural lipid annotation"
   },
   {
-    "objectID": "chapter3.html#sfc-msms",
-    "href": "chapter3.html#sfc-msms",
+    "objectID": "chapter2.html#sfc-msms",
+    "href": "chapter2.html#sfc-msms",
     "title": "Lipidomics",
     "section": "4. SFC-MS/MS",
     "text": "4. SFC-MS/MS"
   },
   {
-    "objectID": "chapter3.html#di-im-msms",
-    "href": "chapter3.html#di-im-msms",
+    "objectID": "chapter2.html#di-im-msms",
+    "href": "chapter2.html#di-im-msms",
     "title": "Lipidomics",
     "section": "5. DI-IM-MS/MS",
     "text": "5. DI-IM-MS/MS"
   },
   {
-    "objectID": "chapter3.html#lc-im-msms",
-    "href": "chapter3.html#lc-im-msms",
+    "objectID": "chapter2.html#lc-im-msms",
+    "href": "chapter2.html#lc-im-msms",
     "title": "Lipidomics",
     "section": "6. LC-IM-MS/MS",
     "text": "6. LC-IM-MS/MS"
   },
   {
-    "objectID": "chapter4.html#lc-msms-ead",
-    "href": "chapter4.html#lc-msms-ead",
+    "objectID": "chapter3.html#lc-msms-ead",
+    "href": "chapter3.html#lc-msms-ead",
     "title": "Proteomics",
     "section": "2. LC-MS/MS (EAD)",
     "text": "2. LC-MS/MS (EAD)"
+  },
+  {
+    "objectID": "chapter4.html#bridge-to-mrmprobs-for-dia-ms-or-gcms-data-sets",
+    "href": "chapter4.html#bridge-to-mrmprobs-for-dia-ms-or-gcms-data-sets",
+    "title": "Other utilities of MS-DIAL",
+    "section": "2. Bridge to MRMPROBS for DIA-MS or GC/MS data sets",
+    "text": "2. Bridge to MRMPROBS for DIA-MS or GC/MS data sets"
+  },
+  {
+    "objectID": "chapter4.html#molecular-spectrum-networking-for-metabolite-annotations",
+    "href": "chapter4.html#molecular-spectrum-networking-for-metabolite-annotations",
+    "title": "Other utilities of MS-DIAL",
+    "section": "3. Molecular spectrum networking for metabolite annotations",
+    "text": "3. Molecular spectrum networking for metabolite annotations"
   },
   {
     "objectID": "index.html",

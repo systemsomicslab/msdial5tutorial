@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>msdial5tutorial - Overview of supported techniques (temporary)</title>
+<title>msdial5tutorial - Metabolomics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -85,7 +85,7 @@ ul.task-list{list-style: none;}
     </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Overview of supported techniques (temporary)</h1>
+      <h1 class="quarto-secondary-nav-title">Metabolomics</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -105,22 +105,22 @@ ul.task-list{list-style: none;}
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter1.html" class="sidebar-item-text sidebar-link active">Overview of supported techniques (temporary)</a>
+  <a href="./chapter1.html" class="sidebar-item-text sidebar-link active">Metabolomics</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter2.html" class="sidebar-item-text sidebar-link">Metabolomics</a>
+  <a href="./chapter2.html" class="sidebar-item-text sidebar-link">Lipidomics</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter3.html" class="sidebar-item-text sidebar-link">Lipidomics</a>
+  <a href="./chapter3.html" class="sidebar-item-text sidebar-link">Proteomics</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter4.html" class="sidebar-item-text sidebar-link">Proteomics</a>
+  <a href="./chapter4.html" class="sidebar-item-text sidebar-link">Other utilities of MS-DIAL</a>
   </div>
 </li>
     </ul>
@@ -128,14 +128,24 @@ ul.task-list{list-style: none;}
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#nominal-and-accurate-gcms-based-metabolic-profiling" id="toc-nominal-and-accurate-gcms-based-metabolic-profiling" class="nav-link active" data-scroll-target="#nominal-and-accurate-gcms-based-metabolic-profiling">1. Nominal and accurate GC/MS based metabolic profiling</a></li>
+  <li><a href="#lcms-or-lcmsms-data-dependent-msms-project-with-user-defined-msms-database-msp-format" id="toc-lcms-or-lcmsms-data-dependent-msms-project-with-user-defined-msms-database-msp-format" class="nav-link" data-scroll-target="#lcms-or-lcmsms-data-dependent-msms-project-with-user-defined-msms-database-msp-format">2. LC/MS or LC/MS/MS (data dependent MS/MS) project with user-defined MS/MS database (MSP format)</a></li>
+  <li><a href="#ce-msms" id="toc-ce-msms" class="nav-link" data-scroll-target="#ce-msms">3. CE-MS/MS</a></li>
+  <li><a href="#all-ion-fragmentation-with-multiple-collision-energies" id="toc-all-ion-fragmentation-with-multiple-collision-energies" class="nav-link" data-scroll-target="#all-ion-fragmentation-with-multiple-collision-energies">4. All ion fragmentation with multiple collision energies</a></li>
+  <li><a href="#ms-dial-isotope-tracking-function" id="toc-ms-dial-isotope-tracking-function" class="nav-link" data-scroll-target="#ms-dial-isotope-tracking-function">5. MS-DIAL isotope tracking function</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Overview of supported techniques (temporary)</h1>
+<h1 class="title d-none d-lg-block">Metabolomics</h1>
 </div>
 
 
@@ -149,26 +159,24 @@ ul.task-list{list-style: none;}
 
 </header>
 
-<ol type="1">
-<li><p>Metabolomics</p>
-<p>1.1. Nominal and accurate GC/MS based metabolic profiling</p>
-<p>1.2. LC/MS or LC/MS/MS (data dependent MS/MS) project with user-defined MS/MS database (MSP format)</p>
-<p>1.3. CE-MS/MS</p>
-<p>1.4. All ion fragmentation with multiple collision energies</p>
-<p>1.5. MS-DIAL isotope tracking function</p></li>
-<li><p>Lipidomics</p>
-<p>2.1. DI-MS/MS</p>
-<p>2.2. LC-MS/MS (data independent MS/MS) project for lipidomics using in silico retention time and theoretical MS/MS library of lipids</p>
-<p>2.3. LC-MS/MS (EAD) – deep structural lipid annotation</p>
-<p>2.4. SFC-MS/MS</p>
-<p>2.5. DI-IM-MS/MS</p>
-<p>2.6. LC-IM-MS/MS</p></li>
-<li><p>Proteomics</p>
-<p>3.1. LC-MS/MS (data independent MS/MS)</p>
-<p>3.2. LC-MS/MS (EAD)</p></li>
-</ol>
+<section id="nominal-and-accurate-gcms-based-metabolic-profiling" class="level2">
+<h2 class="anchored" data-anchor-id="nominal-and-accurate-gcms-based-metabolic-profiling">1. Nominal and accurate GC/MS based metabolic profiling</h2>
+<p>The environment for GC-MS data analysis in MS-DIAL5 is now under construction. Please use version 4 series for which the tutorial is available here: <a href="https://mtbinfo-team.github.io/mtbinfo.github.io/MS-DIAL/tutorial.html#chapter-4" class="uri">https://mtbinfo-team.github.io/mtbinfo.github.io/MS-DIAL/tutorial.html#chapter-4</a></p>
+</section>
+<section id="lcms-or-lcmsms-data-dependent-msms-project-with-user-defined-msms-database-msp-format" class="level2">
+<h2 class="anchored" data-anchor-id="lcms-or-lcmsms-data-dependent-msms-project-with-user-defined-msms-database-msp-format">2. LC/MS or LC/MS/MS (data dependent MS/MS) project with user-defined MS/MS database (MSP format)</h2>
+</section>
+<section id="ce-msms" class="level2">
+<h2 class="anchored" data-anchor-id="ce-msms">3. CE-MS/MS</h2>
+</section>
+<section id="all-ion-fragmentation-with-multiple-collision-energies" class="level2">
+<h2 class="anchored" data-anchor-id="all-ion-fragmentation-with-multiple-collision-energies">4. All ion fragmentation with multiple collision energies</h2>
+</section>
+<section id="ms-dial-isotope-tracking-function" class="level2">
+<h2 class="anchored" data-anchor-id="ms-dial-isotope-tracking-function">5. MS-DIAL isotope tracking function</h2>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

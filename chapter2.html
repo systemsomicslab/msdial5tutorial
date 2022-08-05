@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>msdial5tutorial - Metabolomics</title>
+<title>msdial5tutorial - Lipidomics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -85,7 +85,7 @@ ul.task-list{list-style: none;}
     </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Metabolomics</h1>
+      <h1 class="quarto-secondary-nav-title">Lipidomics</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -105,22 +105,22 @@ ul.task-list{list-style: none;}
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter1.html" class="sidebar-item-text sidebar-link">Overview of supported techniques (temporary)</a>
+  <a href="./chapter1.html" class="sidebar-item-text sidebar-link">Metabolomics</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter2.html" class="sidebar-item-text sidebar-link active">Metabolomics</a>
+  <a href="./chapter2.html" class="sidebar-item-text sidebar-link active">Lipidomics</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter3.html" class="sidebar-item-text sidebar-link">Lipidomics</a>
+  <a href="./chapter3.html" class="sidebar-item-text sidebar-link">Proteomics</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter4.html" class="sidebar-item-text sidebar-link">Proteomics</a>
+  <a href="./chapter4.html" class="sidebar-item-text sidebar-link">Other utilities of MS-DIAL</a>
   </div>
 </li>
     </ul>
@@ -132,11 +132,12 @@ ul.task-list{list-style: none;}
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#nominal-and-accurate-gcms-based-metabolic-profiling" id="toc-nominal-and-accurate-gcms-based-metabolic-profiling" class="nav-link active" data-scroll-target="#nominal-and-accurate-gcms-based-metabolic-profiling">1. Nominal and accurate GC/MS based metabolic profiling</a></li>
-  <li><a href="#lcms-or-lcmsms-data-dependent-msms-project-with-user-defined-msms-database-msp-format" id="toc-lcms-or-lcmsms-data-dependent-msms-project-with-user-defined-msms-database-msp-format" class="nav-link" data-scroll-target="#lcms-or-lcmsms-data-dependent-msms-project-with-user-defined-msms-database-msp-format">2. LC/MS or LC/MS/MS (data dependent MS/MS) project with user-defined MS/MS database (MSP format)</a></li>
-  <li><a href="#ce-msms" id="toc-ce-msms" class="nav-link" data-scroll-target="#ce-msms">3. CE-MS/MS</a></li>
-  <li><a href="#all-ion-fragmentation-with-multiple-collision-energies" id="toc-all-ion-fragmentation-with-multiple-collision-energies" class="nav-link" data-scroll-target="#all-ion-fragmentation-with-multiple-collision-energies">4. All ion fragmentation with multiple collision energies</a></li>
-  <li><a href="#ms-dial-isotope-tracking-function" id="toc-ms-dial-isotope-tracking-function" class="nav-link" data-scroll-target="#ms-dial-isotope-tracking-function">5. MS-DIAL isotope tracking function</a></li>
+  <li><a href="#di-msms" id="toc-di-msms" class="nav-link active" data-scroll-target="#di-msms">1. DI-MS/MS</a></li>
+  <li><a href="#lc-msms-data-independent-msms-project-for-lipidomics-using-in-silico-retention-time-and-theoretical-msms-library-of-lipids" id="toc-lc-msms-data-independent-msms-project-for-lipidomics-using-in-silico-retention-time-and-theoretical-msms-library-of-lipids" class="nav-link" data-scroll-target="#lc-msms-data-independent-msms-project-for-lipidomics-using-in-silico-retention-time-and-theoretical-msms-library-of-lipids">2. LC-MS/MS (data independent MS/MS) project for lipidomics using in silico retention time and theoretical MS/MS library of lipids</a></li>
+  <li><a href="#lc-msms-ead---deep-structural-lipid-annotation" id="toc-lc-msms-ead---deep-structural-lipid-annotation" class="nav-link" data-scroll-target="#lc-msms-ead---deep-structural-lipid-annotation">3. LC-MS/MS (EAD) - deep structural lipid annotation</a></li>
+  <li><a href="#sfc-msms" id="toc-sfc-msms" class="nav-link" data-scroll-target="#sfc-msms">4. SFC-MS/MS</a></li>
+  <li><a href="#di-im-msms" id="toc-di-im-msms" class="nav-link" data-scroll-target="#di-im-msms">5. DI-IM-MS/MS</a></li>
+  <li><a href="#lc-im-msms" id="toc-lc-im-msms" class="nav-link" data-scroll-target="#lc-im-msms">6. LC-IM-MS/MS</a></li>
   </ul>
 </nav>
     </div>
@@ -145,7 +146,7 @@ ul.task-list{list-style: none;}
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Metabolomics</h1>
+<h1 class="title d-none d-lg-block">Lipidomics</h1>
 </div>
 
 
@@ -159,21 +160,23 @@ ul.task-list{list-style: none;}
 
 </header>
 
-<section id="nominal-and-accurate-gcms-based-metabolic-profiling" class="level2">
-<h2 class="anchored" data-anchor-id="nominal-and-accurate-gcms-based-metabolic-profiling">1. Nominal and accurate GC/MS based metabolic profiling</h2>
-<p>The environment for GC-MS data analysis in MS-DIAL5 is now under construction. Please use version 4 series for which the tutorial is available here: <a href="https://mtbinfo-team.github.io/mtbinfo.github.io/MS-DIAL/tutorial.html#chapter-4" class="uri">https://mtbinfo-team.github.io/mtbinfo.github.io/MS-DIAL/tutorial.html#chapter-4</a></p>
+<section id="di-msms" class="level2">
+<h2 class="anchored" data-anchor-id="di-msms">1. DI-MS/MS</h2>
 </section>
-<section id="lcms-or-lcmsms-data-dependent-msms-project-with-user-defined-msms-database-msp-format" class="level2">
-<h2 class="anchored" data-anchor-id="lcms-or-lcmsms-data-dependent-msms-project-with-user-defined-msms-database-msp-format">2. LC/MS or LC/MS/MS (data dependent MS/MS) project with user-defined MS/MS database (MSP format)</h2>
+<section id="lc-msms-data-independent-msms-project-for-lipidomics-using-in-silico-retention-time-and-theoretical-msms-library-of-lipids" class="level2">
+<h2 class="anchored" data-anchor-id="lc-msms-data-independent-msms-project-for-lipidomics-using-in-silico-retention-time-and-theoretical-msms-library-of-lipids">2. LC-MS/MS (data independent MS/MS) project for lipidomics using in silico retention time and theoretical MS/MS library of lipids</h2>
 </section>
-<section id="ce-msms" class="level2">
-<h2 class="anchored" data-anchor-id="ce-msms">3. CE-MS/MS</h2>
+<section id="lc-msms-ead---deep-structural-lipid-annotation" class="level2">
+<h2 class="anchored" data-anchor-id="lc-msms-ead---deep-structural-lipid-annotation">3. LC-MS/MS (EAD) - deep structural lipid annotation</h2>
 </section>
-<section id="all-ion-fragmentation-with-multiple-collision-energies" class="level2">
-<h2 class="anchored" data-anchor-id="all-ion-fragmentation-with-multiple-collision-energies">4. All ion fragmentation with multiple collision energies</h2>
+<section id="sfc-msms" class="level2">
+<h2 class="anchored" data-anchor-id="sfc-msms">4. SFC-MS/MS</h2>
 </section>
-<section id="ms-dial-isotope-tracking-function" class="level2">
-<h2 class="anchored" data-anchor-id="ms-dial-isotope-tracking-function">5. MS-DIAL isotope tracking function</h2>
+<section id="di-im-msms" class="level2">
+<h2 class="anchored" data-anchor-id="di-im-msms">5. DI-IM-MS/MS</h2>
+</section>
+<section id="lc-im-msms" class="level2">
+<h2 class="anchored" data-anchor-id="lc-im-msms">6. LC-IM-MS/MS</h2>
 
 
 </section>
