@@ -105,7 +105,7 @@ ul.task-list{list-style: none;}
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter1.html" class="sidebar-item-text sidebar-link">TITLE_OF_CHAPTER1</a>
+  <a href="./chapter1.html" class="sidebar-item-text sidebar-link">Overview of supported techniques</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -284,12 +284,18 @@ ul.task-list{list-style: none;}
 Alkanes: <a href="http://www.sciencedirect.com/science/article/pii/S1389172311001848" class="uri">http://www.sciencedirect.com/science/article/pii/S1389172311001848</a><br>
 Alkanes: <a href="https://en.wikipedia.org/wiki/Kovats_retention_index" class="uri">https://en.wikipedia.org/wiki/Kovats_retention_index</a><br>
 FAMEs: <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2805091/" class="uri">http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2805091/</a></p>
-<p>In order to calculate the retention indexes of detected peaks, users have to prepare a dictionary including the pairs of the carbon number and its retention time as tab-delimited text (see next page).</p>
+<p>In order to calculate the retention indexes of detected peaks, users have to prepare a dictionary including the pairs of the carbon number and its retention time as tab-delimited text (<strong>Figure 11</strong>).</p>
 <p><strong>FAQ</strong></p>
 <ul>
 <li><p>By alkane mixture, the calculation of retention index is based on Kovats’s method (temperature programmed chromatography).</p></li>
 <li><p>By FAME mixture, the calculation is based on Fiehn’s method. Importantly, FAMEs of carbon number C8, C9, C10, C12, C14, C16, C18, C20, C22, C24, C26, C28, and C30 (total 13 FAMEs) must be included in this dictionary to calculate Fiehn’s index. A polynomial regression of fifth order is applied to chromatographic peaks between C9 and C28. The peaks between C8 (and its earlier) and C9 and between C28 and C30 (and its later) are interpolated by a linear regression. The original indexes are based on the retention time (sec) * 1000 of authentic standards.</p></li>
 </ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Fig11%20%20Examples%20of%20Alkanes%20or%20Fames%20dictionaries.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure 11 Examples of Alkanes or Fames dictionaries</figcaption><p></p>
+</figure>
+</div>
 
 
 </section>
