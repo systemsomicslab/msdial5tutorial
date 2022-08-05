@@ -1,15 +1,18 @@
 ---
-title: "Metabolomics"
+title: "Lipidomics"
+editor: 
+  markdown: 
+    wrap: 72
 ---
 
-## 1. Nominal and accurate GC/MS based metabolic profiling
+## 1. DI-MS/MS
 
-The environment for GC-MS data analysis in MS-DIAL5 is now under construction. Please use version 4 series for which the tutorial is available here: <https://mtbinfo-team.github.io/mtbinfo.github.io/MS-DIAL/tutorial.html#chapter-4>
+## 2. LC-MS/MS (data independent MS/MS) project for lipidomics using in silico retention time and theoretical MS/MS library of lipids
 
-## 2. LC/MS or LC/MS/MS (data dependent MS/MS) project with user-defined MS/MS database (MSP format)
+## 3. LC-MS/MS (EAD) - deep structural lipid annotation
 
-## 3. CE-MS/MS
+## 4. SFC-MS/MS
 
-## 4. All ion fragmentation with multiple collision energies
+## 5. DI-IM-MS/MS
 
-## 5. MS-DIAL isotope tracking function
+## 6. LC-IM-MS/MS

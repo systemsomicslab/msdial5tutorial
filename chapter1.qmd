@@ -1,40 +1,15 @@
 ---
-title: "Overview of supported techniques (temporary)"
-editor: 
-  markdown: 
-    wrap: 72
+title: "Metabolomics"
 ---
 
-1.  Metabolomics
+## 1. Nominal and accurate GC/MS based metabolic profiling
 
-    1.1. Nominal and accurate GC/MS based metabolic profiling
+The environment for GC-MS data analysis in MS-DIAL5 is now under construction. Please use version 4 series for which the tutorial is available here: <https://mtbinfo-team.github.io/mtbinfo.github.io/MS-DIAL/tutorial.html#chapter-4>
 
-    1.2. LC/MS or LC/MS/MS (data dependent MS/MS) project with
-    user-defined MS/MS database (MSP format)
+## 2. LC/MS or LC/MS/MS (data dependent MS/MS) project with user-defined MS/MS database (MSP format)
 
-    1.3. CE-MS/MS
+## 3. CE-MS/MS
 
-    1.4. All ion fragmentation with multiple collision energies
+## 4. All ion fragmentation with multiple collision energies
 
-    1.5. MS-DIAL isotope tracking function
-
-2.  Lipidomics
-
-    2.1. DI-MS/MS
-
-    2.2. LC-MS/MS (data independent MS/MS) project for lipidomics using
-    in silico retention time and theoretical MS/MS library of lipids
-
-    2.3. LC-MS/MS (EAD) -- deep structural lipid annotation
-
-    2.4. SFC-MS/MS
-
-    2.5. DI-IM-MS/MS
-
-    2.6. LC-IM-MS/MS
-
-3.  Proteomics
-
-    3.1. LC-MS/MS (data independent MS/MS)
-
-    3.2. LC-MS/MS (EAD)
+## 5. MS-DIAL isotope tracking function

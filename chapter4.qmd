@@ -1,7 +1,9 @@
 ---
-title: "Proteomics"
+title: "Other utilities of MS-DIAL"
 ---
 
-## 1.  LC-MS/MS (data independent MS/MS)
+## 1. Link to MS-FINDER for searching unknowns
 
-## 2.  LC-MS/MS (EAD)
+## 2. Bridge to MRMPROBS for DIA-MS or GC/MS data sets
+
+## 3. Molecular spectrum networking for metabolite annotations

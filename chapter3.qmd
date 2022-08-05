@@ -1,18 +1,7 @@
 ---
-title: "Lipidomics"
-editor: 
-  markdown: 
-    wrap: 72
+title: "Proteomics"
 ---
 
-## 1.  DI-MS/MS
+## 1.  LC-MS/MS (data independent MS/MS)
 
-## 2.  LC-MS/MS (data independent MS/MS) project for lipidomics using in silico retention time and theoretical MS/MS library of lipids
-
-## 3.  LC-MS/MS (EAD) - deep structural lipid annotation
-
-## 4.  SFC-MS/MS
-
-## 5.  DI-IM-MS/MS
-
-## 6.  LC-IM-MS/MS
+## 2.  LC-MS/MS (EAD)
