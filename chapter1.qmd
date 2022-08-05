@@ -1,6 +1,40 @@
 ---
-title: "TITLE_OF_CHAPTER1"
-author: "AUTHOR_NAME"
+title: "Overview of supported techniques"
+editor: 
+  markdown: 
+    wrap: 72
 ---
 
-## FILLME
+1.  Metabolomics
+
+    1.1. Nominal and accurate GC/MS based metabolic profiling
+
+    1.2. LC/MS or LC/MS/MS (data dependent MS/MS) project with
+    user-defined MS/MS database (MSP format)
+
+    1.3. CE-MS/MS
+
+    1.4. All ion fragmentation with multiple collision energies
+
+    1.5. MS-DIAL isotope tracking function
+
+2.  Lipidomics
+
+    2.1. DI-MS/MS
+
+    2.2. LC-MS/MS (data independent MS/MS) project for lipidomics using
+    in silico retention time and theoretical MS/MS library of lipids
+
+    2.3. LC-MS/MS (EAD) -- deep structural lipid annotation
+
+    2.4. SFC-MS/MS
+
+    2.5. DI-IM-MS/MS
+
+    2.6. LC-IM-MS/MS
+
+3.  Proteomics
+
+    3.1. LC-MS/MS (data independent MS/MS)
+
+    3.2. LC-MS/MS (EAD)
