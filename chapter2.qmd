@@ -42,9 +42,9 @@ processing (2). It is advisable to select the blanks and QC samples (if
 measured) to be able to use all functions of MS-DIAL (such as blank
 filtering or LOWESS signal correction based on QCs) (3). After clicking
 next and selecting the "Measurement parameters" in the left side tab you
-can specify your analytical setup (more details are provided in the
-[intruduction
-section](https://mtbinfo-team.github.io/msdial5tutorial/#start-up-a-project-of-ms-dial5))
+can specify your analytical setup according to this figure (more details
+are provided in the [intruduction
+section](https://mtbinfo-team.github.io/msdial5tutorial/#fig-5))
 (4).](images/Chapter2/Fig2%20Importing%20raw%20data%20files%20and%20setting%20up%20the%20measurement%20parameters.png){#fig-2}
 
 ## 2. LC-MS/MS (data independent MS/MS) project for lipidomics using in silico retention time and theoretical MS/MS library of lipids
