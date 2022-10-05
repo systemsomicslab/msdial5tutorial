@@ -5,7 +5,7 @@ editor:
     wrap: 72
 ---
 
-## 1. DI-MS/MS
+## 1. DI-MS/MS (DDA)
 
 A project dealing with data dependent DI-MS acquisition in combination
 with the in silico retention time and MS/MS databases for lipids is
@@ -47,12 +47,22 @@ are provided in the [intruduction
 section](https://mtbinfo-team.github.io/msdial5tutorial/#fig-5))
 (4).](images/Chapter2/Fig2%20Importing%20raw%20data%20files%20and%20setting%20up%20the%20measurement%20parameters.png){#fig-2}
 
-## 2. LC-MS/MS (data independent MS/MS) project for lipidomics using in silico retention time and theoretical MS/MS library of lipids
+## 2. DI-MS/MS (MSall)
 
-## 3. LC-MS/MS (EAD) - deep structural lipid annotation
+A project dealing with MSall DI-MS acquisition in combination with the
+in silico retention time and MS/MS databases for lipids is demonstrated.
 
-## 4. SFC-MS/MS
+## 3. LC-MS/MS (SWATH)
 
-## 5. DI-IM-MS/MS
+A project dealing with data independent LC-MS acquisition using the
+Sequential Window Acquisition of all Theoretical Mass Spectra (SWATH-MS)
+in combination with the in silico retention time and MS/MS databases for
+lipids is demonstrated.
 
-## 6. LC-IM-MS/MS
+## 4. LC-MS/MS (EAD) - deep structural lipid annotation
+
+## 5. SFC-MS/MS
+
+## 6. DI-IM-MS/MS
+
+## 7. LC-IM-MS/MS
