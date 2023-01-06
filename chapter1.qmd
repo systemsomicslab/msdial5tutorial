@@ -30,7 +30,7 @@ The experimental protocol has been previously described in the following researc
 
 ### The video tutorial for the MS-DIAL operation
 
-
+{{< video https://www.youtube.com/embed/cZY7wqF5Wdo >}}
 
 ### Key points in the MS-DIAL operation
 
