@@ -19,14 +19,14 @@ The ABF files for this demonstration can be downloaded from <http://prime.psc.ri
 The experimental protocol has been previously described in the following research: <http://pubs.acs.org/doi/abs/10.1021/acs.jafc.5b04890>.
 
 #### Experiment summary:
-- **Liquid chromatography:** total 4 min run per sample with Kinetex C18 2.6 μm (50×1.0 mm).
+- **Liquid chromatography:** total 4 min run per sample with Kinetex C18 2.6 μm (50×1.0 mm)
 - **Solvent A:** water with 0.1% acetic acid
 - **Solvent B:** acetonitrile with 0.1% acetic acid
-- **Mass spectrometer:** data dependent method with positive ion mode.
+- **Mass spectrometer:** data dependent method with positive ion mode
   - Collision energy: 35 V
-  - Collision energy spread: 15 V
-  - Cycle time: 125 ms
-  - Mass range: m/z 60-1250
+  - Collision energy spread: 15 V
+  - Cycle time: 125 ms
+  - Mass range: m/z 60-1250
 
 ### The video tutorial for the MS-DIAL operation
 
