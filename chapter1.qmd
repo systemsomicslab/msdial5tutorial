@@ -34,6 +34,8 @@ The experimental protocol has been previously described in the following researc
 
 ### Key points in the MS-DIAL operation
 
+- All sample `Type`s are `Sample`. The input data here does not contain `QC` or `Blank`.
+- For this input data, set a different `Class ID` for each sample.
 
 ## 3. CE-MS/MS
 
