@@ -28,6 +28,13 @@ The experimental protocol has been previously described in the following researc
   - Cycle time, 125 ms
   - Mass range, m/z 60-1250
 
+### The video tutorial for the MS-DIAL operation
+
+
+
+### Key points in the MS-DIAL operation
+
+
 ## 3. CE-MS/MS
 
 ## 4. All ion fragmentation with multiple collision energies
