@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.37">
+<meta name="generator" content="quarto-1.2.280">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,10 +11,15 @@
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
 </style>
 
 
@@ -64,19 +69,23 @@ ul.task-list{list-style: none;}
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <a class="navbar-brand" href="./index.html">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">msdial5tutorial</span>
-  </a>
+    </a>
+  </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page">Home</a>
+    <a class="nav-link active" href="./index.html" aria-current="page">
+ <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html">About</a>
+    <a class="nav-link" href="./about.html">
+ <span class="menu-text">About</span></a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -128,19 +137,20 @@ ul.task-list{list-style: none;}
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#di-msms" id="toc-di-msms" class="nav-link active" data-scroll-target="#di-msms">1. DI-MS/MS</a>
+  <li><a href="#di-msms-dda" id="toc-di-msms-dda" class="nav-link active" data-scroll-target="#di-msms-dda">1. DI-MS/MS (DDA)</a>
   <ul class="collapse">
   <li><a href="#starting-up-your-project" id="toc-starting-up-your-project" class="nav-link" data-scroll-target="#starting-up-your-project">1-1 Starting up your project</a></li>
   </ul></li>
-  <li><a href="#lc-msms-data-independent-msms-project-for-lipidomics-using-in-silico-retention-time-and-theoretical-msms-library-of-lipids" id="toc-lc-msms-data-independent-msms-project-for-lipidomics-using-in-silico-retention-time-and-theoretical-msms-library-of-lipids" class="nav-link" data-scroll-target="#lc-msms-data-independent-msms-project-for-lipidomics-using-in-silico-retention-time-and-theoretical-msms-library-of-lipids">2. LC-MS/MS (data independent MS/MS) project for lipidomics using in silico retention time and theoretical MS/MS library of lipids</a></li>
-  <li><a href="#lc-msms-ead---deep-structural-lipid-annotation" id="toc-lc-msms-ead---deep-structural-lipid-annotation" class="nav-link" data-scroll-target="#lc-msms-ead---deep-structural-lipid-annotation">3. LC-MS/MS (EAD) - deep structural lipid annotation</a></li>
-  <li><a href="#sfc-msms" id="toc-sfc-msms" class="nav-link" data-scroll-target="#sfc-msms">4. SFC-MS/MS</a></li>
-  <li><a href="#di-im-msms" id="toc-di-im-msms" class="nav-link" data-scroll-target="#di-im-msms">5. DI-IM-MS/MS</a></li>
-  <li><a href="#lc-im-msms" id="toc-lc-im-msms" class="nav-link" data-scroll-target="#lc-im-msms">6. LC-IM-MS/MS</a></li>
+  <li><a href="#di-msms-msall" id="toc-di-msms-msall" class="nav-link" data-scroll-target="#di-msms-msall">2. DI-MS/MS (MSall)</a></li>
+  <li><a href="#lc-msms-swath" id="toc-lc-msms-swath" class="nav-link" data-scroll-target="#lc-msms-swath">3. LC-MS/MS (SWATH)</a></li>
+  <li><a href="#lc-msms-ead---deep-structural-lipid-annotation" id="toc-lc-msms-ead---deep-structural-lipid-annotation" class="nav-link" data-scroll-target="#lc-msms-ead---deep-structural-lipid-annotation">4. LC-MS/MS (EAD) - deep structural lipid annotation</a></li>
+  <li><a href="#sfc-msms" id="toc-sfc-msms" class="nav-link" data-scroll-target="#sfc-msms">5. SFC-MS/MS</a></li>
+  <li><a href="#di-im-msms" id="toc-di-im-msms" class="nav-link" data-scroll-target="#di-im-msms">6. DI-IM-MS/MS</a></li>
+  <li><a href="#lc-im-msms" id="toc-lc-im-msms" class="nav-link" data-scroll-target="#lc-im-msms">7. LC-IM-MS/MS</a></li>
   </ul>
 </nav>
     </div>
@@ -157,14 +167,15 @@ ul.task-list{list-style: none;}
 <div class="quarto-title-meta">
 
     
+  
     
   </div>
   
 
 </header>
 
-<section id="di-msms" class="level2">
-<h2 class="anchored" data-anchor-id="di-msms">1. DI-MS/MS</h2>
+<section id="di-msms-dda" class="level2">
+<h2 class="anchored" data-anchor-id="di-msms-dda">1. DI-MS/MS (DDA)</h2>
 <p>A project dealing with data dependent DI-MS acquisition in combination with the in silico retention time and MS/MS databases for lipids is demonstrated.</p>
 <p>This tutorial uses 15 demonstration files which are downloadable from the below link.<br>
 (<em>add the corresponding link</em>)</p>
@@ -174,32 +185,37 @@ ul.task-list{list-style: none;}
 <h3 class="anchored" data-anchor-id="starting-up-your-project">1-1 Starting up your project</h3>
 <div id="fig-1" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="images/Chapter2/Fig1%20Starting%20up%20a%20project%20in%20MS-DIAL.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure 1: Figure 1 Starting up a project in MS-DIAL. First open the MSDIAL.exe file in the downloaded folder (1). Click on new project (2). You can name your project according to your preferences (3). Browse to the location of your experimental files (here your processing files will be also stored) (3). Click next and then continue to the second left side bar “Raw measurement files”. Here click browse to access your raw data files (4).</figcaption><p></p>
+<p><img src="images/Chapter2/Fig1 Starting up a project in MS-DIAL.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: Figure 1 Starting up a project in MS-DIAL. First open the MSDIAL.exe file in the downloaded folder (1). Click on new project (2). You can name your project according to your preferences (3). Browse to the location of your experimental files (here your processing files will be also stored) (3). Click next and then continue to the second left side bar “Raw measurement files”. Here click browse to access your raw data files (4).</figcaption><p></p>
 </figure>
 </div>
 <div id="fig-2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="images/Chapter2/Fig2%20Importing%20raw%20data%20files%20and%20setting%20up%20the%20measurement%20parameters.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure 2: Figure 2 Importing raw data files and setting up the measurement parameters. Change the type of file according to your vendor format and select raw data files which you want to import (note: the data files will be imported according to the alphabetical order) (1). After inserting your raw data files, you will be able to further assign identifiers to your measurements by sample type (Sample, Standard, QC, Blank), class ID (according to your experimental setup), and you can also set the batch (if you analyzed multiple batches), analytical order, dilution factor, or possibly exclude some samples from further data processing (2). It is advisable to select the blanks and QC samples (if measured) to be able to use all functions of MS-DIAL (such as blank filtering or LOWESS signal correction based on QCs) (3). After clicking next and selecting the “Measurement parameters” in the left side tab you can specify your analytical setup according to this figure (more details are provided in the <a href="https://mtbinfo-team.github.io/msdial5tutorial/#fig-5">intruduction section</a>) (4).</figcaption><p></p>
+<p><img src="images/Chapter2/Fig2 Importing raw data files and setting up the measurement parameters.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;2: Figure 2 Importing raw data files and setting up the measurement parameters. Change the type of file according to your vendor format and select raw data files which you want to import (note: the data files will be imported according to the alphabetical order) (1). After inserting your raw data files, you will be able to further assign identifiers to your measurements by sample type (Sample, Standard, QC, Blank), class ID (according to your experimental setup), and you can also set the batch (if you analyzed multiple batches), analytical order, dilution factor, or possibly exclude some samples from further data processing (2). It is advisable to select the blanks and QC samples (if measured) to be able to use all functions of MS-DIAL (such as blank filtering or LOWESS signal correction based on QCs) (3). After clicking next and selecting the “Measurement parameters” in the left side tab you can specify your analytical setup according to this figure (more details are provided in the <a href="https://mtbinfo-team.github.io/msdial5tutorial/#fig-5">intruduction section</a>) (4).</figcaption><p></p>
 </figure>
 </div>
 </section>
 </section>
-<section id="lc-msms-data-independent-msms-project-for-lipidomics-using-in-silico-retention-time-and-theoretical-msms-library-of-lipids" class="level2">
-<h2 class="anchored" data-anchor-id="lc-msms-data-independent-msms-project-for-lipidomics-using-in-silico-retention-time-and-theoretical-msms-library-of-lipids">2. LC-MS/MS (data independent MS/MS) project for lipidomics using in silico retention time and theoretical MS/MS library of lipids</h2>
+<section id="di-msms-msall" class="level2">
+<h2 class="anchored" data-anchor-id="di-msms-msall">2. DI-MS/MS (MSall)</h2>
+<p>A project dealing with MSall DI-MS acquisition in combination with the in silico retention time and MS/MS databases for lipids is demonstrated.</p>
+</section>
+<section id="lc-msms-swath" class="level2">
+<h2 class="anchored" data-anchor-id="lc-msms-swath">3. LC-MS/MS (SWATH)</h2>
+<p>A project dealing with data independent LC-MS acquisition using the Sequential Window Acquisition of all Theoretical Mass Spectra (SWATH-MS) in combination with the in silico retention time and MS/MS databases for lipids is demonstrated.</p>
 </section>
 <section id="lc-msms-ead---deep-structural-lipid-annotation" class="level2">
-<h2 class="anchored" data-anchor-id="lc-msms-ead---deep-structural-lipid-annotation">3. LC-MS/MS (EAD) - deep structural lipid annotation</h2>
+<h2 class="anchored" data-anchor-id="lc-msms-ead---deep-structural-lipid-annotation">4. LC-MS/MS (EAD) - deep structural lipid annotation</h2>
 </section>
 <section id="sfc-msms" class="level2">
-<h2 class="anchored" data-anchor-id="sfc-msms">4. SFC-MS/MS</h2>
+<h2 class="anchored" data-anchor-id="sfc-msms">5. SFC-MS/MS</h2>
 </section>
 <section id="di-im-msms" class="level2">
-<h2 class="anchored" data-anchor-id="di-im-msms">5. DI-IM-MS/MS</h2>
+<h2 class="anchored" data-anchor-id="di-im-msms">6. DI-IM-MS/MS</h2>
 </section>
 <section id="lc-im-msms" class="level2">
-<h2 class="anchored" data-anchor-id="lc-im-msms">6. LC-IM-MS/MS</h2>
+<h2 class="anchored" data-anchor-id="lc-im-msms">7. LC-IM-MS/MS</h2>
 
 
 </section>
@@ -246,7 +262,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -274,31 +307,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
     });
   }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>

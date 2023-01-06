@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.37">
+<meta name="generator" content="quarto-1.2.280">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,10 +11,15 @@
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
 </style>
 
 
@@ -64,19 +69,23 @@ ul.task-list{list-style: none;}
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <a class="navbar-brand" href="./index.html">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">msdial5tutorial</span>
-  </a>
+    </a>
+  </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page">Home</a>
+    <a class="nav-link active" href="./index.html" aria-current="page">
+ <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html">About</a>
+    <a class="nav-link" href="./about.html">
+ <span class="menu-text">About</span></a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -128,7 +137,7 @@ ul.task-list{list-style: none;}
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
@@ -154,6 +163,7 @@ ul.task-list{list-style: none;}
 <div class="quarto-title-meta">
 
     
+  
     
   </div>
   
@@ -171,15 +181,15 @@ ul.task-list{list-style: none;}
 <p>The current MS-DIAL program provides a stream pipeline for untargeted metabolomics, lipidomics and proteomics. In this latest version, the user experience has been greatly improved with a new graphical interface and also due to the fact it is no longer necessary to convert raw MS data from different vendor formats into a common ABF format (which is still supported), but the data can now be imported directly (supported file formats and analytical techniques are summarized in <strong><a href="#fig-1">Figure&nbsp;1</a></strong>).</p>
 <div id="fig-1" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="images/Index/Fig1%20Supported%20file%20formats%20and%20analytical%20techniques.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure 1: Figure 1 Overview of supported file formats and analytical techniques</figcaption><p></p>
+<p><img src="images/Index/Fig1 Supported file formats and analytical techniques.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: Figure 1 Overview of supported file formats and analytical techniques</figcaption><p></p>
 </figure>
 </div>
 <p>The latest version of MS-DIAL aims to be the most versatile tool for multiomics data analysis and therefore supports direct injection, many separation (GC, LC, CE, SFC), ionization (EI, ESI, MALDI), fragmentation (CID, HCD, ETD, ECD, EIEIO, EID, OAD) and MS/MS (DDA, SWATH, AIF) datasets (which are summarized in <strong><a href="#fig-2">Figure&nbsp;2</a></strong>). In addition, technological advances in fragmentation mechanisms such as electron-impact excitation of ions from organics (EIEIO) have also been taken into account, making it possible to work with these types of data to offer comprehensive structural identification of metabolites, lipids and proteins.</p>
 <div id="fig-2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="images/Index/Fig2%20MS-DIAL%205%20environment.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure 2: Figure 2 Summary of analytical techniques compatible with MS-DIAL 5</figcaption><p></p>
+<p><img src="images/Index/Fig2 MS-DIAL 5 environment.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;2: Figure 2 Summary of analytical techniques compatible with MS-DIAL 5</figcaption><p></p>
 </figure>
 </div>
 <p>After data processing which includes peak picking, deconvolution, compound identification, and peak alignment, MS-DIAL provides several normalization methods (including LOWESS) and a multivariate analysis by principal component analysis (PCA). Finally, for further analysis by other programs, this program can export your result as table format (for SIMCA-P, MetaboAnalyst, and MetFamily etc.), and as several spectral formats including NIST, MassBank, and Mascot formats for compound identifications by MS-FINDER, CSI:FingerID, CFM-ID, MetFrag, and MetFamily etc. For the parameter explanations including the description of MS-DIAL algorithms, see also ‘MS-DIAL mathematics’ which can be downloaded at <a href="http://prime.psc.riken.jp/compms/msdial/download/mathematics/MS-DIAL%20FAQ-vs2.pdf" class="uri">http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/MS-DIAL%20FAQ-vs2.pdf</a></p>
@@ -188,22 +198,22 @@ ul.task-list{list-style: none;}
 <p>This tutorial demonstrates four projects, (1) GC/MS, (2) LC/MS or LC/MS/MS (DDA: data dependent acquisition), (3) LC/MS/MS (data independent acquisition), and (4) LC-Ion mobility for the explanation of parameters and required files. In this section, three projects are summarized and you will find a minimum requirement for these processes. The details for LC/MS/MS (DIA), LC/MS/MS (DDA), GC/MS, and LC-Ion mobility processing are described in Chapter 2, Chapter 3, Chapter 4, and Chapter 10 respectively. First you need to start a new project in MS-DIAL5, set up a folder to store your project files and point MS-DIAL5 to the folder where your raw data is stored (<strong><a href="#fig-3">Figure&nbsp;3</a></strong>).</p>
 <div id="fig-3" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="images/Index/Fig3%20Start%20up%20a%20project%20of%20MS-DIAL5.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure 3: Figure 3 Start up a project in MS-DIAL5. First select new project to be created (1), next select a location where your project files will be saved (2). You need to direct MS-DIAL5 to your raw data file location (3) and select the corresponding data file format in the scrolling selection list and select the data files you want to process (4).</figcaption><p></p>
+<p><img src="images/Index/Fig3 Start up a project of MS-DIAL5.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3: Figure 3 Start up a project in MS-DIAL5. First select new project to be created (1), next select a location where your project files will be saved (2). You need to direct MS-DIAL5 to your raw data file location (3) and select the corresponding data file format in the scrolling selection list and select the data files you want to process (4).</figcaption><p></p>
 </figure>
 </div>
 <p>After inserting your raw data files, you will be able to further assign identifiers to your measurements by sample type (Sample, Standard, QC, Blank), class ID (according to your experimental setup), and you can also set the batch (if you analyzed multiple batches), analytical order, dilution factor, or possibly exclude some samples from further data processing (<strong><a href="#fig-4">Figure&nbsp;4</a></strong>).</p>
 <div id="fig-4" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="images/Index/Fig4%20Raw%20measurement%20files.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure 4: Figure 4 Specifications of raw measurement files. An example of assigning identifiers to your raw measurement files (more details will be described in the following sections).</figcaption><p></p>
+<p><img src="images/Index/Fig4 Raw measurement files.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;4: Figure 4 Specifications of raw measurement files. An example of assigning identifiers to your raw measurement files (more details will be described in the following sections).</figcaption><p></p>
 </figure>
 </div>
 <p>After assigning identifiers to the raw measurement files, click “Next” to go to the “Measurement parameters” tab. Here you will need to enter the analytical and instrumental parameters that were used to acquire your data (<strong><a href="#fig-5">Figure&nbsp;5</a></strong>).</p>
 <div id="fig-5" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="images/Index/Fig5%20Measurement%20parameters.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure 5: Figure 5 Measurement parameters. Overview of the parameters that need to be set according to your analytical and instrumental setup.</figcaption><p></p>
+<p><img src="images/Index/Fig5 Measurement parameters.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5: Figure 5 Measurement parameters. Overview of the parameters that need to be set according to your analytical and instrumental setup.</figcaption><p></p>
 </figure>
 </div>
 <p>The following sections will contain information about the data type (centroid and profile), the data format of custom user database (MSP file), and information about the types of adducts. The next chapters will then demonstrate case studies of processing different types of publicly available data in MS-DIAL5.</p>
@@ -213,14 +223,14 @@ ul.task-list{list-style: none;}
 <p>In the previous version of MS-DIAL users needed to define the type of imported data (centroid or profile). However in the new version you can choose centroid data by default. MS-DIAL retrieves data as centroid even for vendor formats which were previously considered as profile (e.g.&nbsp;SCIEX or Thermo). The only exception would be regarding Agilent data which can be stored as centroid, profile or both. To make sure what type of data you have, we recommend using our program “raw_data_viewer.exe” (which is available in the MS-DIAL base folder). The raw data viewer shows the spectrum that has been retrieved by the MS-DIAL backend (here you can determine the data type), and users can additionally determine the threshold values for amplitude cut off etc. by looking at the statistics of peak height vs.&nbsp;the frequency (<strong><a href="#fig-6">Figure&nbsp;6</a></strong> and <strong><a href="#fig-7">Figure&nbsp;7</a></strong>).</p>
 <div id="fig-6" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="images/Index/Fig6%20Raw%20data%20viewer.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure 6: Figure 6 Raw data viewer - data upload. After opening the “Raw data viewer.exe” you can browse to the location of your data (1) and load them (single or multiple files - one by one) (2). Next select the file you want to process (3) and click the “Show” button (4).</figcaption><p></p>
+<p><img src="images/Index/Fig6 Raw data viewer.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;6: Figure 6 Raw data viewer - data upload. After opening the “Raw data viewer.exe” you can browse to the location of your data (1) and load them (single or multiple files - one by one) (2). Next select the file you want to process (3) and click the “Show” button (4).</figcaption><p></p>
 </figure>
 </div>
 <div id="fig-7" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="images/Index/Fig7%20Raw%20data%20viewer%20result.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure 7: Figure 7 Raw data viewer - results. After processing the data you will be shown three histograms (for MS1 and MS2 spectrum intensity and peak height). Additionally you can browse to any ions found in your data (in the table provided at the bottom). You can order the ions by multiple parameters (scan start time, MS level, base peak m/z, base peak intensity, etc.). You can zoom the x (<em>m/z</em>) and y (Intensity) axis by using scroll button to inspect if your data are centroid or profile. Using this overview you can also estimate the ideal peak height cut-off for the MS-DIAL processing parameters.</figcaption><p></p>
+<p><img src="images/Index/Fig7 Raw data viewer result.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;7: Figure 7 Raw data viewer - results. After processing the data you will be shown three histograms (for MS1 and MS2 spectrum intensity and peak height). Additionally you can browse to any ions found in your data (in the table provided at the bottom). You can order the ions by multiple parameters (scan start time, MS level, base peak m/z, base peak intensity, etc.). You can zoom the x (<em>m/z</em>) and y (Intensity) axis by using scroll button to inspect if your data are centroid or profile. Using this overview you can also estimate the ideal peak height cut-off for the MS-DIAL processing parameters.</figcaption><p></p>
 </figure>
 </div>
 </section>
@@ -232,8 +242,8 @@ ul.task-list{list-style: none;}
 <p>MS-DIAL supports the MSP (<a href="http://www.nist.gov/srd/upload/NIST1a11Ver2-0Man.pdf" class="uri">http://www.nist.gov/srd/upload/NIST1a11Ver2-0Man.pdf</a>) format in ASCII text (<strong><a href="#fig-8">Figure&nbsp;8</a></strong>). In addition, the software can utilize “RETENTIONTIME:”, “PRECURSORTYPE:”, and “FORMULA:” information for metabolite identification (cases are ignored). Retention time information must be specified in minutes [min] scale when possible. The adduct ion information, i.e.&nbsp;here ‘Precursor type’, will be used for the adduct ion search algorithm (see section 7).</p>
 <div id="fig-8" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="images/Index/Fig8%20MSP%20format.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure 8: Figure 8 An example of MSP format library</figcaption><p></p>
+<p><img src="images/Index/Fig8 MSP format.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;8: Figure 8 An example of MSP format library</figcaption><p></p>
 </figure>
 </div>
 </section>
@@ -262,8 +272,8 @@ ul.task-list{list-style: none;}
 <p>* The minimum requirement for this text library is just ‘metabolite name’ and ‘<em>m/z</em>’ information; i.e.&nbsp;the first two columns are required. Retention time and adduct ion fields provide additional information for MS-DIAL in peak identification and adduct ion picking, respectively.</p>
 <div id="fig-9" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="images/Index/Fig9%20Text%20library.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure 9: Figure 9 An example of a text library</figcaption><p></p>
+<p><img src="images/Index/Fig9 Text library.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;9: Figure 9 An example of a text library</figcaption><p></p>
 </figure>
 </div>
 </section>
@@ -272,8 +282,8 @@ ul.task-list{list-style: none;}
 <p>MS-DIAL supports the MSP format (<a href="http://www.nist.gov/srd/upload/NIST1a11Ver2-0Man.pdf" class="uri">http://www.nist.gov/srd/upload/NIST1a11Ver2-0Man.pdf</a>) in ASCII text, same as in the “<strong>MSP format for precursor- and MS/MS library</strong>” seciton. MS-DIAL accepts two fields for ‘retention’ information as the reference: “RETENTIONTIME:” or “RT”, and “RETENTIONINDEX” or “RI” (<strong><a href="#fig-10">Figure&nbsp;10</a></strong>). Retention time information must be specified in minute [min] scale when possible.</p>
 <div id="fig-10" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="images/Index/Fig10%20MSP%20format%20library%20for%20GC-MS.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure 10: Figure 10 An example of MSP format library for GC/MS</figcaption><p></p>
+<p><img src="images/Index/Fig10 MSP format library for GC-MS.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;10: Figure 10 An example of MSP format library for GC/MS</figcaption><p></p>
 </figure>
 </div>
 </section>
@@ -292,8 +302,8 @@ FAMEs: <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2805091/" class="uri
 </ul>
 <div id="fig-11" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="images/Index/Fig11%20%20Examples%20of%20Alkanes%20or%20Fames%20dictionaries.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure 11: Figure 11 Examples of FAMEs and Alkanes dictionaries</figcaption><p></p>
+<p><img src="images/Index/Fig11  Examples of Alkanes or Fames dictionaries.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;11: Figure 11 Examples of FAMEs and Alkanes dictionaries</figcaption><p></p>
 </figure>
 </div>
 
@@ -344,7 +354,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -372,31 +399,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
     });
   }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>
