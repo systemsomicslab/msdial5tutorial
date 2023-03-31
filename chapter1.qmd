@@ -14,19 +14,18 @@ Here, a project involving data-dependent MS/MS acquisition in conjunction with a
 
 ### Input Data
 
-This section utilizes a total of 6 ABF files, with the MSP file being located in the same ZIP folder as this demonstration.
-The ABF files for this demonstration can be downloaded from <http://prime.psc.riken.jp/compms/msdial/download/demo/20160805-Wine-DDA-Pos-Demo%20files.zip>.
-The experimental protocol has been previously described in the following research: <http://pubs.acs.org/doi/abs/10.1021/acs.jafc.5b04890>.
+This section utilizes a total of 6 ABF files, with the MSP file being located in the same ZIP folder as this demonstration. The ABF files for this demonstration can be downloaded from <http://prime.psc.riken.jp/compms/msdial/download/demo/20160805-Wine-DDA-Pos-Demo%20files.zip>. The experimental protocol has been previously described in the following research: <http://pubs.acs.org/doi/abs/10.1021/acs.jafc.5b04890>.
 
 #### Experiment summary:
-- **Liquid chromatography:** total 4 min run per sample with Kinetex C18 2.6 μm (50×1.0 mm)
-- **Solvent A:** water with 0.1% acetic acid
-- **Solvent B:** acetonitrile with 0.1% acetic acid
-- **Mass spectrometer:** data dependent method with positive ion mode
-  - Collision energy: 35 V
-  - Collision energy spread: 15 V
-  - Cycle time: 125 ms
-  - Mass range: m/z 60-1250
+
+-   **Liquid chromatography:** total 4 min run per sample with Kinetex C18 2.6 μm (50×1.0 mm)
+-   **Solvent A:** water with 0.1% acetic acid
+-   **Solvent B:** acetonitrile with 0.1% acetic acid
+-   **Mass spectrometer:** data dependent method with positive ion mode
+    -   Collision energy: 35 V
+    -   Collision energy spread: 15 V
+    -   Cycle time: 125 ms
+    -   Mass range: m/z 60-1250
 
 ### The video tutorial for the MS-DIAL operation
 
@@ -34,9 +33,9 @@ The experimental protocol has been previously described in the following researc
 
 ### Key points in the MS-DIAL operation
 
-1. All sample `Type`s are `Sample`. The input data here does not contain `QC` or `Blank`.
-2. For this input data, set a different `Class ID` for each sample.
-3. You can paste Excel cells to MS-DIAL sample table.
+1.  All sample `Type`s are `Sample`. The input data here does not contain `QC` or `Blank`.
+2.  For this input data, set a different `Class ID` for each sample.
+3.  You can paste Excel cells to MS-DIAL sample table.
 
 ## 3. CE-MS/MS
 

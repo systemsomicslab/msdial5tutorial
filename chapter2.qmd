@@ -52,17 +52,31 @@ section](https://mtbinfo-team.github.io/msdial5tutorial/#fig-5))
 A project dealing with MSall DI-MS acquisition in combination with the
 in silico retention time and MS/MS databases for lipids is demonstrated.
 
-## 3. LC-MS/MS (SWATH)
+Additionally, you can watch our tutorial video:
+{{< video https://www.youtube.com/watch?v=YiAj0K37-CE&ab_channel=MS-DIALproject >}}
+
+## 3. DI-MS/MS (DDA)
+
+A project dealing with DDA DI-MS acquisition in combination with the
+in silico retention time and MS/MS databases for lipids is demonstrated.
+
+Additionally, you can watch our tutorial video:
+{{< video https://www.youtube.com/watch?v=Zo7qBcduc1E&ab_channel=MS-DIALproject >}}
+
+## 4. LC-MS/MS (SWATH)
 
 A project dealing with data independent LC-MS acquisition using the
 Sequential Window Acquisition of all Theoretical Mass Spectra (SWATH-MS)
 in combination with the in silico retention time and MS/MS databases for
 lipids is demonstrated.
 
-## 4. LC-MS/MS (EAD) - deep structural lipid annotation
+Additionally, you can watch our tutorial video:
+{{< video https://www.youtube.com/watch?v=HV-e9wG9WRo&ab_channel=MS-DIALproject >}}
 
-## 5. SFC-MS/MS
+## 5. LC-MS/MS (EAD) - deep structural lipid annotation
 
-## 6. DI-IM-MS/MS
+## 6. SFC-MS/MS
 
-## 7. LC-IM-MS/MS
+## 7. DI-IM-MS/MS
+
+## 8. LC-IM-MS/MS
