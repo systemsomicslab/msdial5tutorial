@@ -1,1 +1,1 @@
-Sitemap: https://mtbinfo-team.github.io/msdial5tutorial/sitemap.xml
+Sitemap: https://systemsomicslab.github.io/msdial5tutorial/sitemap.xml
