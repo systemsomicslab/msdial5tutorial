@@ -5,6 +5,8 @@ editor:
     wrap: 72
 ---
 
+See [Figure 2](index.qmd#fig-2) for the meanings of the abbreviations used in this chapter.
+
 ## 1. DI-MS/MS (DDA)
 
 A project dealing with data dependent DI-MS acquisition in combination
