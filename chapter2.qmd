@@ -72,6 +72,25 @@ Sequential Window Acquisition of all Theoretical Mass Spectra (SWATH-MS)
 in combination with the in silico retention time and MS/MS databases for
 lipids is demonstrated.
 
+### Input Data
+
+This tutorial uses 23 demonstration files which are downloadable from <http://prime.psc.riken.jp/archives/data/DropMet/019/20140809_MSDIAL_DemoFiles_Swath(abf).zip>.
+The experimental protocol is described in previous research: <http://www.nature.com/nmeth/journal/v12/n6/abs/nmeth.3393.html>.
+
+#### Experiment summary:
+
+Liquid chromatography: total 15 min run per sample with Waters Acquity UPLC CSH C18 column (100×2.1 mm; 1.7 μm).
+Mass spectrometer: SWATH method with negative ion mode.
+
+- MS1 accumulation time, 100 ms
+- MS2 accumulation time, 10 ms
+- Collision energy, 45 V
+- Collision energy spread, 15 V
+- Cycle time, 731 ms
+- Q1 window, 21 Da
+- Mass range, m/z 100-1250
+- Modifier, Ammonium formate (HCOONH4)
+
 Additionally, you can watch our tutorial video:
 {{< video https://www.youtube.com/watch?v=HV-e9wG9WRo&ab_channel=MS-DIALproject >}}
 
