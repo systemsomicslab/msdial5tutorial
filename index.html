@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.301">
+<meta name="generator" content="quarto-1.3.340">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -205,14 +205,14 @@ ul.task-list li input[type="checkbox"] {
 <div id="fig-1" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/Index/Fig1 Supported file formats and analytical techniques.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;1: Figure 1 Overview of supported file formats and analytical techniques</figcaption><p></p>
+<figcaption class="figure-caption">Figure&nbsp;1: Overview of supported file formats and analytical techniques</figcaption>
 </figure>
 </div>
 <p>The latest version of MS-DIAL aims to be the most versatile tool for multiomics data analysis and therefore supports direct injection, many separation (GC, LC, CE, SFC), ionization (EI, ESI, MALDI), fragmentation (CID, HCD, ETD, ECD, EIEIO, EID, OAD) and MS/MS (DDA, SWATH, AIF) datasets (which are summarized in <a href="#fig-2">Figure&nbsp;2</a>). In addition, technological advances in fragmentation mechanisms such as electron-impact excitation of ions from organics (EIEIO) have also been taken into account, making it possible to work with these types of data to offer comprehensive structural identification of metabolites, lipids and proteins.</p>
 <div id="fig-2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/Index/Fig2 MS-DIAL 5 environment.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;2: Figure 2 Summary of analytical techniques compatible with MS-DIAL 5</figcaption><p></p>
+<figcaption class="figure-caption">Figure&nbsp;2: Summary of analytical techniques compatible with MS-DIAL 5</figcaption>
 </figure>
 </div>
 <p>After data processing which includes peak picking, deconvolution, compound identification, and peak alignment, MS-DIAL provides several normalization methods (including LOWESS) and a multivariate analysis by principal component analysis (PCA). Finally, for further analysis by other programs, this program can export your result as table format (for SIMCA-P, MetaboAnalyst, and MetFamily etc.), and as several spectral formats including NIST, MassBank, and Mascot formats for compound identifications by MS-FINDER, CSI:FingerID, CFM-ID, MetFrag, and MetFamily etc. For the parameter explanations including the description of MS-DIAL algorithms, see also ‘MS-DIAL mathematics’ which can be downloaded at <a href="http://prime.psc.riken.jp/compms/msdial/download/mathematics/MS-DIAL%20FAQ-vs2.pdf" class="uri">http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/MS-DIAL%20FAQ-vs2.pdf</a></p>
@@ -222,21 +222,21 @@ ul.task-list li input[type="checkbox"] {
 <div id="fig-3" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/Index/Fig3 Start up a project of MS-DIAL5.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;3: Figure 3 Start up a project in MS-DIAL5. First select new project to be created (1), next select a location where your project files will be saved (2). You need to direct MS-DIAL5 to your raw data file location (3) and select the corresponding data file format in the scrolling selection list and select the data files you want to process (4).</figcaption><p></p>
+<figcaption class="figure-caption">Figure&nbsp;3: Start up a project in MS-DIAL5. First select new project to be created (1), next select a location where your project files will be saved (2). You need to direct MS-DIAL5 to your raw data file location (3) and select the corresponding data file format in the scrolling selection list and select the data files you want to process (4).</figcaption>
 </figure>
 </div>
 <p>After inserting your raw data files, you will be able to further assign identifiers to your measurements by sample type (Sample, Standard, QC, Blank), class ID (according to your experimental setup), and you can also set the batch (if you analyzed multiple batches), analytical order, dilution factor, or possibly exclude some samples from further data processing (<a href="#fig-4">Figure&nbsp;4</a>).</p>
 <div id="fig-4" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/Index/Fig4 Raw measurement files.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;4: Figure 4 Specifications of raw measurement files. An example of assigning identifiers to your raw measurement files (more details will be described in the following sections).</figcaption><p></p>
+<figcaption class="figure-caption">Figure&nbsp;4: Specifications of raw measurement files. An example of assigning identifiers to your raw measurement files (more details will be described in the following sections).</figcaption>
 </figure>
 </div>
 <p>After assigning identifiers to the raw measurement files, click “Next” to go to the “Measurement parameters” tab. Here you will need to enter the analytical and instrumental parameters that were used to acquire your data (<a href="#fig-5">Figure&nbsp;5</a>).</p>
 <div id="fig-5" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/Index/Fig5 Measurement parameters.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;5: Figure 5 Measurement parameters. Overview of the parameters that need to be set according to your analytical and instrumental setup.</figcaption><p></p>
+<figcaption class="figure-caption">Figure&nbsp;5: Measurement parameters. Overview of the parameters that need to be set according to your analytical and instrumental setup.</figcaption>
 </figure>
 </div>
 <p>The following sections will contain information about the data type (centroid and profile), the data format of custom user database (MSP file), and information about the types of adducts. The next chapters will then demonstrate case studies of processing different types of publicly available data in MS-DIAL5.</p>
@@ -247,13 +247,13 @@ ul.task-list li input[type="checkbox"] {
 <div id="fig-6" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/Index/Fig6 Raw data viewer.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;6: Figure 6 Raw data viewer - data upload. After opening the “Raw data viewer.exe” you can browse to the location of your data (1) and load them (single or multiple files - one by one) (2). Next select the file you want to process (3) and click the “Show” button (4).</figcaption><p></p>
+<figcaption class="figure-caption">Figure&nbsp;6: Raw data viewer - data upload. After opening the “Raw data viewer.exe” you can browse to the location of your data (1) and load them (single or multiple files - one by one) (2). Next select the file you want to process (3) and click the “Show” button (4).</figcaption>
 </figure>
 </div>
 <div id="fig-7" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/Index/Fig7 Raw data viewer result.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;7: Figure 7 Raw data viewer - results. After processing the data you will be shown three histograms (for MS1 and MS2 spectrum intensity and peak height). Additionally you can browse to any ions found in your data (in the table provided at the bottom). You can order the ions by multiple parameters (scan start time, MS level, base peak m/z, base peak intensity, etc.). You can zoom the x (<em>m/z</em>) and y (Intensity) axis by using scroll button to inspect if your data are centroid or profile. Using this overview you can also estimate the ideal peak height cut-off for the MS-DIAL processing parameters.</figcaption><p></p>
+<figcaption class="figure-caption">Figure&nbsp;7: Raw data viewer - results. After processing the data you will be shown three histograms (for MS1 and MS2 spectrum intensity and peak height). Additionally you can browse to any ions found in your data (in the table provided at the bottom). You can order the ions by multiple parameters (scan start time, MS level, base peak m/z, base peak intensity, etc.). You can zoom the x (<em>m/z</em>) and y (Intensity) axis by using scroll button to inspect if your data are centroid or profile. Using this overview you can also estimate the ideal peak height cut-off for the MS-DIAL processing parameters.</figcaption>
 </figure>
 </div>
 <p>Additionally, you can also watch our tutorial video:</p>
@@ -268,7 +268,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="fig-8" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/Index/Fig8 MSP format.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;8: Figure 8 An example of MSP format library</figcaption><p></p>
+<figcaption class="figure-caption">Figure&nbsp;8: An example of MSP format library</figcaption>
 </figure>
 </div>
 </section>
@@ -298,7 +298,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="fig-9" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/Index/Fig9 Text library.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;9: Figure 9 An example of a text library</figcaption><p></p>
+<figcaption class="figure-caption">Figure&nbsp;9: An example of a text library</figcaption>
 </figure>
 </div>
 </section>
@@ -308,7 +308,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="fig-10" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/Index/Fig10 MSP format library for GC-MS.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;10: Figure 10 An example of MSP format library for GC/MS</figcaption><p></p>
+<figcaption class="figure-caption">Figure&nbsp;10: An example of MSP format library for GC/MS</figcaption>
 </figure>
 </div>
 </section>
@@ -328,7 +328,7 @@ FAMEs: <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2805091/" class="uri
 <div id="fig-11" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/Index/Fig11  Examples of Alkanes or Fames dictionaries.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;11: Figure 11 Examples of FAMEs and Alkanes dictionaries</figcaption><p></p>
+<figcaption class="figure-caption">Figure&nbsp;11: Examples of FAMEs and Alkanes dictionaries</figcaption>
 </figure>
 </div>
 
