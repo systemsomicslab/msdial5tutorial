@@ -7,7 +7,7 @@ abstract: MS-DIAL was launched as a universal program for untargeted metabolomic
 
 |                                                                                             |                                                                                |                                                                           |
 |---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| [![](images/iconMsdial.png){width="72"}](http://prime.psc.riken.jp/compms/msdial/main.html) | [![](images/Youtube.png){width="105"}](https://www.youtube.com/@msdialproject) | [![](images/Twitter.png){width="95"}](https://twitter.com/msdial_project) |
+| [![](images/iconMsdial.png){width="72"}](http://prime.psc.riken.jp/compms/msdial/main.html) | [YouTube @msdialproject channel](https://www.youtube.com/@msdialproject) | [![](images/Twitter.png){width="95"}](https://twitter.com/msdial_project) |
 
 ## General introduction of MS-DIAL5
 
