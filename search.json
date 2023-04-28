@@ -144,7 +144,7 @@
     "href": "chapter4.html#link-to-ms-finder-for-searching-unknowns",
     "title": "Other utilities of MS-DIAL",
     "section": "4. Link to MS-FINDER for searching unknowns",
-    "text": "4. Link to MS-FINDER for searching unknowns"
+    "text": "4. Link to MS-FINDER for searching unknowns\nMS-FINDER aims to provide solutions for\n\nformula predictions\nfragment annotations\nstructure elucidations\n\nby means of survey scan MS and MS/MS spectra of unknowns. The detail of MS-FINDER is described in http://prime.psc.riken.jp/Metabolomics_Software/MS-FINDER/index.html.\n\n\n\n\n\n\nNote\n\n\n\nNote that you have to download the MS-FIDNER program from the website above on your PC."
   },
   {
     "objectID": "chapter4.html#principal-component-analysis-in-ms-dial5",
@@ -166,6 +166,20 @@
     "title": "Other utilities of MS-DIAL",
     "section": "6. Molecular spectrum networking for metabolite annotations",
     "text": "6. Molecular spectrum networking for metabolite annotations"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "MS-DIAL5 tutorial",
+    "section": "",
+    "text": "YouTube @msdialproject channel"
+  },
+  {
+    "objectID": "index.html#keep-in-touch-with-us-and-follow-the-latest-developments",
+    "href": "index.html#keep-in-touch-with-us-and-follow-the-latest-developments",
+    "title": "MS-DIAL5 tutorial",
+    "section": "",
+    "text": "YouTube @msdialproject channel"
   },
   {
     "objectID": "index.html#general-introduction-of-ms-dial5",
