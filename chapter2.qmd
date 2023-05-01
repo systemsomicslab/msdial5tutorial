@@ -15,10 +15,14 @@ demonstrated.
 
 This tutorial uses 15 demonstration files which are downloadable from
 the below link.\
-(*add the corresponding link*)
+
+[http://prime.psc.riken.jp/compms/msdial/download/demo/dims.zip](http://prime.psc.riken.jp/compms/msdial/download/demo/dims.zip)
 
 **Experiment summary:**\
-(*add experiment summary*)
+
+The direct infusion MS data analyzing plasma, white adipose tissue (WAT), muscle, and liver of mice in addition to the procedure blank samples.
+The MS/MS spectrum was acquired by information dependent acquisition (IDA) mode of SCIEX meaning data dependent acquisition (DDA).
+
 
 ### 1-1 Starting up your project
 
