@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>msdial5tutorial - About</title>
+<title>msdial5tutorial - Metabolomics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -85,7 +85,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="./about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
@@ -93,7 +93,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Lipidomics</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./metabolomics.html" rel="" target="">
+    <a class="nav-link active" href="./metabolomics.html" rel="" target="" aria-current="page">
  <span class="menu-text">Metabolomics</span></a>
   </li>  
   <li class="nav-item">
@@ -116,14 +116,30 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#gc-ms-nominal-mass" id="toc-gc-ms-nominal-mass" class="nav-link active" data-scroll-target="#gc-ms-nominal-mass">1. GC-MS (nominal mass)</a></li>
+  <li><a href="#gc-ms-high-resolution" id="toc-gc-ms-high-resolution" class="nav-link" data-scroll-target="#gc-ms-high-resolution">2. GC-MS (high resolution)</a></li>
+  <li><a href="#lcms-or-lcmsms-data-dependent-msms-project-with-user-defined-msms-database-msp-format" id="toc-lcms-or-lcmsms-data-dependent-msms-project-with-user-defined-msms-database-msp-format" class="nav-link" data-scroll-target="#lcms-or-lcmsms-data-dependent-msms-project-with-user-defined-msms-database-msp-format">3. LC/MS or LC/MS/MS (data dependent MS/MS) project with user-defined MS/MS database (MSP format)</a>
+  <ul class="collapse">
+  <li><a href="#input-data" id="toc-input-data" class="nav-link" data-scroll-target="#input-data">Input Data</a></li>
+  <li><a href="#the-video-tutorial-for-the-ms-dial-operation" id="toc-the-video-tutorial-for-the-ms-dial-operation" class="nav-link" data-scroll-target="#the-video-tutorial-for-the-ms-dial-operation">The video tutorial for the MS-DIAL operation</a></li>
+  <li><a href="#key-points-in-the-ms-dial-operation" id="toc-key-points-in-the-ms-dial-operation" class="nav-link" data-scroll-target="#key-points-in-the-ms-dial-operation">Key points in the MS-DIAL operation</a></li>
+  </ul></li>
+  <li><a href="#ce-msms" id="toc-ce-msms" class="nav-link" data-scroll-target="#ce-msms">3. CE-MS/MS</a></li>
+  <li><a href="#all-ion-fragmentation-with-multiple-collision-energies" id="toc-all-ion-fragmentation-with-multiple-collision-energies" class="nav-link" data-scroll-target="#all-ion-fragmentation-with-multiple-collision-energies">4. All ion fragmentation with multiple collision energies</a></li>
+  <li><a href="#ms-dial-isotope-tracking-function" id="toc-ms-dial-isotope-tracking-function" class="nav-link" data-scroll-target="#ms-dial-isotope-tracking-function">5. MS-DIAL isotope tracking function</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">Metabolomics</h1>
 </div>
 
 
@@ -138,9 +154,60 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>About this site</p>
+<p>See <a href="./index.html#fig-2">Figure 2</a> for the meanings of the abbreviations used in this chapter.</p>
+<section id="gc-ms-nominal-mass" class="level2">
+<h2 class="anchored" data-anchor-id="gc-ms-nominal-mass">1. GC-MS (nominal mass)</h2>
+<p>The environment for GC-MS data analysis in MS-DIAL5 is now under construction. Please use version 4 series for which the tutorial is available here: <a href="https://mtbinfo-team.github.io/mtbinfo.github.io/MS-DIAL/tutorial.html#chapter-4" class="uri">https://mtbinfo-team.github.io/mtbinfo.github.io/MS-DIAL/tutorial.html#chapter-4</a></p>
+</section>
+<section id="gc-ms-high-resolution" class="level2">
+<h2 class="anchored" data-anchor-id="gc-ms-high-resolution">2. GC-MS (high resolution)</h2>
+</section>
+<section id="lcms-or-lcmsms-data-dependent-msms-project-with-user-defined-msms-database-msp-format" class="level2">
+<h2 class="anchored" data-anchor-id="lcms-or-lcmsms-data-dependent-msms-project-with-user-defined-msms-database-msp-format">3. LC/MS or LC/MS/MS (data dependent MS/MS) project with user-defined MS/MS database (MSP format)</h2>
+<p>Here, a project involving data-dependent MS/MS acquisition in conjunction with a user-defined MSP library (a composite library comprising MassBank, GNPS, and Respect) is presented.</p>
+<section id="input-data" class="level3">
+<h3 class="anchored" data-anchor-id="input-data">Input Data</h3>
+<p>This section utilizes a total of 6 ABF files, with the MSP file being located in the same ZIP folder as this demonstration. The ABF files for this demonstration can be downloaded from <a href="http://prime.psc.riken.jp/compms/msdial/download/demo/20160805-Wine-DDA-Pos-Demo%20files.zip" class="uri">http://prime.psc.riken.jp/compms/msdial/download/demo/20160805-Wine-DDA-Pos-Demo%20files.zip</a>. The experimental protocol has been previously described in the following research: <a href="http://pubs.acs.org/doi/abs/10.1021/acs.jafc.5b04890" class="uri">http://pubs.acs.org/doi/abs/10.1021/acs.jafc.5b04890</a>.</p>
+<section id="experiment-summary" class="level4">
+<h4 class="anchored" data-anchor-id="experiment-summary">Experiment summary:</h4>
+<ul>
+<li><strong>Liquid chromatography:</strong> total 4 min run per sample with Kinetex C18 2.6 μm (50×1.0 mm)</li>
+<li><strong>Solvent A:</strong> water with 0.1% acetic acid</li>
+<li><strong>Solvent B:</strong> acetonitrile with 0.1% acetic acid</li>
+<li><strong>Mass spectrometer:</strong> data dependent method with positive ion mode
+<ul>
+<li>Collision energy: 35 V</li>
+<li>Collision energy spread: 15 V</li>
+<li>Cycle time: 125 ms</li>
+<li>Mass range: m/z 60-1250</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="the-video-tutorial-for-the-ms-dial-operation" class="level3">
+<h3 class="anchored" data-anchor-id="the-video-tutorial-for-the-ms-dial-operation">The video tutorial for the MS-DIAL operation</h3>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/cZY7wqF5Wdo" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</section>
+<section id="key-points-in-the-ms-dial-operation" class="level3">
+<h3 class="anchored" data-anchor-id="key-points-in-the-ms-dial-operation">Key points in the MS-DIAL operation</h3>
+<ol type="1">
+<li>All sample <code>Type</code>s are <code>Sample</code>. The input data here does not contain <code>QC</code> or <code>Blank</code>.</li>
+<li>For this input data, set a different <code>Class ID</code> for each sample.</li>
+<li>You can paste Excel cells to MS-DIAL sample table.</li>
+</ol>
+</section>
+</section>
+<section id="ce-msms" class="level2">
+<h2 class="anchored" data-anchor-id="ce-msms">3. CE-MS/MS</h2>
+</section>
+<section id="all-ion-fragmentation-with-multiple-collision-energies" class="level2">
+<h2 class="anchored" data-anchor-id="all-ion-fragmentation-with-multiple-collision-energies">4. All ion fragmentation with multiple collision energies</h2>
+</section>
+<section id="ms-dial-isotope-tracking-function" class="level2">
+<h2 class="anchored" data-anchor-id="ms-dial-isotope-tracking-function">5. MS-DIAL isotope tracking function</h2>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
