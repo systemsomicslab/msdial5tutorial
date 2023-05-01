@@ -53,6 +53,11 @@ are provided in the [intruduction
 section](https://mtbinfo-team.github.io/msdial5tutorial/#fig-5))
 (4).](images/Chapter2/Fig2%20Importing%20raw%20data%20files%20and%20setting%20up%20the%20measurement%20parameters.png){#fig-2}
 
+To see the above operation in YouTube, check out the following
+
+{{< video https://www.youtube.com/watch?v=Zo7qBcduc1E >}}
+
+
 ## 2. DI-MS/MS (MSall)
 
 A project dealing with MSall DI-MS acquisition in combination with the
