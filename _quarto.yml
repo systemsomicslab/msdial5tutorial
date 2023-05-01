@@ -8,10 +8,10 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
-      - chapter1.qmd
-      - chapter2.qmd
-      - chapter3.qmd
-      - chapter4.qmd
+      - lipidomics.qmd
+      - metabolomics.qmd
+      - proteomics.qmd
+      - utils.qmd
 
 format:
   html:
