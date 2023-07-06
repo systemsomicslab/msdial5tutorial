@@ -21,7 +21,21 @@ The latest version of MS-DIAL aims to be the most versatile tool for multiomics 
 
 After data processing which includes peak picking, deconvolution, compound identification, and peak alignment, MS-DIAL provides several normalization methods (including LOWESS) and a multivariate analysis by principal component analysis (PCA). Finally, for further analysis by other programs, this program can export your result as table format (for SIMCA-P, MetaboAnalyst, and MetFamily etc.), and as several spectral formats including NIST, MassBank, and Mascot formats for compound identifications by MS-FINDER, CSI:FingerID, CFM-ID, MetFrag, and MetFamily etc. For the parameter explanations including the description of MS-DIAL algorithms, see also 'MS-DIAL mathematics' which can be downloaded at [http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/MS-DIAL%20FAQ-vs2.pdf](http://prime.psc.riken.jp/compms/msdial/download/mathematics/MS-DIAL%20FAQ-vs2.pdf){.uri}
 
-### Start up a project of MS-DIAL5
+## The difference between MS-DIAL version 4 and 5
+
+|                                                  | MS-DIAL4               | MS-DIAL5                                                                         |
+| ------------------------------------------------ | ---------------------- | -------------------------------------------------------------------------------- |
+| Annotation DB                                    | Single for an analysis | Multi DBs for an analysis                                                        |
+| Annotation level                                 | Single for an analysis | Multi level annotation for an analysis                                           |
+| Annotation candidates                            | Single for an analysis | Top 3 for analysis                                                               |
+| *m/z* range used for mass chromatography display | FILLME                 | FILLME                                                                           |
+| MS method type                                   | Single for an analysis | Hybrid MS method for an analysis (DDA,SWATH,AIF can be combined for an analysis) |
+| Undo/Redo support in "Peak spot table"           | Not supported          | Supported [https://youtu.be/LeI4OpbHV1s](https://youtu.be/LeI4OpbHV1s)           |
+
+: The difference between MS-DIAL version 4 and 5
+
+
+## Start up a project of MS-DIAL5
 
 This tutorial demonstrates four projects, (1) GC/MS, (2) LC/MS or LC/MS/MS (DDA: data dependent acquisition), (3) LC/MS/MS (data independent acquisition), and (4) LC-Ion mobility for the explanation of parameters and required files. In this section, three projects are summarized and you will find a minimum requirement for these processes. The details for LC/MS/MS (DIA), LC/MS/MS (DDA), GC/MS, and LC-Ion mobility processing are described in Chapter 2, Chapter 3, Chapter 4, and Chapter 10 respectively. First you need to start a new project in MS-DIAL5, set up a folder to store your project files and point MS-DIAL5 to the folder where your raw data is stored (@fig-3).
 
