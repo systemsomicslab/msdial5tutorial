@@ -23,16 +23,23 @@ After data processing which includes peak picking, deconvolution, compound ident
 
 ## The difference between MS-DIAL version 4 and 5
 
-|                                                  | MS-DIAL4               | MS-DIAL5                                                                         |
-| ------------------------------------------------ | ---------------------- | -------------------------------------------------------------------------------- |
-| Annotation DB                                    | Single for an analysis | Multi DBs for an analysis                                                        |
-| Annotation level                                 | Single for an analysis | Multi level annotation for an analysis                                           |
-| Annotation candidates                            | Single for an analysis | Top 3 for analysis                                                               |
-| *m/z* range used for mass chromatography display | FILLME                 | FILLME                                                                           |
-| MS method type                                   | Single for an analysis | Hybrid MS method for an analysis (DDA,SWATH,AIF can be combined for an analysis) |
-| Undo/Redo support in "Peak spot table"           | Not supported          | Supported [https://youtu.be/LeI4OpbHV1s](https://youtu.be/LeI4OpbHV1s)           |
+|                                                     | MS-DIAL4                 | MS-DIAL5                                                                         |
+| --------------------------------------------------- | ------------------------ | -------------------------------------------------------------------------------- |
+| Annotation DB/level                                 | Single for an analysis   | Multi DB/level annotation for an analysis                                        |
+| Annotation candidates                               | Single for an analysis   | Multi candicated for each DB                                                     |
+| Separation type                                     | LCMS, LCIMMS, GCMS       | LCMS, LCIMMS, DIMS, IMMS                                                         |
+| Collision type                                      | CID/HCD                  | CID/HCD, ECD, HotECD, EIEIO, EID, OAD                                            |
+| Target omics                                        | Metabolomics, Lipidomics | Metabolomics, Lipidomics, Proteomics                                             |
+| MS method type                                      | Single for an analysis   | Multiple types of MS method (DDA,SWATH,AIF) can be applied to a single analysis. |
+| Undo/Redo support in "Change annotation to Unknown" | Not supported            | Supported  [https://youtu.be/LeI4OpbHV1s](https://youtu.be/LeI4OpbHV1s)          |
 
 : The difference between MS-DIAL version 4 and 5
+
+<!--
+| *m/z* range used for mass chromatography display | FILLME                 | FILLME                                                                           |
+-->
+
+
 
 
 ## Start up a project of MS-DIAL5
