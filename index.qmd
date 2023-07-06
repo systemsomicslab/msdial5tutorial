@@ -37,10 +37,13 @@ After data processing which includes peak picking, deconvolution, compound ident
 
 <!--
 | *m/z* range used for mass chromatography display | FILLME                 | FILLME                                                                           |
+| Ability to tag peak spots and filter by them | Not supported              | Supported [FILLME the YouTube](URL)                                              |
+| Ontology and adduct filters | Not supported              | Supported [FILLME the YouTube](URL)                                                               |
+| Buildt in MSCleanR generic filters | Not supported              | Supported [FILLME the YouTube](URL)                                                        |
+| MassQL support | Not supported              | Supported [FILLME the YouTube](URL)                                                                            |
+| Peak spot replication | Not supported              | Supported [FILLME the YouTube](URL)                                                                     |
+| Switching between MS/MS to display and vertical axis of MS/MS | Not supported              | Supported [FILLME the YouTube](URL)                             |
 -->
-
-
-
 
 ## Start up a project of MS-DIAL5
 
