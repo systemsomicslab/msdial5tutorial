@@ -98,18 +98,11 @@
     "text": "3. CE-MS/MS"
   },
   {
-    "objectID": "metabolomics.html#all-ion-fragmentation-with-multiple-collision-energies",
-    "href": "metabolomics.html#all-ion-fragmentation-with-multiple-collision-energies",
-    "title": "Metabolomics",
-    "section": "4. All ion fragmentation with multiple collision energies",
-    "text": "4. All ion fragmentation with multiple collision energies"
-  },
-  {
     "objectID": "metabolomics.html#ms-dial-isotope-tracking-function",
     "href": "metabolomics.html#ms-dial-isotope-tracking-function",
     "title": "Metabolomics",
-    "section": "5. MS-DIAL isotope tracking function",
-    "text": "5. MS-DIAL isotope tracking function"
+    "section": "4. MS-DIAL isotope tracking function",
+    "text": "4. MS-DIAL isotope tracking function\nThis function has not yet been developed in MS-DIAL5. Therefore, we will include a link to MS-DIAL4.\nhttps://systemsomicslab.github.io/mtbinfo.github.io/MS-DIAL/tutorial#chapter-7"
   },
   {
     "objectID": "about.html",
