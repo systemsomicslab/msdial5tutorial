@@ -1,4 +1,4 @@
-# msdial5tutorial
+# MS-DIAL 5 tutorial
 This is the tutorial of MS-DIAL 5 for untargeted mass spec data analysis.
 
 ## Prerequisites
