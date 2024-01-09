@@ -1,5 +1,68 @@
 [
   {
+    "objectID": "lipidomics.html",
+    "href": "lipidomics.html",
+    "title": "Lipidomics",
+    "section": "",
+    "text": "See Figure 2 for the meanings of the abbreviations used in this chapter."
+  },
+  {
+    "objectID": "lipidomics.html#di-msms-dda",
+    "href": "lipidomics.html#di-msms-dda",
+    "title": "Lipidomics",
+    "section": "1. DI-MS/MS (DDA)",
+    "text": "1. DI-MS/MS (DDA)\nA project dealing with data dependent DI-MS acquisition in combination with the in silico retention time and MS/MS databases for lipids is demonstrated.\nThis tutorial uses 15 demonstration files which are downloadable from the below link.\n\nhttp://prime.psc.riken.jp/compms/msdial/download/demo/dims.zip\nExperiment summary:\n\nThe direct infusion MS data analyzing plasma, white adipose tissue (WAT), muscle, and liver of mice in addition to the procedure blank samples. The MS/MS spectrum was acquired by information dependent acquisition (IDA) mode of SCIEX meaning data dependent acquisition (DDA).\n\n1-1 Starting up your project\n\n\n\nFigure 1: Figure 1 Starting up a project in MS-DIAL. First open the MSDIAL.exe file in the downloaded folder (1). Click on new project (2). You can name your project according to your preferences (3). Browse to the location of your experimental files (here your processing files will be also stored) (3). Click next and then continue to the second left side bar “Raw measurement files”. Here click browse to access your raw data files (4).\n\n\n\n\n\nFigure 2: Figure 2 Importing raw data files and setting up the measurement parameters. Change the type of file according to your vendor format and select raw data files which you want to import (note: the data files will be imported according to the alphabetical order) (1). After inserting your raw data files, you will be able to further assign identifiers to your measurements by sample type (Sample, Standard, QC, Blank), class ID (according to your experimental setup), and you can also set the batch (if you analyzed multiple batches), analytical order, dilution factor, or possibly exclude some samples from further data processing (2). It is advisable to select the blanks and QC samples (if measured) to be able to use all functions of MS-DIAL (such as blank filtering or LOWESS signal correction based on QCs) (3). After clicking next and selecting the “Measurement parameters” in the left side tab you can specify your analytical setup according to this figure (more details are provided in the intruduction section) (4).\n\n\nTo see the above operation in YouTube, check out the following"
+  },
+  {
+    "objectID": "lipidomics.html#di-msms-msall",
+    "href": "lipidomics.html#di-msms-msall",
+    "title": "Lipidomics",
+    "section": "2. DI-MS/MS (MSall)",
+    "text": "2. DI-MS/MS (MSall)\nA project dealing with MSall DI-MS acquisition in combination with the in silico retention time and MS/MS databases for lipids is demonstrated.\nAdditionally, you can watch our tutorial video:"
+  },
+  {
+    "objectID": "lipidomics.html#di-msms-dda-1",
+    "href": "lipidomics.html#di-msms-dda-1",
+    "title": "Lipidomics",
+    "section": "3. DI-MS/MS (DDA)",
+    "text": "3. DI-MS/MS (DDA)\nA project dealing with DDA DI-MS acquisition in combination with the in silico retention time and MS/MS databases for lipids is demonstrated.\nAdditionally, you can watch our tutorial video:"
+  },
+  {
+    "objectID": "lipidomics.html#lc-msms-swath",
+    "href": "lipidomics.html#lc-msms-swath",
+    "title": "Lipidomics",
+    "section": "4. LC-MS/MS (SWATH)",
+    "text": "4. LC-MS/MS (SWATH)\nA project dealing with data independent LC-MS acquisition using the Sequential Window Acquisition of all Theoretical Mass Spectra (SWATH-MS) in combination with the in silico retention time and MS/MS databases for lipids is demonstrated.\n\nInput Data\nThis tutorial uses 23 demonstration files which are downloadable from http://prime.psc.riken.jp/archives/data/DropMet/019/20140809_MSDIAL_DemoFiles_Swath(abf).zip. The experimental protocol is described in previous research: http://www.nature.com/nmeth/journal/v12/n6/abs/nmeth.3393.html.\n\nExperiment summary:\nLiquid chromatography: total 15 min run per sample with Waters Acquity UPLC CSH C18 column (100×2.1 mm; 1.7 μm). Mass spectrometer: SWATH method with negative ion mode.\n\nMS1 accumulation time, 100 ms\nMS2 accumulation time, 10 ms\nCollision energy, 45 V\nCollision energy spread, 15 V\nCycle time, 731 ms\nQ1 window, 21 Da\nMass range, m/z 100-1250\nModifier, Ammonium formate (HCOONH4)\n\nAdditionally, you can watch our tutorial video:"
+  },
+  {
+    "objectID": "lipidomics.html#lc-msms-ead---deep-structural-lipid-annotation",
+    "href": "lipidomics.html#lc-msms-ead---deep-structural-lipid-annotation",
+    "title": "Lipidomics",
+    "section": "5. LC-MS/MS (EAD) - deep structural lipid annotation",
+    "text": "5. LC-MS/MS (EAD) - deep structural lipid annotation"
+  },
+  {
+    "objectID": "lipidomics.html#sfc-msms",
+    "href": "lipidomics.html#sfc-msms",
+    "title": "Lipidomics",
+    "section": "6. SFC-MS/MS",
+    "text": "6. SFC-MS/MS"
+  },
+  {
+    "objectID": "lipidomics.html#di-im-msms",
+    "href": "lipidomics.html#di-im-msms",
+    "title": "Lipidomics",
+    "section": "7. DI-IM-MS/MS",
+    "text": "7. DI-IM-MS/MS"
+  },
+  {
+    "objectID": "lipidomics.html#lc-im-msms",
+    "href": "lipidomics.html#lc-im-msms",
+    "title": "Lipidomics",
+    "section": "8. LC-IM-MS/MS",
+    "text": "8. LC-IM-MS/MS"
+  },
+  {
     "objectID": "metabolomics.html",
     "href": "metabolomics.html",
     "title": "Metabolomics",
@@ -54,6 +117,13 @@
     "title": "About",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "proteomics.html#lc-msms-ead",
+    "href": "proteomics.html#lc-msms-ead",
+    "title": "Proteomics",
+    "section": "2. LC-MS/MS (EAD)",
+    "text": "2. LC-MS/MS (EAD)"
   },
   {
     "objectID": "index.html",
@@ -131,75 +201,5 @@
     "title": "Other utilities of MS-DIAL",
     "section": "6. Molecular spectrum networking for metabolite annotations",
     "text": "6. Molecular spectrum networking for metabolite annotations"
-  },
-  {
-    "objectID": "lipidomics.html",
-    "href": "lipidomics.html",
-    "title": "Lipidomics",
-    "section": "",
-    "text": "See Figure 2 for the meanings of the abbreviations used in this chapter."
-  },
-  {
-    "objectID": "lipidomics.html#di-msms-dda",
-    "href": "lipidomics.html#di-msms-dda",
-    "title": "Lipidomics",
-    "section": "1. DI-MS/MS (DDA)",
-    "text": "1. DI-MS/MS (DDA)\nA project dealing with data dependent DI-MS acquisition in combination with the in silico retention time and MS/MS databases for lipids is demonstrated.\nThis tutorial uses 15 demonstration files which are downloadable from the below link.\n\nhttp://prime.psc.riken.jp/compms/msdial/download/demo/dims.zip\nExperiment summary:\n\nThe direct infusion MS data analyzing plasma, white adipose tissue (WAT), muscle, and liver of mice in addition to the procedure blank samples. The MS/MS spectrum was acquired by information dependent acquisition (IDA) mode of SCIEX meaning data dependent acquisition (DDA).\n\n1-1 Starting up your project\n\n\n\nFigure 1: Figure 1 Starting up a project in MS-DIAL. First open the MSDIAL.exe file in the downloaded folder (1). Click on new project (2). You can name your project according to your preferences (3). Browse to the location of your experimental files (here your processing files will be also stored) (3). Click next and then continue to the second left side bar “Raw measurement files”. Here click browse to access your raw data files (4).\n\n\n\n\n\nFigure 2: Figure 2 Importing raw data files and setting up the measurement parameters. Change the type of file according to your vendor format and select raw data files which you want to import (note: the data files will be imported according to the alphabetical order) (1). After inserting your raw data files, you will be able to further assign identifiers to your measurements by sample type (Sample, Standard, QC, Blank), class ID (according to your experimental setup), and you can also set the batch (if you analyzed multiple batches), analytical order, dilution factor, or possibly exclude some samples from further data processing (2). It is advisable to select the blanks and QC samples (if measured) to be able to use all functions of MS-DIAL (such as blank filtering or LOWESS signal correction based on QCs) (3). After clicking next and selecting the “Measurement parameters” in the left side tab you can specify your analytical setup according to this figure (more details are provided in the intruduction section) (4).\n\n\nTo see the above operation in YouTube, check out the following"
-  },
-  {
-    "objectID": "lipidomics.html#di-msms-msall",
-    "href": "lipidomics.html#di-msms-msall",
-    "title": "Lipidomics",
-    "section": "2. DI-MS/MS (MSall)",
-    "text": "2. DI-MS/MS (MSall)\nA project dealing with MSall DI-MS acquisition in combination with the in silico retention time and MS/MS databases for lipids is demonstrated.\nAdditionally, you can watch our tutorial video:"
-  },
-  {
-    "objectID": "lipidomics.html#di-msms-dda-1",
-    "href": "lipidomics.html#di-msms-dda-1",
-    "title": "Lipidomics",
-    "section": "3. DI-MS/MS (DDA)",
-    "text": "3. DI-MS/MS (DDA)\nA project dealing with DDA DI-MS acquisition in combination with the in silico retention time and MS/MS databases for lipids is demonstrated.\nAdditionally, you can watch our tutorial video:"
-  },
-  {
-    "objectID": "lipidomics.html#lc-msms-swath",
-    "href": "lipidomics.html#lc-msms-swath",
-    "title": "Lipidomics",
-    "section": "4. LC-MS/MS (SWATH)",
-    "text": "4. LC-MS/MS (SWATH)\nA project dealing with data independent LC-MS acquisition using the Sequential Window Acquisition of all Theoretical Mass Spectra (SWATH-MS) in combination with the in silico retention time and MS/MS databases for lipids is demonstrated.\n\nInput Data\nThis tutorial uses 23 demonstration files which are downloadable from http://prime.psc.riken.jp/archives/data/DropMet/019/20140809_MSDIAL_DemoFiles_Swath(abf).zip. The experimental protocol is described in previous research: http://www.nature.com/nmeth/journal/v12/n6/abs/nmeth.3393.html.\n\nExperiment summary:\nLiquid chromatography: total 15 min run per sample with Waters Acquity UPLC CSH C18 column (100×2.1 mm; 1.7 μm). Mass spectrometer: SWATH method with negative ion mode.\n\nMS1 accumulation time, 100 ms\nMS2 accumulation time, 10 ms\nCollision energy, 45 V\nCollision energy spread, 15 V\nCycle time, 731 ms\nQ1 window, 21 Da\nMass range, m/z 100-1250\nModifier, Ammonium formate (HCOONH4)\n\nAdditionally, you can watch our tutorial video:"
-  },
-  {
-    "objectID": "lipidomics.html#lc-msms-ead---deep-structural-lipid-annotation",
-    "href": "lipidomics.html#lc-msms-ead---deep-structural-lipid-annotation",
-    "title": "Lipidomics",
-    "section": "5. LC-MS/MS (EAD) - deep structural lipid annotation",
-    "text": "5. LC-MS/MS (EAD) - deep structural lipid annotation"
-  },
-  {
-    "objectID": "lipidomics.html#sfc-msms",
-    "href": "lipidomics.html#sfc-msms",
-    "title": "Lipidomics",
-    "section": "6. SFC-MS/MS",
-    "text": "6. SFC-MS/MS"
-  },
-  {
-    "objectID": "lipidomics.html#di-im-msms",
-    "href": "lipidomics.html#di-im-msms",
-    "title": "Lipidomics",
-    "section": "7. DI-IM-MS/MS",
-    "text": "7. DI-IM-MS/MS"
-  },
-  {
-    "objectID": "lipidomics.html#lc-im-msms",
-    "href": "lipidomics.html#lc-im-msms",
-    "title": "Lipidomics",
-    "section": "8. LC-IM-MS/MS",
-    "text": "8. LC-IM-MS/MS"
-  },
-  {
-    "objectID": "proteomics.html#lc-msms-ead",
-    "href": "proteomics.html#lc-msms-ead",
-    "title": "Proteomics",
-    "section": "2. LC-MS/MS (EAD)",
-    "text": "2. LC-MS/MS (EAD)"
   }
 ]
