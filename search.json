@@ -102,7 +102,7 @@
     "href": "metabolomics.html#ms-dial-isotope-tracking-function",
     "title": "Metabolomics",
     "section": "4. MS-DIAL isotope tracking function",
-    "text": "4. MS-DIAL isotope tracking function\nThis function has not yet been developed in MS-DIAL5. Therefore, we will include a link to MS-DIAL4.\nhttps://systemsomicslab.github.io/mtbinfo.github.io/MS-DIAL/tutorial#chapter-7"
+    "text": "4. MS-DIAL isotope tracking function\nThis feature is currently in the development stage in MS-DIAL5, so if you want to use it now, please use MS-DIAL4.\nhttps://systemsomicslab.github.io/mtbinfo.github.io/MS-DIAL/tutorial#chapter-7"
   },
   {
     "objectID": "about.html",
