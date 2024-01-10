@@ -1,0 +1,9 @@
+---
+title: "Mass spectrometry imaging"
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+# Analytical methods for imaging mass spectrometry
+
