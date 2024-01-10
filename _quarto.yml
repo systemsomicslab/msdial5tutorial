@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "msdial5tutorial"
+  title: "MS-DIAL 5 tutorial"
   navbar:
     left:
       - href: index.qmd
