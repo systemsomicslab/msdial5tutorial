@@ -2,6 +2,6 @@
 title: "Proteomics"
 ---
 
-## 1.  LC-MS/MS (data independent MS/MS)
+## 1. Label-free shotgun proteomics
 
-## 2.  LC-MS/MS (EAD)
+TBA
