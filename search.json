@@ -42,25 +42,18 @@
     "text": "5. LC-MS/MS (EAD) - deep structural lipid annotation"
   },
   {
-    "objectID": "lipidomics.html#sfc-msms",
-    "href": "lipidomics.html#sfc-msms",
-    "title": "Lipidomics",
-    "section": "6. SFC-MS/MS",
-    "text": "6. SFC-MS/MS"
-  },
-  {
     "objectID": "lipidomics.html#di-im-msms",
     "href": "lipidomics.html#di-im-msms",
     "title": "Lipidomics",
-    "section": "7. DI-IM-MS/MS",
-    "text": "7. DI-IM-MS/MS"
+    "section": "6. DI-IM-MS/MS",
+    "text": "6. DI-IM-MS/MS"
   },
   {
     "objectID": "lipidomics.html#lc-im-msms",
     "href": "lipidomics.html#lc-im-msms",
     "title": "Lipidomics",
-    "section": "8. LC-IM-MS/MS",
-    "text": "8. LC-IM-MS/MS"
+    "section": "7. LC-IM-MS/MS",
+    "text": "7. LC-IM-MS/MS"
   },
   {
     "objectID": "metabolomics.html",
