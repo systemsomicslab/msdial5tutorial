@@ -7,12 +7,12 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
       - lipidomics.qmd
       - metabolomics.qmd
       - proteomics.qmd
       - imaging.qmd
       - utils.qmd
+      - about.qmd
 
 format:
   html:
