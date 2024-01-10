@@ -105,8 +105,6 @@ Additionally, you can watch our tutorial video:
 
 ## 5. LC-MS/MS (EAD) - deep structural lipid annotation
 
-## 6. SFC-MS/MS
+## 6. DI-IM-MS/MS
 
-## 7. DI-IM-MS/MS
-
-## 8. LC-IM-MS/MS
+## 7. LC-IM-MS/MS
