@@ -11,6 +11,7 @@ website:
       - lipidomics.qmd
       - metabolomics.qmd
       - proteomics.qmd
+      - imaging.qmd
       - utils.qmd
 
 format:
