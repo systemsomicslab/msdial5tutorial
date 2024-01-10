@@ -105,11 +105,18 @@
     "text": "About this site"
   },
   {
-    "objectID": "proteomics.html#lc-msms-ead",
-    "href": "proteomics.html#lc-msms-ead",
+    "objectID": "proteomics.html",
+    "href": "proteomics.html",
     "title": "Proteomics",
-    "section": "2. LC-MS/MS (EAD)",
-    "text": "2. LC-MS/MS (EAD)"
+    "section": "",
+    "text": "TBA"
+  },
+  {
+    "objectID": "proteomics.html#label-free-shotgun-proteomics",
+    "href": "proteomics.html#label-free-shotgun-proteomics",
+    "title": "Proteomics",
+    "section": "",
+    "text": "TBA"
   },
   {
     "objectID": "index.html",
