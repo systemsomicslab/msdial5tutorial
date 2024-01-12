@@ -95,7 +95,14 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site"
+    "text": "Yuki Matsuzawa (Lead developer)\nHiroshi Tsugawa (Main developer)\nMikiko Takahashi (Main developer)\nKozo Nishida (Main developer)\n\n\n\n\n\nAleš Kvasnička (MS-DIAL5 tutorial)\nBujinlkham Buyantogtokh (notame workflow integration)\nKanako Hirata (Google Summer of Code 2023)\n\n\n\n\n\nnotame (Workflow for non-targeted LC-MS metabolic profiling) developers\nMing Wang (MassQL integration)\nGuillaume Marti (MS-CleanR integration)"
+  },
+  {
+    "objectID": "about.html#contributors",
+    "href": "about.html#contributors",
+    "title": "About",
+    "section": "",
+    "text": "Yuki Matsuzawa (Lead developer)\nHiroshi Tsugawa (Main developer)\nMikiko Takahashi (Main developer)\nKozo Nishida (Main developer)\n\n\n\n\n\nAleš Kvasnička (MS-DIAL5 tutorial)\nBujinlkham Buyantogtokh (notame workflow integration)\nKanako Hirata (Google Summer of Code 2023)\n\n\n\n\n\nnotame (Workflow for non-targeted LC-MS metabolic profiling) developers\nMing Wang (MassQL integration)\nGuillaume Marti (MS-CleanR integration)"
   },
   {
     "objectID": "metabolomics.html",
