@@ -95,14 +95,21 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "If you use MS-DIAL for a scientific publication, we would appreciate citations to the following paper:\n(For the purpose of “General, and lipidomics:”, please cite “1.”,\nfor “Plant metabolomics and stable isotope labeling technology:”, cite “2.”,\nfor “GC-MS project:”, cite “3.”,\nand for “SWATH-MS/MS and DIA-MS:”, cite “4.”.)\n\n\n1. Tsugawa, H. et al. A lipidome atlas in MS-DIAL 4. Nature Biotechnology 38, 1159–1163 (2020).\n\n\n2. Tsugawa, H. et al. A cheminformatics approach to characterize metabolomes in stable-isotope-labeled organisms. Nature Methods 16, 295–298 (2019).\n\n\n3. Lai, Z. et al. Identifying metabolites by integrating metabolome databases with mass spectrometry cheminformatics. Nature Methods 15, 53–56 (2018).\n\n\n4. Tsugawa, H. et al. MS-DIAL: Data-independent MS/MS deconvolution for comprehensive metabolome analysis. Nature Methods 12, 523–526 (2015)."
+    "text": "For information on the license of the source code and data in the MS-DIAL tutorials, please refer to the following link.\nhttp://prime.psc.riken.jp/compms/licence/main.html"
+  },
+  {
+    "objectID": "about.html#license",
+    "href": "about.html#license",
+    "title": "About",
+    "section": "",
+    "text": "For information on the license of the source code and data in the MS-DIAL tutorials, please refer to the following link.\nhttp://prime.psc.riken.jp/compms/licence/main.html"
   },
   {
     "objectID": "about.html#citing-ms-dial",
     "href": "about.html#citing-ms-dial",
     "title": "About",
-    "section": "",
-    "text": "If you use MS-DIAL for a scientific publication, we would appreciate citations to the following paper:\n(For the purpose of “General, and lipidomics:”, please cite “1.”,\nfor “Plant metabolomics and stable isotope labeling technology:”, cite “2.”,\nfor “GC-MS project:”, cite “3.”,\nand for “SWATH-MS/MS and DIA-MS:”, cite “4.”.)\n\n\n1. Tsugawa, H. et al. A lipidome atlas in MS-DIAL 4. Nature Biotechnology 38, 1159–1163 (2020).\n\n\n2. Tsugawa, H. et al. A cheminformatics approach to characterize metabolomes in stable-isotope-labeled organisms. Nature Methods 16, 295–298 (2019).\n\n\n3. Lai, Z. et al. Identifying metabolites by integrating metabolome databases with mass spectrometry cheminformatics. Nature Methods 15, 53–56 (2018).\n\n\n4. Tsugawa, H. et al. MS-DIAL: Data-independent MS/MS deconvolution for comprehensive metabolome analysis. Nature Methods 12, 523–526 (2015)."
+    "section": "Citing MS-DIAL",
+    "text": "Citing MS-DIAL\nIf you use MS-DIAL for a scientific publication, we would appreciate citations to the following paper:\n(For the purpose of “General, and lipidomics:”, please cite “1.”,\nfor “Plant metabolomics and stable isotope labeling technology:”, cite “2.”,\nfor “GC-MS project:”, cite “3.”,\nand for “SWATH-MS/MS and DIA-MS:”, cite “4.”.)\n\n\n1. Tsugawa, H. et al. A lipidome atlas in MS-DIAL 4. Nature Biotechnology 38, 1159–1163 (2020).\n\n\n2. Tsugawa, H. et al. A cheminformatics approach to characterize metabolomes in stable-isotope-labeled organisms. Nature Methods 16, 295–298 (2019).\n\n\n3. Lai, Z. et al. Identifying metabolites by integrating metabolome databases with mass spectrometry cheminformatics. Nature Methods 15, 53–56 (2018).\n\n\n4. Tsugawa, H. et al. MS-DIAL: Data-independent MS/MS deconvolution for comprehensive metabolome analysis. Nature Methods 12, 523–526 (2015)."
   },
   {
     "objectID": "about.html#contributors",
