@@ -1,8 +1,23 @@
 ---
 title: "About"
+bibliography: citations.bib
+csl: nature.csl
+nocite: |
+  @*
 ---
 
+## Citing MS-DIAL
 
+If you use MS-DIAL for a scientific publication,
+we would appreciate citations to the following paper:
+
+(For the purpose of "General, and lipidomics:", please cite "1.",  
+for the purpose of "Plant metabolomics and stable isotope labeling technology:", cite "2.",  
+for the purpose of "GC-MS project:", cite "3.",  
+and for the purpose of "SWATH-MS/MS and DIA-MS:", cite "4.".)
+
+::: {#refs}
+:::
 
 ## Contributors
 
