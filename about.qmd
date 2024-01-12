@@ -2,4 +2,26 @@
 title: "About"
 ---
 
-About this site
+
+
+## Contributors
+
+### Active Developers
+
+- [Yuki Matsuzawa](https://github.com/YukiMatsuzawa) (Lead developer)
+- [Hiroshi Tsugawa](https://github.com/htsugawa) (Main developer)
+- [Mikiko Takahashi](https://github.com/mikikot113) (Main developer)
+- [Kozo Nishida](https://github.com/kozo2) (Main developer)
+
+### Other Contributors
+
+- [Aleš Kvasnička](https://github.com/AlesKvasnicka) ([MS-DIAL5 tutorial](https://systemsomicslab.github.io/msdial5tutorial/))
+- [Bujinlkham Buyantogtokh](https://github.com/Bujee415) ([notame](https://github.com/antonvsdata/notame) workflow integration)
+- [Kanako Hirata](https://github.com/kanakohirata) ([Google Summer of Code 2023](https://summerofcode.withgoogle.com/programs/2023/projects/A7tRhdjB))
+
+### Collaborators
+
+- [notame (Workflow for non-targeted LC-MS metabolic profiling) developers](https://github.com/antonvsdata/notame)
+- [Ming Wang](https://github.com/mwang87) ([MassQL](https://github.com/mwang87/MassQueryLanguage) integration)
+- [Guillaume Marti](https://github.com/guikool) ([MS-CleanR](https://github.com/eMetaboHUB/MS-CleanR) integration)
+
