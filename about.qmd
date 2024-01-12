@@ -6,6 +6,13 @@ nocite: |
   @*
 ---
 
+## License
+
+For information on the license of the source code and data in the MS-DIAL tutorials, please refer to the following link.
+
+[http://prime.psc.riken.jp/compms/licence/main.html](
+http://prime.psc.riken.jp/compms/licence/main.html)
+
 ## Citing MS-DIAL
 
 If you use MS-DIAL for a scientific publication,
