@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -125,7 +144,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#contributors" id="toc-contributors" class="nav-link active" data-scroll-target="#contributors">Contributors</a>
+  <li><a href="#citing-ms-dial" id="toc-citing-ms-dial" class="nav-link active" data-scroll-target="#citing-ms-dial">Citing MS-DIAL</a></li>
+  <li><a href="#contributors" id="toc-contributors" class="nav-link" data-scroll-target="#contributors">Contributors</a>
   <ul class="collapse">
   <li><a href="#active-developers" id="toc-active-developers" class="nav-link" data-scroll-target="#active-developers">Active Developers</a></li>
   <li><a href="#other-contributors" id="toc-other-contributors" class="nav-link" data-scroll-target="#other-contributors">Other Contributors</a></li>
@@ -154,6 +174,28 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="citing-ms-dial" class="level2">
+<h2 class="anchored" data-anchor-id="citing-ms-dial">Citing MS-DIAL</h2>
+<p>If you use MS-DIAL for a scientific publication, we would appreciate citations to the following paper:</p>
+<p>(For the purpose of “General, and lipidomics:”, please cite “1.”,<br>
+for the purpose of “Plant metabolomics and stable isotope labeling technology:”, cite “2.”,<br>
+for the purpose of “GC-MS project:”, cite “3.”,<br>
+and for the purpose of “SWATH-MS/MS and DIA-MS:”, cite “4.”.)</p>
+<div id="refs" class="references csl-bib-body" data-line-spacing="2" role="list">
+<div id="ref-tsugawa_lipidome_2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Tsugawa, H. <em>et al.</em> <a href="https://doi.org/10.1038/s41587-020-0531-2">A lipidome atlas in <span>MS</span>-<span>DIAL</span> 4</a>. <em>Nature Biotechnology</em> <strong>38</strong>, 1159–1163 (2020).</div>
+</div>
+<div id="ref-tsugawa_cheminformatics_2019" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Tsugawa, H. <em>et al.</em> <a href="https://doi.org/10.1038/s41592-019-0358-2">A cheminformatics approach to characterize metabolomes in stable-isotope-labeled organisms</a>. <em>Nature Methods</em> <strong>16</strong>, 295–298 (2019).</div>
+</div>
+<div id="ref-lai_identifying_2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Lai, Z. <em>et al.</em> <a href="https://doi.org/10.1038/nmeth.4512">Identifying metabolites by integrating metabolome databases with mass spectrometry cheminformatics</a>. <em>Nature Methods</em> <strong>15</strong>, 53–56 (2018).</div>
+</div>
+<div id="ref-tsugawa_ms-dial:_2015" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Tsugawa, H. <em>et al.</em> <a href="https://doi.org/10.1038/nmeth.3393"><span>MS</span>-<span>DIAL</span>: Data-independent <span>MS</span>/<span>MS</span> deconvolution for comprehensive metabolome analysis</a>. <em>Nature Methods</em> <strong>12</strong>, 523–526 (2015).</div>
+</div>
+</div>
+</section>
 <section id="contributors" class="level2">
 <h2 class="anchored" data-anchor-id="contributors">Contributors</h2>
 <section id="active-developers" class="level3">
