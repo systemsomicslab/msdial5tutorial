@@ -103,8 +103,10 @@ Mass spectrometer: SWATH method with negative ion mode.
 Additionally, you can watch our tutorial video:
 {{< video https://www.youtube.com/watch?v=HV-e9wG9WRo&ab_channel=MS-DIALproject >}}
 
-## 5. LC-MS/MS (EAD) - deep structural lipid annotation
+## 5. LC-MS/MS (Hybrid MS-DDA/SWATH)
 
-## 6. DI-IM-MS/MS
+## 6. LC-MS/MS (EAD) - deep structural lipid annotation
+
+## 7. DI-IM-MS/MS
 
 ## 7. LC-IM-MS/MS
