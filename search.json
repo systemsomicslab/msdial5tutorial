@@ -196,18 +196,25 @@
     "text": "4. LC-MS/MS (SWATH)\nA project dealing with data independent LC-MS acquisition using the Sequential Window Acquisition of all Theoretical Mass Spectra (SWATH-MS) in combination with the in silico retention time and MS/MS databases for lipids is demonstrated.\n\nInput Data\nThis tutorial uses 23 demonstration files which are downloadable from http://prime.psc.riken.jp/archives/data/DropMet/019/20140809_MSDIAL_DemoFiles_Swath(abf).zip. The experimental protocol is described in previous research: http://www.nature.com/nmeth/journal/v12/n6/abs/nmeth.3393.html.\n\nExperiment summary:\nLiquid chromatography: total 15 min run per sample with Waters Acquity UPLC CSH C18 column (100×2.1 mm; 1.7 μm). Mass spectrometer: SWATH method with negative ion mode.\n\nMS1 accumulation time, 100 ms\nMS2 accumulation time, 10 ms\nCollision energy, 45 V\nCollision energy spread, 15 V\nCycle time, 731 ms\nQ1 window, 21 Da\nMass range, m/z 100-1250\nModifier, Ammonium formate (HCOONH4)\n\nAdditionally, you can watch our tutorial video:"
   },
   {
+    "objectID": "lipidomics.html#lc-msms-hybrid-ms-ddaswath",
+    "href": "lipidomics.html#lc-msms-hybrid-ms-ddaswath",
+    "title": "Lipidomics",
+    "section": "5. LC-MS/MS (Hybrid MS-DDA/SWATH)",
+    "text": "5. LC-MS/MS (Hybrid MS-DDA/SWATH)"
+  },
+  {
     "objectID": "lipidomics.html#lc-msms-ead---deep-structural-lipid-annotation",
     "href": "lipidomics.html#lc-msms-ead---deep-structural-lipid-annotation",
     "title": "Lipidomics",
-    "section": "5. LC-MS/MS (EAD) - deep structural lipid annotation",
-    "text": "5. LC-MS/MS (EAD) - deep structural lipid annotation"
+    "section": "6. LC-MS/MS (EAD) - deep structural lipid annotation",
+    "text": "6. LC-MS/MS (EAD) - deep structural lipid annotation"
   },
   {
     "objectID": "lipidomics.html#di-im-msms",
     "href": "lipidomics.html#di-im-msms",
     "title": "Lipidomics",
-    "section": "6. DI-IM-MS/MS",
-    "text": "6. DI-IM-MS/MS"
+    "section": "7. DI-IM-MS/MS",
+    "text": "7. DI-IM-MS/MS"
   },
   {
     "objectID": "lipidomics.html#lc-im-msms",
