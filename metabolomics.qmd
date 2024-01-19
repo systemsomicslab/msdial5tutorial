@@ -8,6 +8,33 @@ See [Figure 2](index.qmd#fig-2) for the meanings of the abbreviations used in th
 
 The environment for GC-MS data analysis in MS-DIAL5 is now under construction. Please use version 4 series for which the tutorial is available here: <https://mtbinfo-team.github.io/mtbinfo.github.io/MS-DIAL/tutorial.html#chapter-4>
 
+### 1-1 Imput data
+This tutorial uses a GC-MS dataset from the Development of Metabolite Profiling Database for Knock-Out Mutants in Arabidopsis.The files used can be downloaded from http://prime.psc.riken.jp/menta.cgi/prime/drop_index.
+
+![download]("D:\tutorial\data_birth.png")  
+![foledr]("D:\tutorial\folder.png")
+
+### 1-2 Starting up your project 
+![fig1]("D:\tutorial\images\image2\fig1.png")  
+
+(1)Launch MS-DIAL,and select New project.  
+(2)Enter the project title.Then,enter of the path of the folder containing the data you want to analyze in the project path. Click  Next.   
+(3)Select the file format you want to input amd input file. Click Next.  
+
+### 1-3 Setting parameters
+![fig2]("D:\tutorial\images\image2\fig2.png")  
+
+(1)After confirming that you have imported the data, click Next.  
+(2)Next, set the measurement parameters. For GC-MS, select Hard ionization type item. Select the ion mode that applies to your experiment.  
+(3)Configure identification setting.Please choose whether to use retention index or retention time for annotation. If you use retention index, you need to set up index file.  
+(4)Click run when the setting are complete.
+
+### 1-3 Result of annotation
+![fig3]("D:\tutorial\images\image2\fig3.png")     
+
+This is the main viewer of MS-DIAL. (1) Double-clicking on a file name in the file navigator will display the detected peak information in the center window(Peak spot viewer).Blue spots indicate peaks of lower abundance in the sample, red spots indicate peaks of high abundance, and green spots indicate peaks of intermediate abundance. (2) Click on the triangle at the top of the Peak spot viewer to display the compound corresponding to the retention time. The MS1 spectrum of the focused peak is displayed in the left window of the Peak spot viewer, and the ion chromatogram of the focused peak is displayed in the upper window.   
+(The right window displays ) Other peak information is displayed in the upper right window.
+
 ## 2. GC-MS (high resolution)
 
 ## 3. LC/MS or LC/MS/MS (data dependent MS/MS) project with user-defined MS/MS database (MSP format)
