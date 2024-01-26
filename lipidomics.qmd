@@ -108,5 +108,13 @@ Additionally, you can watch our tutorial video:
 ## 6. LC-MS/MS (EAD) - deep structural lipid annotation
 
 ## 7. DI-IM-MS/MS
+A project dealing with DI-IM-MS acquisition in combination with the in silico retention time and MS/MS databases for lipids is demonstrated.
 
-## 7. LC-IM-MS/MS
+Additionally, you can watch our tutorial video:
+{{< video video url >}}
+
+## 8. LC-IM-MS/MS(SWATH)
+A project dealing with LC-IM-MS/MS acquisition in combination with the in silico retention time and MS/MS databases for lipids is demonstrated.
+
+Additionally, you can watch our tutorial video:
+{{< video video url >}}
