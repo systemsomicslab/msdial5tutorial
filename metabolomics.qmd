@@ -33,13 +33,15 @@ This is the main viewer of MS-DIAL. (1) Double-clicking on a file name in the fi
 
 ## 2. GC-MS (high resolution)
 ## 2-1 Imput data
-![fig4]() 
-The data used in this tutorial are the results of a non-targeted GC-HRMS (Q Exactive GC Orbitrap) analysis of a PM2.5 air sample from the Maldives. This data is high-resolution mass spectrometry data.The files used can be downloaded from https://tuatsysbiolab.slack.com/archives/C06EZ3EQNTH/p1706108295928159　
-## 2-2 Setting parameters
+![fig4]()   
+The data used in this tutorial are the results of a non-targeted GC-HRMS (Q Exactive GC Orbitrap) analysis of a PM2.5 air sample from the Maldives. This data is high-resolution mass spectrometry data.The files used can be downloaded from https://tuatsysbiolab.slack.com/archives/C06EZ3EQNTH/p1706108295928159  
+
+## 2-2 Setting parameters  
+
 ![fig5]("D:\tutorial\images\image2\fig5.png")  
-(1)Launch MS-DIAL,and select New project.  
-(2)Enter a project name. Enter the folder containing the data you want to input into the project file path. Then click Next.　　　　　　
-(3)Next,select the analysis file path. First click on Browse.  
+(1)Launch MS-DIAL,and select New project.    
+(2)Enter a project name. Enter the folder containing the data you want to input into the project file path. Then click Next.  　　　　　　
+(3)Next,select the analysis file path. First click on Browse.    
 (4)Open the folder containing the files you wish to analyze, select the files and click Open. The same operation can be done with drag-and-drop. Also, remember to select the file format in the lower right corner according to the format of the file you wish to enter.  
 ![fig6]("D:\tutorial\images\image2\fig5.png")  
 (5)After inputting the file, you will see a screen like this. When you confirm that the file has been entered, press the NEXT button to proceed.。  
