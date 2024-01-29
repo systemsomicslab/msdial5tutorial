@@ -5,11 +5,8 @@ title: "Metabolomics"
 See [Figure 2](index.qmd#fig-2) for the meanings of the abbreviations used in this chapter.
 
 ## 1. GC-MS (nominal mass)
-
-The environment for GC-MS data analysis in MS-DIAL5 is now under construction. Please use version 4 series for which the tutorial is available here: <https://mtbinfo-team.github.io/mtbinfo.github.io/MS-DIAL/tutorial.html#chapter-4>
-
 ### 1-1 Imput data
-This tutorial uses a GC-MS dataset from the Development of Metabolite Profiling Database for Knock-Out Mutants in Arabidopsis.The files used can be downloaded from http://prime.psc.riken.jp/menta.cgi/prime/drop_index.
+This tutorial uses a GC-MS dataset from the Development of Metabolite Profiling Database for Knock-Out Mutants in Arabidopsis.The files used can be downloaded from http://prime.psc.riken.jp/menta.cgi/prime/drop_index
 
 ![download]("D:\tutorial\data_birth.png")  
 ![foledr]("D:\tutorial\folder.png")
@@ -29,13 +26,37 @@ This tutorial uses a GC-MS dataset from the Development of Metabolite Profiling 
 (3)Configure identification setting.Please choose whether to use retention index or retention time for annotation. If you use retention index, you need to set up index file.  
 (4)Click run when the setting are complete.
 
-### 1-3 Result of annotation
+### 1-4 Result of annotation
 ![fig3]("D:\tutorial\images\image2\fig3.png")     
 
-This is the main viewer of MS-DIAL. (1) Double-clicking on a file name in the file navigator will display the detected peak information in the center window(Peak spot viewer).Blue spots indicate peaks of lower abundance in the sample, red spots indicate peaks of high abundance, and green spots indicate peaks of intermediate abundance. (2) Click on the triangle at the top of the Peak spot viewer to display the compound corresponding to the retention time. The MS1 spectrum of the focused peak is displayed in the left window of the Peak spot viewer, and the ion chromatogram of the focused peak is displayed in the upper window.   
-(The right window displays ) Other peak information is displayed in the upper right window.
+This is the main viewer of MS-DIAL. (1) Double-clicking on a file name in the file navigator will display the detected peak information in the center window(Peak spot viewer).Blue spots indicate peaks of lower abundance in the sample, red spots indicate peaks of high abundance, and green spots indicate peaks of intermediate abundance. (2) Click on the triangle at the top of the Peak spot viewer to display the compound corresponding to the retention time.(3) The MS1 spectrum of the focused peak is displayed in the left window of the Peak spot viewer. (4)The ion chromatogram of the focused peak is displayed in the upper window.(5 )Other peak information is displayed in the upper right window.
 
 ## 2. GC-MS (high resolution)
+## 2-1 Imput data
+![fig4]() 
+The data used in this tutorial are the results of a non-targeted GC-HRMS (Q Exactive GC Orbitrap) analysis of a PM2.5 air sample from the Maldives. This data is high-resolution mass spectrometry data.The files used can be downloaded from https://tuatsysbiolab.slack.com/archives/C06EZ3EQNTH/p1706108295928159　
+## 2-2 Setting parameters
+![fig5]("D:\tutorial\images\image2\fig5.png")  
+(1)Launch MS-DIAL,and select New project.  
+(2)Enter a project name. Enter the folder containing the data you want to input into the project file path. Then click Next.　　　　　　
+(3)Next,select the analysis file path. First click on Browse.  
+(4)Open the folder containing the files you wish to analyze, select the files and click Open. The same operation can be done with drag-and-drop. Also, remember to select the file format in the lower right corner according to the format of the file you wish to enter.  
+![fig6]("D:\tutorial\images\image2\fig5.png")  
+(5)After inputting the file, you will see a screen like this. When you confirm that the file has been entered, press the NEXT button to proceed.。  
+(6)Here we set the measurement parameter.In this case, select "Hard ionization" for GCMS. Select data type, ion mode, and targetomics according to the data you want to analyze, and click Next.  
+(7)The data collection section enable you to determine the mass range and retention time range you want to observe.          
+(8)In the peak detection section, you can change the parameters for peak detection. The data used in this tutorial are high resolution data, so Accurate MS is checked.  
+![fig7]("D:\tutorial\images\image2\fig5.png")  
+(9)The Spectrum deconvolution section allows you to set parameters for deconvolution of the spectrum.   
+(10)Please choose whether to use retention index or retention time for annotation. If you use retention index, you need to set up index file.This tutorial uses retention time.   
+(11)Finally, set the alignment parameters and click Run. 
+
+
+## 2-3 Result of anotation
+![fig7]("D:\tutorial\images\image2\fig5.png") 
+This is the main viewer of MS-DIAL.(1) Double-clicking on a file name in the file navigator will display the detected peak information in the center window.Then select the Alignment spot viewer next to the Peak spot viewer to see the alignment results.Blue spots indicate peaks of lower abundance in the sample, red spots indicate peaks of high abundance, and green spots indicate peaks of intermediate abundance. (2)Click on the spot in the center window to see the information corresponding to that peak spot.
+(3) The MS1 spectrum of the focused peak is displayed in the left window of the center window.(4)The ion chromatogram of the focused peak is displayed in the upper window.
+(5) Other peak information is displayed in the upper right window.　　
 
 ## 3. LC/MS or LC/MS/MS (data dependent MS/MS) project with user-defined MS/MS database (MSP format)
 
