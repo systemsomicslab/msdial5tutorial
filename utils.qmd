@@ -38,3 +38,5 @@ Note that you have to download the MS-FIDNER program from the website above on y
 ## 5. Bridge to MRMPROBS for DIA-MS or GC/MS data sets
 
 ## 6. Molecular spectrum networking for metabolite annotations
+
+{{< video https://youtu.be/OxCMpR4umjA?feature=shared >}}
