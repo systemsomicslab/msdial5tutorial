@@ -9,7 +9,7 @@ See [Figure 2](index.qmd#fig-2) for the meanings of the abbreviations used in th
 This tutorial uses a GC-MS dataset from the Development of Metabolite Profiling Database for Knock-Out Mutants in Arabidopsis.The files used can be downloaded from http://prime.psc.riken.jp/menta.cgi/prime/drop_index
 
 ![download](images/gcnominal/data_birth.png)
-![foleder](images/gcnominal/folder.png)
+![folder](images/gcnominal/folder.png)
 
 ### 1-2 Starting up your project 
 ![fig1](images/gcnominal/images\image2\fig1.png)  
