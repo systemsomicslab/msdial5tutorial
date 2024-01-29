@@ -55,7 +55,8 @@ The data used in this tutorial are the results of a non-targeted GC-HRMS (Q Exac
 
 
 ## 2-3 Result of anotation
-![fig7]("D:\tutorial\images\image2\fig5.png") 
+![fig7]("D:\tutorial\images\image2\fig5.png")  
+
 This is the main viewer of MS-DIAL.(1) Double-clicking on a file name in the file navigator will display the detected peak information in the center window.Then select the Alignment spot viewer next to the Peak spot viewer to see the alignment results.Blue spots indicate peaks of lower abundance in the sample, red spots indicate peaks of high abundance, and green spots indicate peaks of intermediate abundance. (2)Click on the spot in the center window to see the information corresponding to that peak spot.
 (3) The MS1 spectrum of the focused peak is displayed in the left window of the center window.(4)The ion chromatogram of the focused peak is displayed in the upper window.
 (5) Other peak information is displayed in the upper right window.　　
