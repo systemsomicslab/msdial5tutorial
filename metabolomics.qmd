@@ -23,8 +23,8 @@ This tutorial uses a GC-MS dataset from the Development of Metabolite Profiling 
 
 (1)After confirming that you have imported the data, click Next.  
 (2)Next, set the measurement parameters. For GC-MS, select Hard ionization type item. Select the ion mode that applies to your experiment.  
-(3)Configure identification setting.Please choose whether to use retention index or retention time for annotation. If you use retention index, you need to set up index file.  
-(4)Click run when the setting are complete.
+(3)In the peak detection section, you can change the parameters for peak detection. The data used in this tutorial are nominal mass data, so Accurate MS is not checked.  
+(4)Configure identification setting.Please choose whether to use retention index or retention time for annotation. If you use retention index, you need to set up index file.Click run when the setting are complete.
 
 ### 1-4 Result of annotation
 ![fig3]("D:\tutorial\images\image2\fig3.png")     
