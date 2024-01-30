@@ -111,10 +111,10 @@ Additionally, you can watch our tutorial video:
 A project dealing with DI-IM-MS acquisition in combination with the in silico retention time and MS/MS databases for lipids is demonstrated.
 
 Additionally, you can watch our tutorial video:
-{{< video video url >}}
+{{< video https://www.youtube.com/watch?v=-LQiiEk-DBw >}}
 
 ## 8. LC-IM-MS/MS(SWATH)
 A project dealing with LC-IM-MS/MS acquisition in combination with the in silico retention time and MS/MS databases for lipids is demonstrated.
 
 Additionally, you can watch our tutorial video:
-{{< video video url >}}
+{{< video https://www.youtube.com/watch?v=4R5Tmaic7A8 >}}
