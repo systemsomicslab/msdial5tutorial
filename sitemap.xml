@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://systemsomicslab.github.io/msdial5tutorial/lipidomics.html</loc>
-    <lastmod>2024-01-30T09:16:59.512Z</lastmod>
-  </url>
-  <url>
     <loc>https://systemsomicslab.github.io/msdial5tutorial/utils.html</loc>
-    <lastmod>2024-01-30T09:16:59.512Z</lastmod>
-  </url>
-  <url>
-    <loc>https://systemsomicslab.github.io/msdial5tutorial/imaging.html</loc>
-    <lastmod>2024-01-30T09:16:59.512Z</lastmod>
-  </url>
-  <url>
-    <loc>https://systemsomicslab.github.io/msdial5tutorial/index.html</loc>
-    <lastmod>2024-01-30T09:16:59.512Z</lastmod>
+    <lastmod>2024-01-30T09:19:06.242Z</lastmod>
   </url>
   <url>
     <loc>https://systemsomicslab.github.io/msdial5tutorial/proteomics.html</loc>
-    <lastmod>2024-01-30T09:16:59.512Z</lastmod>
+    <lastmod>2024-01-30T09:19:06.242Z</lastmod>
   </url>
   <url>
     <loc>https://systemsomicslab.github.io/msdial5tutorial/metabolomics.html</loc>
-    <lastmod>2024-01-30T09:16:59.512Z</lastmod>
+    <lastmod>2024-01-30T09:19:06.242Z</lastmod>
+  </url>
+  <url>
+    <loc>https://systemsomicslab.github.io/msdial5tutorial/lipidomics.html</loc>
+    <lastmod>2024-01-30T09:19:06.242Z</lastmod>
+  </url>
+  <url>
+    <loc>https://systemsomicslab.github.io/msdial5tutorial/index.html</loc>
+    <lastmod>2024-01-30T09:19:06.242Z</lastmod>
   </url>
   <url>
     <loc>https://systemsomicslab.github.io/msdial5tutorial/about.html</loc>
-    <lastmod>2024-01-30T09:16:59.440Z</lastmod>
+    <lastmod>2024-01-30T09:19:06.170Z</lastmod>
+  </url>
+  <url>
+    <loc>https://systemsomicslab.github.io/msdial5tutorial/imaging.html</loc>
+    <lastmod>2024-01-30T09:19:06.242Z</lastmod>
   </url>
 </urlset>
