@@ -44,10 +44,7 @@ This is the main viewer of MS-DIAL. (1) Double-clicking on a file name in the fi
 The data used in this tutorial are the results of a non-targeted GC-HRMS (Q Exactive GC Orbitrap) analysis of a PM2.5 air sample from the Maldives. This data is high-resolution mass spectrometry data.The files used can be downloaded from https://tuatsysbiolab.slack.com/archives/C06EZ3EQNTH/p1706108295928159  
 
 ### 2-2 Setting parameters
-![fig5-1](images/gcnominal/5-1.png)
-![fig5-2](images/gcnominal/5-2.png)
-![fig5-3](images/gcnominal/5-3.png)
-![fig5-4](images/gcnominal/5-4.png) 
+![fig5](images/gcnominal/fig5.png) 
 (1)Launch MS-DIAL,and select New project.  
 (2)Enter a project name. Enter the folder containing the data you want to input into the project file path. Then click Next.            
 (3)Next,select the analysis file path. First click on Browse.  
