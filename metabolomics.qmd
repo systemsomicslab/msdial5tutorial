@@ -23,7 +23,7 @@ This tutorial uses a GC-MS dataset from the Development of Metabolite Profiling 
 
 ### 1-3 Setting parameters
 ![fig2-1](images/gcnominal/2-1.png)
-![fig2-2](images/gcnominal/2-2.png)
+![fig2-2](images/gcnominal/2-2ver2.png)
 ![fig2-3](images/gcnominal/2-3.png)
 ![fig2-4](images/gcnominal/2-4.png)
 
