@@ -104,6 +104,10 @@ Additionally, you can watch our tutorial video:
 {{< video https://www.youtube.com/watch?v=HV-e9wG9WRo&ab_channel=MS-DIALproject >}}
 
 ## 5. LC-MS/MS (Hybrid MS-DDA/SWATH)
+A project dealing with DI-IM-MS acquisition in combination with the in silico retention time and MS/MS databases for lipids is demonstrated. 
+
+Additionally, you can watch our tutorial video:
+{{< video https://www.youtube.com/watch?v=IGPQMCW1FPw >}}
 
 ## 6. LC-MS/MS (EAD) - deep structural lipid annotation
 
