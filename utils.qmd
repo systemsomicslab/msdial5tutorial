@@ -31,7 +31,7 @@ Note that you have to download the MS-FIDNER program from the website above on y
 
 {{< video https://www.youtube.com/watch?v=moHIiTTVfGQ&ab_channel=MS-DIALproject >}}
 
-## 5. Principal component analysis in MS DIAL5
+## 5. Multivariate analysis in MS-DIAL5
 
 {{< video https://www.youtube.com/watch?v=wtOS7F1RgZs&ab_channel=MS-DIALproject >}}
 
