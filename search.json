@@ -21,11 +21,11 @@
     "text": "4. Link to MS-FINDER for searching unknowns\nMS-FINDER aims to provide solutions for\n\nformula predictions\nfragment annotations\nstructure elucidations\n\nby means of survey scan MS and MS/MS spectra of unknowns. The detail of MS-FINDER is described in http://prime.psc.riken.jp/Metabolomics_Software/MS-FINDER/index.html.\n\n\n\n\n\n\nNote\n\n\n\nNote that you have to download the MS-FIDNER program from the website above on your PC."
   },
   {
-    "objectID": "utils.html#principal-component-analysis-in-ms-dial5",
-    "href": "utils.html#principal-component-analysis-in-ms-dial5",
+    "objectID": "utils.html#multivariate-analysis-in-ms-dial5",
+    "href": "utils.html#multivariate-analysis-in-ms-dial5",
     "title": "Other utilities of MS-DIAL",
-    "section": "5. Principal component analysis in MS DIAL5",
-    "text": "5. Principal component analysis in MS DIAL5"
+    "section": "5. Multivariate analysis in MS-DIAL5",
+    "text": "5. Multivariate analysis in MS-DIAL5"
   },
   {
     "objectID": "utils.html#bridge-to-mrmprobs-for-dia-ms-or-gcms-data-sets",
@@ -137,7 +137,7 @@
     "href": "lipidomics.html#lc-msms-hybrid-ms-ddaswath",
     "title": "Lipidomics",
     "section": "5. LC-MS/MS (Hybrid MS-DDA/SWATH)",
-    "text": "5. LC-MS/MS (Hybrid MS-DDA/SWATH)"
+    "text": "5. LC-MS/MS (Hybrid MS-DDA/SWATH)\nA project dealing with DI-IM-MS acquisition in combination with the in silico retention time and MS/MS databases for lipids is demonstrated.\nAdditionally, you can watch our tutorial video:"
   },
   {
     "objectID": "lipidomics.html#lc-msms-ead---deep-structural-lipid-annotation",
@@ -151,14 +151,14 @@
     "href": "lipidomics.html#di-im-msms",
     "title": "Lipidomics",
     "section": "7. DI-IM-MS/MS",
-    "text": "7. DI-IM-MS/MS"
+    "text": "7. DI-IM-MS/MS\nA project dealing with DI-IM-MS acquisition in combination with the in silico retention time and MS/MS databases for lipids is demonstrated.\nAdditionally, you can watch our tutorial video:"
   },
   {
-    "objectID": "lipidomics.html#lc-im-msms",
-    "href": "lipidomics.html#lc-im-msms",
+    "objectID": "lipidomics.html#lc-im-msmsswath",
+    "href": "lipidomics.html#lc-im-msmsswath",
     "title": "Lipidomics",
-    "section": "7. LC-IM-MS/MS",
-    "text": "7. LC-IM-MS/MS"
+    "section": "8. LC-IM-MS/MS(SWATH)",
+    "text": "8. LC-IM-MS/MS(SWATH)\nA project dealing with LC-IM-MS/MS acquisition in combination with the in silico retention time and MS/MS databases for lipids is demonstrated.\nAdditionally, you can watch our tutorial video:"
   },
   {
     "objectID": "index.html",
