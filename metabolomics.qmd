@@ -41,7 +41,7 @@ This is the main viewer of MS-DIAL. (1) Double-clicking on a file name in the fi
 ## 2. GC-MS (high resolution)
 ### 2-1 Imput data
 ![fig4](images/gcnominal/fig4.png)   
-The data used in this tutorial are the results of a non-targeted GC-HRMS (Q Exactive GC Orbitrap) analysis of a PM2.5 air sample from the Maldives. This data is high-resolution mass spectrometry data.The files used can be downloaded from https://tuatsysbiolab.slack.com/archives/C06EZ3EQNTH/p1706108295928159  
+The data used in this tutorial are the results of a non-targeted GC-HRMS (Q Exactive GC Orbitrap) analysis of a PM2.5 air sample from the Maldives. This data is high-resolution mass spectrometry data.The files used can be downloaded from [MassIVE MSV000087683 Files](https://massive.ucsd.edu/ProteoSAFe/dataset_files.jsp?task=d98091ce8b2c4e4dba7199934341ef57#%7B%22table_sort_history%22%3A%22main.collection_asc%22%7D).
 
 ### 2-2 Setting parameters
 ![fig5](images/gcnominal/fig5.png) 
