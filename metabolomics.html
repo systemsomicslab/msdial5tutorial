@@ -132,8 +132,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#gc-ms-nominal-mass" id="toc-gc-ms-nominal-mass" class="nav-link active" data-scroll-target="#gc-ms-nominal-mass">1. GC-MS (nominal mass)</a></li>
-  <li><a href="#gc-ms-high-resolution" id="toc-gc-ms-high-resolution" class="nav-link" data-scroll-target="#gc-ms-high-resolution">2. GC-MS (high resolution)</a></li>
+  <li><a href="#gc-ms-nominal-mass" id="toc-gc-ms-nominal-mass" class="nav-link active" data-scroll-target="#gc-ms-nominal-mass">1. GC-MS (nominal mass)</a>
+  <ul class="collapse">
+  <li><a href="#imput-data" id="toc-imput-data" class="nav-link" data-scroll-target="#imput-data">1-1 Imput data</a></li>
+  <li><a href="#starting-up-your-project" id="toc-starting-up-your-project" class="nav-link" data-scroll-target="#starting-up-your-project">1-2 Starting up your project</a></li>
+  <li><a href="#setting-parameters" id="toc-setting-parameters" class="nav-link" data-scroll-target="#setting-parameters">1-3 Setting parameters</a></li>
+  <li><a href="#result-of-annotation" id="toc-result-of-annotation" class="nav-link" data-scroll-target="#result-of-annotation">1-4 Result of annotation</a></li>
+  </ul></li>
+  <li><a href="#gc-ms-high-resolution" id="toc-gc-ms-high-resolution" class="nav-link" data-scroll-target="#gc-ms-high-resolution">2. GC-MS (high resolution)</a>
+  <ul class="collapse">
+  <li><a href="#imput-data-1" id="toc-imput-data-1" class="nav-link" data-scroll-target="#imput-data-1">2-1 Imput data</a></li>
+  <li><a href="#setting-parameters-1" id="toc-setting-parameters-1" class="nav-link" data-scroll-target="#setting-parameters-1">2-2 Setting parameters</a></li>
+  <li><a href="#result-of-anotation" id="toc-result-of-anotation" class="nav-link" data-scroll-target="#result-of-anotation">2-3 Result of anotation</a></li>
+  </ul></li>
   <li><a href="#lcms-or-lcmsms-data-dependent-msms-project-with-user-defined-msms-database-msp-format" id="toc-lcms-or-lcmsms-data-dependent-msms-project-with-user-defined-msms-database-msp-format" class="nav-link" data-scroll-target="#lcms-or-lcmsms-data-dependent-msms-project-with-user-defined-msms-database-msp-format">3. LC/MS or LC/MS/MS (data dependent MS/MS) project with user-defined MS/MS database (MSP format)</a>
   <ul class="collapse">
   <li><a href="#input-data" id="toc-input-data" class="nav-link" data-scroll-target="#input-data">Input Data</a></li>
@@ -170,10 +181,63 @@ ul.task-list li input[type="checkbox"] {
 <p>See <a href="./index.html#fig-2">Figure 2</a> for the meanings of the abbreviations used in this chapter.</p>
 <section id="gc-ms-nominal-mass" class="level2">
 <h2 class="anchored" data-anchor-id="gc-ms-nominal-mass">1. GC-MS (nominal mass)</h2>
-<p>The environment for GC-MS data analysis in MS-DIAL5 is now under construction. Please use version 4 series for which the tutorial is available here: <a href="https://mtbinfo-team.github.io/mtbinfo.github.io/MS-DIAL/tutorial.html#chapter-4" class="uri">https://mtbinfo-team.github.io/mtbinfo.github.io/MS-DIAL/tutorial.html#chapter-4</a></p>
+<section id="imput-data" class="level3">
+<h3 class="anchored" data-anchor-id="imput-data">1-1 Imput data</h3>
+<p>This tutorial uses a GC-MS dataset from the Development of Metabolite Profiling Database for Knock-Out Mutants in Arabidopsis.The files used can be downloaded from http://prime.psc.riken.jp/menta.cgi/prime/drop_index</p>
+<p><img src="images/gcnominal/data_birth.png" class="img-fluid" alt="download"> <img src="images/gcnominal/folder.png" class="img-fluid" alt="folder"></p>
+</section>
+<section id="starting-up-your-project" class="level3">
+<h3 class="anchored" data-anchor-id="starting-up-your-project">1-2 Starting up your project</h3>
+<p><img src="images/gcnominal/1-1.png" class="img-fluid" alt="fig1-1"> <img src="images/gcnominal/1-2.png" class="img-fluid" alt="fig1-2"> <img src="images/gcnominal/1-3.png" class="img-fluid" alt="fig1-3"> <img src="images/gcnominal/1-4.png" class="img-fluid" alt="fig1-4"></p>
+<p>(1)Launch MS-DIAL,and select New project.<br>
+(2)Enter the project title.Then,enter of the path of the folder containing the data you want to analyze in the project path. Click Next.<br>
+(3)Select the file format you want to input amd input file. Click Next.</p>
+</section>
+<section id="setting-parameters" class="level3">
+<h3 class="anchored" data-anchor-id="setting-parameters">1-3 Setting parameters</h3>
+<p><img src="images/gcnominal/2-1.png" class="img-fluid" alt="fig2-1"> <img src="images/gcnominal/2-2.png" class="img-fluid" alt="fig2-2"> <img src="images/gcnominal/2-3.png" class="img-fluid" alt="fig2-3"> <img src="images/gcnominal/2-4.png" class="img-fluid" alt="fig2-4"></p>
+<p>(1)After confirming that you have imported the data, click Next.<br>
+(2)Next, set the measurement parameters. For GC-MS, select Hard ionization type item. Select the ion mode that applies to your experiment.<br>
+(3)In the peak detection section, you can change the parameters for peak detection. The data used in this tutorial are nominal mass data, so Accurate MS is not checked.<br>
+(4)Configure identification setting.Please choose whether to use retention index or retention time for annotation. If you use retention index, click Set and designate the PATH of the retention index to be used.If there are library you want to reference, click Browse and designate the library.</p>
+</section>
+<section id="result-of-annotation" class="level3">
+<h3 class="anchored" data-anchor-id="result-of-annotation">1-4 Result of annotation</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/gcnominal/fig3.png" class="img-fluid figure-img"></p>
+<figcaption>fig3</figcaption>
+</figure>
+</div>
+<p>This is the main viewer of MS-DIAL. (1) Double-clicking on a file name in the file navigator will display the detected peak information in the center window(Peak spot viewer).Blue spots indicate peaks of lower abundance in the sample, red spots indicate peaks of high abundance, and green spots indicate peaks of intermediate abundance. (2) Click on the triangle at the top of the Peak spot viewer to display the compound corresponding to the retention time.(3) The MS1 spectrum of the focused peak is displayed in the left window of the Peak spot viewer. (4)The ion chromatogram of the focused peak is displayed in the upper window.(5)Other peak information is displayed in the upper right window.</p>
+</section>
 </section>
 <section id="gc-ms-high-resolution" class="level2">
 <h2 class="anchored" data-anchor-id="gc-ms-high-resolution">2. GC-MS (high resolution)</h2>
+<section id="imput-data-1" class="level3">
+<h3 class="anchored" data-anchor-id="imput-data-1">2-1 Imput data</h3>
+<p><img src="images/gcnominal/fig4.png" class="img-fluid" alt="fig4"><br>
+The data used in this tutorial are the results of a non-targeted GC-HRMS (Q Exactive GC Orbitrap) analysis of a PM2.5 air sample from the Maldives. This data is high-resolution mass spectrometry data.The files used can be downloaded from https://tuatsysbiolab.slack.com/archives/C06EZ3EQNTH/p1706108295928159</p>
+</section>
+<section id="setting-parameters-1" class="level3">
+<h3 class="anchored" data-anchor-id="setting-parameters-1">2-2 Setting parameters</h3>
+<p><img src="images/gcnominal/5-1.png" class="img-fluid" alt="fig5-1"> <img src="images/gcnominal/5-2.png" class="img-fluid" alt="fig5-2"> <img src="images/gcnominal/5-3.png" class="img-fluid" alt="fig5-3"> <img src="images/gcnominal/5-4.png" class="img-fluid" alt="fig5-4"> (1)Launch MS-DIAL,and select New project.<br>
+(2)Enter a project name. Enter the folder containing the data you want to input into the project file path. Then click Next.<br>
+(3)Next,select the analysis file path. First click on Browse.<br>
+(4)Open the folder containing the files you wish to analyze, select the files and click Open. The same operation can be done with drag-and-drop. Also, remember to select the file format in the lower right corner according to the format of the file you wish to enter.<br>
+<img src="images/gcnominal/6-5.png" class="img-fluid" alt="fig6-1"> <img src="images/gcnominal/6-6.png" class="img-fluid" alt="fig6-2"> <img src="images/gcnominal/6-7.png" class="img-fluid" alt="fig6-3"> <img src="images/gcnominal/6-8.png" class="img-fluid" alt="fig6-4"> (5)After inputting the file, you will see a screen like this. When you confirm that the file has been entered, press the NEXT button to proceed.。<br>
+(6)Here we set the measurement parameter.In this case, select “Hard ionization” for GCMS. Select data type, ion mode, and targetomics according to the data you want to analyze, and click Next.<br>
+(7)The data collection section enable you to determine the mass range and retention time range you want to observe.<br>
+(8)In the peak detection section, you can change the parameters for peak detection. The data used in this tutorial are high resolution data, so Accurate MS is checked.<br>
+<img src="images/gcnominal/7-9.png" class="img-fluid" alt="fig7-1"> <img src="images/gcnominal/7-10.png" class="img-fluid" alt="fig7-2"> <img src="images/gcnominal/7-11.png" class="img-fluid" alt="fig7-3"> (9)The Spectrum deconvolution section allows you to set parameters for deconvolution of the spectrum.<br>
+(10)Please choose whether to use retention index or retention time for annotation. If you use retention index, you need to set up index file.This tutorial uses retention time.<br>
+(11)Finally, set the alignment parameters and click Run.</p>
+</section>
+<section id="result-of-anotation" class="level3">
+<h3 class="anchored" data-anchor-id="result-of-anotation">2-3 Result of anotation</h3>
+<p><img src="images/gcnominal/fig1.png" class="img-fluid" alt="fig8"><br>
+This is the main viewer of MS-DIAL.(1) Double-clicking on a file name in the file navigator will display the detected peak information in the center window.Then select the Alignment spot viewer next to the Peak spot viewer to see the alignment results.Blue spots indicate peaks of lower abundance in the sample, red spots indicate peaks of high abundance, and green spots indicate peaks of intermediate abundance. (2)Click on the spot in the center window to see the information corresponding to that peak spot. (3) The MS1 spectrum of the focused peak is displayed in the left window of the center window.(4)The ion chromatogram of the focused peak is displayed in the upper window. (5) Other peak information is displayed in the upper right window.　　</p>
+</section>
 </section>
 <section id="lcms-or-lcmsms-data-dependent-msms-project-with-user-defined-msms-database-msp-format" class="level2">
 <h2 class="anchored" data-anchor-id="lcms-or-lcmsms-data-dependent-msms-project-with-user-defined-msms-database-msp-format">3. LC/MS or LC/MS/MS (data dependent MS/MS) project with user-defined MS/MS database (MSP format)</h2>
