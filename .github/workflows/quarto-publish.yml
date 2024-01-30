@@ -2,7 +2,6 @@ on:
   push:
     branches: 
       - main
-      - gc-nominal
       
 name: Render and Publish
 
