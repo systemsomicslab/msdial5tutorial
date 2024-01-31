@@ -40,3 +40,18 @@ Note that you have to download the MS-FIDNER program from the website above on y
 ## 6. Molecular spectrum networking for metabolite annotations
 
 {{< video https://www.youtube.com/watch?v=OxCMpR4umjA&ab_channel=MS-DIALproject >}}
+
+This section introduces how to create molecular spectrum networking in MS-DIAL5.
+Molecular spectrum networking is a tool for creating networks that visualize the MS/MS similarities among metabolites.
+
+To follow this video, please download the dataset and check the description in [https://zenodo.org/communities/msdial?q=&l=list&p=1&s=10&sort=newest](https://zenodo.org/communities/msdial?q=&l=list&p=1&s=10&sort=newest).
+
+### The Workflow
+1. Download the dataset of "Molecular spectrum networking tutorial dataset" in [https://zenodo.org/communities/msdial?q=&l=list&p=1&s=10&sort=newest](https://zenodo.org/communities/msdial?q=&l=list&p=1&s=10&sort=newest)
+2. Open *.mdproject in MS-DIAL5
+3. Follow the youtube video 
+
+You can get thses as outputs:
+1. The molecular spectrum network that visualize the  MS/MS similarities among metabolites.
+2. The dataset to create the network in cytoscape
+3. The molecular spectrum network that focusing on one metabolite.
