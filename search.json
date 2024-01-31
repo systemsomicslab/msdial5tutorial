@@ -137,7 +137,7 @@
     "href": "lipidomics.html#lc-msms-hybrid-ms-ddaswath",
     "title": "Lipidomics",
     "section": "5. LC-MS/MS (Hybrid MS-DDA/SWATH)",
-    "text": "5. LC-MS/MS (Hybrid MS-DDA/SWATH)\nA project dealing with DI-IM-MS acquisition in combination with the in silico retention time and MS/MS databases for lipids is demonstrated.\nAdditionally, you can watch our tutorial video:"
+    "text": "5. LC-MS/MS (Hybrid MS-DDA/SWATH)\nA project dealing with LC-MS/MS (Hybrid MS-DDA/SWATH) acquisition in combination with the in silico retention time and MS/MS databases for lipids is demonstrated. Hybrid MS-DDA/SWATH　is a novel strategy combining DIA and DDA in fast LC-MS-based analytical batches, intending to increase annotation rates.\nAdditionally, you can watch our tutorial video:"
   },
   {
     "objectID": "lipidomics.html#lc-msms-ead---deep-structural-lipid-annotation",
