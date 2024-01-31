@@ -19,7 +19,7 @@ This tutorial uses a GC-MS dataset from the Development of Metabolite Profiling 
 
 (1)Launch MS-DIAL,and select New project.  
 (2)Enter the project title.Then,enter of the path of the folder containing the data you want to analyze in the project path. Click  Next.   
-(3)Select the file format you want to input amd input file. Click Next.  
+(3)Select the file format you want to input and input file. Click Next.  
 
 ### 1-3 Setting parameters
 ![fig2-1](images/gcnominal/2-1.png)
@@ -28,9 +28,17 @@ This tutorial uses a GC-MS dataset from the Development of Metabolite Profiling 
 ![fig2-4](images/gcnominal/2-4.png)
 
 (1)After confirming that you have imported the data, click Next.  
-(2)Next, set the measurement parameters. For GC-MS, select Hard ionization type item. Select the ion mode that applies to your experiment.  
-(3)In the peak detection section, you can change the parameters for peak detection. The data used in this tutorial are nominal mass data, so Accurate MS is not checked.  
-(4)Configure identification setting.Please choose whether to use retention index or retention time for annotation. If you use retention index, click Set and designate the PATH of the retention index to be used.If there are library you want to reference, click Browse and designate the library.
+(2)Next, set the measurement parameters. For GC-MS, select **Hard ionization** type item. Select the ion mode that applies to your experiment.  
+(3)In the peak detection section, you can change the parameters for peak detection. The data used in this tutorial are nominal mass data, so Accurate MS is **not** checked.  
+(4)Configure identification setting.Please choose whether to use retention index or retention time for annotation. If you use retention index, click Set and designate the PATH of the retention index to be used.If there are library you want to reference, click Browse and designate the library.　　
+
+The following table shows the parameters changed from the defaults in this analysis.　　　　
+
+|                        | parameter       | example           |
+|:-----------------------|:----------------|:------------------|
+| measurement parameters | Ionization type | Hard ionization   |
+| measurement parameters | Ion mode        | Positive ion mode |
+| measurement parameters | target omics    | Metabolomics      |　　　
 
 
 ### 1-4 Result of annotation
@@ -54,15 +62,31 @@ The data used in this tutorial are the results of a non-targeted GC-HRMS (Q Exac
 ![fig6-3](images/gcnominal/6-7.png)
 ![fig6-4](images/gcnominal/6-8.png)
 (5)After inputting the file, you will see a screen like this. When you confirm that the file has been entered, press the NEXT button to proceed.。  
-(6)Here we set the measurement parameter.In this case, select "Hard ionization" for GCMS. Select data type, ion mode, and targetomics according to the data you want to analyze, and click Next.  
+(6)Here we set the measurement parameter.In this case, select **Hard ionization** for GCMS. Select data type, ion mode, and targetomics according to the data you want to analyze, and click Next.  
 (7)The data collection section enable you to determine the mass range and retention time range you want to observe.          
-(8)In the peak detection section, you can change the parameters for peak detection. The data used in this tutorial are high resolution data, so Accurate MS is checked.  
+(8)In the peak detection section, you can change the parameters for peak detection. The data used in this tutorial are high resolution data, so **Accurate MS is checked**.  
 ![fig7-1](images/gcnominal/7-9.png)
 ![fig7-2](images/gcnominal/7-10.png)
 ![fig7-3](images/gcnominal/7-11.png) 
 (9)The Spectrum deconvolution section allows you to set parameters for deconvolution of the spectrum.   
-(10)Please choose whether to use retention index or retention time for annotation. If you use retention index, you need to set up index file.This tutorial uses retention time.   
-(11)Finally, set the alignment parameters and click Run. 
+(10)Please choose whether to use **retention index** or **retention time** for annotation. If you use retention index, you need to set up index file.This tutorial uses retention time.   
+(11)Finally, set the alignment parameters and click Run.　　
+
+::: {.callout-note appearance="minimal"}   
+If you use a retention index,make sure you have the right retention
+index for the data you want to analyze.
+:::  
+
+
+The following table shows the parameters changed from the defaults in this analysis.　　
+
+|                        | parameter       | example           |
+|:-----------------------|:----------------|:------------------|
+| measurement parameters | Ionization type | Hard ionization   |
+| measurement parameters | Ion mode        | Positive ion mode |
+| measurement parameters | target omics    | Metabolomics      |
+| Peak detection         | Accurate MS     | Check             |
+| Identification         | RI or RT        | RI                |　　
 
 
 ### 2-3 Result of anotation
