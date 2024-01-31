@@ -191,15 +191,42 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="images/gcnominal/1-1.png" class="img-fluid" alt="fig1-1"> <img src="images/gcnominal/1-2.png" class="img-fluid" alt="fig1-2"> <img src="images/gcnominal/1-3.png" class="img-fluid" alt="fig1-3"> <img src="images/gcnominal/1-4.png" class="img-fluid" alt="fig1-4"></p>
 <p>(1)Launch MS-DIAL,and select New project.<br>
 (2)Enter the project title.Then,enter of the path of the folder containing the data you want to analyze in the project path. Click Next.<br>
-(3)Select the file format you want to input amd input file. Click Next.</p>
+(3)Select the file format you want to input and input file. Click Next.</p>
 </section>
 <section id="setting-parameters" class="level3">
 <h3 class="anchored" data-anchor-id="setting-parameters">1-3 Setting parameters</h3>
 <p><img src="images/gcnominal/2-1.png" class="img-fluid" alt="fig2-1"> <img src="images/gcnominal/2-2ver2.png" class="img-fluid" alt="fig2-2"> <img src="images/gcnominal/2-3.png" class="img-fluid" alt="fig2-3"> <img src="images/gcnominal/2-4.png" class="img-fluid" alt="fig2-4"></p>
 <p>(1)After confirming that you have imported the data, click Next.<br>
-(2)Next, set the measurement parameters. For GC-MS, select Hard ionization type item. Select the ion mode that applies to your experiment.<br>
-(3)In the peak detection section, you can change the parameters for peak detection. The data used in this tutorial are nominal mass data, so Accurate MS is not checked.<br>
-(4)Configure identification setting.Please choose whether to use retention index or retention time for annotation. If you use retention index, click Set and designate the PATH of the retention index to be used.If there are library you want to reference, click Browse and designate the library.</p>
+(2)Next, set the measurement parameters. For GC-MS, select <strong>Hard ionization</strong> type item. Select the ion mode that applies to your experiment.<br>
+(3)In the peak detection section, you can change the parameters for peak detection. The data used in this tutorial are nominal mass data, so Accurate MS is <strong>not</strong> checked.<br>
+(4)Configure identification setting.Please choose whether to use retention index or retention time for annotation. If you use retention index, click Set and designate the PATH of the retention index to be used.If there are library you want to reference, click Browse and designate the library.　　</p>
+<p>The following table shows the parameters changed from the defaults in this analysis.　　　　</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">parameter</th>
+<th style="text-align: left;">example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">measurement parameters</td>
+<td style="text-align: left;">Ionization type</td>
+<td style="text-align: left;">Hard ionization</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">measurement parameters</td>
+<td style="text-align: left;">Ion mode</td>
+<td style="text-align: left;">Positive ion mode</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">measurement parameters</td>
+<td style="text-align: left;">target omics</td>
+<td style="text-align: left;">Metabolomics</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="result-of-annotation" class="level3">
 <h3 class="anchored" data-anchor-id="result-of-annotation">1-4 Result of annotation</h3>
@@ -226,12 +253,59 @@ The data used in this tutorial are the results of a non-targeted GC-HRMS (Q Exac
 (3)Next,select the analysis file path. First click on Browse.<br>
 (4)Open the folder containing the files you wish to analyze, select the files and click Open. The same operation can be done with drag-and-drop. Also, remember to select the file format in the lower right corner according to the format of the file you wish to enter.<br>
 <img src="images/gcnominal/6-5.png" class="img-fluid" alt="fig6-1"> <img src="images/gcnominal/6-6.png" class="img-fluid" alt="fig6-2"> <img src="images/gcnominal/6-7.png" class="img-fluid" alt="fig6-3"> <img src="images/gcnominal/6-8.png" class="img-fluid" alt="fig6-4"> (5)After inputting the file, you will see a screen like this. When you confirm that the file has been entered, press the NEXT button to proceed.。<br>
-(6)Here we set the measurement parameter.In this case, select “Hard ionization” for GCMS. Select data type, ion mode, and targetomics according to the data you want to analyze, and click Next.<br>
+(6)Here we set the measurement parameter.In this case, select <strong>Hard ionization</strong> for GCMS. Select data type, ion mode, and targetomics according to the data you want to analyze, and click Next.<br>
 (7)The data collection section enable you to determine the mass range and retention time range you want to observe.<br>
-(8)In the peak detection section, you can change the parameters for peak detection. The data used in this tutorial are high resolution data, so Accurate MS is checked.<br>
+(8)In the peak detection section, you can change the parameters for peak detection. The data used in this tutorial are high resolution data, so <strong>Accurate MS is checked</strong>.<br>
 <img src="images/gcnominal/7-9.png" class="img-fluid" alt="fig7-1"> <img src="images/gcnominal/7-10.png" class="img-fluid" alt="fig7-2"> <img src="images/gcnominal/7-11.png" class="img-fluid" alt="fig7-3"> (9)The Spectrum deconvolution section allows you to set parameters for deconvolution of the spectrum.<br>
-(10)Please choose whether to use retention index or retention time for annotation. If you use retention index, you need to set up index file.This tutorial uses retention time.<br>
-(11)Finally, set the alignment parameters and click Run.</p>
+(10)Please choose whether to use <strong>retention index</strong> or <strong>retention time</strong> for annotation. If you use retention index, you need to set up index file.This tutorial uses retention time.<br>
+(11)Finally, set the alignment parameters and click Run.　　</p>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>If you use a retention index,make sure you have the right retention index for the data you want to analyze.</p>
+</div>
+</div>
+</div>
+<p>The following table shows the parameters changed from the defaults in this analysis.　　</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">parameter</th>
+<th style="text-align: left;">example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">measurement parameters</td>
+<td style="text-align: left;">Ionization type</td>
+<td style="text-align: left;">Hard ionization</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">measurement parameters</td>
+<td style="text-align: left;">Ion mode</td>
+<td style="text-align: left;">Positive ion mode</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">measurement parameters</td>
+<td style="text-align: left;">target omics</td>
+<td style="text-align: left;">Metabolomics</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Peak detection</td>
+<td style="text-align: left;">Accurate MS</td>
+<td style="text-align: left;">Check</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Identification</td>
+<td style="text-align: left;">RI or RT</td>
+<td style="text-align: left;">RI</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="result-of-anotation" class="level3">
 <h3 class="anchored" data-anchor-id="result-of-anotation">2-3 Result of anotation</h3>
