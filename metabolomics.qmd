@@ -125,6 +125,30 @@ This section utilizes a total of 6 ABF files, with the MSP file being located in
 3.  You can paste Excel cells to MS-DIAL sample table.
 
 ## 3. CE-MS/MS
+A project dealing with CE-MS/MS data measured using vDIA(variable data independent acquisition) in combination
+with migration time correction is demonstrated.
+
+This tutorial uses 19 demonstration data files and three libralies which are downloadable from
+the below link.\
+
+[https://doi.org/10.5281/zenodo.10597056/dims.zip](http://prime.psc.riken.jp/compms/msdial/download/demo/dims.zip)
+
+**Experiment summary:**\
+* Hydrophilic metabolites were extracted from RAW264.7 cells according to previously described protocol.
+  (Human metabolome Technologies Inc. Patent JP WO2014045932 A1)
+* Capillary electrophoresis was performed using a CE System 7100(Agilent Technologies Inc.), 
+  and an Agilent 1260 isocratic HPLC pump was used to create the sheath flow.
+* The MS/MS spectrum was acquired using Q Exactive Plus (Thermo Fisher Scientific Inc.)  with vDIA
+
+**Note:**\
+* **Txt format library**
+    + In this tutorial, two txt files, "Identification_anion.txt" and "MTcorrection_anion.txt",
+      were used for identification of internal standards and migration time correction, respectively.
+    + See below link for the details of library format: <http://prime.psc.riken.jp/compms/msdial/main.html#Templates>
+* **Migration time (MT) correction**
+    + Migration times of metabolite ion peaks were linearly corrected along the MT axis using internal standard compounds.
+    + If migration times of the reference compounds in each file doesn't match reference MT,
+      change the parametors from reference compound informatin table and try MT correction again.
 
 ## 4. MS-DIAL isotope tracking function
 
