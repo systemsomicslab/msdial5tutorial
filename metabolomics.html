@@ -151,7 +151,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#the-video-tutorial-for-the-ms-dial-operation" id="toc-the-video-tutorial-for-the-ms-dial-operation" class="nav-link" data-scroll-target="#the-video-tutorial-for-the-ms-dial-operation">The video tutorial for the MS-DIAL operation</a></li>
   <li><a href="#key-points-in-the-ms-dial-operation" id="toc-key-points-in-the-ms-dial-operation" class="nav-link" data-scroll-target="#key-points-in-the-ms-dial-operation">Key points in the MS-DIAL operation</a></li>
   </ul></li>
-  <li><a href="#ce-msms" id="toc-ce-msms" class="nav-link" data-scroll-target="#ce-msms">3. CE-MS/MS</a></li>
+  <li><a href="#ce-msms" id="toc-ce-msms" class="nav-link" data-scroll-target="#ce-msms">3. CE-MS/MS</a>
+  <ul class="collapse">
+  <li><a href="#the-video-tutorial-for-the-ms-dial-operation-1" id="toc-the-video-tutorial-for-the-ms-dial-operation-1" class="nav-link" data-scroll-target="#the-video-tutorial-for-the-ms-dial-operation-1">The video tutorial for the MS-DIAL operation</a></li>
+  </ul></li>
   <li><a href="#ms-dial-isotope-tracking-function" id="toc-ms-dial-isotope-tracking-function" class="nav-link" data-scroll-target="#ms-dial-isotope-tracking-function">4. MS-DIAL isotope tracking function</a></li>
   </ul>
 </nav>
@@ -354,10 +357,31 @@ This is the main viewer of MS-DIAL.(1) Double-clicking on a file name in the fil
 <p>This tutorial uses 19 demonstration data files and three libralies which are downloadable from the below link.<br>
 </p>
 <p><a href="http://prime.psc.riken.jp/compms/msdial/download/demo/dims.zip">https://doi.org/10.5281/zenodo.10597056/dims.zip</a></p>
-<p><strong>Experiment summary:</strong><br>
-* Hydrophilic metabolites were extracted from RAW264.7 cells according to previously described protocol. (Human metabolome Technologies Inc.&nbsp;Patent JP WO2014045932 A1) * Capillary electrophoresis was performed using a CE System 7100(Agilent Technologies Inc.), and an Agilent 1260 isocratic HPLC pump was used to create the sheath flow. * The MS/MS spectrum was acquired using Q Exactive Plus (Thermo Fisher Scientific Inc.) with vDIA</p>
-<p><strong>Note:</strong><br>
-* <strong>Txt format library</strong> + In this tutorial, two txt files, “Identification_anion.txt” and “MTcorrection_anion.txt”, were used for identification of internal standards and migration time correction, respectively. + See below link for the details of library format: <a href="http://prime.psc.riken.jp/compms/msdial/main.html#Templates" class="uri">http://prime.psc.riken.jp/compms/msdial/main.html#Templates</a> * <strong>Migration time (MT) correction</strong> + Migration times of metabolite ion peaks were linearly corrected along the MT axis using internal standard compounds. + If migration times of the reference compounds in each file doesn’t match reference MT, change the parametors from reference compound informatin table and try MT correction again.</p>
+<section id="experiment-summary-1" class="level4">
+<h4 class="anchored" data-anchor-id="experiment-summary-1"><strong>Experiment summary:</strong><br>
+</h4>
+<ul>
+<li>Hydrophilic metabolites were extracted from RAW264.7 cells according to previously described protocol. (Human metabolome Technologies Inc.&nbsp;Patent JP WO2014045932 A1)</li>
+<li>Capillary electrophoresis was performed using a CE System 7100(Agilent Technologies Inc.), and an Agilent 1260 isocratic HPLC pump was used to create the sheath flow.</li>
+<li>The MS/MS spectrum was acquired using Q Exactive Plus (Thermo Fisher Scientific Inc.) with vDIA</li>
+</ul>
+</section>
+<section id="note" class="level4">
+<h4 class="anchored" data-anchor-id="note"><strong>Note:</strong><br>
+</h4>
+<ul>
+<li><strong>Txt format library</strong></li>
+<li>In this tutorial, two txt files, “Identification_anion.txt” and “MTcorrection_anion.txt”, were used for identification of internal standards and migration time correction, respectively.</li>
+<li>See below link for the details of library format: <a href="http://prime.psc.riken.jp/compms/msdial/main.html#Templates" class="uri">http://prime.psc.riken.jp/compms/msdial/main.html#Templates</a></li>
+<li><strong>Migration time (MT) correction</strong></li>
+<li>Migration times of metabolite ion peaks were linearly corrected along the MT axis using internal standard compounds.</li>
+<li>If migration times of the reference compounds in each file doesn’t match reference MT, change the parametors from reference compound informatin table and try MT correction again.</li>
+</ul>
+</section>
+<section id="the-video-tutorial-for-the-ms-dial-operation-1" class="level3">
+<h3 class="anchored" data-anchor-id="the-video-tutorial-for-the-ms-dial-operation-1">The video tutorial for the MS-DIAL operation</h3>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/T9krZs2jNSs" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</section>
 </section>
 <section id="ms-dial-isotope-tracking-function" class="level2">
 <h2 class="anchored" data-anchor-id="ms-dial-isotope-tracking-function">4. MS-DIAL isotope tracking function</h2>
