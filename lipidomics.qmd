@@ -104,22 +104,23 @@ Additionally, you can watch our tutorial video:
 {{< video https://www.youtube.com/watch?v=HV-e9wG9WRo&ab_channel=MS-DIALproject >}}
 
 ## 5. LC-MS/MS (Hybrid MS-DDA/SWATH)
-A project dealing with LC-MS/MS (Hybrid MS-DDA/SWATH) acquisition in combination with the in silico retention time and MS/MS databases for lipids is demonstrated. 
+A project dealing with LC-MS/MS (Hybrid MS-DDA/SWATH) acquisition in combination with the in silico retention time and MS/MS databases for lipids is demonstrated. \
 Hybrid MS-DDA/SWATH is a novel strategy combining DIA and DDA in fast LC-MS-based analytical batches, intending to increase annotation rates. 
 
-The input data to the workflow is located in [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10590080.svg)](https://doi.org/10.5281/zenodo.10590080). 
-See [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10590080.svg)](https://doi.org/10.5281/zenodo.10590080) for a description of the input data.
+The input data to the workflow is located in [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10590080.svg)](https://doi.org/10.5281/zenodo.10590080). \
+See zendo for a description of the input data.
 
 ### The Workflow
 1. Download and unzip the tutorial dataset.
-2. Add the LBM2 file to the MS-DIAL folder. (NOTE: Exclude the original LBM2 format. The program accepts only one LBM/LBM2 file in the MS-DIAL folder.)
+2. Add the LBM2 file to the MS-DIAL folder. \
+   NOTE: Exclude the original LBM2 format. The program accepts only one LBM/LBM2 file in the MS-DIAL folder.
 4. Start up a new project in MS-DIAL. 
 3. Follow the YouTube video below to operate the MS-DIAL5 GUI.
 {{< video https://www.youtube.com/watch?v=IGPQMCW1FPw >}}
 4. The output is obtained as *.mdproject.
 
 ### Reference
-See below for the details of "Hybrid MS".
+See below for the details of "Hybrid MS".\
 [K. Tokiyoshi et al. Anal Chem, 96, 991-996. 2024](https://doi.org/10.1021/acs.analchem.3c04400) 
 
 ## 6. LC-MS/MS (EAD) - deep structural lipid annotation
