@@ -350,6 +350,14 @@ This is the main viewer of MS-DIAL.(1) Double-clicking on a file name in the fil
 </section>
 <section id="ce-msms" class="level2">
 <h2 class="anchored" data-anchor-id="ce-msms">3. CE-MS/MS</h2>
+<p>A project dealing with CE-MS/MS data measured using vDIA(variable data independent acquisition) in combination with migration time correction is demonstrated.</p>
+<p>This tutorial uses 19 demonstration data files and three libralies which are downloadable from the below link.<br>
+</p>
+<p><a href="http://prime.psc.riken.jp/compms/msdial/download/demo/dims.zip">https://doi.org/10.5281/zenodo.10597056/dims.zip</a></p>
+<p><strong>Experiment summary:</strong><br>
+* Hydrophilic metabolites were extracted from RAW264.7 cells according to previously described protocol. (Human metabolome Technologies Inc.&nbsp;Patent JP WO2014045932 A1) * Capillary electrophoresis was performed using a CE System 7100(Agilent Technologies Inc.), and an Agilent 1260 isocratic HPLC pump was used to create the sheath flow. * The MS/MS spectrum was acquired using Q Exactive Plus (Thermo Fisher Scientific Inc.) with vDIA</p>
+<p><strong>Note:</strong><br>
+* <strong>Txt format library</strong> + In this tutorial, two txt files, “Identification_anion.txt” and “MTcorrection_anion.txt”, were used for identification of internal standards and migration time correction, respectively. + See below link for the details of library format: <a href="http://prime.psc.riken.jp/compms/msdial/main.html#Templates" class="uri">http://prime.psc.riken.jp/compms/msdial/main.html#Templates</a> * <strong>Migration time (MT) correction</strong> + Migration times of metabolite ion peaks were linearly corrected along the MT axis using internal standard compounds. + If migration times of the reference compounds in each file doesn’t match reference MT, change the parametors from reference compound informatin table and try MT correction again.</p>
 </section>
 <section id="ms-dial-isotope-tracking-function" class="level2">
 <h2 class="anchored" data-anchor-id="ms-dial-isotope-tracking-function">4. MS-DIAL isotope tracking function</h2>
