@@ -6,9 +6,9 @@ See [Figure 2](index.qmd#fig-2) for the meanings of the abbreviations used in th
 
 ## 1. GC-MS (nominal mass)
 ### 1-1 Imput data
-This tutorial uses a GC-MS dataset from the Development of Metabolite Profiling Database for Knock-Out Mutants in Arabidopsis.The files used can be downloaded from http://prime.psc.riken.jp/menta.cgi/prime/drop_index
+This tutorial uses a GC-MS dataset from the Development of Metabolite Profiling Database for Knock-Out Mutants in Arabidopsis.
+The dataset for reproducing this tutorial can be obtained from [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10604540.svg)](https://doi.org/10.5281/zenodo.10604540)
 
-![download](images/gcnominal/data_birth.png)
 ![folder](images/gcnominal/folder.png)
 
 ### 1-2 Starting up your project 
@@ -48,7 +48,7 @@ This is the main viewer of MS-DIAL. (1) Double-clicking on a file name in the fi
 
 ## 2. GC-MS (high resolution)
 ### 2-1 Imput data
-![fig4](images/gcnominal/fig4.png)   
+![fig4](images/gcnominal/fig4.png)
 The data used in this tutorial are the results of a non-targeted GC-HRMS (Q Exactive GC Orbitrap) analysis of a PM2.5 air sample from the Maldives. This data is high-resolution mass spectrometry data.The files used can be downloaded from [MassIVE MSV000087683 Files](https://massive.ucsd.edu/ProteoSAFe/dataset_files.jsp?task=d98091ce8b2c4e4dba7199934341ef57#%7B%22table_sort_history%22%3A%22main.collection_asc%22%7D).
 
 ### 2-2 Setting parameters
