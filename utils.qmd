@@ -45,17 +45,28 @@ Note that you have to download the MS-FIDNER program from the website above on y
 
 ## 5. Bridge to MRMPROBS for DIA-MS or GC/MS data sets
 
-Required software programs and files:
+The purpose of this section is to announce the utility of [‘MRMPROBS’](http://prime.psc.riken.jp/Metabolomics_Software/MRMPROBS/index.html) instead of MS-DIAL for SWATH-MS or other DIA-MS data.
+MRMPROBS was originally developed for targeted metabolomics using triple quadrupole MS data (multiple reaction monitoring, MRM; selected reaction monitoring, SRM).
+It also supports the entire workflow from data import until statistical analysis as MS-DIAL does.
+Compared to the MS-DIAL program, MRMPROBS is optimized for targeted metabolomics:
 
-**MRMPROBS**
-- Download link: http://prime.psc.riken.jp/Metabolomics_Software/MRMPROBS/index.html
-- For further information: https://systemsomicslab.github.io/mtbinfo.github.io/MRMPROBS/tutorial
+1.  users can manually curate the peak left- and right edges of chromatographic peaks
+2.  users can simultaneously check all samples’ peaks of a targeted compound, and 3) users can easily curate the identification results.
 
-**Reifycs Analysis Base File Converter (ABF file converter)**
-- Download link: https://www.reifycs.com/abfconverter/
+While the current MS-DIAL program always calculates the peak intensity (height) and peak area of compounds by the survey scan MS1 data, MRMPROBS can utilize the MS/MS chromatograms for metabolite quantifications.
+In addition, the tools for untargeted analysis like MS-DIAL will often provide the false positive things in the process of peak picking, deconvolution, and peak alignment.
+In contrast, users can easily parse the targeted compounds with the user-friendly graphical user interface.
+The ‘bridge’ from MS-DIAL to MRMPROBS is described in the video below.
+The workflow can also be utilized for GC/MS data.
+The detail of MRMPROBS is fully described in [the tutorial of MRMPROBS program](https://systemsomicslab.github.io/mtbinfo.github.io/MRMPROBS/tutorial
+).
 
 {{< video https://www.youtube.com/watch?v=ndDvHoHDIMk >}}
 
+### Required software program and dataset (to reproduce the video)
+
+- [Reifycs Analysis Base File Converter (ABF file converter)](https://www.reifycs.com/abfconverter/)
+- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10589122.svg)](https://doi.org/10.5281/zenodo.10589122)
 
 ## 6. Molecular spectrum networking for metabolite annotations
 
