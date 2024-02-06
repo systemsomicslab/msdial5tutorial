@@ -37,6 +37,18 @@ Note that you have to download the MS-FIDNER program from the website above on y
 
 ## 5. Bridge to MRMPROBS for DIA-MS or GC/MS data sets
 
+Required software programs and files:
+
+**MRMPROBS**
+Download link: http://prime.psc.riken.jp/Metabolomics_Software/MRMPROBS/index.html
+For further information: https://systemsomicslab.github.io/mtbinfo.github.io/MRMPROBS/tutorial
+
+Reifycs Analysis Base File Converter (ABF file converter)
+Download link: https://www.reifycs.com/abfconverter/
+
+{{< video https://www.youtube.com/watch?v=ndDvHoHDIMk >}}
+
+
 ## 6. Molecular spectrum networking for metabolite annotations
 
 {{< video https://www.youtube.com/watch?v=OxCMpR4umjA&ab_channel=MS-DIALproject >}}
