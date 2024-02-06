@@ -9,4 +9,3 @@ editor:
 
 The dataset for this tutorial can be obtained from [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10579185.svg)](https://doi.org/10.5281/zenodo.10579185)
 
-{{< video https://www.youtube.com/embed/b5E0CyzJcmI >}}
