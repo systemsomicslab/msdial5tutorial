@@ -48,11 +48,11 @@ Note that you have to download the MS-FIDNER program from the website above on y
 Required software programs and files:
 
 **MRMPROBS**
-Download link: http://prime.psc.riken.jp/Metabolomics_Software/MRMPROBS/index.html
-For further information: https://systemsomicslab.github.io/mtbinfo.github.io/MRMPROBS/tutorial
+- Download link: http://prime.psc.riken.jp/Metabolomics_Software/MRMPROBS/index.html
+- For further information: https://systemsomicslab.github.io/mtbinfo.github.io/MRMPROBS/tutorial
 
-Reifycs Analysis Base File Converter (ABF file converter)
-Download link: https://www.reifycs.com/abfconverter/
+**Reifycs Analysis Base File Converter (ABF file converter)**
+- Download link: https://www.reifycs.com/abfconverter/
 
 {{< video https://www.youtube.com/watch?v=ndDvHoHDIMk >}}
 
