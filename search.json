@@ -63,11 +63,25 @@
     "text": "8. LC-IM-MS/MS(SWATH)\nA project dealing with LC-IM-MS/MS acquisition in combination with the in silico retention time and MS/MS databases for lipids is demonstrated.\nAdditionally, you can watch our tutorial video:"
   },
   {
+    "objectID": "utils.html",
+    "href": "utils.html",
+    "title": "Other utilities of MS-DIAL",
+    "section": "",
+    "text": "To build MS-DIAL by yourself, you currently need Visual Studio. We plan to make it possible to do this from the command line in the future, but for now, please refer to the video below and do it with Visual Studio."
+  },
+  {
+    "objectID": "utils.html#build-ms-dial5-4-and-ms-finder-by-yourself",
+    "href": "utils.html#build-ms-dial5-4-and-ms-finder-by-yourself",
+    "title": "Other utilities of MS-DIAL",
+    "section": "",
+    "text": "To build MS-DIAL by yourself, you currently need Visual Studio. We plan to make it possible to do this from the command line in the future, but for now, please refer to the video below and do it with Visual Studio."
+  },
+  {
     "objectID": "utils.html#massql-in-ms-dial5",
     "href": "utils.html#massql-in-ms-dial5",
     "title": "Other utilities of MS-DIAL",
     "section": "2. MassQL in MS DIAL5",
-    "text": "2. MassQL in MS DIAL5"
+    "text": "2. MassQL in MS DIAL5\nMassQL is a query language designed for mass spectrometry data. It enables users to search and filter mass spectrometry data using a structured query format, similar to how SQL is used for databases. MassQL allows for the extraction of specific information from complex datasets, making it easier for researchers and analysts to explore and interpret their mass spectrometry results. For more details, please refer to the MassQL Documentation.\nThe video below demonstrates how to perform peak filtering with MassQL from MS-DIAL5."
   },
   {
     "objectID": "utils.html#mscleanr-in-ms-dial5",
