@@ -1,15 +1,8 @@
 ---
-title: "Other utilities of MS-DIAL"
+title: "Other utilities"
 ---
 
-## 1. Build MS-DIAL5, 4, and MS-FINDER by yourself!
-
-To build MS-DIAL by yourself, you currently need [Visual Studio](https://visualstudio.microsoft.com).
-We plan to make it possible to do this from the command line in the future, but for now, please refer to the video below and do it with Visual Studio.
-
-{{< video https://www.youtube.com/watch?v=5eDAsISjj2I&ab_channel=MS-DIALproject >}}
-
-## 2. MassQL in MS DIAL5
+## 1. MassQL in MS DIAL5
 
 MassQL is a query language designed for mass spectrometry data.
 It enables users to search and filter mass spectrometry data using a structured query format, similar to how SQL is used for databases.
@@ -20,11 +13,16 @@ The video below demonstrates how to perform peak filtering with MassQL from MS-D
 
 {{< video https://www.youtube.com/watch?v=otCq9s1PjAs&ab_channel=MS-DIALproject >}}
 
-## 3. MSCleanR in MS-DIAL5
+## 2. MSCleanR in MS-DIAL5
+
+[MS-CleanR](https://github.com/eMetaboHUB/MS-CleanR) is an R package that applies **1. general filtering** and **2. feature clustering** to the peak list of MS-DIAL**4**, then passes those peaks to [MS-FINDER](http://prime.psc.riken.jp/compms/msfinder/main.html) to obtain an annotated peak list.
+
+We have made it possible to perform **1. general filtering** inside MS-DIAL5.
+The video for using that feature can be found below.
 
 {{< video https://www.youtube.com/watch?v=c-_mP8A9I04&ab_channel=MS-DIALproject >}}
 
-## 4. Link to MS-FINDER for searching unknowns
+## 3. Link to MS-FINDER for searching unknowns
 
 MS-FINDER aims to provide solutions for
 
@@ -41,7 +39,7 @@ Note that you have to download the MS-FIDNER program from the website above on y
 
 {{< video https://www.youtube.com/watch?v=moHIiTTVfGQ&ab_channel=MS-DIALproject >}}
 
-## 5. Multivariate analysis in MS-DIAL5
+## 4. Multivariate analysis in MS-DIAL5
 
 {{< video https://www.youtube.com/watch?v=wtOS7F1RgZs&ab_channel=MS-DIALproject >}}
 
