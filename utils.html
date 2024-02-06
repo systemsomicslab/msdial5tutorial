@@ -136,7 +136,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#mscleanr-in-ms-dial5" id="toc-mscleanr-in-ms-dial5" class="nav-link" data-scroll-target="#mscleanr-in-ms-dial5">2. MSCleanR in MS-DIAL5</a></li>
   <li><a href="#link-to-ms-finder-for-searching-unknowns" id="toc-link-to-ms-finder-for-searching-unknowns" class="nav-link" data-scroll-target="#link-to-ms-finder-for-searching-unknowns">3. Link to MS-FINDER for searching unknowns</a></li>
   <li><a href="#multivariate-analysis-in-ms-dial5" id="toc-multivariate-analysis-in-ms-dial5" class="nav-link" data-scroll-target="#multivariate-analysis-in-ms-dial5">4. Multivariate analysis in MS-DIAL5</a></li>
-  <li><a href="#bridge-to-mrmprobs-for-dia-ms-or-gcms-data-sets" id="toc-bridge-to-mrmprobs-for-dia-ms-or-gcms-data-sets" class="nav-link" data-scroll-target="#bridge-to-mrmprobs-for-dia-ms-or-gcms-data-sets">5. Bridge to MRMPROBS for DIA-MS or GC/MS data sets</a></li>
+  <li><a href="#bridge-to-mrmprobs-for-dia-ms-or-gcms-data-sets" id="toc-bridge-to-mrmprobs-for-dia-ms-or-gcms-data-sets" class="nav-link" data-scroll-target="#bridge-to-mrmprobs-for-dia-ms-or-gcms-data-sets">5. Bridge to MRMPROBS for DIA-MS or GC/MS data sets</a>
+  <ul class="collapse">
+  <li><a href="#required-software-program-and-dataset-to-reproduce-the-video" id="toc-required-software-program-and-dataset-to-reproduce-the-video" class="nav-link" data-scroll-target="#required-software-program-and-dataset-to-reproduce-the-video">Required software program and dataset (to reproduce the video)</a></li>
+  </ul></li>
   <li><a href="#molecular-spectrum-networking-for-metabolite-annotations" id="toc-molecular-spectrum-networking-for-metabolite-annotations" class="nav-link" data-scroll-target="#molecular-spectrum-networking-for-metabolite-annotations">6. Molecular spectrum networking for metabolite annotations</a>
   <ul class="collapse">
   <li><a href="#the-workflow" id="toc-the-workflow" class="nav-link" data-scroll-target="#the-workflow">The Workflow</a></li>
@@ -208,10 +211,20 @@ Note
 </section>
 <section id="bridge-to-mrmprobs-for-dia-ms-or-gcms-data-sets" class="level2">
 <h2 class="anchored" data-anchor-id="bridge-to-mrmprobs-for-dia-ms-or-gcms-data-sets">5. Bridge to MRMPROBS for DIA-MS or GC/MS data sets</h2>
-<p>Required software programs and files:</p>
-<p><strong>MRMPROBS</strong> - Download link: http://prime.psc.riken.jp/Metabolomics_Software/MRMPROBS/index.html - For further information: https://systemsomicslab.github.io/mtbinfo.github.io/MRMPROBS/tutorial</p>
-<p><strong>Reifycs Analysis Base File Converter (ABF file converter)</strong> - Download link: https://www.reifycs.com/abfconverter/</p>
+<p>The purpose of this section is to announce the utility of <a href="http://prime.psc.riken.jp/Metabolomics_Software/MRMPROBS/index.html">‘MRMPROBS’</a> instead of MS-DIAL for SWATH-MS or other DIA-MS data. MRMPROBS was originally developed for targeted metabolomics using triple quadrupole MS data (multiple reaction monitoring, MRM; selected reaction monitoring, SRM). It also supports the entire workflow from data import until statistical analysis as MS-DIAL does. Compared to the MS-DIAL program, MRMPROBS is optimized for targeted metabolomics:</p>
+<ol type="1">
+<li>users can manually curate the peak left- and right edges of chromatographic peaks</li>
+<li>users can simultaneously check all samples’ peaks of a targeted compound, and 3) users can easily curate the identification results.</li>
+</ol>
+<p>While the current MS-DIAL program always calculates the peak intensity (height) and peak area of compounds by the survey scan MS1 data, MRMPROBS can utilize the MS/MS chromatograms for metabolite quantifications. In addition, the tools for untargeted analysis like MS-DIAL will often provide the false positive things in the process of peak picking, deconvolution, and peak alignment. In contrast, users can easily parse the targeted compounds with the user-friendly graphical user interface. The ‘bridge’ from MS-DIAL to MRMPROBS is described in the video below. The workflow can also be utilized for GC/MS data. The detail of MRMPROBS is fully described in <a href="https://systemsomicslab.github.io/mtbinfo.github.io/MRMPROBS/tutorial">the tutorial of MRMPROBS program</a>.</p>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/ndDvHoHDIMk" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="required-software-program-and-dataset-to-reproduce-the-video" class="level3">
+<h3 class="anchored" data-anchor-id="required-software-program-and-dataset-to-reproduce-the-video">Required software program and dataset (to reproduce the video)</h3>
+<ul>
+<li><a href="https://www.reifycs.com/abfconverter/">Reifycs Analysis Base File Converter (ABF file converter)</a></li>
+<li><a href="https://doi.org/10.5281/zenodo.10589122"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.10589122.svg" class="img-fluid" alt="DOI"></a></li>
+</ul>
+</section>
 </section>
 <section id="molecular-spectrum-networking-for-metabolite-annotations" class="level2">
 <h2 class="anchored" data-anchor-id="molecular-spectrum-networking-for-metabolite-annotations">6. Molecular spectrum networking for metabolite annotations</h2>
