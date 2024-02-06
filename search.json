@@ -105,6 +105,20 @@
     "text": "6. Molecular spectrum networking for metabolite annotations\n\nThis section introduces how to create molecular spectrum networking in MS-DIAL5. Molecular spectrum networking is a tool for creating networks that visualize the MS/MS similarities among metabolites.\nTo follow this video, please download the dataset and check the description in https://zenodo.org/communities/msdial?q=&l=list&p=1&s=10&sort=newest.\n\nThe Workflow\n\nDownload the dataset of “Molecular spectrum networking tutorial dataset” in https://zenodo.org/communities/msdial?q=&l=list&p=1&s=10&sort=newest\nOpen *.mdproject in MS-DIAL5\nFollow the youtube video\n\nYou can get thses as outputs: 1. The molecular spectrum network that visualize the MS/MS similarities among metabolites. 2. The dataset to create the network in cytoscape 3. The molecular spectrum network that focusing on one metabolite."
   },
   {
+    "objectID": "imaging.html",
+    "href": "imaging.html",
+    "title": "Mass spectrometry imaging",
+    "section": "",
+    "text": "The dataset for this tutorial can be obtained from"
+  },
+  {
+    "objectID": "imaging.html#analytical-methods-for-imaging-mass-spectrometry",
+    "href": "imaging.html#analytical-methods-for-imaging-mass-spectrometry",
+    "title": "Mass spectrometry imaging",
+    "section": "",
+    "text": "The dataset for this tutorial can be obtained from"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "MS-DIAL5 tutorial",
