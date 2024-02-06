@@ -65,56 +65,49 @@
   {
     "objectID": "utils.html",
     "href": "utils.html",
-    "title": "Other utilities of MS-DIAL",
+    "title": "Other utilities",
     "section": "",
-    "text": "To build MS-DIAL by yourself, you currently need Visual Studio. We plan to make it possible to do this from the command line in the future, but for now, please refer to the video below and do it with Visual Studio."
-  },
-  {
-    "objectID": "utils.html#build-ms-dial5-4-and-ms-finder-by-yourself",
-    "href": "utils.html#build-ms-dial5-4-and-ms-finder-by-yourself",
-    "title": "Other utilities of MS-DIAL",
-    "section": "",
-    "text": "To build MS-DIAL by yourself, you currently need Visual Studio. We plan to make it possible to do this from the command line in the future, but for now, please refer to the video below and do it with Visual Studio."
+    "text": "MassQL is a query language designed for mass spectrometry data. It enables users to search and filter mass spectrometry data using a structured query format, similar to how SQL is used for databases. MassQL allows for the extraction of specific information from complex datasets, making it easier for researchers and analysts to explore and interpret their mass spectrometry results. For more details, please refer to the MassQL Documentation.\nThe video below demonstrates how to perform peak filtering with MassQL from MS-DIAL5."
   },
   {
     "objectID": "utils.html#massql-in-ms-dial5",
     "href": "utils.html#massql-in-ms-dial5",
-    "title": "Other utilities of MS-DIAL",
-    "section": "2. MassQL in MS DIAL5",
-    "text": "2. MassQL in MS DIAL5\nMassQL is a query language designed for mass spectrometry data. It enables users to search and filter mass spectrometry data using a structured query format, similar to how SQL is used for databases. MassQL allows for the extraction of specific information from complex datasets, making it easier for researchers and analysts to explore and interpret their mass spectrometry results. For more details, please refer to the MassQL Documentation.\nThe video below demonstrates how to perform peak filtering with MassQL from MS-DIAL5."
+    "title": "Other utilities",
+    "section": "",
+    "text": "MassQL is a query language designed for mass spectrometry data. It enables users to search and filter mass spectrometry data using a structured query format, similar to how SQL is used for databases. MassQL allows for the extraction of specific information from complex datasets, making it easier for researchers and analysts to explore and interpret their mass spectrometry results. For more details, please refer to the MassQL Documentation.\nThe video below demonstrates how to perform peak filtering with MassQL from MS-DIAL5."
   },
   {
     "objectID": "utils.html#mscleanr-in-ms-dial5",
     "href": "utils.html#mscleanr-in-ms-dial5",
-    "title": "Other utilities of MS-DIAL",
-    "section": "3. MSCleanR in MS-DIAL5",
-    "text": "3. MSCleanR in MS-DIAL5"
+    "title": "Other utilities",
+    "section": "2. MSCleanR in MS-DIAL5",
+    "text": "2. MSCleanR in MS-DIAL5\nMS-CleanR is an R package that applies 1. general filtering and 2. feature clustering to the peak list of MS-DIAL4, then passes those peaks to MS-FINDER to obtain an annotated peak list.\nWe have made it possible to perform 1. general filtering inside MS-DIAL5. The video for using that feature can be found below."
   },
   {
     "objectID": "utils.html#link-to-ms-finder-for-searching-unknowns",
     "href": "utils.html#link-to-ms-finder-for-searching-unknowns",
-    "title": "Other utilities of MS-DIAL",
-    "section": "4. Link to MS-FINDER for searching unknowns",
-    "text": "4. Link to MS-FINDER for searching unknowns\nMS-FINDER aims to provide solutions for\n\nformula predictions\nfragment annotations\nstructure elucidations\n\nby means of survey scan MS and MS/MS spectra of unknowns. The detail of MS-FINDER is described in http://prime.psc.riken.jp/Metabolomics_Software/MS-FINDER/index.html.\n\n\n\n\n\n\nNote\n\n\n\nNote that you have to download the MS-FIDNER program from the website above on your PC."
+    "title": "Other utilities",
+    "section": "3. Link to MS-FINDER for searching unknowns",
+    "text": "3. Link to MS-FINDER for searching unknowns\nMS-FINDER aims to provide solutions for\n\nformula predictions\nfragment annotations\nstructure elucidations\n\nby means of survey scan MS and MS/MS spectra of unknowns. The detail of MS-FINDER is described in http://prime.psc.riken.jp/Metabolomics_Software/MS-FINDER/index.html.\n\n\n\n\n\n\nNote\n\n\n\nNote that you have to download the MS-FIDNER program from the website above on your PC."
   },
   {
     "objectID": "utils.html#multivariate-analysis-in-ms-dial5",
     "href": "utils.html#multivariate-analysis-in-ms-dial5",
-    "title": "Other utilities of MS-DIAL",
-    "section": "5. Multivariate analysis in MS-DIAL5",
-    "text": "5. Multivariate analysis in MS-DIAL5"
+    "title": "Other utilities",
+    "section": "4. Multivariate analysis in MS-DIAL5",
+    "text": "4. Multivariate analysis in MS-DIAL5"
   },
   {
     "objectID": "utils.html#bridge-to-mrmprobs-for-dia-ms-or-gcms-data-sets",
     "href": "utils.html#bridge-to-mrmprobs-for-dia-ms-or-gcms-data-sets",
-    "title": "Other utilities of MS-DIAL",
+    "title": "Other utilities",
     "section": "5. Bridge to MRMPROBS for DIA-MS or GC/MS data sets",
     "text": "5. Bridge to MRMPROBS for DIA-MS or GC/MS data sets\nRequired software programs and files:\nMRMPROBS Download link: http://prime.psc.riken.jp/Metabolomics_Software/MRMPROBS/index.html For further information: https://systemsomicslab.github.io/mtbinfo.github.io/MRMPROBS/tutorial\nReifycs Analysis Base File Converter (ABF file converter) Download link: https://www.reifycs.com/abfconverter/"
   },
   {
     "objectID": "utils.html#molecular-spectrum-networking-for-metabolite-annotations",
     "href": "utils.html#molecular-spectrum-networking-for-metabolite-annotations",
-    "title": "Other utilities of MS-DIAL",
+    "title": "Other utilities",
     "section": "6. Molecular spectrum networking for metabolite annotations",
     "text": "6. Molecular spectrum networking for metabolite annotations\n\nThis section introduces how to create molecular spectrum networking in MS-DIAL5. Molecular spectrum networking is a tool for creating networks that visualize the MS/MS similarities among metabolites.\nTo follow this video, please download the dataset and check the description in https://zenodo.org/communities/msdial?q=&l=list&p=1&s=10&sort=newest.\n\nThe Workflow\n\nDownload the dataset of “Molecular spectrum networking tutorial dataset” in https://zenodo.org/communities/msdial?q=&l=list&p=1&s=10&sort=newest\nOpen *.mdproject in MS-DIAL5\nFollow the youtube video\n\nYou can get thses as outputs: 1. The molecular spectrum network that visualize the MS/MS similarities among metabolites. 2. The dataset to create the network in cytoscape 3. The molecular spectrum network that focusing on one metabolite."
   },
