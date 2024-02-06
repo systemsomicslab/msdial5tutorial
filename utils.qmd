@@ -4,9 +4,19 @@ title: "Other utilities of MS-DIAL"
 
 ## 1. Build MS-DIAL5, 4, and MS-FINDER by yourself!
 
+To build MS-DIAL by yourself, you currently need [Visual Studio](https://visualstudio.microsoft.com).
+We plan to make it possible to do this from the command line in the future, but for now, please refer to the video below and do it with Visual Studio.
+
 {{< video https://www.youtube.com/watch?v=5eDAsISjj2I&ab_channel=MS-DIALproject >}}
 
 ## 2. MassQL in MS DIAL5
+
+MassQL is a query language designed for mass spectrometry data.
+It enables users to search and filter mass spectrometry data using a structured query format, similar to how SQL is used for databases.
+MassQL allows for the extraction of specific information from complex datasets, making it easier for researchers and analysts to explore and interpret their mass spectrometry results.
+For more details, please refer to [the MassQL Documentation](https://mwang87.github.io/MassQueryLanguage_Documentation/).
+
+The video below demonstrates how to perform peak filtering with MassQL from MS-DIAL5.
 
 {{< video https://www.youtube.com/watch?v=otCq9s1PjAs&ab_channel=MS-DIALproject >}}
 
