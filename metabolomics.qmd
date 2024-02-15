@@ -9,8 +9,6 @@ See [Figure 2](index.qmd#fig-2) for the meanings of the abbreviations used in th
 This tutorial uses a GC-MS dataset from the Development of Metabolite Profiling Database for Knock-Out Mutants in Arabidopsis.
 The dataset for reproducing this tutorial can be obtained from [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10604540.svg)](https://doi.org/10.5281/zenodo.10604540)
 
-![folder](images/gcnominal/folder.png)
-
 ### 1-2 Starting up your project 
 ![fig1-1](images/gcnominal/1-1.png)
 ![fig1-2](images/gcnominal/1-2.png)
@@ -23,14 +21,12 @@ The dataset for reproducing this tutorial can be obtained from [![DOI](https://z
 
 ### 1-3 Setting parameters
 ![fig2-1](images/gcnominal/2-1.png)
-![fig2-2](images/gcnominal/2-2ver2.png)
-![fig2-3](images/gcnominal/2-3.png)
-![fig2-4](images/gcnominal/2-4.png)
 
 (1)After confirming that you have imported the data, click Next.  
+
+![fig2-2](images/gcnominal/2-2ver2.png)
+
 (2)Next, set the measurement parameters. For GC-MS, select **Hard ionization** type item. Select the ion mode that applies to your experiment.  
-(3)In the peak detection section, you can change the parameters for peak detection. The data used in this tutorial are nominal mass data, so Accurate MS is **not** checked.  
-(4)Configure identification setting.Please choose whether to use retention index or retention time for annotation. If you use retention index, click Set and designate the PATH of the retention index to be used.If there are library you want to reference, click Browse and designate the library.　　
 
 The following table shows the parameters changed from the defaults in this analysis.　　　　
 
@@ -40,6 +36,13 @@ The following table shows the parameters changed from the defaults in this analy
 | measurement parameters | Ion mode        | Positive ion mode |
 | measurement parameters | target omics    | Metabolomics      |　　　
 
+![fig2-3](images/gcnominal/2-3.png)
+
+(3)In the peak detection section, you can change the parameters for peak detection. The data used in this tutorial are nominal mass data, so Accurate MS is **not** checked.  
+
+![fig2-4](images/gcnominal/2-4.png)
+
+(4)Configure identification setting.Please choose whether to use retention index or retention time for annotation. If you use retention index, click Set and designate the PATH of the retention index to be used.If there are library you want to reference, click Browse and designate the library.　　
 
 ### 1-4 Result of annotation
 ![fig3](images/gcnominal/fig3.png)     
