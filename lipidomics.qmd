@@ -108,7 +108,7 @@ A project dealing with LC-MS/MS (Hybrid MS-DDA/SWATH) acquisition in combination
 Hybrid MS-DDA/SWATH is a novel strategy combining DIA and DDA in fast LC-MS-based analytical batches, intending to increase annotation rates. 
 
 The input data to the workflow is located in [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10590080.svg)](https://doi.org/10.5281/zenodo.10590080). \
-See zendo for a description of the input data.
+See the Zenodo dataset for description of the input data.
 
 ### The Workflow
 1. Download and unzip the tutorial dataset.
@@ -124,6 +124,13 @@ See below for the details of "Hybrid MS".\
 [K. Tokiyoshi et al. Anal Chem, 96, 991-996. 2024](https://doi.org/10.1021/acs.analchem.3c04400) 
 
 ## 6. LC-MS/MS (EAD) - deep structural lipid annotation
+
+The input data to the workflow is located in [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10616947.svg)](https://doi.org/10.5281/zenodo.10616947).
+
+See the Zenodo dataset for description of the input data.
+
+### The Workflow
+
 
 ## 7. DI-IM-MS/MS
 A project dealing with DI-IM-MS acquisition in combination with the in silico retention time and MS/MS databases for lipids is demonstrated.
