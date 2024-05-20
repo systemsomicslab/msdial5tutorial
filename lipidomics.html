@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.549">
+<meta name="generator" content="quarto-1.4.554">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -147,7 +147,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#the-workflow" id="toc-the-workflow" class="nav-link" data-scroll-target="#the-workflow">The Workflow</a></li>
   <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference">Reference</a></li>
   </ul></li>
-  <li><a href="#lc-msms-ead---deep-structural-lipid-annotation" id="toc-lc-msms-ead---deep-structural-lipid-annotation" class="nav-link" data-scroll-target="#lc-msms-ead---deep-structural-lipid-annotation">6. LC-MS/MS (EAD) - deep structural lipid annotation</a></li>
+  <li><a href="#lc-msms-ead---deep-structural-lipid-annotation" id="toc-lc-msms-ead---deep-structural-lipid-annotation" class="nav-link" data-scroll-target="#lc-msms-ead---deep-structural-lipid-annotation">6. LC-MS/MS (EAD) - deep structural lipid annotation</a>
+  <ul class="collapse">
+  <li><a href="#the-workflow-1" id="toc-the-workflow-1" class="nav-link" data-scroll-target="#the-workflow-1">The Workflow</a></li>
+  </ul></li>
   <li><a href="#di-im-msms" id="toc-di-im-msms" class="nav-link" data-scroll-target="#di-im-msms">7. DI-IM-MS/MS</a></li>
   <li><a href="#lc-im-msmsswath" id="toc-lc-im-msmsswath" class="nav-link" data-scroll-target="#lc-im-msmsswath">8. LC-IM-MS/MS(SWATH)</a></li>
   </ul>
@@ -252,7 +255,7 @@ Figure&nbsp;2: Figure 2 Importing raw data files and setting up the measurement 
 <p>A project dealing with LC-MS/MS (Hybrid MS-DDA/SWATH) acquisition in combination with the in silico retention time and MS/MS databases for lipids is demonstrated.<br>
 Hybrid MS-DDA/SWATH is a novel strategy combining DIA and DDA in fast LC-MS-based analytical batches, intending to increase annotation rates.</p>
 <p>The input data to the workflow is located in <a href="https://doi.org/10.5281/zenodo.10590080"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.10590080.svg" class="img-fluid" alt="DOI"></a>.<br>
-See zendo for a description of the input data.</p>
+See the Zenodo dataset for description of the input data.</p>
 <section id="the-workflow" class="level3">
 <h3 class="anchored" data-anchor-id="the-workflow">The Workflow</h3>
 <ol type="1">
@@ -275,6 +278,11 @@ NOTE: Exclude the original LBM2 format. The program accepts only one LBM/LBM2 fi
 </section>
 <section id="lc-msms-ead---deep-structural-lipid-annotation" class="level2">
 <h2 class="anchored" data-anchor-id="lc-msms-ead---deep-structural-lipid-annotation">6. LC-MS/MS (EAD) - deep structural lipid annotation</h2>
+<p>The input data to the workflow is located in <a href="https://doi.org/10.5281/zenodo.10616947"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.10616947.svg" class="img-fluid" alt="DOI"></a>.</p>
+<p>See the Zenodo dataset for description of the input data.</p>
+<section id="the-workflow-1" class="level3">
+<h3 class="anchored" data-anchor-id="the-workflow-1">The Workflow</h3>
+</section>
 </section>
 <section id="di-im-msms" class="level2">
 <h2 class="anchored" data-anchor-id="di-im-msms">7. DI-IM-MS/MS</h2>
@@ -371,6 +379,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/systemsomicslab\.github\.io\/msdial5tutorial\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -405,7 +431,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
