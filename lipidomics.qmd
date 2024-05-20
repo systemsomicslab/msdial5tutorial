@@ -129,8 +129,9 @@ The input data to the workflow is located in [![DOI](https://zenodo.org/badge/DO
 
 See the Zenodo dataset for description of the input data.
 
-### The Workflow
+Additionally, you can watch our tutorial video:
 
+{{< video https://www.youtube.com/watch?v=uyD1rmSZKuw >}}
 
 ## 7. DI-IM-MS/MS
 A project dealing with DI-IM-MS acquisition in combination with the in silico retention time and MS/MS databases for lipids is demonstrated.
