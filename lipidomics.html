@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.555">
+<meta name="generator" content="quarto-1.5.54">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>MS-DIAL 5 tutorial - Lipidomics</title>
+<title>Lipidomics – MS-DIAL 5 tutorial</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -110,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./utils.html"> 
-<span class="menu-text">Other utilities of MS-DIAL</span></a>
+<span class="menu-text">Other utilities</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
@@ -118,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -142,10 +142,14 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#input-data" id="toc-input-data" class="nav-link" data-scroll-target="#input-data">Input Data</a></li>
   </ul></li>
-  <li><a href="#lc-msms-hybrid-ms-ddaswath" id="toc-lc-msms-hybrid-ms-ddaswath" class="nav-link" data-scroll-target="#lc-msms-hybrid-ms-ddaswath">5. LC-MS/MS (Hybrid MS-DDA/SWATH)</a></li>
+  <li><a href="#lc-msms-hybrid-ms-ddaswath" id="toc-lc-msms-hybrid-ms-ddaswath" class="nav-link" data-scroll-target="#lc-msms-hybrid-ms-ddaswath">5. LC-MS/MS (Hybrid MS-DDA/SWATH)</a>
+  <ul class="collapse">
+  <li><a href="#the-workflow" id="toc-the-workflow" class="nav-link" data-scroll-target="#the-workflow">The Workflow</a></li>
+  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference">Reference</a></li>
+  </ul></li>
   <li><a href="#lc-msms-ead---deep-structural-lipid-annotation" id="toc-lc-msms-ead---deep-structural-lipid-annotation" class="nav-link" data-scroll-target="#lc-msms-ead---deep-structural-lipid-annotation">6. LC-MS/MS (EAD) - deep structural lipid annotation</a></li>
   <li><a href="#di-im-msms" id="toc-di-im-msms" class="nav-link" data-scroll-target="#di-im-msms">7. DI-IM-MS/MS</a></li>
-  <li><a href="#lc-im-msms" id="toc-lc-im-msms" class="nav-link" data-scroll-target="#lc-im-msms">7. LC-IM-MS/MS</a></li>
+  <li><a href="#lc-im-msmsswath" id="toc-lc-im-msmsswath" class="nav-link" data-scroll-target="#lc-im-msmsswath">8. LC-IM-MS/MS(SWATH)</a></li>
   </ul>
 </nav>
     </div>
@@ -183,7 +187,7 @@ ul.task-list li input[type="checkbox"] {
 <p>The direct infusion MS data analyzing plasma, white adipose tissue (WAT), muscle, and liver of mice in addition to the procedure blank samples. The MS/MS spectrum was acquired by information dependent acquisition (IDA) mode of SCIEX meaning data dependent acquisition (DDA).</p>
 <section id="starting-up-your-project" class="level3">
 <h3 class="anchored" data-anchor-id="starting-up-your-project">1-1 Starting up your project</h3>
-<div id="fig-1" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-1" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/Chapter2/Fig1 Starting up a project in MS-DIAL.png" class="img-fluid figure-img">
@@ -193,7 +197,7 @@ Figure&nbsp;1: Figure 1 Starting up a project in MS-DIAL. First open the MSDIAL.
 </figcaption>
 </figure>
 </div>
-<div id="fig-2" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-2" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/Chapter2/Fig2 Importing raw data files and setting up the measurement parameters.png" class="img-fluid figure-img">
@@ -245,15 +249,48 @@ Figure&nbsp;2: Figure 2 Importing raw data files and setting up the measurement 
 </section>
 <section id="lc-msms-hybrid-ms-ddaswath" class="level2">
 <h2 class="anchored" data-anchor-id="lc-msms-hybrid-ms-ddaswath">5. LC-MS/MS (Hybrid MS-DDA/SWATH)</h2>
+<p>A project dealing with LC-MS/MS (Hybrid MS-DDA/SWATH) acquisition in combination with the in silico retention time and MS/MS databases for lipids is demonstrated.<br>
+Hybrid MS-DDA/SWATH is a novel strategy combining DIA and DDA in fast LC-MS-based analytical batches, intending to increase annotation rates.</p>
+<p>The input data to the workflow is located in <a href="https://doi.org/10.5281/zenodo.10590080"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.10590080.svg" class="img-fluid" alt="DOI"></a>.<br>
+See the Zenodo dataset for description of the input data.</p>
+<section id="the-workflow" class="level3">
+<h3 class="anchored" data-anchor-id="the-workflow">The Workflow</h3>
+<ol type="1">
+<li>Download and unzip the tutorial dataset.</li>
+<li>Add the LBM2 file to the MS-DIAL folder.<br>
+NOTE: Exclude the original LBM2 format. The program accepts only one LBM/LBM2 file in the MS-DIAL folder.</li>
+<li>Start up a new project in MS-DIAL.</li>
+<li>Follow the YouTube video below to operate the MS-DIAL5 GUI.</li>
+</ol>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/IGPQMCW1FPw" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<ol start="4" type="1">
+<li>The output is obtained as *.mdproject.</li>
+</ol>
+</section>
+<section id="reference" class="level3">
+<h3 class="anchored" data-anchor-id="reference">Reference</h3>
+<p>See below for the details of “Hybrid MS”.<br>
+<a href="https://doi.org/10.1021/acs.analchem.3c04400">K. Tokiyoshi et al.&nbsp;Anal Chem, 96, 991-996. 2024</a></p>
+</section>
 </section>
 <section id="lc-msms-ead---deep-structural-lipid-annotation" class="level2">
 <h2 class="anchored" data-anchor-id="lc-msms-ead---deep-structural-lipid-annotation">6. LC-MS/MS (EAD) - deep structural lipid annotation</h2>
+<p>The input data to the workflow is located in <a href="https://doi.org/10.5281/zenodo.10616947"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.10616947.svg" class="img-fluid" alt="DOI"></a>.</p>
+<p>See the Zenodo dataset for description of the input data.</p>
+<p>Additionally, you can watch our tutorial video:</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/uyD1rmSZKuw" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 </section>
 <section id="di-im-msms" class="level2">
 <h2 class="anchored" data-anchor-id="di-im-msms">7. DI-IM-MS/MS</h2>
+<p>A project dealing with DI-IM-MS acquisition in combination with the in silico retention time and MS/MS databases for lipids is demonstrated.</p>
+<p>Additionally, you can watch our tutorial video:</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/-LQiiEk-DBw" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 </section>
-<section id="lc-im-msms" class="level2">
-<h2 class="anchored" data-anchor-id="lc-im-msms">7. LC-IM-MS/MS</h2>
+<section id="lc-im-msmsswath" class="level2">
+<h2 class="anchored" data-anchor-id="lc-im-msmsswath">8. LC-IM-MS/MS(SWATH)</h2>
+<p>A project dealing with LC-IM-MS/MS acquisition in combination with the in silico retention time and MS/MS databases for lipids is demonstrated.</p>
+<p>Additionally, you can watch our tutorial video:</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/4R5Tmaic7A8" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 
 
 </section>
@@ -294,18 +331,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -337,7 +363,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp("https:\/\/systemsomicslab\.github\.io\/msdial5tutorial\/");
@@ -345,7 +393,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
