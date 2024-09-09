@@ -11,7 +11,9 @@ website:
       - metabolomics.qmd
       - proteomics.qmd
       - imaging.qmd
-      - utils.qmd
+      - text: "Utilities"
+        menu:
+          - utils.qmd
       - about.qmd
 
 format:
