@@ -112,20 +112,6 @@
     "text": "8. LC-IM-MS/MS(SWATH)\nA project dealing with LC-IM-MS/MS acquisition in combination with the in silico retention time and MS/MS databases for lipids is demonstrated.\nAdditionally, you can watch our tutorial video:"
   },
   {
-    "objectID": "proteomics.html",
-    "href": "proteomics.html",
-    "title": "Proteomics",
-    "section": "",
-    "text": "TBA"
-  },
-  {
-    "objectID": "proteomics.html#label-free-shotgun-proteomics",
-    "href": "proteomics.html#label-free-shotgun-proteomics",
-    "title": "Proteomics",
-    "section": "",
-    "text": "TBA"
-  },
-  {
     "objectID": "utils.html",
     "href": "utils.html",
     "title": "Other utilities",
@@ -173,6 +159,27 @@
     "title": "Other utilities",
     "section": "6. Molecular spectrum networking for metabolite annotations",
     "text": "6. Molecular spectrum networking for metabolite annotations\n\nThis section introduces how to create molecular spectrum networking in MS-DIAL5. Molecular spectrum networking is a tool for creating networks that visualize the MS/MS similarities among metabolites.\nTo follow this video, please download the dataset and check the description in https://zenodo.org/communities/msdial?q=&l=list&p=1&s=10&sort=newest.\n\nThe Workflow\n\nDownload the dataset of “Molecular spectrum networking tutorial dataset” in https://zenodo.org/communities/msdial?q=&l=list&p=1&s=10&sort=newest\nOpen *.mdproject in MS-DIAL5\nFollow the youtube video\n\nYou can get thses as outputs: 1. The molecular spectrum network that visualize the MS/MS similarities among metabolites. 2. The dataset to create the network in cytoscape 3. The molecular spectrum network that focusing on one metabolite."
+  },
+  {
+    "objectID": "proteomics.html",
+    "href": "proteomics.html",
+    "title": "Proteomics",
+    "section": "",
+    "text": "TBA"
+  },
+  {
+    "objectID": "proteomics.html#label-free-shotgun-proteomics",
+    "href": "proteomics.html#label-free-shotgun-proteomics",
+    "title": "Proteomics",
+    "section": "",
+    "text": "TBA"
+  },
+  {
+    "objectID": "duplicate_alignment_spotfeature.html",
+    "href": "duplicate_alignment_spotfeature.html",
+    "title": "How to duplicate alignment spot feature to separate isomers in GUI",
+    "section": "",
+    "text": "FILLME\nFILLME THE CONTENT!"
   },
   {
     "objectID": "metabolomics.html",
