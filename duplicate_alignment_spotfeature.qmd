@@ -1,1 +1,8 @@
+---
+title: "How to duplicate alignment spot feature to separate isomers in GUI"
+author: "FILLME"
+---
 
+# FILLME
+
+FILLME THE CONTENT!
