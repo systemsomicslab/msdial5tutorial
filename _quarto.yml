@@ -14,6 +14,7 @@ website:
       - text: "Utilities"
         menu:
           - utils.qmd
+          - duplicate_alignment_spotfeature.qmd
       - about.qmd
 
 format:
