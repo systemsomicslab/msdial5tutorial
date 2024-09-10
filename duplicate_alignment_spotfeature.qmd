@@ -1,5 +1,5 @@
 ---
-title: "Duplicate alignment spot feature to separate isomers in GUI"
+title: "Duplicate alignment spot feature to separate isomers"
 author: "Jayaprakash Jayashankar"
 ---
 
