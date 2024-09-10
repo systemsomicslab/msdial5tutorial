@@ -17,7 +17,7 @@ This tutorial demonstrates how to separate isomeric compounds in lipidomics and 
 
 Next, click on "Show Ion Table" to view the lipids annotated by MS-DIAL. Further, proceed with the peak picking process. If you identify isomeric compounds within your data, follow the subsequent steps to separate those isomeric mixtures effectively (Figure 1). 
 
-![Figure 1: Start up a project in MS-DIAL 5.3. First, select your processed lipidomics or metabolomics project to load it into the software (A). Next, select “Show Ion Table" to view the list of lipids annotated by MS-DIAL (B). Do the peak picking and identify isomeric compounds in your data (C). Check the aligned spot and isomeric peaks in the EIC of aligned spot.](images/Index/){#fig-1}
+![Figure 1: Start up a project in MS-DIAL 5.3. First, select your processed lipidomics or metabolomics project to load it into the software (A). Next, select “Show Ion Table" to view the list of lipids annotated by MS-DIAL (B). Do the peak picking and identify isomeric compounds in your data (C). Check the aligned spot and isomeric peaks in the EIC of aligned spot.](images/Duplicate alignment spot features/Figure_1 for website.png){#fig-1}
 
 Select the lipid that appears as isomers in the ion table. Next, navigate to the EIC (Extracted Ion Chromatogram) of the aligned spot to view the peaks, and use the alignment spot viewer to examine the isomeric compounds. To duplicate the isomeric peaks, right-click and drag to zoom in on the alignment spot of the isomeric compounds within the alignment spot viewer. Then, right-click on the aligned spot and select "Duplicate Selected Peak Spot." Finally, return to the ion table, where the duplicated peak of the isomeric compound, will appear at the bottom.
 
