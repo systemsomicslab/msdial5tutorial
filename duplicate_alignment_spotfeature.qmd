@@ -36,4 +36,4 @@ To get a clearer view, right-click and drag to zoom in on the alignment spot of 
 
 The video for using this feature can be found below.
 
-
+{{< video https://www.youtube.com/watch?v=Qw2JDOqUiGc&t=57s >}}
