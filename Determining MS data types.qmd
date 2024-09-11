@@ -9,8 +9,9 @@ In mass spectrometry (MS) data processing, particularly in complex analyses like
 
 ## What are Centroid and Profile Data?
 
-Centroid Data: Centroid data represents mass spectrometry peaks as discrete points at their central m/z values. Each peak is summarized by a single intensity value located at its centroid, which is the peak's most significant point. This format simplifies the data by reducing noise and focusing on the peak's central information, making it easier to process and analyze large datasets.
-Profile Data: Profile data provides a detailed view of the entire peak shape in a mass spectrum by showing continuous intensity values across a range of m/z values. Profile data captures the full profile of each peak, including its shape and width, allowing for a comprehensive representation of the peak's characteristics.
+**Centroid Data:** Centroid data represents mass spectrometry peaks as discrete points at their central m/z values. Each peak is summarized by a single intensity value located at its centroid, which is the peak's most significant point. This format simplifies the data by reducing noise and focusing on the peak's central information, making it easier to process and analyze large datasets.
+
+**Profile Data:** Profile data provides a detailed view of the entire peak shape in a mass spectrum by showing continuous intensity values across a range of m/z values. Profile data captures the full profile of each peak, including its shape and width, allowing for a comprehensive representation of the peak's characteristics.
 
 ## Why selecting an MS (Centroid or profile) data type is important?
 
