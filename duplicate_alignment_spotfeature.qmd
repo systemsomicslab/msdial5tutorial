@@ -34,3 +34,6 @@ To get a clearer view, right-click and drag to zoom in on the alignment spot of 
 
 ![Refresh the ion table and cross-verify the separation of the isomeric peaks by selecting the original isomeric peak (A) and alignment spot (B)](images/Duplicate alignment spot features/Figure_4 for website.png){#fig-4}
 
+The video for using this feature can be found below.
+
+
