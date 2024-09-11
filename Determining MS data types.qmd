@@ -30,7 +30,7 @@ In the RawDataViewer tool, click on browse and select any raw file to check whet
 
 To organize the data, double-click on the base peak intensity column to sort the lipid list in ascending order based on MS levels and peak intensity.  To determine whether the MS1 data is centroid or profile, click on the most intense MS1 peak (typically the first peak in the table). Right-click on the peak and zoom to examine the base peak of the selected peak. If the peak appears as a single sharp peak with its m/z value centered at the peak's highest point, it indicates that the data is in centroid mode. Next, scroll through the table to examine the MS/MS (MS2) data. Select the MS2 peak in the table, right-click, and zoom in on the base peak of the selected peak. The MS2 peak also shows a single, high-intensity peak centered at its m/z value, this confirms that both the MS1 and MS/MS data are in centroid mode (Figure 2).
 
-![Click on the base peak intensity column to sort the peak list in ascending order based on MS levels and peak intensity (A). Select the MS1 peak (usually the first peak in the table) (B). Zoom the MS1 base peak (C). Select and zoom in on the MS2 base peak (D)](images/Index/Fig1%20Supported%20file%20formats%20and%20analytical%20techniques.png){#fig-1}
+![Click on the base peak intensity column to sort the peak list in ascending order based on MS levels and peak intensity (A). Select the MS1 peak (usually the first peak in the table) (B). Zoom the MS1 base peak (C). Select and zoom in on the MS2 base peak (D)] (images/Determine MS profile or centroid data/Figure 2_Website.png){#fig-1}
 
 ## How to determine profile data?
 
