@@ -15,7 +15,7 @@ website:
         menu:
           - utils.qmd
           - duplicate_alignment_spotfeature.qmd
-          - "Determining MS data types.qmd"
+          - "Determining MS data type.qmd"
       - about.qmd
 
 format:
