@@ -16,7 +16,7 @@ website:
           - utils.qmd
           - duplicate_alignment_spotfeature.qmd
           - "Determining MS data types.qmd"
-          - "Determine the optimal minimum peak height"
+          - "Determine the optimal minimum peak height.qmd"
       - about.qmd
 
 format:
