@@ -214,16 +214,36 @@ Figure&nbsp;1: MS-Dial screenshot
 <h2 class="anchored" data-anchor-id="the-differences-between-ms-dial-4-and-ms-dial-5">3.0 The differences between MS-DIAL 4 and MS-DIAL 5:</h2>
 <p><strong>Graphical User Interface (GUI):</strong> MS-Dial 4: Functional but slightly less refined. MS-Dial 5: Improved GUI with more intuitive workflows and better user experience.</p>
 <p><strong>Speed and Performance:</strong> MS-Dial 4: Effective but slower on larger datasets. MS-Dial 5: Optimized for faster data processing, especially for large, multi-omics datasets.</p>
-<p><strong>Annotation Capabilities:</strong> MS-DIAL 4: Limited to using one database and annotation level in a single analysis. Provides comprehensive annotation of metabolites and lipids through spectral matching using established databases. MS-DIAL 5: Enables the use of multiple databases and annotation levels within the same analysis. Significantly improves annotation accuracy by incorporating ion mobility spectrometry (IMS) data and enhanced spectral deconvolution. MS-DIAL 5 also has better integration with larger and more updated databases, improving the annotation of complex molecules like lipids, metabolites, and isomers.</p>
-<p><strong>Annotation Capabilities:</strong> MS-DIAL 4: Offers only one possible annotation candidate per analysis. MS-DIAL 5: Provides multiple annotation candidates from different databases, improving identification accuracy. Adds support for ion mobility spectrometry (IMS), enabling better separation of ions that share the same mass-to-charge ratio (m/z) but have different drift times. This improves separation in complex biological mixtures.</p>
-<p><strong>Isomer Separation:</strong> MS-Dial 4: It will support basic functionality. MS-Dial 5: Enhanced separation of isomers and similar molecular species.</p>
-<p><strong>Peak Picking and Alignment:</strong> MS-Dial 4: Accurate, but sometimes slower or less accurate with noisy data. MS-Dial 5: Refined peak picking and alignment algorithms for better performance, especially with complex datasets.</p>
-<p><strong>Data Formats:</strong> MS-Dial 4: Supports only (.ABF) format. MS-Dial 5: Further extended support for newer formats, including advanced mass spectrometry data.</p>
-<p><strong>Separation Techniques:</strong> MS-DIAL 4: Supports separation methods like LCMS, LCIMMS, and GCMS. MS-DIAL 5: Adds support for direct infusion MS (DIMS) and ion mobility MS (IMMS), broadening the range of separation techniques.</p>
-<p><strong>Collision Types:</strong> MS-DIAL 4: Works with CID and HCD collision types. MS-DIAL 5: Extends support to additional collision types, including ECD, HotECD, EIEIO, EID, and OAD, offering more advanced fragmentation methods.</p>
-<p><strong>Targeted Omics:</strong> MS-DIAL 4: Focuses on metabolomics and lipidomics analysis. MS-DIAL 5: Expands its capabilities to include proteomics, in addition to metabolomics and lipidomics.</p>
-<p><strong>Flexibility in MS Methods:</strong> MS-DIAL 4: Only one MS method (DDA, SWATH, AIF) can be applied in each analysis. MS-DIAL 5: Allows multiple MS methods to be applied to a single analysis, enabling more comprehensive data analysis.</p>
-<p><strong>Undo/Redo Functionality:</strong> MS-DIAL 4: Does not offer an undo/redo feature when changing an annotation to unknown. MS-DIAL 5: Introduces this capability, making it easier to revert or correct annotation changes during data processing.</p>
+<p><strong>Annotation Capabilities:</strong></p>
+<p>MS-DIAL 4: Limited to using one database and annotation level in a single analysis. Provides comprehensive annotation of metabolites and lipids through spectral matching using established databases.</p>
+<p>MS-DIAL 5: Enables the use of multiple databases and annotation levels within the same analysis. Significantly improves annotation accuracy by incorporating ion mobility spectrometry (IMS) data and enhanced spectral deconvolution. MS-DIAL 5 also has better integration with larger and more updated databases, improving the annotation of complex molecules like lipids, metabolites, and isomers.</p>
+<p><strong>Annotation Capabilities:</strong></p>
+<p>MS-DIAL 4: Offers only one possible annotation candidate per analysis.</p>
+<p>MS-DIAL 5: Provides multiple annotation candidates from different databases, improving identification accuracy. Adds support for ion mobility spectrometry (IMS), enabling better separation of ions that share the same mass-to-charge ratio (m/z) but have different drift times. This improves separation in complex biological mixtures.</p>
+<p><strong>Isomer Separation:</strong></p>
+<p>MS-Dial 4: It will support basic functionality.</p>
+<p>MS-Dial 5: Enhanced separation of isomers and similar molecular species.</p>
+<p><strong>Peak Picking and Alignment:</strong></p>
+<p>MS-Dial 4: Accurate, but sometimes slower or less accurate with noisy data.</p>
+<p>MS-Dial 5: Refined peak picking and alignment algorithms for better performance, especially with complex datasets.</p>
+<p><strong>Data Formats:</strong></p>
+<p>MS-Dial 4: Supports only (.ABF) format.</p>
+<p>MS-Dial 5: Further extended support for newer formats, including advanced mass spectrometry data.</p>
+<p><strong>Separation Techniques:</strong></p>
+<p>MS-DIAL 4: Supports separation methods like LCMS, LCIMMS, and GCMS.</p>
+<p>MS-DIAL 5: Adds support for direct infusion MS (DIMS) and ion mobility MS (IMMS), broadening the range of separation techniques.</p>
+<p><strong>Collision Types:</strong></p>
+<p>MS-DIAL 4: Works with CID and HCD collision types.</p>
+<p>MS-DIAL 5: Extends support to additional collision types, including ECD, HotECD, EIEIO, EID, and OAD, offering more advanced fragmentation methods.</p>
+<p><strong>Targeted Omics:</strong></p>
+<p>MS-DIAL 4: Focuses on metabolomics and lipidomics analysis.</p>
+<p>MS-DIAL 5: Expands its capabilities to include proteomics, in addition to metabolomics and lipidomics.</p>
+<p><strong>Flexibility in MS Methods:</strong></p>
+<p>MS-DIAL 4: Only one MS method (DDA, SWATH, AIF) can be applied in each analysis.</p>
+<p>MS-DIAL 5: Allows multiple MS methods to be applied to a single analysis, enabling more comprehensive data analysis.</p>
+<p><strong>Undo/Redo Functionality:</strong></p>
+<p>MS-DIAL 4: Does not offer an undo/redo feature when changing an annotation to unknown.</p>
+<p>MS-DIAL 5: Introduces this capability, making it easier to revert or correct annotation changes during data processing.</p>
 </section>
 <section id="step-by-step-guide-on-how-to-set-up-a-project-in-ms-dial-5" class="level2">
 <h2 class="anchored" data-anchor-id="step-by-step-guide-on-how-to-set-up-a-project-in-ms-dial-5">4.0 Step-by-step guide on how to set up a project in MS-DIAL 5</h2>
@@ -244,7 +264,7 @@ Figure&nbsp;2: Start up a project in MS-DIAL5. First, select a new project to be
 <p><strong>DIA (Data-Independent Acquisition):</strong> Choose this option when analyzing SWATH or AIF data, where MS/MS data is acquired independently of precursor ions.</p>
 <p>For a detailed walkthrough on selecting the acquisition type, refer to the video linked below, which demonstrates the process visually.</p>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/2iy-fsbusYI?si=49SP7rO1YIfv1BUO" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<p>After selecting the acquisition type, you can further customize your project by setting additional parameters. If your analysis involves multiple batches, you can assign batch numbers to differentiate between them and account for batch effects during data processing. You can also specify the analytical order of your samples, which is useful for tracking trends such as signal drift or other variations that may have occurred throughout the run. Additionally, you can set a dilution factor for each sample, allowing MS-DIAL to adjust the quantification accordingly. If certain samples are not needed for further analysis, you can choose to exclude them from the data processing (figure 3).</p>
+<p>After selecting the acquisition type, you can further customize your project by setting additional parameters. If your analysis involves multiple batches, you can assign batch numbers to differentiate between them and account for batch effects during data processing. You can also specify the analytical order of your samples, which is useful for tracking trends such as signal drift or other variations that may have occurred throughout the run. Additionally, you can set a dilution factor for each sample, allowing MS-DIAL to adjust the quantification accordingly. If certain samples are not needed for further analysis, you can choose to exclude them from the data processing (Figure 3).</p>
 <div id="fig-3" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -255,7 +275,7 @@ Figure&nbsp;3: Click on the browse icon and point MS-DIAL5 to the folder where y
 </figcaption>
 </figure>
 </div>
-<p>After assigning identifiers to the raw measurement files, click Next to proceed to the Measurement Parameters tab. In this section, you will input the analytical and instrumental parameters that were used during data acquisition. These settings are crucial for ensuring accurate data processing and should align exactly with the experimental conditions under which the measurements were taken. The following sections will offer detailed instructions on how to select and configure each parameter within the Measurement Parameters section</p>
+<p>After assigning identifiers to the raw measurement files, click Next to proceed to the Measurement Parameters tab. In this section, you will input the analytical and instrumental parameters that were used during data acquisition. These settings are crucial for ensuring accurate data processing and should align exactly with the experimental conditions under which the measurements were taken (Figure 4). The following sections will offer detailed instructions on how to select and configure each parameter within the Measurement Parameters section</p>
 <p><strong>4.1 Measurement Parameters Section:</strong></p>
 <p><strong>1. Ionization type:</strong> Select the soft ionization type, when you are analyzing the ESI data or select hard ionization type when you are analyzing the EI data.</p>
 <p><strong>2. Separation type:</strong> Select chromatography (for LC, GC, CE, or SFC) or direct infusion method as per your analysis. Additionally, you can check ion mobility box coupled with one of the previous options.</p>
@@ -277,7 +297,7 @@ Figure&nbsp;4: Overview of the Measurement parameter settings
 </figcaption>
 </figure>
 </div>
-<p>After configuring each parameter in the Measurement Parameters section, click “Next” to proceed to the Data Collection tab. In this section, you will need to enter the data collection parameters that were used during the acquisition of your samples. These parameters are essential for accurately processing and analyzing your data according to the conditions of your experiment. The upcoming sections will provide detailed instructions on how to set each parameter in the Data Collection section.</p>
+<p>After configuring each parameter in the Measurement Parameters section, click “Next” to proceed to the Data Collection tab. In this section, you will need to enter the data collection parameters that were used during the acquisition of your samples. These parameters are essential for accurately processing and analyzing your data according to the conditions of your experiment (Figure 5). The upcoming sections will provide detailed instructions on how to set each parameter in the Data Collection section.</p>
 <p><strong>4.2 Data collection parameters:</strong></p>
 <p><strong>Mass accuracy (Centroid parameter):</strong> After the initial peak detection in MS-DIAL, mass tolerance defines the acceptable range of mass deviation for both MS1 and MS/MS data. By default, mass tolerance values are set to ±0.01 Da for MS1 and ±0.025 Da for MS/MS. This means that peaks within these ranges around the detected mass are integrated and considered for further analysis. Importantly, the MS/MS tolerance also influences how MS/MS chromatograms are constructed, affecting how closely the detected fragment ions need to match the theoretical masses to be included in the MS2Dec deconvolution process.</p>
 <p><strong>Data collection parameters:</strong> In MS-DIAL, you can define the analysis ranges as per your analysis for retention time (RT), MS1, and MS/MS axis to focus on specific parts of your data. For this demonstration, we have chosen the expected data range as follows: In this demo data RT range is 0 - 100 min, and the MS and MS/MS range is 0 – 2000 Da.</p>
@@ -295,7 +315,7 @@ Figure&nbsp;5: Overview of the Data collection parameter setting.
 </figcaption>
 </figure>
 </div>
-<p>Click Next to proceed to the Peak Detection Parameter Settings. In this section, you’ll need to enter the parameters used for peak detection in your mass spectrometry data. This includes specifying values such as the minimum peak height, mass peak width, and exclusion mass list. The following sections will offer detailed guidance on how to configure each parameter within the Peak Detection section</p>
+<p>Click Next to proceed to the Peak Detection Parameter Settings. In this section, you’ll need to enter the parameters used for peak detection in your mass spectrometry data. This includes specifying values such as the minimum peak height, mass peak width, and exclusion mass list (Figure 6). The following sections will offer detailed guidance on how to configure each parameter within the Peak Detection section</p>
 <p><strong>4.3 Peak detection parameter:</strong></p>
 <p>MS-DIAL provides two simple thresholds; minimum values for peak width and height. Peaks below these thresholds are ignored.</p>
 <p><strong>Minimum Peak Height:</strong> Set the minimum intensity level required for a peak to be detected in your data. Peaks with heights below this threshold will be ignored, which helps in filtering out noise and focusing only on significant signals for accurate analysis. Ideally, users put values here based on their own experience that you are looking at the trend of your data. However, based on our experience, the minimum peak height may be set to 1000 as a default value for this demo data. Besides, for FT-MS or Orbitrap data, the minimum peak height maybe 10,000 or more.</p>
@@ -316,7 +336,7 @@ Figure&nbsp;6: Overview of the Peak detection parameter settings.
 </figcaption>
 </figure>
 </div>
-<p>Click Next to proceed to the Spectrum Deconvolution Parameter Settings. In this section, you will configure the parameters for deconvoluting your mass spectrometry data. Key settings include the sigma window value, the MS/MS abundance cut-off value, and the option to exclude peaks following the precursor ion. The following sections will provide detailed instructions on how to set each parameter within the Spectrum Deconvolution section.</p>
+<p>Click Next to proceed to the Spectrum Deconvolution Parameter Settings. In this section, you will configure the parameters for deconvoluting your mass spectrometry data. Key settings include the sigma window value, the MS/MS abundance cut-off value, and the option to exclude peaks following the precursor ion (Figure 7). The following sections will provide detailed instructions on how to set each parameter within the Spectrum Deconvolution section.</p>
 <p><strong>4.4 Spectrum deconvolution parameter:</strong></p>
 <p><strong>Sigma window value:</strong> The sigma window value is highly affected by the resolution of deconvolutions. A higher value (0.7-1.0) will reduce the peak top resolutions, i.e.&nbsp;the number of resolved peaks will be decreased. On the other hand, a lower value (0.1-0.3) may also recognize many noise chromatographic peaks. In our demo data, we have chosen 0.5.</p>
 <p><strong>MS/MS Abundance Cut-off:</strong> MS/MS Abundance Cut-off refers to the minimum intensity level of the MS/MS (tandem mass spectrometry) signals that must be reached for a fragment ion to be considered significant and included in the analysis. Unless you have data-independent MS/MS data sets, you can skip this part. However, you may set a cutoff value to reduce the MS peak noise levels.</p>
@@ -333,7 +353,7 @@ Figure&nbsp;7: Overview of the Spectrum deconvolution parameter settings.
 </figcaption>
 </figure>
 </div>
-<p>Click Next to proceed to the Identification Parameter Settings. In this section, you will configure parameters related to the identification of compounds, including the database type, lipid profiling settings, annotation options, and retention time settings. The following sections will provide detailed instructions on how to set each parameter within the Identification section.</p>
+<p>Click Next to proceed to the Identification Parameter Settings. In this section, you will configure parameters related to the identification of compounds, including the database type, lipid profiling settings, annotation options, and retention time settings (Figure 8). The following sections will provide detailed instructions on how to set each parameter within the Identification section.</p>
 <p><strong>4.5 Identification parameter:</strong></p>
 <p><strong>MSP file:</strong> In the case that you selected the ‘lipidomics’ project, select what you want to annotate in your data sets for lipid profiling. For example, we selected all the lipids to analyze in our data. For this tutorial data, in which ammonium acetate was used as a solvent type, select HCOONH4 (ammonium formate) as the solvent type in the window ’Lipid database setting, although nowadays CH3COONH4 (ammonium acetate) is basically used as a solvent type.</p>
 <p>If you are selected as a metabolomics project, insert the MSP file. Several MSP files are downloadable as a starter kit for MS-DIAL using below link</p>
@@ -357,7 +377,7 @@ Figure&nbsp;8: Overview of the Identification parameter settings. Selecting lipi
 </figcaption>
 </figure>
 </div>
-<p>Click on Next to proceed to the Adduct Ion Parameter Settings. In this section, you will need to select the adduct ions relevant to your analysis. The following sections will provide detailed instructions on how to choose and configure adduct ions for your analysis.</p>
+<p>Click on Next to proceed to the Adduct Ion Parameter Settings. In this section, you will need to select the adduct ions relevant to your analysis. The following sections will provide detailed instructions on how to choose and configure adduct ions for your analysis (Figure 9).</p>
 <p><strong>4.6 Adduct ion parameters:</strong></p>
 <p><strong>Adduct ion setting:</strong> You can tick the adduct ions and charge values which is suitable for your analysis.</p>
 <p><strong>Adduct ion format:</strong> Adduct ion information should be formatted as described in this section: [M+Na]+, [M+2H]2+, [M-2H2O+H]+, [2M+FA-H]-, etc.</p>
@@ -383,7 +403,7 @@ Figure&nbsp;9: Overview of the Adduct parameter settings.
 </figcaption>
 </figure>
 </div>
-<p>Click Next to proceed to the Alignment Parameter Settings. In this section, you’ll need to configure various parameters including the reference file, RT tolerance, RT factor, features based on blank information, and peak count filter for adduct ions. The following sections will provide detailed instructions on how to set each of these parameters for optimal alignment of your data.</p>
+<p>Click Next to proceed to the Alignment Parameter Settings. In this section, you’ll need to configure various parameters including the reference file, RT tolerance, RT factor, features based on blank information, and peak count filter for adduct ions (Figure 10). The following sections will provide detailed instructions on how to set each of these parameters for optimal alignment of your data.</p>
 <p><strong>4.7 Alignment parameters:</strong></p>
 <p><strong>Result name:</strong> The name will be the name of each alignment shown at the tab of ‘Alignment navigator’ in the main window.</p>
 <p><strong>Reference file:</strong> If you already have suitable quality control (QC) data, typically mixed sample data, then specify the QC file in the reference file. All sample data will be aligned to this QC file.</p>
@@ -409,7 +429,7 @@ Figure&nbsp;10: Overview of the alignment parameter settings.
 </figcaption>
 </figure>
 </div>
-<p>Click Next to proceed to the Isotope Tracking Settings. In this section, you will configure the settings to enable isotope tracking in your data. The following sections will provide detailed instructions on how to set up the isotope tracking parameters for your analysis.</p>
+<p>Click Next to proceed to the Isotope Tracking Settings. In this section, you will configure the settings to enable isotope tracking in your data (Figure 11). The following sections will provide detailed instructions on how to set up the isotope tracking parameters for your analysis.</p>
 <p><strong>4.8 Isotope tracking parameter:</strong></p>
 <p><strong>Tracking of isotope labels:</strong> If you check this box, it will identify and monitor the isotopically labeled lipids or metabolites in your sample. This is especially useful in lipidomics or metabolomics experiments where stable isotopes like 13C or 2H are incorporated into lipids or metabolites in your study.</p>
 <div id="fig-11" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -423,7 +443,7 @@ Figure&nbsp;11: Overview of the Isotope tracking parameter settings.
 </figure>
 </div>
 <p>Then you can click Run for the processing of your MS data in MS-Dial 5 and click Save to save the project.</p>
-<p>Once you finished the data processing like peak picking, peak identification, and peak annotation. You can click the export icon to export the results in different forms. The following sections will provide detailed instructions on how to export your results.</p>
+<p>Once you finished the data processing like peak picking, peak identification, and peak annotation. You can click the export icon to export the results in different forms (Figure 12). The following sections will provide detailed instructions on how to export your results.</p>
 <p><strong>4.9 Export:</strong> Here, in this case, we are using the alignment results export option to get all the spectral information of lipids.</p>
 <p>The following options are used to export the results:</p>
 <p><strong>Peak list export:</strong> You can get the peak list information of each sample including retention time, m/z, MS/MS spectra information, and so on. Available formats are MSP, MGF, or Text.</p>
@@ -446,10 +466,10 @@ Figure&nbsp;12: Overview of the export parameter settings
 <h2 class="anchored" data-anchor-id="understanding-fill-and-sn-average-in-mass-spectrometry-data">Understanding “Fill%” and “S/N Average” in Mass Spectrometry data</h2>
 <p>Let’s consider for lipidomics project:</p>
 <p><strong>1: Meaning of Fill%:</strong></p>
-<p>Fill% refers to the proportion of scans or runs in which a particular ion or feature is detected during mass spectrometry analysis. It indicates how consistently the feature is present across multiple injections or samples.</p>
+<p>Fill% refers to the proportion of scans or runs in which a particular ion or feature is detected during mass spectrometry analysis. It indicates how consistently the feature is present across multiple injections or samples (Figure 13A).</p>
 <p>Fill% helps assess the reliability of detection for a particular compound in a sample, indicating how frequently it was detected during analysis.</p>
 <p><strong>2: Meaning of S/N average:</strong></p>
-<p>S/N (Signal-to-Noise) Average refers to the average ratio of the signal’s intensity (the compound of interest) to the background noise over multiple scans. A higher S/N ratio indicates a clearer signal against background noise.</p>
+<p>S/N (Signal-to-Noise) Average refers to the average ratio of the signal’s intensity (the compound of interest) to the background noise over multiple scans. A higher S/N ratio indicates a clearer signal against background noise (Figure 13B).</p>
 <p>A higher S/N ratio means that the signal is clearly distinguishable from the noise, indicating reliable detection of the compound.</p>
 <p>Low S/N ratios might indicate that the compound is difficult to detect due to high background noise, which could make identification and quantification less reliable.</p>
 <div id="fig-13" class="quarto-float quarto-figure quarto-figure-center anchored">
