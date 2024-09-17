@@ -1,1 +1,88 @@
+---
+title: "Tutorial on MS-Dial 5"
+author: "Jayaprakash Jayashankar"
+---
+
+## 1.0 Introduction to MS-Dial
+
+MS-DIAL is a powerful, open-source software tool designed for the comprehensive analysis of mass spectrometry data, whether for untargeted metabolomics or lipidomics. One of its standout features is its compatibility with a wide range of instruments, including GC/MS, GC/MS/MS, LC/MS, and LC/MS/MS systems, and support for major vendors such as Agilent, Bruker, LECO, Sciex, Shimadzu, Thermo, and Waters. In this latest version, MS-DIAL enhances the user experience by eliminating the need for data format conversion into the ABF format—although it is still supported. Users can now directly import raw MS data. Still, the data can now be imported directly to MS-Dial. MS-DIAL provides a comprehensive ‘start-up kit’ that includes several MSP files with both EI- and MS/MS spectra to facilitate ease of use. MS-DIAL includes an internal version of the Fiehn lab’s GC/MS database, oriented by the FAME RI index, as well as an in-silico retention time- and MS/MS database for LC/MS/MS-based lipidomics. Additionally, MS-DIAL facilitates isotope-labeled tracking in LC/MS projects, making it a powerful tool for detailed metabolic studies and precise quantification. Its user-friendly graphical interface combined with broad functionality makes it a key resource for researchers conducting multi-omics studies.
+
+![MS-Dial screenshot](images/Determine MS profile or centroid data/Figure 1_Website.png){#fig-1}
+
+## 2.0 Importance of MS-Dial 5
+
+The latest version of MS-DIAL 5 aims to be the most versatile tool for multi-omics data analysis and therefore supports direct injection, many separation (GC, LC, CE, SFC), ionization (EI, ESI, MALDI), fragmentation (CID, HCD, ETD, ECD, EIEIO, EID, OAD) and MS/MS (DDA, SWATH, AIF) datasets. In addition, technological advances in fragmentation mechanisms such as electron-impact excitation of ions from organics (EIEIO) have also been taken into account, making it possible to work with these types of data to offer comprehensive structural identification of metabolites, lipids, and proteins. These resources enhance the identification and quantification of metabolites and lipids. After data processing which includes peak picking, deconvolution, compound identification, and peak alignment, MS-DIAL provides several normalization methods (including LOWESS) and a multivariate analysis by principal component analysis (PCA). Finally, for further analysis by other programs, this program can export your result as table format (for SIMCA-P, MetaboAnalyst, and MetFamily etc.), and as several spectral formats including NIST, MassBank, and Mascot formats for compound identifications by MS-FINDER, CSI:FingerID, CFM-ID, MetFrag, and MetFamily etc.
+
+## 3.0 The differences between MS-DIAL 4 and MS-DIAL 5:
+
+**Graphical User Interface (GUI):**
+MS-Dial 4: Functional but slightly less refined
+MS-Dial 5: Improved GUI with more intuitive workflows and better user experience
+**Speed and Performance:**
+MS-Dial 4: Effective but slower on larger datasets
+MS-Dial 5: Optimized for faster data processing, especially for large, multi-omics datasets
+**Annotation Capabilities:**
+MS-DIAL 4: Limited to using one database and annotation level in a single analysis. Provides comprehensive annotation of metabolites and lipids through spectral matching using established databases.
+MS-DIAL 5: Enables the use of multiple databases and annotation levels within the same analysis. Significantly improves annotation accuracy by incorporating ion mobility spectrometry (IMS) data and enhanced spectral deconvolution. MS-DIAL 5 also has better integration with larger and more updated databases, improving the annotation of complex molecules like lipids, metabolites, and isomers.
+**Annotation Capabilities:**
+MS-DIAL 4: Offers only one possible annotation candidate per analysis.
+MS-DIAL 5: Provides multiple annotation candidates from different databases, improving identification accuracy. Adds support for ion mobility spectrometry (IMS), enabling better separation of ions that share the same mass-to-charge ratio (m/z) but have different drift times. This improves separation in complex biological mixtures.
+**Isomer Separation:**
+MS-Dial 4: It will support basic functionality.
+MS-Dial 5: Enhanced separation of isomers and similar molecular species.
+**Peak Picking and Alignment:**
+MS-Dial 4: Accurate, but sometimes slower or less accurate with noisy data
+MS-Dial 5: Refined peak picking and alignment algorithms for better performance, especially with complex datasets.
+**Data Formats:**
+MS-Dial 4: Supports only (.ABF) format.
+MS-Dial 5: Further extended support for newer formats, including advanced mass spectrometry data.
+**Separation Techniques:**
+MS-DIAL 4: Supports separation methods like LCMS, LCIMMS, and GCMS.
+MS-DIAL 5: Adds support for direct infusion MS (DIMS) and ion mobility MS (IMMS), broadening the range of separation techniques.
+**Collision Types:**
+MS-DIAL 4: Works with CID and HCD collision types.
+MS-DIAL 5: Extends support to additional collision types, including ECD, HotECD, EIEIO, EID, and OAD, offering more advanced fragmentation methods.
+**Targeted Omics:**
+MS-DIAL 4: Focuses on metabolomics and lipidomics analysis.
+MS-DIAL 5: Expands its capabilities to include proteomics, in addition to metabolomics and lipidomics.
+**Flexibility in MS Methods:**
+MS-DIAL 4: Only one MS method (DDA, SWATH, AIF) can be applied in each analysis.
+MS-DIAL 5: Allows multiple MS methods to be applied to a single analysis, enabling more comprehensive data analysis.
+**Undo/Redo Functionality:**
+MS-DIAL 4: Does not offer an undo/redo feature when changing an annotation to unknown.
+MS-DIAL 5: Introduces this capability, making it easier to revert or correct annotation changes during data processing.
+
+## 4.0 Step-by-step guide on how to set up a project in MS-DIAL 5
+
+This tutorial demonstrates how to start a new project in MS-DIAL 5, covering the steps to import raw data and set the MS method type. To begin, launch MS-DIAL 5 from your desktop or application menu, which will open the main user interface with various options and toolbars. The first step is to create a new project by setting up a dedicated folder where all project files, including raw data and results, will be stored. After selecting New Project from the "File" menu, choose the designated folder to ensure data is organized. Next, you can import raw data directly into MS-DIAL 5 without the need for conversion to ABF format. After selecting your raw data files, proceed to configure the MS method type according to your experiment, ensuring the appropriate settings are in place for accurate data analysis. This streamlined process sets the foundation for efficient data processing in MS-DIAL 5.
+
+![Start up a project in MS-DIAL5. First, select a new project to be created (A). Next, click browse to select a location where your project files will be saved (B). Select the folder where you want to save the MS-Dial project (C). Click run to go to the next parameter setting (D)](images/Determine MS profile or centroid data/Figure 1_Website.png){#fig-2}
+
+After selecting the project folder, click on Browse in the raw measurement file section, and navigate to the folder where your raw data is stored. Select the raw files you wish to analyze, or simply drag and drop your files (including .d format files) directly into MS-DIAL 5. Once you’ve selected the appropriate files, click Open to import them. After importing your raw data, you can further assign identifiers to your measurements based on sample type (e.g., Sample, Standard, QC, Blank). You can also categorize them by class ID, according to your experimental design. At this point, you need to set the acquisition type for each raw data file.
+
+**Here’s how to set the MS method type:**
+**DDA (Data-Dependent Acquisition):** Select this if you are analyzing single MS or data-dependent MS/MS data.
+**DIA (Data-Independent Acquisition):** Choose this option when analyzing SWATH or AIF data, where MS/MS data is acquired independently of precursor ions.
+
+For a detailed walkthrough on selecting the acquisition type, refer to the video linked below, which demonstrates the process visually.
+
+Link
+
+After selecting the acquisition type, you can further customize your project by setting additional parameters. If your analysis involves multiple batches, you can assign batch numbers to differentiate between them and account for batch effects during data processing. You can also specify the analytical order of your samples, which is useful for tracking trends such as signal drift or other variations that may have occurred throughout the run. Additionally, you can set a dilution factor for each sample, allowing MS-DIAL to adjust the quantification accordingly. If certain samples are not needed for further analysis, you can choose to exclude them from the data processing. 
+## How to determine centroid data?
+
+In the RawDataViewer tool, click on browse and select any raw file to check whether the MS data is centroid or profile and click open. Once the file is loaded into the software. In the Method Type section, choose the appropriate method based on your analysis, and select the Ion Mode (positive or negative) to match your sample. After configuring these settings, click Load to upload the file. Once the file is loaded, select the file and click the show button to display the data. Once you click the show button, a new window will appear displaying a histogram of peak height, MS, and MS/MS peak intensity information. This window also provides a table with details such as scan start time, polarity, MS levels, base peak m/z, and base peak intensity for each metabolite in your sample (Figure 1). 
+
+![Open the RawDataViewer application (A). Browse and select the raw MS file to determine whether the data is centroid or profile (B). Click the load button to load the raw file into the tool (C). Click the show button to display the histograms of peak information](images/Determine MS profile or centroid data/Figure 1_Website.png){#fig-1}
+
+To organize the data, double-click on the base peak intensity column to sort the lipid list in ascending order based on MS levels and peak intensity.  To determine whether the MS1 data is centroid or profile, click on the most intense MS1 peak (typically the first peak in the table). Right-click on the peak and zoom to examine the base peak of the selected peak. If the peak appears as a single sharp peak with its m/z value centered at the peak's highest point, it indicates that the data is in centroid mode. Next, scroll through the table to examine the MS/MS (MS2) data. Select the MS2 peak in the table, right-click, and zoom in on the base peak of the selected peak. The MS2 peak also shows a single, high-intensity peak centered at its m/z value, this confirms that both the MS1 and MS/MS data are in centroid mode (Figure 2).
+
+![Click on the base peak intensity column to sort the peak list in ascending order based on MS levels and peak intensity (A). Select the MS1 peak (usually the first peak in the table) (B). Zoom the MS1 base peak (C). Select and zoom in on the MS2 base peak (D)](images/Determine MS profile or centroid data/Figure 2_Website.png){#fig-1}
+
+## How to determine profile data?
+
+Next, open the raw file and follow the same steps until a new window of histograms of peak height, MS, and MS/MS peak intensity of the selected raw file appears. Double-click on the base peak intensity column to sort the lipid list in ascending order based on MS levels and peak intensity. Select the first peak (MS1) in the table, then right-click, and zoom in on the base peak of the selected peak. The peak appears like a detailed view of the entire peak shape by showing the continuous intensity distribution of the peak across a range of m/z values. it indicates that the data is in profile mode. To check the MS/MS data, scroll down the table. Select the MS2 level peak, then right-click, and zoom in on the base peak of the selected peak. The MS2 peak also shows a continuous distribution of peak intensities, this confirms that both the MS1 and MS/MS data are in profile mode (Figure 3).
+
+![Click on the base peak intensity column to sort the peak list in ascending order based on MS levels and peak intensity (A). Select the MS1 peak (usually the first peak in the table) (B). Zoom the MS1 base peak (C). Select and zoom in on the MS2 base peak (D)](images/Determine MS profile or centroid data/Figure 3_Website.png){#fig-1}
+
 
