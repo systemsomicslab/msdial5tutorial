@@ -419,7 +419,8 @@ Figure&nbsp;9: Overview of the Adduct parameter settings.
 <p><strong>Reference file:</strong> If you already have suitable quality control (QC) data, typically mixed sample data, then specify the QC file in the reference file. All sample data will be aligned to this QC file.</p>
 <p><strong>RT and MS1 tolerances:</strong> The RT and MS1 of the peak will be compared with the library RT and MS spectra. Typically, give the default setting values.</p>
 <p><strong>Retention time factor and MS1 factor:</strong> These values indicate the importance of either RT or MS1 to compare and evaluate the similarity of the spectra among samples based on RT and MS1 tolerance.</p>
-<p>Equation to calculate the RT factor: =exp(-0.5<em>(sample1(RT)-sample2(RT))/RT tolerance)^2) Equation to calculate the m/z factor: =exp(-0.5</em>(sample1(m/z)-sample2(m/z))/m/z tolerance)^2)</p>
+<p>Equation to calculate the RT factor: =exp(-0.5*(sample1(RT)-sample2(RT))/RT tolerance)^2)</p>
+<p>Equation to calculate the m/z factor: =exp(-0.5*(sample1(m/z)-sample2(m/z))/m/z tolerance)^2)</p>
 <p><strong>Peak count filter:</strong> If you want to remove specific peaks that are not fully detected in the alignment, specify the peak count filter.</p>
 <p>For example, if you have 3 biological replicates with the same peak information and the total number of data is 24. Then, you may set the peak count filter as (3/24)∗100. This means peaks will be removed when they include missing values for more than the entered peak count filter (%). In the tutorial data we have only 3 samples.</p>
 <p><strong>N% detected in at least one group:</strong> The filtering is done within each sample group. If it is set to 100%, the peaks should be detected in all of the samples of a class.</p>
@@ -455,7 +456,8 @@ Figure&nbsp;11: Overview of the Isotope tracking parameter settings.
 <p>Then you can click Run for the processing of your MS data in MS-Dial 5 and click Save to save the project.</p>
 <p>Once you finished the data processing like peak picking, peak identification, and peak annotation. You can click the export icon to export the results in different forms (Figure 12).</p>
 <p>The following sections will provide detailed instructions on how to export your results.</p>
-<p><strong>4.9 Export:</strong> Here, in this case, we are using the alignment results export option to get all the spectral information of lipids.</p>
+<p><strong>4.9 Export:</strong></p>
+<p>Here, in this case, we are using the alignment results export option to get all the spectral information of lipids.</p>
 <p>The following options are used to export the results:</p>
 <p><strong>Peak list export:</strong> You can get the peak list information of each sample including retention time, m/z, MS/MS spectra information, and so on. Available formats are MSP, MGF, or Text.</p>
 <p><strong>Alignment result export:</strong> You can get the results of your data especially spectral information of lipids or metabolites. To export alignment results you just need to choose an export folder path and choose an alignment file that you want to export. Select export format if you want to export the representative spectra. Then click the export button.</p>
