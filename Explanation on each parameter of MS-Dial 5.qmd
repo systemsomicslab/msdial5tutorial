@@ -253,11 +253,17 @@ Sequential equations are acceptable: [2M+H-C6H12O5+Na]2+.
 MS-DIAL accepts some abbreviations or common organic formulas for adduct types as follows.
 
 For Acetonitrile: ACN, CH3CN
+
 For Methanol: CH3OH
+
 For Isopropanol: IsoProp, C3H7OH
+
 For Dimethyl sulfoxide: DMSO
+
 For Formic acid: FA, HCOOH
+
 For Acetic acid: Hac, CH3COOH
+
 For Trifluoroacetic acid: TFA, CFCOOH
 
 ![Overview of the Adduct parameter settings.](images/Parameters for MS-Dial/Figure_8Website.png){#fig-9}
