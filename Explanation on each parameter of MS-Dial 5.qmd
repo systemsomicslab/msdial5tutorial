@@ -102,7 +102,8 @@ The following sections will offer detailed instructions on how to select and con
 
 *Refer to the tutorial on MS-Dial on how to determine profile or centroid data type for your analysis using the Rawdataviewer tool in the below link.
 
-{{< link https://systemsomicslab.github.io/msdial5tutorial/Determining%20MS%20data%20types.html >}}
+
+[https://systemsomicslab.github.io/msdial5tutorial/Determining%20MS%20data%20types.html](https://systemsomicslab.github.io/msdial5tutorial/Determining%20MS%20data%20types.html)
 
 **6.	Ion mode:** Select the corresponding ion mode according to your analytical setup.
 
