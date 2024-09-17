@@ -160,7 +160,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#importance-of-ms-dial-5" id="toc-importance-of-ms-dial-5" class="nav-link" data-scroll-target="#importance-of-ms-dial-5">2.0 Importance of MS-Dial 5</a></li>
   <li><a href="#the-differences-between-ms-dial-4-and-ms-dial-5" id="toc-the-differences-between-ms-dial-4-and-ms-dial-5" class="nav-link" data-scroll-target="#the-differences-between-ms-dial-4-and-ms-dial-5">3.0 The differences between MS-DIAL 4 and MS-DIAL 5:</a></li>
   <li><a href="#step-by-step-guide-on-how-to-set-up-a-project-in-ms-dial-5" id="toc-step-by-step-guide-on-how-to-set-up-a-project-in-ms-dial-5" class="nav-link" data-scroll-target="#step-by-step-guide-on-how-to-set-up-a-project-in-ms-dial-5">4.0 Step-by-step guide on how to set up a project in MS-DIAL 5</a></li>
-  <li><a href="#how-to-determine-profile-data" id="toc-how-to-determine-profile-data" class="nav-link" data-scroll-target="#how-to-determine-profile-data">How to determine profile data?</a></li>
+  <li><a href="#understanding-fill-and-sn-average-in-mass-spectrometry-data" id="toc-understanding-fill-and-sn-average-in-mass-spectrometry-data" class="nav-link" data-scroll-target="#understanding-fill-and-sn-average-in-mass-spectrometry-data">Understanding “Fill%” and “S/N Average” in Mass Spectrometry data</a></li>
   </ul>
 </nav>
     </div>
@@ -300,7 +300,7 @@ Figure&nbsp;5: Overview of the Data collection parameter setting.
 <p>MS-DIAL provides two simple thresholds; minimum values for peak width and height. Peaks below these thresholds are ignored.</p>
 <p><strong>Minimum Peak Height:</strong> Set the minimum intensity level required for a peak to be detected in your data. Peaks with heights below this threshold will be ignored, which helps in filtering out noise and focusing only on significant signals for accurate analysis. Ideally, users put values here based on their own experience that you are looking at the trend of your data. However, based on our experience, the minimum peak height may be set to 1000 as a default value for this demo data. Besides, for FT-MS or Orbitrap data, the minimum peak height maybe 10,000 or more.</p>
 <p>Refer to the tutorial on how to determine the minimum peak height for your analysis using the Rawdataviewer tool in the link below.</p>
-{{&lt; https://systemsomicslab.github.io/msdial5tutorial/Determine%20the%20optimal%20minimum%20peak%20height.html  &gt;}}
+<p><a href="https://systemsomicslab.github.io/msdial5tutorial/Determine%20the%20optimal%20minimum%20peak%20height.html">https://systemsomicslab.github.io/msdial5tutorial/Determine%20the%20optimal%20minimum%20peak%20height.html</a></p>
 <p><strong>Mass Slice Width:</strong> Define the range of mass-to-charge ratios (m/z) around each detected peak that will be considered during data analysis. This width helps in grouping ions within a specified m/z range to improve peak detection and quantification by accounting for slight variations in mass measurements. In this case, we are using 0.1 Da. From our experience, 0.1 and 0.05 are suitable for Q-TOF and Orbitrap, respectively.</p>
 <p><strong>Smoothing method:</strong>Linear-weighted moving average is used for the peak detection as default to accurately determine the peak left- and right edges.</p>
 <p><strong>Smoothing level:</strong> The recommended smoothing level is 1-3. It is the number of points on each side of the peaks.</p>
@@ -316,39 +316,149 @@ Figure&nbsp;6: Overview of the Peak detection parameter settings.
 </figcaption>
 </figure>
 </div>
-<p>In the RawDataViewer tool, click on browse and select any raw file to check whether the MS data is centroid or profile and click open. Once the file is loaded into the software. In the Method Type section, choose the appropriate method based on your analysis, and select the Ion Mode (positive or negative) to match your sample. After configuring these settings, click Load to upload the file. Once the file is loaded, select the file and click the show button to display the data. Once you click the show button, a new window will appear displaying a histogram of peak height, MS, and MS/MS peak intensity information. This window also provides a table with details such as scan start time, polarity, MS levels, base peak m/z, and base peak intensity for each metabolite in your sample (Figure 1).</p>
-<div id="fig-1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<p>Click Next to proceed to the Spectrum Deconvolution Parameter Settings. In this section, you will configure the parameters for deconvoluting your mass spectrometry data. Key settings include the sigma window value, the MS/MS abundance cut-off value, and the option to exclude peaks following the precursor ion. The following sections will provide detailed instructions on how to set each parameter within the Spectrum Deconvolution section.</p>
+<p><strong>4.4 Spectrum deconvolution parameter:</strong></p>
+<p><strong>Sigma window value:</strong> The sigma window value is highly affected by the resolution of deconvolutions. A higher value (0.7-1.0) will reduce the peak top resolutions, i.e.&nbsp;the number of resolved peaks will be decreased. On the other hand, a lower value (0.1-0.3) may also recognize many noise chromatographic peaks. In our demo data, we have chosen 0.5.</p>
+<p><strong>MS/MS Abundance Cut-off:</strong> MS/MS Abundance Cut-off refers to the minimum intensity level of the MS/MS (tandem mass spectrometry) signals that must be reached for a fragment ion to be considered significant and included in the analysis. Unless you have data-independent MS/MS data sets, you can skip this part. However, you may set a cutoff value to reduce the MS peak noise levels.</p>
+<p><strong>Exclude after precursor ion:</strong> If you want to remove the product ions after the focused precursor ion (recommended for metabolomics and lipidomics), check this box.</p>
+<p><strong>Keep the isotopic ions until:</strong> In fact, the isotopic patterns in MS1 spectra are frequently disturbed. On the other hand, there are some cases that the isotopic patterns in MS/MS spectra are clearer than that of MS1 spectra, which can be used for the accurate annotation of molecular formula. If you set this parameter as 5 Da, the ions until precursor + 5 Da are kept after MS2Dec algorithm is finished.</p>
+<p><strong>Keep the isotopic ions w/o MS2Dec:</strong> The MS2Dec algorithm may sometimes erase the precursor’s isotopic ions due to the mathematics issues. Therefore, you can keep the raw MS/MS spectra only for the precursor’s isotopic ions by checking this option.</p>
+<div id="fig-6" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/Determine MS profile or centroid data/Figure 1_Website.png" class="img-fluid figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7: Open the RawDataViewer application (A). Browse and select the raw MS file to determine whether the data is centroid or profile (B). Click the load button to load the raw file into the tool (C). Click the show button to display the histograms of peak information
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7: Overview of the Spectrum deconvolution parameter settings.
 </figcaption>
 </figure>
 </div>
-<p>To organize the data, double-click on the base peak intensity column to sort the lipid list in ascending order based on MS levels and peak intensity. To determine whether the MS1 data is centroid or profile, click on the most intense MS1 peak (typically the first peak in the table). Right-click on the peak and zoom to examine the base peak of the selected peak. If the peak appears as a single sharp peak with its m/z value centered at the peak’s highest point, it indicates that the data is in centroid mode. Next, scroll through the table to examine the MS/MS (MS2) data. Select the MS2 peak in the table, right-click, and zoom in on the base peak of the selected peak. The MS2 peak also shows a single, high-intensity peak centered at its m/z value, this confirms that both the MS1 and MS/MS data are in centroid mode (Figure 2).</p>
-<div id="fig-1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<p>Click Next to proceed to the Identification Parameter Settings. In this section, you will configure parameters related to the identification of compounds, including the database type, lipid profiling settings, annotation options, and retention time settings. The following sections will provide detailed instructions on how to set each parameter within the Identification section.</p>
+<p><strong>4.5 Identification parameter:</strong></p>
+<p><strong>MSP file:</strong> In the case that you selected the ‘lipidomics’ project, select what you want to annotate in your data sets for lipid profiling. For example, we selected all the lipids to analyze in our data. For this tutorial data, in which ammonium acetate was used as a solvent type, select HCOONH4 (ammonium formate) as the solvent type in the window ’Lipid database setting, although nowadays CH3COONH4 (ammonium acetate) is basically used as a solvent type.</p>
+<p>If you are selected as a metabolomics project, insert the MSP file. Several MSP files are downloadable as a starter kit for MS-DIAL using below link</p>
+<p><a href="https://systemsomicslab.github.io/compms/msdial/main.html">https://systemsomicslab.github.io/compms/msdial/main.html</a></p>
+<p>MS-DIAL supports the MSP file format in ASCII text. In addition, the software can utilize “RETENTIONTIME:”, “PRECURSORTYPE:”, and “FORMULA:” information for metabolite identification (cases are ignored). Retention time information must be specified in minutes [min] scale when possible. The adduct ion information, i.e.&nbsp;here ‘Precursor type’, will be used for the adduct ion search algorithm. You can also insert your own MSP file by clicking “+” icon in the database setting. Select that MSP file and click on the upper arrow in the annotation method setting to give a first preference.</p>
+<p><strong>Text format library:</strong> MS-DIAL also supports a tab-delimited text format library for peak identification using retention time and MS1 accurate mass information. The identification process is performed after completing peak identification based on the MSP format library. This is why we call this identification processing “post-identification”. The first row should include header information. The first, second, third, and fourth columns should contain the metabolite name, accurate mass [Da], retention time [min], and adduct ion, respectively. This library can be easily created in Microsoft Excel. Save the spreadsheet in “Tab-delimited text format”. This option is useful for internal standard identifications etc. (Even if you don’t have MS/MS libraries, the peak identification based on retention time and accurate mass is available from this option). * The minimum requirement for this text library is just ‘metabolite name’ and ‘m/z’ information; i.e.&nbsp;the first two columns are required. Retention time and adduct ion fields provide additional information for MS-DIAL in peak identification and adduct ion picking, respectively.</p>
+<p>Refer to the tutorial video on MS-DIAL for guidance on how to import a text library file using the link below.</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/moAMNYUKimo?si=wveHG6nb_h-Pb5DI" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p><strong>Annotation method:</strong> If you put RT information in your MSP file, set the RT tolerance value. For example, the predicted RT information is optimized for the 15-min LC method. If you set the RT time tolerance to 1.5 min for your data. It will compare the RT of the same lipid/metabolite in different sample. If the difference is high means it will not consider that peak in all the samples. If suitable RT information is unavailable, set the tolerance to 100 (default) or larger (larger than your LC time). The two mass tolerances for MS1 and MS2 are required for the compound search and are dependent on your instrument performance.</p>
+<p><strong>MS2 spectrum cut-off:</strong> The minimum intensity value for ions to be considered during analysis. Any fragment ions with intensities below this threshold are excluded from the spectrum, helping to reduce background noise and improve the quality of data interpretation. The mass spectrum peak less than the user-defined value will not be used for the MS/MS similarity calculation. Also, enter the mass range at the beginning and end. If you don’t have information no need to enter. Use the default values.</p>
+<p><strong>Annotation cut-off:</strong> In MS-DIAL, these parameters are crucial for determining how closely your experimental spectra match reference spectra from databases during the identification process. They help score the similarity of fragmentation patterns compared to the record in the database. If the MS/MS has5 peaks for 1 compound, if you give for example., 60%, then 3 peaks should match with a reference database. It is also the same for the minimum number of matched spectra. If you don’t have information no need to give any values. Use the default values.</p>
+<p><strong>4.5.1 Retention time setting:</strong></p>
+<p><strong>Retention time scoring and filtering:</strong> If you set the tolerance and you selected the filtering means, it will not take peaks which the difference in RT between the samples more than you entered in RT tolerance. Unless you check neither Use retention time for scoring nor Use retention time for filtering, the value of RT tolerance does not mean anything. If you didn’t select the RT filtering means the total score will be calculated and compared with the observed peak (RT score) of a lipid/metabolite in your data and the score of the peak (RT score) from a reference library.</p>
+<div id="fig-8" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/Determine MS profile or centroid data/Figure 2_Website.png" class="img-fluid figure-img">
+<div aria-describedby="fig-8-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Determine MS profile or centroid data/Figure 1_Website.png" class="img-fluid figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8: Click on the base peak intensity column to sort the peak list in ascending order based on MS levels and peak intensity (A). Select the MS1 peak (usually the first peak in the table) (B). Zoom the MS1 base peak (C). Select and zoom in on the MS2 base peak (D)
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-8-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8: Overview of the Identification parameter settings. Selecting lipids for the analysis (A). Setting identification parameters (B).
+</figcaption>
+</figure>
+</div>
+<p>Click on Next to proceed to the Adduct Ion Parameter Settings. In this section, you will need to select the adduct ions relevant to your analysis. The following sections will provide detailed instructions on how to choose and configure adduct ions for your analysis.</p>
+<p><strong>4.6 Adduct ion parameters:</strong></p>
+<p><strong>Adduct ion setting:</strong> You can tick the adduct ions and charge values which is suitable for your analysis.</p>
+<p><strong>Adduct ion format:</strong> Adduct ion information should be formatted as described in this section: [M+Na]+, [M+2H]2+, [M-2H2O+H]+, [2M+FA-H]-, etc.</p>
+<p>The parentheses ‘[’ and ‘]’ must be used to bracket the ion information. The char + and - are required after ‘]’ and the number must be written before + or -.</p>
+<p>When you want to define the organic formula like C6H12O5, you have to write it without any replicate elements or parentheses like [M+C2H5COOH-H] or [M+H+(CH3)3SiOH].</p>
+<p>The beginning figure of organic formula like ’2’H2O is recognized as the H2O × 2. Again, do not use 2(H2O) to specify this.</p>
+<p>Sequential equations are acceptable: [2M+H-C6H12O5+Na]2+.</p>
+<p>MS-DIAL accepts some abbreviations or common organic formulas for adduct types as follows.</p>
+<p>For Acetonitrile: ACN, CH3CN</p>
+<p>For Methanol: CH3OH</p>
+<p>For Isopropanol: IsoProp, C3H7OH</p>
+<p>For Dimethyl sulfoxide: DMSO</p>
+<p>For Formic acid: FA, HCOOH</p>
+<p>For Acetic acid: Hac, CH3COOH</p>
+<p>For Trifluoroacetic acid: TFA, CFCOOH</p>
+<div id="fig-9" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-9-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Determine MS profile or centroid data/Figure 1_Website.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-9-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9: Overview of the Adduct parameter settings.
+</figcaption>
+</figure>
+</div>
+<p>Click Next to proceed to the Alignment Parameter Settings. In this section, you’ll need to configure various parameters including the reference file, RT tolerance, RT factor, features based on blank information, and peak count filter for adduct ions. The following sections will provide detailed instructions on how to set each of these parameters for optimal alignment of your data.</p>
+<p><strong>4.7 Alignment parameters:</strong></p>
+<p><strong>Result name:</strong> The name will be the name of each alignment shown at the tab of ‘Alignment navigator’ in the main window.</p>
+<p><strong>Reference file:</strong> If you already have suitable quality control (QC) data, typically mixed sample data, then specify the QC file in the reference file. All sample data will be aligned to this QC file.</p>
+<p><strong>RT and MS1 tolerances:</strong> The RT and MS1 of the peak will be compared with the library RT and MS spectra. Typically, give the default setting values.</p>
+<p><strong>Retention time factor and MS1 factor:</strong> These values indicate the importance of either RT or MS1 to compare and evaluate the similarity of the spectra among samples based on RT and MS1 tolerance.</p>
+<p>Equation to calculate the RT factor: =exp(-0.5*(sample1(RT)-sample2(RT))/RT tolerance)^2)</p>
+<p>Equation to calculate the m/z factor: =exp(-0.5*(sample1(m/z)-sample2(m/z))/m/z tolerance)^2)</p>
+<p><strong>Peak count filter:</strong> If you want to remove specific peaks that are not fully detected in the alignment, specify the peak count filter.</p>
+<p>For example, if you have 3 biological replicates with the same peak information and the total number of data is 24. Then, you may set the peak count filter as (3/24)∗100. This means peaks will be removed when they include missing values for more than the entered peak count filter (%). In the tutorial data we have only 3 samples.</p>
+<p><strong>N% detected in at least one group:</strong> The filtering is done within each sample group. If it is set to 100%, the peaks should be detected in all of the samples of a class.</p>
+<p><strong>Remove Features Based on Blank Information:</strong> If you include blank sample information in your analysis and want to incorporate it into the results, enable this option. This allows MS-DIAL to evaluate and filter peaks based on the blank sample data. Once this option is checked, you can also adjust the following settings:</p>
+<p><strong>Keep ‘Reference Matched’ Metabolite Features:</strong> This option ensures that any metabolites matched to a reference library (such as MSP or Text libraries) are retained, even if they appear in the blank sample.</p>
+<p><strong>Keep ‘Suggested (without MS2)’ Metabolite Features:</strong> This retains metabolites that are annotated based on their MS1 feature alone, without MS2 data, even if they exceed the blank feature threshold.</p>
+<p><strong>Keep Removable Features and Assign the Tag:</strong> By selecting this, any features that don’t pass the blank feature threshold will still be included in the results, but they will be marked as removable. You can review these features by using the “Blank Filter” checkbox in the Peak Spot Navigator pane. If you uncheck this option, the blank-related features will be fully removed from the analysis, and you will no longer be able to view them after alignment. In our data, we are using the default option set by tool.</p>
+<p><strong>Gap Filling by Compulsion:</strong> This enables to recognition of peaks based on the average peak width of detected metabolites across samples, even if a local maximum isn’t observed in the chromatogram.</p>
+<div id="fig-10" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-10-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Determine MS profile or centroid data/Figure 1_Website.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-10-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10: Overview of the alignment parameter settings.
+</figcaption>
+</figure>
+</div>
+<p>Click Next to proceed to the Isotope Tracking Settings. In this section, you will configure the settings to enable isotope tracking in your data. The following sections will provide detailed instructions on how to set up the isotope tracking parameters for your analysis.</p>
+<p><strong>4.8 Isotope tracking parameter:</strong></p>
+<p><strong>Tracking of isotope labels:</strong> If you check this box, it will identify and monitor the isotopically labeled lipids or metabolites in your sample. This is especially useful in lipidomics or metabolomics experiments where stable isotopes like 13C or 2H are incorporated into lipids or metabolites in your study.</p>
+<div id="fig-11" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-11-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Determine MS profile or centroid data/Figure 1_Website.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-11-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;11: Overview of the Isotope tracking parameter settings.
+</figcaption>
+</figure>
+</div>
+<p>Then you can click Run for the processing of your MS data in MS-Dial 5 and click Save to save the project.</p>
+<p>Once you finished the data processing like peak picking, peak identification, and peak annotation. You can click the export icon to export the results in different forms. The following sections will provide detailed instructions on how to export your results.</p>
+<p><strong>4.9 Export:</strong> Here, in this case, we are using the alignment results export option to get all the spectral information of lipids.</p>
+<p>The following options are used to export the results:</p>
+<p><strong>Peak list export:</strong> You can get the peak list information of each sample including retention time, m/z, MS/MS spectra information, and so on. Available formats are MSP, MGF, or Text.</p>
+<p><strong>Alignment result export:</strong> You can get the results of your data especially spectral information of lipids or metabolites. To export alignment results you just need to choose an export folder path and choose an alignment file that you want to export. Select export format if you want to export the representative spectra. Then click the export button.</p>
+<p><strong>Molecular spectrum networking export:</strong> You can obtain results that show the relationships between molecular features based on their fragmentation patterns.</p>
+<p><strong>Copy screenshot to clipboard (emf):</strong> By copying a screenshot to the clipboard in EMF format, you get a vector-based image that retains high quality when resized.</p>
+<p><strong>Parameter export (Tab-delimited text):</strong> By exporting parameters as a tab-delimited text file, you get a structured file containing the settings and parameters used during your analysis. This format makes it easy to review, share, or import the parameters into other tools.</p>
+<div id="fig-12" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-12-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Determine MS profile or centroid data/Figure 1_Website.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-12-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12: Overview of the export parameter settings
 </figcaption>
 </figure>
 </div>
 </section>
-<section id="how-to-determine-profile-data" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-determine-profile-data">How to determine profile data?</h2>
-<p>Next, open the raw file and follow the same steps until a new window of histograms of peak height, MS, and MS/MS peak intensity of the selected raw file appears. Double-click on the base peak intensity column to sort the lipid list in ascending order based on MS levels and peak intensity. Select the first peak (MS1) in the table, then right-click, and zoom in on the base peak of the selected peak. The peak appears like a detailed view of the entire peak shape by showing the continuous intensity distribution of the peak across a range of m/z values. it indicates that the data is in profile mode. To check the MS/MS data, scroll down the table. Select the MS2 level peak, then right-click, and zoom in on the base peak of the selected peak. The MS2 peak also shows a continuous distribution of peak intensities, this confirms that both the MS1 and MS/MS data are in profile mode (Figure 3).</p>
-<div id="fig-1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<section id="understanding-fill-and-sn-average-in-mass-spectrometry-data" class="level2">
+<h2 class="anchored" data-anchor-id="understanding-fill-and-sn-average-in-mass-spectrometry-data">Understanding “Fill%” and “S/N Average” in Mass Spectrometry data</h2>
+<p>Let’s consider for lipidomics project:</p>
+<p><strong>1: Meaning of Fill%:</strong></p>
+<p>Fill% refers to the proportion of scans or runs in which a particular ion or feature is detected during mass spectrometry analysis. It indicates how consistently the feature is present across multiple injections or samples.</p>
+<p>Fill% helps assess the reliability of detection for a particular compound in a sample, indicating how frequently it was detected during analysis.</p>
+<p><strong>2: Meaning of S/N average:</strong></p>
+<p>S/N (Signal-to-Noise) Average refers to the average ratio of the signal’s intensity (the compound of interest) to the background noise over multiple scans. A higher S/N ratio indicates a clearer signal against background noise.</p>
+<p>A higher S/N ratio means that the signal is clearly distinguishable from the noise, indicating reliable detection of the compound.</p>
+<p>Low S/N ratios might indicate that the compound is difficult to detect due to high background noise, which could make identification and quantification less reliable.</p>
+<div id="fig-13" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/Determine MS profile or centroid data/Figure 3_Website.png" class="img-fluid figure-img">
+<div aria-describedby="fig-13-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Determine MS profile or centroid data/Figure 1_Website.png" class="img-fluid figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;9: Click on the base peak intensity column to sort the peak list in ascending order based on MS levels and peak intensity (A). Select the MS1 peak (usually the first peak in the table) (B). Zoom the MS1 base peak (C). Select and zoom in on the MS2 base peak (D)
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-13-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;13: Fill % (A) and S/N average (B) ratio across mass spectrometry data
 </figcaption>
 </figure>
 </div>
