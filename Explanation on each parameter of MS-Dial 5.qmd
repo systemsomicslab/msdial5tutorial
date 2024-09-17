@@ -16,11 +16,15 @@ The latest version of MS-DIAL 5 aims to be the most versatile tool for multi-omi
 ## 3.0 The differences between MS-DIAL 4 and MS-DIAL 5:
 
 **Graphical User Interface (GUI):**
+
 MS-Dial 4: Functional but slightly less refined.
+
 MS-Dial 5: Improved GUI with more intuitive workflows and better user experience.
 
 **Speed and Performance:**
+
 MS-Dial 4: Effective but slower on larger datasets.
+
 MS-Dial 5: Optimized for faster data processing, especially for large, multi-omics datasets.
 
 **Annotation Capabilities:**
@@ -106,6 +110,7 @@ After selecting the acquisition type, you can further customize your project by 
 ![Click on the browse icon and point MS-DIAL5 to the folder where your raw data is stored (A). Next, select the raw file format as per your analysis (B). Select the raw files for analysis (C). Further, assign identifiers to your measurements and acquisition type (D)](images/Parameters for MS-Dial/Figure_2 Website.png){#fig-3}
 
 After assigning identifiers to the raw measurement files, click Next to proceed to the Measurement Parameters tab. In this section, you will input the analytical and instrumental parameters that were used during data acquisition. These settings are crucial for ensuring accurate data processing and should align exactly with the experimental conditions under which the measurements were taken (Figure 4).
+
 The following sections will offer detailed instructions on how to select and configure each parameter within the Measurement Parameters section
 
 **4.1 Measurement Parameters Section:**
@@ -122,7 +127,6 @@ The following sections will offer detailed instructions on how to select and con
 
 *Refer to the tutorial on MS-Dial on how to determine profile or centroid data type for your analysis using the Rawdataviewer tool in the below link.
 
-
 [https://systemsomicslab.github.io/msdial5tutorial/Determining%20MS%20data%20types.html](https://systemsomicslab.github.io/msdial5tutorial/Determining%20MS%20data%20types.html)
 
 **6.	Ion mode:** Select the corresponding ion mode according to your analytical setup.
@@ -134,6 +138,7 @@ The following sections will offer detailed instructions on how to select and con
 ![Overview of the Measurement parameter settings](images/Parameters for MS-Dial/Figure_3 Website.png){#fig-4}
 
 After configuring each parameter in the Measurement Parameters section, click “Next” to proceed to the Data Collection tab. In this section, you will need to enter the data collection parameters that were used during the acquisition of your samples. These parameters are essential for accurately processing and analyzing your data according to the conditions of your experiment (Figure 5).
+
 The upcoming sections will provide detailed instructions on how to set each parameter in the Data Collection section.
 
 **4.2 Data collection parameters:**
@@ -153,11 +158,10 @@ The upcoming sections will provide detailed instructions on how to set each para
 ![Overview of the Data collection parameter setting.](images/Parameters for MS-Dial/Figure_4 Website.png){#fig-5}
 
 Click Next to proceed to the Peak Detection Parameter Settings. In this section, you'll need to enter the parameters used for peak detection in your mass spectrometry data. This includes specifying values such as the minimum peak height, mass peak width, and exclusion mass list (Figure 6).
+
 The following sections will offer detailed guidance on how to configure each parameter within the Peak Detection section
 
 **4.3 Peak detection parameter:**
-
-MS-DIAL provides two simple thresholds; minimum values for peak width and height. Peaks below these thresholds are ignored.
 
 **Minimum Peak Height:** Set the minimum intensity level required for a peak to be detected in your data. Peaks with heights below this threshold will be ignored, which helps in filtering out noise and focusing only on significant signals for accurate analysis.
 Ideally, users put values here based on their own experience that you are looking at the trend of your data. However, based on our experience, the minimum peak height may be set to 1000 as a default value for this demo data. Besides, for FT-MS or Orbitrap data, the minimum peak height maybe 10,000 or more.
@@ -179,6 +183,7 @@ Refer to the tutorial on how to determine the minimum peak height for your analy
 ![Overview of the Peak detection parameter settings.](images/Parameters for MS-Dial/Figure_5 Website.png){#fig-6}
 
 Click Next to proceed to the Spectrum Deconvolution Parameter Settings. In this section, you will configure the parameters for deconvoluting your mass spectrometry data. Key settings include the sigma window value, the MS/MS abundance cut-off value, and the option to exclude peaks following the precursor ion (Figure 7).
+
 The following sections will provide detailed instructions on how to set each parameter within the Spectrum Deconvolution section.
 
 **4.4 Spectrum deconvolution parameter:**
@@ -196,6 +201,7 @@ The following sections will provide detailed instructions on how to set each par
 ![Overview of the Spectrum deconvolution parameter settings.](images/Parameters for MS-Dial/Figure_6 Website.png){#fig-7}
 
 Click Next to proceed to the Identification Parameter Settings. In this section, you will configure parameters related to the identification of compounds, including the database type, lipid profiling settings, annotation options, and retention time settings (Figure 8).
+
 The following sections will provide detailed instructions on how to set each parameter within the Identification section.
 
 **4.5 Identification parameter:**
@@ -227,6 +233,7 @@ Refer to the tutorial video on MS-DIAL for guidance on how to import a text libr
 ![Overview of the Identification parameter settings. Selecting lipids for the analysis (A). Setting identification parameters (B).](images/Parameters for MS-Dial/Figure_7Website.png){#fig-8}
 
 Click on Next to proceed to the Adduct Ion Parameter Settings. In this section, you will need to select the adduct ions relevant to your analysis.
+
 The following sections will provide detailed instructions on how to choose and configure adduct ions for your analysis (Figure 9). 
 
 **4.6 Adduct ion parameters:**
@@ -246,22 +253,17 @@ Sequential equations are acceptable: [2M+H-C6H12O5+Na]2+.
 MS-DIAL accepts some abbreviations or common organic formulas for adduct types as follows.
 
 For Acetonitrile: ACN, CH3CN
-
 For Methanol: CH3OH
-
 For Isopropanol: IsoProp, C3H7OH
-
 For Dimethyl sulfoxide: DMSO
-
 For Formic acid: FA, HCOOH
-
 For Acetic acid: Hac, CH3COOH
-
 For Trifluoroacetic acid: TFA, CFCOOH
 
 ![Overview of the Adduct parameter settings.](images/Parameters for MS-Dial/Figure_8Website.png){#fig-9}
 
 Click Next to proceed to the Alignment Parameter Settings. In this section, you'll need to configure various parameters including the reference file, RT tolerance, RT factor, features based on blank information, and peak count filter for adduct ions (Figure 10).
+
 The following sections will provide detailed instructions on how to set each of these parameters for optimal alignment of your data.
 
 **4.7 Alignment parameters:**
@@ -275,7 +277,6 @@ The following sections will provide detailed instructions on how to set each of 
 **Retention time factor and MS1 factor:** These values indicate the importance of either RT or MS1 to compare and evaluate the similarity of the spectra among samples based on RT and MS1 tolerance.
 
 Equation to calculate the RT factor: =exp(-0.5*(sample1(RT)-sample2(RT))/RT tolerance)^2)
-
 Equation to calculate the m/z factor: =exp(-0.5*(sample1(m/z)-sample2(m/z))/m/z tolerance)^2)
 
 **Peak count filter:** If you want to remove specific peaks that are not fully detected in the alignment, specify the peak count filter. 
@@ -297,6 +298,7 @@ For example, if you have 3 biological replicates with the same peak information 
 ![Overview of the alignment parameter settings.](images/Parameters for MS-Dial/Figure_9Website.png){#fig-10}
 
 Click Next to proceed to the Isotope Tracking Settings. In this section, you will configure the settings to enable isotope tracking in your data (Figure 11).
+
 The following sections will provide detailed instructions on how to set up the isotope tracking parameters for your analysis.
 
 **4.8 Isotope tracking parameter:**
@@ -308,6 +310,7 @@ The following sections will provide detailed instructions on how to set up the i
 Then you can click Run for the processing of your MS data in MS-Dial 5 and click Save to save the project.
 
 Once you finished the data processing like peak picking, peak identification, and peak annotation. You can click the export icon to export the results in different forms (Figure 12). 
+
 The following sections will provide detailed instructions on how to export your results. 
 
 **4.9 Export:**
