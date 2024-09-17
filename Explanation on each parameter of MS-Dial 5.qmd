@@ -7,7 +7,7 @@ author: "Jayaprakash Jayashankar"
 
 MS-DIAL is a powerful, open-source software tool designed for the comprehensive analysis of mass spectrometry data, whether for untargeted metabolomics or lipidomics. One of its standout features is its compatibility with a wide range of instruments, including GC/MS, GC/MS/MS, LC/MS, and LC/MS/MS systems, and support for major vendors such as Agilent, Bruker, LECO, Sciex, Shimadzu, Thermo, and Waters. In this latest version, MS-DIAL enhances the user experience by eliminating the need for data format conversion into the ABF format—although it is still supported. Users can now directly import raw MS data. Still, the data can now be imported directly to MS-Dial. MS-DIAL provides a comprehensive ‘start-up kit’ that includes several MSP files with both EI- and MS/MS spectra to facilitate ease of use. MS-DIAL includes an internal version of the Fiehn lab’s GC/MS database, oriented by the FAME RI index, as well as an in-silico retention time- and MS/MS database for LC/MS/MS-based lipidomics. Additionally, MS-DIAL facilitates isotope-labeled tracking in LC/MS projects, making it a powerful tool for detailed metabolic studies and precise quantification. Its user-friendly graphical interface combined with broad functionality makes it a key resource for researchers conducting multi-omics studies (Figure 1).
 
-![MS-Dial screenshot](images/Parameters for MS-Dial/Figure_ Website.png){#fig-1}
+![MS-Dial screenshot](images/Parameters for MS-Dial/Figure 0_1_ website.png){#fig-1}
 
 ## 2.0 Importance of MS-Dial 5
 
