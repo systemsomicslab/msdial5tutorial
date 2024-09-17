@@ -17,6 +17,7 @@ website:
           - duplicate_alignment_spotfeature.qmd
           - "Determining MS data types.qmd"
           - "Determine the optimal minimum peak height.qmd"
+          - "Explanation on each parameter of MS-Dial 5.qmd"
       - about.qmd
 
 format:
