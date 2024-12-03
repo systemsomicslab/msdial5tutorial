@@ -163,7 +163,8 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#required-software-program-and-dataset-to-reproduce-the-video" id="toc-required-software-program-and-dataset-to-reproduce-the-video" class="nav-link" data-scroll-target="#required-software-program-and-dataset-to-reproduce-the-video">Required software program and dataset (to reproduce the video)</a></li>
   </ul></li>
-  <li><a href="#molecular-spectrum-networking-for-metabolite-annotations" id="toc-molecular-spectrum-networking-for-metabolite-annotations" class="nav-link" data-scroll-target="#molecular-spectrum-networking-for-metabolite-annotations">6. Molecular spectrum networking for metabolite annotations</a>
+  <li><a href="#molecular-spectrum-networking-for-metabolite-annotations" id="toc-molecular-spectrum-networking-for-metabolite-annotations" class="nav-link" data-scroll-target="#molecular-spectrum-networking-for-metabolite-annotations">6. Molecular spectrum networking for metabolite annotations</a></li>
+  <li><a href="#console-app" id="toc-console-app" class="nav-link" data-scroll-target="#console-app">7. Console app</a>
   <ul class="collapse">
   <li><a href="#the-workflow" id="toc-the-workflow" class="nav-link" data-scroll-target="#the-workflow">The Workflow</a></li>
   </ul></li>
@@ -254,6 +255,16 @@ Note
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/OxCMpR4umjA" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <p>This section introduces how to create molecular spectrum networking in MS-DIAL5. Molecular spectrum networking is a tool for creating networks that visualize the MS/MS similarities among metabolites.</p>
 <p>To follow this video, please download the dataset and check the description in <a href="https://zenodo.org/communities/msdial?q=&amp;l=list&amp;p=1&amp;s=10&amp;sort=newest">https://zenodo.org/communities/msdial?q=&amp;l=list&amp;p=1&amp;s=10&amp;sort=newest</a>.</p>
+</section>
+<section id="console-app" class="level2">
+<h2 class="anchored" data-anchor-id="console-app">7. Console app</h2>
+<ol type="1">
+<li>Download console app from <a href="https://github.com/systemsomicslab/MsdialWorkbench/releases">MS-DIAL releases</a>.</li>
+<li>Open your terminal or PowerShell.</li>
+<li>You can get help by typing “YourPathOfMSDIALCUI.exe”. <img src="images/MSDIALCUI/Console_help.png" class="img-fluid" alt="fig1-1"></li>
+<li>Type “YourPath.exe YourAnalysisType -i YourInputFolder&nbsp;-o YourOutputFolder&nbsp;-m YourLibraryFolder-p”. For example, “YourPath.exe lcms -i .&nbsp;-o .&nbsp;-m YourLibraryFolder_console_param4lipidomics.txt -p”</li>
+<li>It will take around a minute to start processing your data. <img src="images/MSDIALCUI/Console_example.png" class="img-fluid" alt="fig1-2"></li>
+</ol>
 <section id="the-workflow" class="level3">
 <h3 class="anchored" data-anchor-id="the-workflow">The Workflow</h3>
 <ol type="1">

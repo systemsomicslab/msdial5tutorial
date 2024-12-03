@@ -263,7 +263,14 @@
     "href": "utils.html#molecular-spectrum-networking-for-metabolite-annotations",
     "title": "Other utilities",
     "section": "6. Molecular spectrum networking for metabolite annotations",
-    "text": "6. Molecular spectrum networking for metabolite annotations\n\nThis section introduces how to create molecular spectrum networking in MS-DIAL5. Molecular spectrum networking is a tool for creating networks that visualize the MS/MS similarities among metabolites.\nTo follow this video, please download the dataset and check the description in https://zenodo.org/communities/msdial?q=&l=list&p=1&s=10&sort=newest.\n\nThe Workflow\n\nDownload the dataset of “Molecular spectrum networking tutorial dataset” in https://zenodo.org/communities/msdial?q=&l=list&p=1&s=10&sort=newest\nOpen *.mdproject in MS-DIAL5\nFollow the youtube video\n\nYou can get thses as outputs: 1. The molecular spectrum network that visualize the MS/MS similarities among metabolites. 2. The dataset to create the network in cytoscape 3. The molecular spectrum network that focusing on one metabolite."
+    "text": "6. Molecular spectrum networking for metabolite annotations\n\nThis section introduces how to create molecular spectrum networking in MS-DIAL5. Molecular spectrum networking is a tool for creating networks that visualize the MS/MS similarities among metabolites.\nTo follow this video, please download the dataset and check the description in https://zenodo.org/communities/msdial?q=&l=list&p=1&s=10&sort=newest."
+  },
+  {
+    "objectID": "utils.html#console-app",
+    "href": "utils.html#console-app",
+    "title": "Other utilities",
+    "section": "7. Console app",
+    "text": "7. Console app\n\nDownload console app from MS-DIAL releases.\nOpen your terminal or PowerShell.\nYou can get help by typing “YourPathOfMSDIALCUI.exe”. \nType “YourPath.exe YourAnalysisType -i YourInputFolder -o YourOutputFolder -m YourLibraryFolder-p”. For example, “YourPath.exe lcms -i . -o . -m YourLibraryFolder_console_param4lipidomics.txt -p”\nIt will take around a minute to start processing your data. \n\n\nThe Workflow\n\nDownload the dataset of “Molecular spectrum networking tutorial dataset” in https://zenodo.org/communities/msdial?q=&l=list&p=1&s=10&sort=newest\nOpen *.mdproject in MS-DIAL5\nFollow the youtube video\n\nYou can get thses as outputs: 1. The molecular spectrum network that visualize the MS/MS similarities among metabolites. 2. The dataset to create the network in cytoscape 3. The molecular spectrum network that focusing on one metabolite."
   },
   {
     "objectID": "Determining MS data types.html",
