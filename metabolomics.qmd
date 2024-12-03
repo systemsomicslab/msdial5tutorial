@@ -5,7 +5,7 @@ title: "Metabolomics"
 See [Figure 2](index.qmd#fig-2) for the meanings of the abbreviations used in this chapter.
 
 ## 1. GC-MS (nominal mass)
-### 1-1 Imput data
+### 1-1 Input data
 This tutorial uses a GC-MS dataset from the Development of Metabolite Profiling Database for Knock-Out Mutants in Arabidopsis.
 The dataset for reproducing this tutorial can be obtained from [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10604540.svg)](https://doi.org/10.5281/zenodo.10604540)
 
