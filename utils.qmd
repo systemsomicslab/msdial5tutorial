@@ -78,12 +78,13 @@ Molecular spectrum networking is a tool for creating networks that visualize the
 To follow this video, please download the dataset and check the description in [https://zenodo.org/communities/msdial?q=&l=list&p=1&s=10&sort=newest](https://zenodo.org/communities/msdial?q=&l=list&p=1&s=10&sort=newest).
 
 ## 7. Console app
+Download demo data from [here](https://zenodo.org/records/14263441/files/MSDIALCUI_demo_lcms_lipidomics.zip?download=1).
 
 1. Download console app from [MS-DIAL releases](https://github.com/systemsomicslab/MsdialWorkbench/releases).
 2. Open your terminal or PowerShell.
 3. You can get help by typing "YourPathOfMSDIALCUI\MSDIALCUI.exe".
 ![fig1-1](images/MSDIALCUI/Console_help.png)
-4. Type "YourPath\MSDIALCUI.exe YourAnalysisType -i YourInputFolder\ -o YourOutputFolder\ -m YourLibraryFolder\YourLibraryFile -p". For example, "YourPath\MSDIALCUI.exe lcms -i .\rawdata\ -o .\rawdata\ -m YourLibraryFolder\msdial_console_param4lipidomics.txt -p"
+4. Type "YourPath\MSDIALCUI.exe YourAnalysisType -i YourInputFolder\ -o YourOutputFolder\ -m YourLibraryFolder\YourLibraryFile -p". For example, " .\bin\MSDIALCUI.exe lcms -i .\rawdata\ -o .\rawdata\ -m .\lib\msdial_console_param4lipidomics.txt -p"
 5. It will take around a minute to start processing your data.
 ![fig1-2](images/MSDIALCUI/Console_example.png)
 
