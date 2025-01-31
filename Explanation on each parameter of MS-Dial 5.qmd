@@ -218,7 +218,7 @@ MS-DIAL supports the MSP file format in ASCII text. In addition, the software ca
 
 Refer to the tutorial video on MS-DIAL for guidance on how to import a text library file using the link below.
 
-{{< video https://youtu.be/moAMNYUKimo?si=wveHG6nb_h-Pb5DI >}}
+{{< video https://www.youtube.com/watch?v=igPetLStrIY >}}
 
 **Annotation method:** If you put RT information in your MSP file, set the RT tolerance value. For example, the predicted RT information is optimized for the 15-min LC method. If you set the RT time tolerance to 1.5 min for your data. It will compare the RT of the same lipid/metabolite in different sample. If the difference is high means it will not consider that peak in all the samples. If suitable RT information is unavailable, set the tolerance to 100 (default) or larger (larger than your LC time). The two mass tolerances for MS1 and MS2 are required for the compound search and are dependent on your instrument performance.
 
