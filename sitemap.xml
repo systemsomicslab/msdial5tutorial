@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://systemsomicslab.github.io/msdial5tutorial/lipidomics.html</loc>
-    <lastmod>2024-12-03T03:32:59.535Z</lastmod>
-  </url>
-  <url>
-    <loc>https://systemsomicslab.github.io/msdial5tutorial/proteomics.html</loc>
-    <lastmod>2024-12-03T03:32:59.539Z</lastmod>
-  </url>
-  <url>
-    <loc>https://systemsomicslab.github.io/msdial5tutorial/index.html</loc>
-    <lastmod>2024-12-03T03:32:59.535Z</lastmod>
-  </url>
-  <url>
-    <loc>https://systemsomicslab.github.io/msdial5tutorial/imaging.html</loc>
-    <lastmod>2024-12-03T03:32:59.535Z</lastmod>
-  </url>
-  <url>
-    <loc>https://systemsomicslab.github.io/msdial5tutorial/about.html</loc>
-    <lastmod>2024-12-03T03:32:59.307Z</lastmod>
-  </url>
-  <url>
-    <loc>https://systemsomicslab.github.io/msdial5tutorial/Determine the optimal minimum peak height.html</loc>
-    <lastmod>2024-12-03T03:32:59.307Z</lastmod>
-  </url>
-  <url>
-    <loc>https://systemsomicslab.github.io/msdial5tutorial/duplicate_alignment_spotfeature.html</loc>
-    <lastmod>2024-12-03T03:32:59.311Z</lastmod>
-  </url>
-  <url>
-    <loc>https://systemsomicslab.github.io/msdial5tutorial/utils.html</loc>
-    <lastmod>2024-12-03T03:32:59.539Z</lastmod>
+    <loc>https://systemsomicslab.github.io/msdial5tutorial/Explanation on each parameter of MS-Dial 5.html</loc>
+    <lastmod>2025-01-31T08:27:43.730Z</lastmod>
   </url>
   <url>
     <loc>https://systemsomicslab.github.io/msdial5tutorial/Determining MS data types.html</loc>
-    <lastmod>2024-12-03T03:32:59.307Z</lastmod>
+    <lastmod>2025-01-31T08:27:43.730Z</lastmod>
   </url>
   <url>
-    <loc>https://systemsomicslab.github.io/msdial5tutorial/Explanation on each parameter of MS-Dial 5.html</loc>
-    <lastmod>2024-12-03T03:32:59.307Z</lastmod>
+    <loc>https://systemsomicslab.github.io/msdial5tutorial/proteomics.html</loc>
+    <lastmod>2025-01-31T08:27:43.938Z</lastmod>
+  </url>
+  <url>
+    <loc>https://systemsomicslab.github.io/msdial5tutorial/Determine the optimal minimum peak height.html</loc>
+    <lastmod>2025-01-31T08:27:43.730Z</lastmod>
+  </url>
+  <url>
+    <loc>https://systemsomicslab.github.io/msdial5tutorial/about.html</loc>
+    <lastmod>2025-01-31T08:27:43.730Z</lastmod>
   </url>
   <url>
     <loc>https://systemsomicslab.github.io/msdial5tutorial/metabolomics.html</loc>
-    <lastmod>2024-12-03T03:32:59.539Z</lastmod>
+    <lastmod>2025-01-31T08:27:43.938Z</lastmod>
+  </url>
+  <url>
+    <loc>https://systemsomicslab.github.io/msdial5tutorial/imaging.html</loc>
+    <lastmod>2025-01-31T08:27:43.938Z</lastmod>
+  </url>
+  <url>
+    <loc>https://systemsomicslab.github.io/msdial5tutorial/utils.html</loc>
+    <lastmod>2025-01-31T08:27:43.938Z</lastmod>
+  </url>
+  <url>
+    <loc>https://systemsomicslab.github.io/msdial5tutorial/duplicate_alignment_spotfeature.html</loc>
+    <lastmod>2025-01-31T08:27:43.731Z</lastmod>
+  </url>
+  <url>
+    <loc>https://systemsomicslab.github.io/msdial5tutorial/index.html</loc>
+    <lastmod>2025-01-31T08:27:43.938Z</lastmod>
+  </url>
+  <url>
+    <loc>https://systemsomicslab.github.io/msdial5tutorial/lipidomics.html</loc>
+    <lastmod>2025-01-31T08:27:43.938Z</lastmod>
   </url>
 </urlset>

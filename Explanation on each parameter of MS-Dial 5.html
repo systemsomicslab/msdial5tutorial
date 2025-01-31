@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.39">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -36,10 +36,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-659650fc26dc25888fc1474f317bb8ac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-5027bf1c1f92ac6615724d89c8213d6a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -369,7 +369,7 @@ Figure&nbsp;7: Overview of the Spectrum deconvolution parameter settings.
 <p>MS-DIAL supports the MSP file format in ASCII text. In addition, the software can utilize “RETENTIONTIME:”, “PRECURSORTYPE:”, and “FORMULA:” information for metabolite identification (cases are ignored). Retention time information must be specified in minutes [min] scale when possible. The adduct ion information, i.e.&nbsp;here ‘Precursor type’, will be used for the adduct ion search algorithm. You can also insert your own MSP file by clicking “+” icon in the database setting. Select that MSP file and click on the upper arrow in the annotation method setting to give a first preference.</p>
 <p><strong>Text format library:</strong> MS-DIAL also supports a tab-delimited text format library for peak identification using retention time and MS1 accurate mass information. The identification process is performed after completing peak identification based on the MSP format library. This is why we call this identification processing “post-identification”. The first row should include header information. The first, second, third, and fourth columns should contain the metabolite name, accurate mass [Da], retention time [min], and adduct ion, respectively. This library can be easily created in Microsoft Excel. Save the spreadsheet in “Tab-delimited text format”. This option is useful for internal standard identifications etc. (Even if you don’t have MS/MS libraries, the peak identification based on retention time and accurate mass is available from this option). * The minimum requirement for this text library is just ‘metabolite name’ and ‘m/z’ information; i.e.&nbsp;the first two columns are required. Retention time and adduct ion fields provide additional information for MS-DIAL in peak identification and adduct ion picking, respectively.</p>
 <p>Refer to the tutorial video on MS-DIAL for guidance on how to import a text library file using the link below.</p>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/moAMNYUKimo?si=wveHG6nb_h-Pb5DI" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/igPetLStrIY" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <p><strong>Annotation method:</strong> If you put RT information in your MSP file, set the RT tolerance value. For example, the predicted RT information is optimized for the 15-min LC method. If you set the RT time tolerance to 1.5 min for your data. It will compare the RT of the same lipid/metabolite in different sample. If the difference is high means it will not consider that peak in all the samples. If suitable RT information is unavailable, set the tolerance to 100 (default) or larger (larger than your LC time). The two mass tolerances for MS1 and MS2 are required for the compound search and are dependent on your instrument performance.</p>
 <p><strong>MS2 spectrum cut-off:</strong> The minimum intensity value for ions to be considered during analysis. Any fragment ions with intensities below this threshold are excluded from the spectrum, helping to reduce background noise and improve the quality of data interpretation. The mass spectrum peak less than the user-defined value will not be used for the MS/MS similarity calculation. Also, enter the mass range at the beginning and end. If you don’t have information no need to enter. Use the default values.</p>
 <p><strong>Annotation cut-off:</strong> In MS-DIAL, these parameters are crucial for determining how closely your experimental spectra match reference spectra from databases during the identification process. They help score the similarity of fragmentation patterns compared to the record in the database. If the MS/MS has5 peaks for 1 compound, if you give for example., 60%, then 3 peaks should match with a reference database. It is also the same for the minimum number of matched spectra. If you don’t have information no need to give any values. Use the default values.</p>
