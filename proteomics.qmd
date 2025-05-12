@@ -11,7 +11,7 @@ The dataset for reproducing this tutorial can be obtained from
 This tutorial utilizes 2 raw data files (*.raw) from https://repository.jpostdb.org/entry/JPST000200.
 The human_proteins_ref.fasta was obtained from https://www.uniprot.org/.
 
-### 1-1 Starting up your project
+### 1-2 Starting up your project
 
 ![Figure 1: Starting up a project in MS-DIAL5. First, open the 
 MSDIAL.exe file in the downloaded folder (1). Click on “New 
@@ -19,7 +19,7 @@ project” (2). You can name your project according to your preferences.
 Browse to the location of your experimental files. Click next and then 
 continue to the second left side bar “Raw measurement files”. Here, 
 click browse to access your raw data files.]
-(images/proteomics/Fig1%20Starting%20up%20a%20project.png){#fig-1}
+(images/proteomics/Fig1%20Starting%20up%20a%20project.png)
 
 ![Figure 2: Importing raw data files and setting up the measurement 
 parameters. Change the type of file according to your vendor format 
@@ -31,8 +31,7 @@ batch, analytical order, dilution factor, or possibly exclude some
 samples from further data processing (2, 3). This is because to be able 
 to use all MS-DIAL functions. After clicking next and selecting the 
 “Measurement parameters” in the left side tab, you can specify your 
-analytical setup according to this figure (4).]
-(images/proteomics/Fig2%20Improting%20a%20raw%20data%20files%20and%20setting%20up%20parameters.png){#fig-2}
+analytical setup according to this figure (4).](images/proteomics/Fig2%20Improting%20a%20raw%20data%20files%20and%20setting%20up%20parameters.png)
 
 ![Figure 3: Setting other project parameters according to your thoughts. 
 Specifically, in the “Identification” section, FASTA files obtained from 
@@ -41,8 +40,7 @@ Uniprot or other sources can be set as a database. Select the “+” next to
 your files (Fasta) (2). In addition to this, if you browse the enzyme setting, 
 you can select the enzyme according to your experimental setup (3, 4). Also, 
 you can set modification settings in this entry. In the proteomics mode of 
-MS-DIAL, carbamidomethyl (CAM) of cysteine is considered in the default settings.]
-(images/proteomics/Fig3%20Setting%20up%20analysis%20parameters.png){#fig-3}
+MS-DIAL, carbamidomethyl (CAM) of cysteine is considered in the default settings.](images/proteomics/Fig3%20Setting%20up%20analysis%20parameters.png)
 
 ![Figure 4: This is the main view of MS-DIAL. Double-clicking on a file name 
 in the file navigator will display the detected peak information in the center 
@@ -57,8 +55,7 @@ tandem mass spectrum. Assuming peptide bond cleavage induced by Collision Induce
 Dissociation (CID), lists of b-ions and y-ions derived from each peptide sequence 
 are generated and compared. In MS-DIAL, product ions with charges greater than one 
 are also considered. B-ions are displayed in red and y-ions in cyan, shown as paired 
-spectra below the measured spectrum (6).]
-(images/proteomics/Fig4%20Project%20windows%20after%20analysis.png){#fig-4}
+spectra below the measured spectrum (6).](images/proteomics/Fig4%20Project%20windows%20after%20analysis.png)
 
 The video tutorial for the MS-DAIL5 operation
 
