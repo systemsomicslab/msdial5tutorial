@@ -7,7 +7,7 @@ See [Figure 2](index.qmd#fig-2) for the meanings of the abbreviations used in th
 ## 1. LC-MS (DDA) for proteomics
 ### 1-1 Input data
 The dataset for reproducing this tutorial can be obtained from 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15369007.svg)](https://zenodo.org/badge/DOI/10.5281/zenodo.15369007)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15369007.svg)](https://zenodo.org/badge/DOI/10.5281/zenodo.15369007)\
 This tutorial utilizes 2 raw data files (*.raw) from https://repository.jpostdb.org/entry/JPST000200.
 The human_proteins_ref.fasta was obtained from https://www.uniprot.org/.
 
@@ -18,8 +18,7 @@ MSDIAL.exe file in the downloaded folder (1). Click on “New
 project” (2). You can name your project according to your preferences.
 Browse to the location of your experimental files. Click next and then 
 continue to the second left side bar “Raw measurement files”. Here, 
-click browse to access your raw data files.]
-(images/proteomics/Fig1%20Starting%20up%20a%20project.png)
+click browse to access your raw data files.](images/proteomics/Fig1%20Starting%20up%20a%20project.png)
 
 ![Figure 2: Importing raw data files and setting up the measurement 
 parameters. Change the type of file according to your vendor format 
