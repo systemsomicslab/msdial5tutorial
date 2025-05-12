@@ -8,7 +8,7 @@ See [Figure 2](index.qmd#fig-2) for the meanings of the abbreviations used in th
 ### 1-1 Input data
 The dataset for reproducing this tutorial can be obtained from 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15369007.svg)](https://zenodo.org/badge/DOI/10.5281/zenodo.15369007)\
-This tutorial utilizes 2 raw data files (*.raw) from https://repository.jpostdb.org/entry/JPST000200.
+This tutorial utilizes 2 raw data files (*.raw) from https://repository.jpostdb.org/entry/JPST000200.\
 The human_proteins_ref.fasta was obtained from https://www.uniprot.org/.
 
 ### 1-2 Starting up your project
