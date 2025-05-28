@@ -13,7 +13,12 @@ abstract: MS-DIAL was launched as a universal program for untargeted metabolomic
 
 The current MS-DIAL program provides a stream pipeline for untargeted metabolomics, lipidomics and proteomics. In this latest version, the user experience has been greatly improved with a new graphical interface and also due to the fact it is no longer necessary to convert raw MS data from different vendor formats into a common ABF format (which is still supported), but the data can now be imported directly (supported file formats and analytical techniques are summarized in @fig-1).
 
-![Overview of supported file formats and analytical techniques](images/Index/Fig1%20Supported%20file%20formats%20and%20analytical%20techniques.png){#fig-1}
+![Overview of supported file formats and analytical techniques](images/Index/Fig1%20Supported%20file%20formats%20and%20analytical%20techniques.png){#fig-1}KK
+
+The current MS-DIAL program provides a stream pipeline for untargeted metabolomics, lipidomics and proteomics. In this latest version, the user experience has been greatly improved with a new graphical interface and also due to the fact it is no longer necessary to convert raw MS data from different vendor formats into a common ABF format (which is still supported), but the data can now be imported directly (supported file formats and analytical techniques are summarized in @fig-1).
+
+![Supported file formats and analytical techniques](images/Index/Fig1%20Supported%20file%20formats%20and%20analytical%20techniques.png){#fig-1}
+
 
 The latest version of MS-DIAL aims to be the most versatile tool for multiomics data analysis and therefore supports direct injection, many separation (GC, LC, CE, SFC), ionization (EI, ESI, MALDI), fragmentation (CID, HCD, ETD, ECD, EIEIO, EID, OAD) and MS/MS (DDA, SWATH, AIF) datasets (which are summarized in @fig-2). In addition, technological advances in fragmentation mechanisms such as electron-impact excitation of ions from organics (EIEIO) have also been taken into account, making it possible to work with these types of data to offer comprehensive structural identification of metabolites, lipids and proteins.
 

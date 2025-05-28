@@ -1,0 +1,143 @@
+---
+title: "MS-DIAL5 チュートリアル"
+abstract: MS-DIALは、ノンターゲット・メタボローム解析のためのユニバーサル・ツールであり、複数の機器（GC/MS、GC/MS/MS、LC/MS、LC/MS/MS）および複数のMSベンダー（Agilent、Bruker、LECO、Sciex、 Shimadzu、Thermo、およびWaters）に対応しています。このプログラムでは、netCDF（AIA）やmzMLなどの一般的なデータ形式を扱うことができます。さらに、EIスペクトルやMS/MSスペクトルを含むいくつかのMSPファイルをスタートアップ・キットとしてリリースしています。また、MS-DIALの内部には、FiehnラボのGC/MSデータベース（FAME RIインデックスに基づく）と、LC/MS/MSベースのリピドミクス用のin silico保持時間およびMS/MSデータベースがあります。同位体ラベル付き追跡は、LC/MSプロジェクトでも実行可能です。
+---
+
+## 最新情報はこちら
+
+|                                                                                             |                                                                                |                                                                           |
+|---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| [![](images/iconMsdial.png){width="72"}](https://systemsomicslab.github.io/compms/msdial/main.html) | [YouTube @msdialproject channel](https://www.youtube.com/@msdialproject) | [![](images/xlogo-black.png){width="80"}](https://twitter.com/msdial_project) |
+
+## MS-DIAL5の概要
+
+現在のMS-DIALは、ノンターゲット・メタボロミクス、リピドミクス、プロテオミクスのためのパイプラインを提供しています。 最新バージョンでは、新しいグラフィカルインターフェースの導入によりユーザーエクスペリエンスが大幅に向上しました。また、ベンダーによってフォーマットが異なる生のMSデータを共通のABF形式に変換する必要がなくなり（ABF形式は引き続きサポートされます）、データを直接インポートできるようになりました（@fig-1）。
+
+![サポート対象のファイル形式と分析手法の概要](images/Index/Fig1%20Supported%20file%20formats%20and%20analytical%20techniques.png){#fig-1}
+
+
+TMS-DIALの最新バージョンは、マルチオミクスデータ解析における最も汎用性の高いツールを目指しています。そのため、直接注入法をはじめ、多様な分離法（GC、LC、CE、SFC）、イオン化法（EI、ESI、MALDI）、フラグメンテーション法（CID、HCD、ETD、ECD、EIEIO、EID、OAD）、およびMS/MS手法（DDA、SWATH、AIF）に対応しています（@fig-2 ）。さらに、有機分子イオンの電子衝撃励起（EIEIO）などのフラグメンテーション機構における技術的進展も考慮されており、これらのタイプのデータを用いて、代謝物、脂質、タンパク質の包括的な構造同定をおこなうことが可能です。
+
+
+![MS-DIAL 5と互換性のある分析手法の概要](images/Index/Fig2%20MS-DIAL%205%20environment.png){#fig-2}
+
+MS-DIALは、ピークピッキング、ディコンボリューション、化合物同定、およびピークアラインメントを含むデータ処理の後、正規化（LOWESSを含む）および主成分分析（PCA）による多変量解析を実行します。最終的に、他のプログラムでのさらなる解析のために、解析結果を表形式（SIMCA-P、MetaboAnalyst、およびMetFamilyなどに対応）や、MS-FINDER、CSI:FingerID、CFM-ID、MetFrag、およびMetFamilyなどによる化合物同定に対応する複数のスペクトル形式（NIST、MassBank、Mascot形式など）として出力することが可能です。MS-DIALのアルゴリズムを含むパラメータの説明については、[https://systemsomicslab.github.io/compms/msdial/download/mathematics/MS-DIAL%20FAQ-vs2.pdf](https://systemsomicslab.github.io/compms/msdial/download/mathematics/MS-DIAL%20FAQ-vs2.pdf){.uri}も参照してください。
+
+## MS-DIAL バージョン4と5の違い
+
+|                                                     | MS-DIAL4                 | MS-DIAL5                                                                         |
+| --------------------------------------------------- | ------------------------ | -------------------------------------------------------------------------------- |
+| アノテーション DB/レベル                                 | 1解析につき単一DB／単一レベル   | 1解析で複数DB／複数レベルのアノテーションが可能                                        |
+| アノテーション候補                               | 1解析につき単一候補   | 各DBごとに複数の候補                                                    |
+| 分離タイプ                                     | LCMS, LCIMMS, GCMS       | LCMS, LCIMMS, DIMS, IMMS                                                         |
+| 衝突タイプ                                      | CID/HCD                  | CID/HCD, ECD, HotECD, EIEIO, EID, OAD                                            |
+| 対応オミクス                                        | メタボロミクス、リピドミクス | メタボロミクス、リピドミクス、プロテオミクス                                             |
+| MS手法のタイプ                                      | 1解析につき1タイプ   | 1解析に複数のMS手法（DDA、SWATH、AIFなど）を適用可能 |
+| アノテーションを「Unknown（不明）」に変更後の取り消し/やり直し | 非対応            | 対応  [https://youtu.be/LeI4OpbHV1s](https://youtu.be/LeI4OpbHV1s)          |
+
+: MS-DIAL バージョン4と5の違い
+
+<!--
+| *m/z* range used for mass chromatography display | FILLME                 | FILLME                                                                           |
+| Ability to tag peak spots and filter by them | Not supported              | Supported [FILLME the YouTube](URL)                                              |
+| Ontology and adduct filters | Not supported              | Supported [FILLME the YouTube](URL)                                                               |
+| Buildt in MSCleanR generic filters | Not supported              | Supported [FILLME the YouTube](URL)                                                        |
+| MassQL support | Not supported              | Supported [FILLME the YouTube](URL)                                                                            |
+| Peak spot replication | Not supported              | Supported [FILLME the YouTube](URL)                                                                     |
+| Switching between MS/MS to display and vertical axis of MS/MS | Not supported              | Supported [FILLME the YouTube](URL)                             |
+-->
+
+## MS-DIAL5のプロジェクトの立ち上げ
+
+このチュートリアルでは、(1)GC/MS、(2)LC/MS または LC/MS/MS (DDA: data dependent acquisition)、(3)LC/MS/MS (data independent acquisition)、(4)LC-Ion mobility の 4 つのプロジェクトについて、パラメータと必要なファイルについて説明します。このセクションでは、3つのプロジェクトを要約し、これらのプロセスで最低限必要なものを紹介します。LC/MS/MS（DIA）、LC/MS/MS（DDA）、GC/MS、およびLCイオンモビリティ処理の詳細については、それぞれ第2章、第3章、第4章、および第10章に記載されています。まず、MS-DIAL5で新しいプロジェクトを開始し、プロジェクトファイルを保存するフォルダーおよび生データが保存されているフォルダーを指定する必要があります (@fig-3)。
+
+![MS-DIAL5でプロジェクトを起動します。 まず、(1)新規プロジェクトを選択し、(2)プロジェクト・ファイルを保存する場所を選択します。 次に、（3）生データファイルが保存されている場所を指定し、（4）スクロールリストからファイル形式を選択し、解析するデータファイルを選択します。](images/Index/Fig3%20Start%20up%20a%20project%20of%20MS-DIAL5.png){#fig-3}
+
+生データファイルを読み込んだ後、サンプルタイプ (Sample, Standard, QC, Blank)、クラス ID (実験設定に基づく) 、バッチ (複数のバッチを分析した場合)、分析順序、希釈係数などの属性ごとに値を設定することができます。また、特定のサンプルを以降のデータ処理から除外することも可能です (@fig-4)。
+
+![読み込んだ生データファイルの仕様. 属性ごとに値を割り当てる例（詳細は後述のセクションに記載）](images/Index/Fig4%20Raw%20measurement%20files.png){#fig-4}
+
+値の設定が完了したら、「Next」をクリックして「Measurement parameters（測定パラメータ）」のタブに進みます。ここでは、データ取得時に使用した分析・装置のパラメータを入力します (@fig-5)。
+
+![分析条件や装置の設定に基づいて入力する必要がある各種測定パラメータ（Measurement parameters）](images/Index/Fig5%20Measurement%20parameters.png){#fig-5}
+
+以下のセクションでは、データタイプ（centroidまたはprofile）、ユーザー独自のデータベース（MSPファイル）のデータ形式、アダクトの種類について説明します。さらに、次の章では、MS-DIAL5で公開されている様々な種類のデータを処理するケーススタディを紹介します。
+
+
+### centroidかprofileか?
+
+以前のMS-DIALバージョンでは、読み込むデータがcentroidかprofileかをユーザーが指定する必要がありました。しかし、新バージョンではデフォルトでcentroidデータとして処理されます。以前はprofileとして扱われていたベンダー形式（例：SCIEXやThermo）の場合も、centroidとしてデータを取得します。ただしAgilentのデータは例外で、centroidかprofile、またはその両方として保存される可能性があります。データのタイプが不明の場合は、MS-DIALフォルダ内のプログラム"raw_data_viewer.exe" の使用を推奨します。このツールでは、MS-DIALのバックエンドで読み込まれたスペクトルの表示（ここでデータタイプの判別が可能）だけでなく、ピークの高さなどの情報から振幅カットオフのしきい値なども判断できます(@fig-6 and @fig-7)。
+
+![Rraw_data_viewerへのデータアップロード方法：Rraw_data_viewer.exe を起動後、(1) データの保存場所を指定し、(2) 単一または複数のファイルを読み込みます。次に (3) 処理したいファイルを選択し、(4) 「Show」ボタンをクリックします。](images/Index/Fig6%20Raw%20data%20viewer.png){#fig-6}
+
+![Rraw_data_viewerの結果の見方：データ処理後、3つのヒストグラム（MS1およびMS2のスペクトル強度とピーク高さ）が表示されます。下部の表には検出されたイオンの一覧が表示され、スキャン開始時間、MSレベル、ベースピークm/z、強度などのパラメーターで並び替えが可能です。スクロールで x軸（m/z）および y軸（Intensity）を拡大し、データがcentroidかprofileかを確認することができます。このビューワーを利用して、最適なピーク高さのカットオフを推定することもできます。](images/Index/Fig7%20Raw%20data%20viewer%20result.png){#fig-7}
+
+さらに詳しい手順は、以下のチュートリアル動画でも紹介されています。
+
+{{< video https://www.youtube.com/watch?v=aApHc8Op4VY&ab_channel=MS-DIALproject >}}
+
+### 化合物同定のためのデータベース(MSP or Text)
+
+このセクションでは、GC/MSまたはLC/MSデータセットのためのデータベースのフォーマットについて説明します。GC/MS（EI-MS）とLC/MS（ESI-MS/MS）の主な違いは、プリカーサーイオンとそのMS/MSが取得できるかどうかです。プリカーサーの m/z およびそのMS/MSは、ほとんどのESI（または他のソフトイオン化）- MS/MSで取得可能ですが、EI-MS中の分子イオンはハードイオン化のために検出するのが困難です。いくつかのMSPファイルは、 <http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/index.html>からMS-DIALのスターターキットとしてダウンロードできます。
+
+#### プリカーサーとMS/MSのライブラリにおけるMSPフォーマット
+
+MS-DIALは、ASCIIテキストでMSP (<http://www.nist.gov/srd/upload/NIST1a11Ver2-0Man.pdf>) 形式をサポートしています (@fig-8)。 さらに、代謝物の識別に”RETENTIONTIME：”、”PRECURSORTYPE：”、および”FORMULA：”の情報を使用できます(大文字／小文字は区別されない)。 可能であれば、保持時間を分単位で指定する必要があります。 アダクトイオンの情報、すなわち”Precursor type”は、アダクトイオン検索アルゴリズムで使用されます（セクション７を参照）。
+
+![MSPフォーマットのライブイラリーの例](images/Index/Fig8%20MSP%20format.png){#fig-8}
+
+#### アダクトイオンのフォーマット
+
+アダクトイオンの情報は、このセクションで記述するフォーマットに従う必要があります：[M+Na]+, [M+2H]2+, [M-2H2O+H]+, [2M+FA-H]-, 等。
+
+1.  イオン情報を囲むカッコは '\[' and '\]' を使用します。
+
+2.  '\]'の後ろに + や - の記号を指定し、数字は記号の前に書きます。
+
+3.  C6H12O5のような有機物の化学式を定義したい時は、 \[M+C2H5COOH-H\] や \[M+H+(CH3)3SiOH\]のように複数要素や括弧なしで書く必要があります。
+
+4.  '2'H2O のような有機物の化学式の最初の数字は、 H2O × 2として認識されます。これもまた、2(H2O)と指定しないでください。
+
+5.  構造方程式を採用: \[2M+H-C6H12O5+Na\]2+ (very apt.)
+
+6.  MS-DIALは、以下のようなアダクトタイプの略語または一般的な有機化学式も使用可能です。\
+      アセトニトリル: ACN, CH3CN\
+      メタノール: CH3OH\
+      イソプロパノール: IsoProp, C3H7OH\
+      ジメチルスルホキシド: DMSO\
+      ギ酸: FA, HCOOH\
+      酢酸: Hac, CH3COOH\
+      トリフルオロ酢酸: TFA, CFCOOH
+
+#### 保持時間と正確な質量検索のためのテキスト形式のライブラリ（同定後）
+
+MS-DIALは、保持時間とMS1の正確な質量情報によるピーク同定のためのタブ区切りテキストフォーマットライブラリもサポートしています。この同定処理は、ＭＳＰフォーマットライブラリに基づくピーク同定を完了した後に実行されます。このため、この同定処理を「同定後」と呼びます。最初の行にはヘッダー情報が含まれています。 1列目、2列目、3列目、4列目には、それぞれ代謝物名、正確な質量 \[Da\]、 保持時間 \[min\] 、およびアダクトイオンを含める必要があります (@fig-9)。 このライブラリはMicrosoft Excelで簡単に作成できます。スプレッドシートをタブ区切りテキスト形式で保存します。このオプションは、内部標準の同定などに役立ちます（MS/MSライブラリを持っていない場合でも、保持時間と正確な質量に基づくピーク同定はこのオプションから利用できます）。
+
+\* このテキストライブラリの最小要件は、単に 'metabolite name' と '*m/z*' の情報です。つまり、最初の2列が必要です。保持時間とアダクトイオンは、それぞれMS-DIALにおけるピーク同定とアダクトイオンピッキングに関する情報を提供します。
+
+![An example of a text library](images/Index/Fig9%20Text%20library.png){#fig-9}
+
+#### GC/MSライブリーとしてのMSPフォーマット
+
+MS-DIALは、「プリカーサーとMS/MSのライブラリにおけるMSPフォーマット」と同様に、ASCIIテキストでMSPフォーマット (<http://www.nist.gov/srd/upload/NIST1a11Ver2-0Man.pdf>) をサポートしています。 MS-DIALは、リファレンスの「保持」情報として "RETENTIONTIME:" または "RT"、および "RETENTIONINDEX" または "RI" の2項目を参照します(@fig-10)。 可能であれば、保持時間情報は分 \[min\] 単位で指定する必要があります。
+
+![GC/MSのMPSフォーマットライブラリーの例](images/Index/Fig10%20MSP%20format%20library%20for%20GC-MS.png){#fig-10}
+
+#### 保持インデックスを計算するためのAlkane-またはFAME保持時間のディクショナリー
+
+保持時間と保持インデックスは、GC/MSを用いたメタボロミクスにおける代謝物の同定に使用されます。 現在のMS-DIALプログラムには、保持情報の使用にあたって、3つのオプションがあります。 1）保持時間、2）アルカンミックスベースの保持インデックス、および3）FAME（脂肪酸メチルエステル）ミックスベースの保持インデックスです。
+
+アルカンあるいはFAMEを混合した実験の詳細については、下記ページを参照してください。\
+アルカン: <http://www.sciencedirect.com/science/article/pii/S1389172311001848>\
+アルカン: <https://en.wikipedia.org/wiki/Kovats_retention_index>\
+FAMEs: <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2805091/>
+
+検出されたピークの保持インデックスを計算するために、ユーザーはタブ区切りのテキストとして炭素数とその保持時間のペアを含む辞書を用意しなければなりません (@fig-11)。
+
+**FAQ**
+
+-   アルカン混合物による保持インデックスの計算は、Kovatsの方法（温度プログラムクロマトグラフィー）に基づいています。
+
+-   AME混合では、計算はFiehnの方法に基づいています。 重要なことは、炭素数C8、C9、C10、C12、C14、C16、C18、C20、C24、C26、C28、およびC30のFAME（合計13のFAME）は、Fiehnのインデックスを計算するためにこの辞書に含まれなければなりません。 5次の多項式回帰は、C9からC28の間のクロマトグラフのピークに適用されます。 C8（とそれ以前）とC9の間、およびC28とC30（およびそれ以降）の間のピークは、線形回帰によって補完されます。 元のインデックスは、標準品の保持時間（秒） \* 1000に基づいています。
+
+![アルカンとFamesの辞書の例](images/Index/Fig11%20%20Examples%20of%20Alkanes%20or%20Fames%20dictionaries.png){#fig-11}
