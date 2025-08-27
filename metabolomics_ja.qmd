@@ -1,0 +1,214 @@
+---
+title: "Metabolomics"
+---
+
+See [Figure 2](index.qmd#fig-2) for the meanings of the abbreviations used in this chapter.
+
+## 1. GC-MS (nominal mass)
+### 1-1 Input data
+This tutorial uses a GC-MS dataset from the Development of Metabolite Profiling Database for Knock-Out Mutants in Arabidopsis.
+The dataset for reproducing this tutorial can be obtained from [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10604540.svg)](https://doi.org/10.5281/zenodo.10604540)
+
+### 1-2 Starting up your project 
+![fig1-1](images/gcnominal/1-1.png)
+![fig1-2](images/gcnominal/1-2.png)
+![fig1-3](images/gcnominal/1-3.png)
+![fig1-4](images/gcnominal/1-4.png)
+
+(1)Launch MS-DIAL,and select New project.  
+(2)Enter the project title.Then,enter of the path of the folder containing the data you want to analyze in the project path. Click  Next.   
+(3)Select the file format you want to input and input file. Click Next.  
+
+### 1-3 Setting parameters
+![fig2-1](images/gcnominal/2-1.png)
+
+(1)After confirming that you have imported the data, click Next.  
+
+![fig2-2](images/gcnominal/2-2ver2.png)
+
+(2)Next, set the measurement parameters. For GC-MS, select **Hard ionization** type item. Select the ion mode that applies to your experiment.  
+
+The following table shows the parameters changed from the defaults in this analysis.　　　　
+
+|                        | parameter       | example           |
+|:-----------------------|:----------------|:------------------|
+| measurement parameters | Ionization type | Hard ionization   |
+| measurement parameters | Ion mode        | Positive ion mode |
+| measurement parameters | target omics    | Metabolomics      |　　　
+
+![fig2-3](images/gcnominal/2-3.png)
+
+(3)In the peak detection section, you can change the parameters for peak detection. The data used in this tutorial are nominal mass data, so Accurate MS is **not** checked.  
+
+![fig2-4](images/gcnominal/2-4.png)
+
+(4)Configure identification setting.Please choose whether to use retention index or retention time for annotation. If you use retention index, click Set and designate the PATH of the retention index to be used.If there are library you want to reference, click Browse and designate the library.　　
+
+### 1-4 Result of annotation
+![fig3](images/gcnominal/fig3.png)     
+
+This is the main viewer of MS-DIAL. (1) Double-clicking on a file name in the file navigator will display the detected peak information in the center window(Peak spot viewer).Blue spots indicate peaks of lower abundance in the sample, red spots indicate peaks of high abundance, and green spots indicate peaks of intermediate abundance. (2) Click on the triangle at the top of the Peak spot viewer to display the compound corresponding to the retention time.(3) The MS1 spectrum of the focused peak is displayed in the left window of the Peak spot viewer. (4)The ion chromatogram of the focused peak is displayed in the upper window.(5)Other peak information is displayed in the upper right window.
+
+## 2. GC-MS (high resolution)
+### 2-1 Imput data
+![fig4](images/gcnominal/fig4.png)
+The data used in this tutorial are the results of a non-targeted GC-HRMS (Q Exactive GC Orbitrap) analysis of a PM2.5 air sample from the Maldives. This data is high-resolution mass spectrometry data.The files used can be downloaded from [MassIVE MSV000087683 Files](https://massive.ucsd.edu/ProteoSAFe/dataset_files.jsp?task=d98091ce8b2c4e4dba7199934341ef57#%7B%22table_sort_history%22%3A%22main.collection_asc%22%7D).
+
+### 2-2 Setting parameters
+![fig5](images/gcnominal/fig5.png) 
+(1)Launch MS-DIAL,and select New project.  
+(2)Enter a project name. Enter the folder containing the data you want to input into the project file path. Then click Next.            
+(3)Next,select the analysis file path. First click on Browse.  
+(4)Open the folder containing the files you wish to analyze, select the files and click Open. The same operation can be done with drag-and-drop. Also, remember to select the file format in the lower right corner according to the format of the file you wish to enter.  
+![fig6-1](images/gcnominal/6-5.png)
+![fig6-2](images/gcnominal/6-6.png)
+![fig6-3](images/gcnominal/6-7.png)
+![fig6-4](images/gcnominal/6-8.png)
+(5)After inputting the file, you will see a screen like this. When you confirm that the file has been entered, press the NEXT button to proceed.。  
+(6)Here we set the measurement parameter.In this case, select **Hard ionization** for GCMS. Select data type, ion mode, and targetomics according to the data you want to analyze, and click Next.  
+(7)The data collection section enable you to determine the mass range and retention time range you want to observe.          
+(8)In the peak detection section, you can change the parameters for peak detection. The data used in this tutorial are high resolution data, so **Accurate MS is checked**.  
+![fig7-1](images/gcnominal/7-9.png)
+![fig7-2](images/gcnominal/7-10.png)
+![fig7-3](images/gcnominal/7-11.png) 
+(9)The Spectrum deconvolution section allows you to set parameters for deconvolution of the spectrum.   
+(10)Please choose whether to use **retention index** or **retention time** for annotation. If you use retention index, you need to set up index file.This tutorial uses retention time.   
+(11)Finally, set the alignment parameters and click Run.　　
+
+::: {.callout-note appearance="minimal"}   
+If you use a retention index,make sure you have the right retention
+index for the data you want to analyze.
+:::  
+
+
+The following table shows the parameters changed from the defaults in this analysis.　　
+
+|                        | parameter       | example           |
+|:-----------------------|:----------------|:------------------|
+| measurement parameters | Ionization type | Hard ionization   |
+| measurement parameters | Ion mode        | Positive ion mode |
+| measurement parameters | target omics    | Metabolomics      |
+| Peak detection         | Accurate MS     | Check             |
+| Identification         | RI or RT        | RI                |　　
+
+
+### 2-3 Result of anotation
+![fig8](images/gcnominal/fig8.png)   
+This is the main viewer of MS-DIAL.(1) Double-clicking on a file name in the file navigator will display the detected peak information in the center window.Then select the Alignment spot viewer next to the Peak spot viewer to see the alignment results.Blue spots indicate peaks of lower abundance in the sample, red spots indicate peaks of high abundance, and green spots indicate peaks of intermediate abundance. (2)Click on the spot in the center window to see the information corresponding to that peak spot.
+(3) The MS1 spectrum of the focused peak is displayed in the left window of the center window.(4)The ion chromatogram of the focused peak is displayed in the upper window.
+(5) Other peak information is displayed in the upper right window.　　
+
+## 3. ユーザーが定義したMS/MSデータベース（MSP形式）を使用したLC/MSあるいはLC/MS/MS(data dependent MS/MS)プロジェクト
+
+ここでは、ユーザー定義のMSPライブラリ（MassBank、GNPS、およびRespectの統合ライブラリ）と組み合わせたdata dependent MS/MSのプロジェクトについて説明します。
+
+### 3-1 入力データ
+
+このセクションでは合計6つのwiffファイルを使用します。MSPファイルはこのデモの同じフォルダに含まれています。 
+実験プロトコルについては、過去の研究を参照してください: <http://pubs.acs.org/doi/abs/10.1021/acs.jafc.5b04890>.
+
+デモファイル一式: <https://zenodo.org/records/10952446>
+
+lcms_dda_metabolomics.zipをダウンロードしてください。
+
+![Fig1](images/lcms-dda/Fig1.png)
+
+![Fig2](images/lcms-dda/Fig2.png)
+
+#### 実験の概要:
+
+-   **液体クロマトグラフィー:** 各サンプルにつき計4分間走らせる。Kinetex C18 2.6 μm (50×1.0 mm)を使用。
+-   **溶液A:**  0.1%酢酸水溶液
+-   **溶液B:**  0.1%酢酸アセトニトリル溶液
+-   **質量分析:** data dependentのネガチィブイオンモード
+    -   Collision energy: 35 V
+    -   Collision energy spread: 15 V
+    -   Cycle time: 125 ms
+    -   Mass range: m/z 60-1250
+
+### 3-2 プロジェクトの立ち上げ
+
+1.  MS-DIALを起動し、New Projectを選択します。「Project title」を入力し、「project file path」にwiffファイルを含むフォルダを指定し、Nextをクリックします。
+![Fig3](images/lcms-dda/Fig3.png)
+
+2.  「Browse」ボタンをクリックし、ファイル形式からWIFF fileを選択し、インポートするwiffファイルを一括選択します。
+![Fig4](images/lcms-dda/Fig4.png)
+![Fig5](images/lcms-dda/Fig5.png)
+
+### 3-3 パラメーターの設定
+
+1.  データがインポートされたことを確認し、必要に応じてファイルの情報を修正し、Nextをクリックします。
+例：Class IDを1,2,3...からA,B,C...に修正します。エクセルなどのテキストデータを貼り付けることも可能です。
+![Fig6](images/lcms-dda/Fig6.png)
+
+2.  “Measurement parameters” セクション：規定値のままNextをクリック
+![Fig7](images/lcms-dda/Fig7.png)
+
+3.  “Data collection”セクション：Multithreading（使用するスレッド数）を使用するマシンのスペックに合わせて変更し、Nextをクリック
+![Fig8](images/lcms-dda/Fig8.png)
+
+4.  “Peak detection”セクション、“Spectrum deconvolution”セクション：規定値のままNextをクリック
+![Fig9](images/lcms-dda/Fig9.png)
+![Fig10](images/lcms-dda/Fig10.png)
+
+5.  “Identification”セクション： (1)Database settingのプラスマークをクリック　(2)Database typeはMspを選択　(3)Brouseボタンからmspファイルを選択
+![Fig11](images/lcms-dda/Fig11.png)
+
+6.  “Adduct ion”セクション、“Alignment parameters”セクション、“lsotope tracking”セクション： 規定値のままNext
+![Fig12](images/lcms-dda/Fig12.png)
+![Fig13](images/lcms-dda/Fig13.png)
+
+7.  最後にRunをクリックをクリックして実行します。
+![Fig14](images/lcms-dda/Fig14.png)
+
+### 3-4 アノテーションの結果
+![Fig15](images/lcms-dda/Fig15.png)
+これはMS-DIALのメインビューアです。(1)File navigatorでファイル名をダブルクリックすると、中央のウィンドウ（Peak spot viewer）に検出されたピーク情報が表示されます。次にPeak spot viewerの隣のAlignment spot viewerをクリックしてアライメント結果を確認します。青いスポットはサンプル中の含有量の少ないピーク、赤いスポットは含有量の多いピーク、緑のスポットは含有量が中程度のピークを示します。(2)中央のウィンドウのスポットをクリックすると、そのピークスポットに対応する情報が表示されます。(3) 中央のウィンドウの左側のウィンドウに、注目したピークのMS1スペクトルが表示されます。(4) 上部のウィンドウに、注目したピークのイオンクロマトグラムが表示されます。(5) 右上のウィンドウに、その他のピーク情報が表示されます。
+
+<!--### The video tutorial for the MS-DIAL operation-->
+ここまでのチュートリアルの操作については以下のビデオでも確認することができます。
+{{< video https://www.youtube.com/embed/cZY7wqF5Wdo >}}
+
+<!--
+### Key points in the MS-DIAL operation
+
+1.  All sample `Type`s are `Sample`. The input data here does not contain `QC` or `Blank`.
+2.  For this input data, set a different `Class ID` for each sample.
+3.  You can paste Excel cells to MS-DIAL sample table.
+-->
+
+## 3. CE-MS/MS
+A project dealing with CE-MS/MS data measured using vDIA(variable data independent acquisition) in combination
+with migration time correction is demonstrated.
+
+This tutorial uses 19 demonstration data files and three libralies which are downloadable from
+the below link.\
+
+[https://doi.org/10.5281/zenodo.10597056/dims.zip](http://prime.psc.riken.jp/compms/msdial/download/demo/dims.zip)
+
+#### **Experiment summary:**\
+-   Hydrophilic metabolites were extracted from RAW264.7 cells according to previously described protocol.
+  (Human metabolome Technologies Inc. Patent JP WO2014045932 A1)
+-   Capillary electrophoresis was performed using a CE System 7100(Agilent Technologies Inc.), 
+  and an Agilent 1260 isocratic HPLC pump was used to create the sheath flow.
+-   The MS/MS spectrum was acquired using Q Exactive Plus (Thermo Fisher Scientific Inc.)  with vDIA
+
+#### **Note:**\
+-   **Txt format library**
+   -   In this tutorial, two txt files, "Identification_anion.txt" and "MTcorrection_anion.txt",
+      were used for identification of internal standards and migration time correction, respectively.
+   -   See below link for the details of library format: <http://prime.psc.riken.jp/compms/msdial/main.html#Templates>
+-   **Migration time (MT) correction**
+   -    Migration times of metabolite ion peaks were linearly corrected along the MT axis using internal standard compounds.
+   -   If migration times of the reference compounds in each file doesn't match reference MT,
+      change the parametors from reference compound informatin table and try MT correction again.
+
+### The video tutorial for the MS-DIAL operation
+
+{{< video https://www.youtube.com/watch?v=T9krZs2jNSs >}}
+
+## 4. MS-DIAL isotope tracking function
+
+This feature is currently in the development stage in MS-DIAL5, so if you want to use it now, please use MS-DIAL4.
+
+[https://systemsomicslab.github.io/mtbinfo.github.io/MS-DIAL/tutorial#chapter-7](https://systemsomicslab.github.io/mtbinfo.github.io/MS-DIAL/tutorial#chapter-7)
