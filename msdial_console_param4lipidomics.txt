@@ -1,0 +1,201 @@
+MS1 data type: Centroid
+MS2 data type: Centroid
+Ion mode: Negative
+Target omics: Lipidomics
+Ionization: ESI
+Machine category: LCMS
+Instrument type: 
+Instrument: 
+Authors: 
+License: 
+Comment: 
+Msp file path: C:\Users\knishida\Desktop\MSDIALCUI_demo_lcms_lipidomics\lib\MSMS-Public_all-neg-VS19.msp
+Lbm file path: C:\Users\knishida\Desktop\MSDIALCUI_demo_lcms_lipidomics\lib\Msp20241113163720_NCDK-TUAT-FastLC_converted_dev.lbm2
+Text DB file path: C:\Users\knishida\Desktop\MSDIALCUI_demo_lcms_lipidomics\lib\20200121_MsdialTxtDB_Neg_EquiSPLASH_rapid.txt
+Isotope text DB file path: 
+Compounds library file path for target detection: 
+Compounds library file path for RT correction: 
+
+#Adduct ion setting
+adduct list: [M-H]-,[M-H2O-H]-,[M+Na-2H]-,[M+Cl]-,[M+K-2H]-,[M+HCOO]-,[M+CH3COO]-,[M+C2H3N+Na-2H]-,[M+Br]-,[M+TFA-H]-,[M-C6H10O4-H]-,[M-C6H10O5-H]-,[M-C6H8O6-H]-,[M+CH3COONa-H]-,[2M-H]-,[2M+FA-H]-,[2M+Hac-H]-,[3M-H]-,[M-2H]2-,[M-3H]3-
+
+# MSP-based annotation
+RT tolerance for MSP-based annotation: 100
+RI tolerance for MSP-based annotation: 100
+CCS tolerance for MSP-based annotation: 20
+Mass range begin for MSP-based annotation: 0
+Mass range end for MSP-based annotation: 2000
+Relative amplitude cutoff for MSP-based annotation: 0
+Absolute amplitude cutoff for MSP-based annotation: 0
+Weighted dot product cutoff for MSP-based annotation: 0.6
+Simple dot product cutoff for MSP-based annotation: 0.6
+Reverse dot product cutoff for MSP-based annotation: 0.8
+Matched peaks percentage cutoff for MSP-based annotation: 0.1
+Minimum spectrum match for MSP-based annotation: 3
+Total score cutoff for MSP-based annotation: 0.8
+MS1 tolerance for MSP-based annotation: 0.01
+MS2 tolerance for MSP-based annotation: 0.025
+Use retention information for MSP-based annotation scoring: False
+Use retention information for MSP-based annotation filtering: False
+Use CCS for MSP-based annotation scoring: False
+Use CCS for MSP-based annotation filtering: False
+Only report top hit for MSP-based annotation: False
+Execute annotation process only for alignment file: False
+
+# Text-based annotation
+RT tolerance for Text-based annotation: 0.1
+RI tolerance for Text-based annotation: 100
+CCS tolerance for Text-based annotation: 20
+Total score cutoff for Text-based annotation: 0.85
+Accurate ms1 tolerance for Text-based annotation: 0.01
+Use retention information for Text-based annotation scoring: False
+Use retention information for Text-based annotation filtering: False
+Use CCS for Text-based annotation scoring: False
+Use CCS for Text-based annotation filtering: False
+Only report top hit for Text-based annotation: False
+
+# LBM-based annotation
+RT tolerance for LBM-based annotation: 2
+RI tolerance for LBM-based annotation: 100
+CCS tolerance for LBM-based annotation: 20
+Mass range begin for LBM-based annotation: 0
+Mass range end for LBM-based annotation: 2000
+Relative amplitude cutoff for LBM-based annotation: 0
+Absolute amplitude cutoff for LBM-based annotation: 0
+Weighted dot product cutoff for LBM-based annotation: 0.1
+Simple dot product cutoff for LBM-based annotation: 0.1
+Reverse dot product cutoff for LBM-based annotation: 0.1
+Matched peaks percentage cutoff for LBM-based annotation: 0
+Minimum spectrum match for LBM-based annotation: 1
+Total score cutoff for LBM-based annotation: 0.5
+MS1 tolerance for LBM-based annotation: 0.01
+MS2 tolerance for LBM-based annotation: 0.025
+Use retention information for LBM-based annotation scoring: True
+Use retention information for LBM-based annotation filtering: True
+Use CCS for LBM-based annotation scoring: False
+Use CCS for LBM-based annotation filtering: False
+Only report top hit for LBM-based annotation: False
+
+# Export
+Export spectra file format: msp
+Export spectra type: deconvoluted
+Mat file export folder path: 
+Export folder path: 
+Height matrix export: True
+Normalized height matrix export: False
+Representative spectra export: False
+Peak ID matrix export: False
+Retention time matrix export: False
+Mass matrix export: False
+MSMS included matrix export: False
+Unique mass matrix export: False
+Peak area matrix export: False
+Parameter export: False
+GNPS export: False
+Molecular networking export: False
+SN matrix export: False
+Export as mztabM format: True
+
+
+# Process parameters
+Process option: All
+Number of threads: 20
+
+
+# Feature detection parameters
+Smoothing method: LinearWeightedMovingAverage
+Smoothing level: 3
+Minimum peak height: 300
+Minimum peak width: 5
+Average peak width: 30
+Mass slice width: 0.1
+Retention time begin: 0
+Retention time end: 100
+MS1 mass range begin: 0
+MS1 mass range end: 2000
+MS2 mass range begin: 0
+MS2 mass range end: 2000
+MS1 tolerance for centroid: 0.01
+MS2 tolerance for centroid: 0.025
+Accuracy type: IsAccurate
+Max charge number: 2
+Considering Br and Cl for isotopes: False
+Exclude mass list: 
+Max isotopes detected in ms1 spectrum: 2
+
+
+# Deconvolution
+Sigma window value: 0.5
+Amplitude cut off: 0
+Keep isotope range: 5
+Exclude after precursor: True
+Keep original precursor isotopes: False
+Is do andromeda ms2 deconvolution: False
+Andromeda delta: 100
+Andromeda max peaks: 12
+Target CE: 0
+
+
+# Annotation parameter
+Solvent type: CH3COONH4
+Searched lipid class: CAR [M+H]+;LPC [M+H]+;LPC [M+Na]+;LPE [M+H]+;PC [M+H]+;PC [M+Na]+;PE [M+H]+;PE [M+Na]+;PI [M+NH4]+;PI [M+Na]+;PS [M+H]+;PS [M+Na]+;PG [M+NH4]+;BMP [M+NH4]+;HBMP [M+NH4]+;CL [M+NH4]+;EtherLPC [M+H]+;EtherLPE [M+H]+;EtherPC [M+H]+;EtherPE [M+H]+;Sph [M+H]+;DHSph [M+H]+;PhytoSph [M+H]+;SM [M+H]+;SM [M+Na]+;NAE [M+H]+;GPNAE [M+H]+;MGDG [M+NH4]+;DGDG [M+NH4]+;EtherMGDG [M+NH4]+;EtherDGDG [M+NH4]+;SHexCer [M+H]+;MG [M+NH4]+;DG [M+NH4]+;DG [M+Na]+;EtherDG [M+NH4]+;TG [M+NH4]+;TG [M+Na]+;EtherTG [M+NH4]+;EtherTG [M+Na]+;CE [M+NH4]+;BRSE [M+NH4]+;CASE [M+NH4]+;SISE [M+NH4]+;STSE [M+NH4]+;AHexCS [M+NH4]+;AHexCS [M-H]-;AHexCS [M+CH3COO]-;AHexCS [M+HCOO]-;AHexBRS [M+NH4]+;AHexBRS [M-H]-;AHexBRS [M+CH3COO]-;AHexBRS [M+HCOO]-;AHexCAS [M+NH4]+;AHexCAS [M-H]-;AHexCAS [M+CH3COO]-;AHexCAS [M+HCOO]-;AHexSIS [M+NH4]+;AHexSIS [M-H]-;AHexSIS [M+CH3COO]-;AHexSIS [M+HCOO]-;AHexSTS [M+NH4]+;AHexSTS [M-H]-;AHexSTS [M+CH3COO]-;AHexSTS [M+HCOO]-;SHex [M+NH4]+;SSulfate [M+NH4]+;BASulfate [M+NH4]+;SHex [M+HCOO]-;SHex [M+CH3COO]-;SSulfate [M-H]-;BASulfate [M-H]-;CoQ [M+H]+;Vitamin_D [M+H]+;Vitamin_D [M+Na]+;Vitamin_E [M-H]-;Vitamin_E [M+CH3COO]-;Vitamin_E [M+HCOO]-;VAE [M+H]+;VAE [M+Na]+;BileAcid [M-H]-;BileAcid [M+CH3COO]-;DCAE [M-H]-;GDCAE [M-H]-;GLCAE [M-H]-;TDCAE [M-H]-;TLCAE [M-H]-;DCAE [M+NH4]+;GDCAE [M+NH4]+;GLCAE [M+NH4]+;TDCAE [M+NH4]+;TLCAE [M+NH4]+;FA [M-H]-;FAHFA [M-H]-;NAGly [M-H]-;NAGly [M+H]+;NAGly [M+NH4]+;NAGlySer [M-H]-;NAGlySer [M+H]+;NAGlySer [M+NH4]+;NAOrn [M+H]+;NATau [M+H]+;NATau [M+NH4]+;NATau [M-H]-;SL [M-H]-;SL [M+H]+;SL [M+NH4]+;LPC [M+CH3COO]-;LPC [M+HCOO]-;LPE [M-H]-;LPS [M-H]-;LPG [M-H]-;LPI [M-H]-;LPA [M-H]-;PA [M-H]-;PC [M+CH3COO]-;PC [M+HCOO]-;PE [M-H]-;PG [M-H]-;PI [M-H]-;PS [M-H]-;OxPC [M+CH3COO]-;OxPC [M+HCOO]-;OxPE [M-H]-;OxPG [M-H]-;OxPS [M-H]-;OxPI [M-H]-;EtherOxPC [M+CH3COO]-;EtherOxPC [M+HCOO]-;EtherOxPE [M-H]-;PMeOH [M-H]-;PEtOH [M-H]-;HBMP [M-H]-;LNAPE [M-H]-;LNAPS [M-H]-;CL [M-H]-;CL [M-2H]2-;DLCL [M-H]-;MLCL [M-H]-;EtherPC [M+CH3COO]-;EtherPC [M+HCOO]-;EtherPE [M-H]-;EtherPS [M-H]-;EtherPI [M-H]-;EtherPG [M-H]-;EtherLPC [M+CH3COO]-;EtherLPC [M+HCOO]-;EtherLPE [M-H]-;EtherLPG [M-H]-;MGDG [M+CH3COO]-;MGDG [M+HCOO]-;DGDG [M+CH3COO]-;DGDG [M+HCOO]-;MGMG [M+CH3COO]-;MGMG [M+HCOO]-;DGMG [M+CH3COO]-;DGMG [M+HCOO]-;EtherMGDG [M+CH3COO]-;EtherMGDG [M+HCOO]-;EtherDGDG [M+CH3COO]-;EtherDGDG [M+HCOO]-;EtherSMGDG [M-H]-;SMGDG [M-H]-;SM [M+CH3COO]-;SM [M+HCOO]-;Cer_NS [M+H]+;Cer_NS [M+H-H2O]+;Cer_NS [M+Na]+;Cer_NS [M-H]-;Cer_NS [M+HCOO]-;Cer_NS [M+CH3COO]-;Cer_NDS [M+H]+;Cer_NDS [M+H-H2O]+;Cer_NDS [M+Na]+;Cer_NDS [M-H]-;Cer_NDS [M+HCOO]-;Cer_NDS [M+CH3COO]-;Cer_AS [M-H]-;Cer_AS [M+HCOO]-;Cer_AS [M+CH3COO]-;Cer_ADS [M-H]-;Cer_ADS [M+HCOO]-;Cer_ADS [M+CH3COO]-;Cer_BS [M-H]-;Cer_BS [M+HCOO]-;Cer_BS [M+CH3COO]-;Cer_BDS [M-H]-;Cer_BDS [M+HCOO]-;Cer_BDS [M+CH3COO]-;Cer_NP [M-H]-;Cer_NP [M+HCOO]-;Cer_NP [M+CH3COO]-;Cer_EOS [M+H]+;Cer_EOS [M+H-H2O]+;Cer_EOS [M-H]-;Cer_EOS [M+HCOO]-;Cer_EOS [M+CH3COO]-;Cer_EODS [M-H]-;Cer_EODS [M+HCOO]-;Cer_EODS [M+CH3COO]-;Cer_AP [M+H]+;Cer_AP [M+H-H2O]+;Cer_AP [M-H]-;Cer_AP [M+HCOO]-;Cer_AP [M+CH3COO]-;Cer_HS [M+H]+;Cer_HS [M+H-H2O]+;Cer_HDS [M+H]+;Cer_HDS [M+H-H2O]+;Cer_EBDS [M+HCOO]-;Cer_EBDS [M+CH3COO]-;HexCer_NS [M+H]+;HexCer_NS [M+H-H2O]+;HexCer_NS [M-H]-;HexCer_NS [M+HCOO]-;HexCer_NS [M+CH3COO]-;HexCer_NDS [M+H]+;HexCer_NDS [M+H-H2O]+;HexCer_NDS [M-H]-;HexCer_NDS [M+HCOO]-;HexCer_NDS [M+CH3COO]-;HexCer_AP [M+H]+;HexCer_AP [M+H-H2O]+;HexCer_AP [M-H]-;HexCer_AP [M+HCOO]-;HexCer_AP [M+CH3COO]-;HexCer_EOS [M+H]+;HexCer_EOS [M+H-H2O]+;HexCer_EOS [M-H]-;HexCer_EOS [M+HCOO]-;HexCer_EOS [M+CH3COO]-;HexCer_HS [M+H]+;HexCer_HS [M+H-H2O]+;HexCer_HS [M-H]-;HexCer_HS [M+HCOO]-;HexCer_HS [M+CH3COO]-;HexCer_HDS [M+H]+;HexCer_HDS [M+H-H2O]+;HexCer_HDS [M-H]-;HexCer_HDS [M+HCOO]-;HexCer_HDS [M+CH3COO]-;Hex2Cer [M+H]+;Hex2Cer [M+HCOO]-;Hex2Cer [M+CH3COO]-;Hex3Cer [M+H]+;Hex3Cer [M+HCOO]-;Hex3Cer [M+CH3COO]-;AHexCer [M-H]-;AHexCer [M+HCOO]-;AHexCer [M+CH3COO]-;AHexCer [M+H]+;AHexCer [M+H-H2O]+;ASM [M+H]+;ASM [M+HCOO]-;ASM [M+CH3COO]-;SHexCer [M-H]-;OxFA [M-H]-;MMPE [M+H]+;MMPE [M-H]-;DMPE [M-H]-;DMPE [M+H]+;EGSE [M+H]+;EGSE [M+NH4]+;EGSE [M+Na]+;DEGSE [M+H]+;DEGSE [M+NH4]+;DEGSE [M+Na]+;DSMSE [M+NH4]+;ST [M+H]+;ST [M+NH4]+;ST [M+Na]+;ST [M+H-H2O]+;OxTG [M+NH4]+;TG_EST [M+NH4]+;MIPC [M-H]-;MIPC [M+H]+;LCAE [M-H]-;LCAE [M+NH4]+;KLCAE [M-H]-;KLCAE [M+NH4]+;KDCAE [M-H]-;KDCAE [M+NH4]+;NAE [M+HCOO]-;NAE [M+CH3COO]-;GPNAE [M-H]-;GM1 [M-H]-;GM1 [M-2H]2-;GM3 [M-H]-;GM3 [M-2H]2-;GD1a [M-H]-;GD1a [M-2H]2-;GD1b [M-H]-;GD1b [M-2H]2-;GD2 [M-H]-;GD2 [M-2H]2-;GD3 [M-H]-;GD3 [M-2H]2-;GQ1b [M-2H]2-;GT1b [M-2H]2-;NGcGM3 [M-H]-;GM1 [M+H]+;GM1 [M+2H]2+;GM1 [M+2NH4]2+;GM3 [M+NH4]+;GD1a [M+2H]2+;GD1a [M+2NH4]2+;GD1b [M+2H]2+;GD1b [M+2NH4]2+;GQ1b [M+2H]2+;GQ1b [M+2NH4]2+;GT1b [M+2H]2+;GT1b [M+2NH4]2+;NGcGM3 [M+H]+;NGcGM3 [M+NH4]+
+
+
+# Retention index dictionary information
+
+
+# Alignment parameters
+Alignment reference file ID: 0
+Retention time tolerance for alignment: 0.1
+Retention time factor for alignment: 0.5
+Spectrum similarity tolerance for alignment: 0.8
+Spectrum similarity factor for alignment: 0.5
+MS1 tolerance for alignment: 0.015
+MS1 factor for alignment: 0.5
+Force insert peaks in gap filling: True
+
+
+# Filtering
+Peak count filter: 0
+N percent detected in one group: 0
+Remove feature based on peak height fold-change: False
+Blank filtering: SampleMaxOverBlankAve
+Sample max / blank average: 5
+Sample average / blank average: 5
+Keep reference matched metabolites: True
+Keep suggested metabolites: False
+Keep removable features and assigned tag for checking: True
+Replace true zero values with 1/2 of minimum peak height over all samples: False
+
+
+# Retention time correction
+Execute RT correction: False
+RT correction with smoothing for RT diff: False
+User setting intercept: 0
+RT diff calc method: SampleMinusSampleAverage
+Interpolation method: Linear
+Extrapolation method (begin): UserSetting
+Extrapolation method (end): LastPoint
+Internal standards for RT alignment: 
+
+
+# Isotope tracking setting
+Tracking isotope label: False
+Set fully labeled reference file: False
+Non labeled reference ID: 0
+Fully labeled reference ID: 0
+Isotope tracking dictionary ID: 0
+
+
+# CorrDec settings
+CorrDec execute: True
+CorrDec MS2 tolerance: 0.01
+CorrDec minimum MS2 peak height: 1000
+CorrDec minimum number of detected samples: 3
+CorrDec exclude highly correlated spots: 0.9
+CorrDec minimum correlation coefficient (MS2): 0.7
+CorrDec margin 1 (target precursor): 0.2
+CorrDec margin 2 (coeluted precursor): 0.1
+CorrDec minimum detected rate: 0.5
+CorrDec minimum MS2 relative intensity: 2
+CorrDec remove peaks larger than precursor: True
