@@ -51,6 +51,16 @@ MS-Dial 4: Accurate, but sometimes slower or less accurate with noisy data.
 
 MS-Dial 5: Refined peak picking and alignment algorithms for better performance, especially with complex datasets.
 
+**Score calculation:**
+
+MS-Dial 4: Utilizes the score calculation below.
+
+MS-Dial 5 (versions released before July): Utilizes square of the score calculation below.
+
+MS-Dial 5 (versions released after July): Utilizes the score calculation below.
+
+![Score calculation](images/Parameters for MS-Dial/Figure_Score calculations.png)
+
 **Data Formats:**
 
 MS-Dial 4: Supports only (.ABF) format.
