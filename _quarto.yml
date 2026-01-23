@@ -11,6 +11,7 @@ website:
       - metabolomics.qmd
       - proteomics.qmd
       - imaging.qmd
+      - consoleapp.qmd
       - text: "Utilities"
         menu:
           - utils.qmd
