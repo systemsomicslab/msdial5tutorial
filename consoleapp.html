@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Proteomics – MS-DIAL 5 tutorial</title>
+<title>Console app – MS-DIAL 5 tutorial</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -103,7 +103,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Metabolomics</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./proteomics.html" aria-current="page"> 
+    <a class="nav-link" href="./proteomics.html"> 
 <span class="menu-text">Proteomics</span></a>
   </li>  
   <li class="nav-item">
@@ -111,7 +111,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Mass spectrometry imaging</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./consoleapp.html"> 
+    <a class="nav-link active" href="./consoleapp.html" aria-current="page"> 
 <span class="menu-text">Console app</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -156,25 +156,13 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#lc-ms-dda-for-proteomics" id="toc-lc-ms-dda-for-proteomics" class="nav-link active" data-scroll-target="#lc-ms-dda-for-proteomics">1. LC-MS (DDA) for proteomics</a>
-  <ul class="collapse">
-  <li><a href="#input-data" id="toc-input-data" class="nav-link" data-scroll-target="#input-data">1-1 Input data</a></li>
-  <li><a href="#starting-up-your-project" id="toc-starting-up-your-project" class="nav-link" data-scroll-target="#starting-up-your-project">1-2 Starting up your project</a></li>
-  </ul></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Proteomics</h1>
+<h1 class="title">Console app</h1>
 </div>
 
 
@@ -191,46 +179,178 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>See <a href="./index.html#fig-2">Figure 2</a> for the meanings of the abbreviations used in this chapter.</p>
-<section id="lc-ms-dda-for-proteomics" class="level2">
-<h2 class="anchored" data-anchor-id="lc-ms-dda-for-proteomics">1. LC-MS (DDA) for proteomics</h2>
-<section id="input-data" class="level3">
-<h3 class="anchored" data-anchor-id="input-data">1-1 Input data</h3>
-<p>The dataset for reproducing this tutorial can be obtained from https://zenodo.org/records/15369007<br>
-This tutorial utilizes 2 raw data files (*.raw) from https://repository.jpostdb.org/entry/JPST000200.<br>
-The human_proteins_ref.fasta was obtained from https://www.uniprot.org/.</p>
+<p>While the standard MS-DIAL version provides a graphical user interface (GUI) primarily for Windows, the Console app allows users to perform high-throughput data processing across multiple operating systems, including Windows, Linux, and macOS.</p>
+<section id="key-features-and-capabilities" class="level2">
+<h2 class="anchored" data-anchor-id="key-features-and-capabilities">Key Features and Capabilities</h2>
+<ul>
+<li><strong>Automation and Scripting:</strong> Designed for users who need to automate large-scale data processing or integrate MS-DIAL into bioinformatics pipelines.</li>
+<li><strong>Core Processing Steps:</strong> It performs essential data analysis tasks without the GUI, including:
+<ul>
+<li><strong>Peak Detection:</strong> Identifying signals from complex mass spectrometry raw data.</li>
+<li><strong>Deconvolution:</strong> Separating overlapping peaks to identify individual compounds.</li>
+<li><strong>Alignment:</strong> Matching peaks across different samples for comparative analysis.</li>
+<li><strong>Identification:</strong> Annotating metabolites using spectral libraries (e.g., MSP format files).</li>
+</ul></li>
+<li><strong>Supported Data Formats:</strong> The app can process various raw data formats such as <strong>mzML, wiff, raw, and D,</strong> and it supports multiple instruments (GC/MS, LC/MS/MS) and vendors.</li>
+<li><strong>Outputs:</strong> It generates 3 metabolome table formats (<strong>.mdalign, .mdmsp, .mzTab</strong>) and 2 types (<strong>.mdmsp, .mdpeak</strong>) peak annotation data formats used for downstream/statistical analysis.</li>
+</ul>
 </section>
-<section id="starting-up-your-project" class="level3">
-<h3 class="anchored" data-anchor-id="starting-up-your-project">1-2 Starting up your project</h3>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/proteomics/Fig1 Starting up a project.png" class="img-fluid figure-img"></p>
-<figcaption>Figure 1: Starting up a project in MS-DIAL5. First, open the MSDIAL.exe file in the downloaded folder (1). Click on “New project” (2). You can name your project according to your preferences. Browse to the location of your experimental files. Click next and then continue to the second left side bar “Raw measurement files”. Here, click browse to access your raw data files.</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/proteomics/Fig2 Improting a raw data files and setting up parameters.png" class="img-fluid figure-img"></p>
-<figcaption>Figure 2: Importing raw data files and setting up the measurement parameters. Change the type of file according to your vendor format and select the raw data files that you want to import (1). After improting your raw data files, you will be able to further assign identifiers to your measurements by sample “Type” (Sample, Standard, Blank), “Class ID” (according to your experimental setup) set the batch, analytical order, dilution factor, or possibly exclude some samples from further data processing (2, 3). This is because to be able to use all MS-DIAL functions. After clicking next and selecting the “Measurement parameters” in the left side tab, you can specify your analytical setup according to this figure (4).</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/proteomics/Fig3 Setting up analysis parameters.png" class="img-fluid figure-img"></p>
-<figcaption>Figure 3: Setting other project parameters according to your thoughts. Specifically, in the “Identification” section, FASTA files obtained from Uniprot or other sources can be set as a database. Select the “+” next to “Database setting” (1). Here, select the database type and browse to access your files (Fasta) (2). In addition to this, if you browse the enzyme setting, you can select the enzyme according to your experimental setup (3, 4). Also, you can set modification settings in this entry. In the proteomics mode of MS-DIAL, carbamidomethyl (CAM) of cysteine is considered in the default settings.</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/proteomics/Fig4 Project windows after analysis.png" class="img-fluid figure-img"></p>
-<figcaption>Figure 4: This is the main view of MS-DIAL. Double-clicking on a file name in the file navigator will display the detected peak information in the center window (Peak spot viewer) (1). “Show ion table” window can be displayed both on the alignment result viewer and the peak spot viewer (2). Based on the amino acid sequence information in the Fasta file, the sequence is annotated and mapped as a peptide that is expected to be generated when digested with trypsin, etc. (3). The peak height is visualized in a bar chart for each result. Each peptide result can be marked with a Comment or Tag (4). This result should be retained by saving the project file (5). The annotation of each peptide involves analysis of its tandem mass spectrum. Assuming peptide bond cleavage induced by Collision Induced Dissociation (CID), lists of b-ions and y-ions derived from each peptide sequence are generated and compared. In MS-DIAL, product ions with charges greater than one are also considered. B-ions are displayed in red and y-ions in cyan, shown as paired spectra below the measured spectrum (6).</figcaption>
-</figure>
-</div>
-<p>The video tutorial for the MS-DAIL5 operation</p>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/kdykKiKPaho" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="console-app-in-action" class="level2">
+<h2 class="anchored" data-anchor-id="console-app-in-action">Console app in action</h2>
+<p>Download our demo mzML files and a Console app configuration file (we call it method file) from <a href="https://zenodo.org/records/18336159">https://zenodo.org/records/18336159</a>.</p>
+<p>(Below is an example of using the Console app for Linux.)</p>
+<ol type="1">
+<li>Download Console app for Linux (MSDIAL5-Console-ubuntu-latest-net8.zip) from <a href="https://github.com/systemsomicslab/MsdialWorkbench/actions/runs/20952439752/artifacts/5110082099">MS-DIAL nightly build</a></li>
+<li>Run <code>mkdir msdial5console &amp;&amp; mv MSDIAL5-Console-ubuntu-latest-net8.zip msdial5console/ &amp;&amp; cd msdial5console/ &amp;&amp; unzip MSDIAL5-Console-ubuntu-latest-net8.zip</code></li>
+<li>Download the demo dataset from <a href="https://zenodo.org/records/18336159">https://zenodo.org/records/18336159</a></li>
+<li>Unzip the <code>zenodo18336159.zip</code></li>
+<li>Run <code>mv zenodo18336159 msdial5console/ &amp;&amp; cd msdial5console</code></li>
+<li>Run <code>./MSDIALCUI lcms -i zenodo18336159/consoleapp_demo_csvimportfiles.csv -o zenodo18336159/output/ -m zenodo18336159/zenodo18336159_method.txt -p</code></li>
+</ol>
+<p>The <code>-i</code> option stands for input. The <code>-i</code> option takes the path to the raw data and the path to the CSV file containing its metadata as arguments. The contents of the input CSV file will be as follows.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 15%">
+<col style="width: 6%">
+<col style="width: 5%">
+<col style="width: 11%">
+<col style="width: 8%">
+<col style="width: 11%">
+<col style="width: 4%">
+<col style="width: 5%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>file_path</th>
+<th>file_name</th>
+<th>file_type</th>
+<th>class_id</th>
+<th>acquisition_type</th>
+<th>batch_order</th>
+<th>analytical_order</th>
+<th>factor</th>
+<th>Included</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>zenodo18336159/20230406_blank_NEG_1.mzML</td>
+<td>20230406_blank_NEG_1</td>
+<td>Blank</td>
+<td>Blank</td>
+<td>DDA</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>zenodo18336159/20230406_feces_1_NEG.mzML</td>
+<td>20230406_feces_1_NEG</td>
+<td>Sample</td>
+<td>feces</td>
+<td>DDA</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>zenodo18336159/20230406_feces_2_NEG.mzML</td>
+<td>20230406_feces_2_NEG</td>
+<td>Sample</td>
+<td>feces</td>
+<td>DDA</td>
+<td>1</td>
+<td>3</td>
+<td>1</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>zenodo18336159/20230406_feces_3_NEG.mzML</td>
+<td>20230406_feces_3_NEG</td>
+<td>Sample</td>
+<td>feces</td>
+<td>DDA</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>zenodo18336159/20230407_plasma_1_NEG.mzML</td>
+<td>20230407_plasma_1_NEG</td>
+<td>Sample</td>
+<td>plasma</td>
+<td>DDA</td>
+<td>1</td>
+<td>5</td>
+<td>1</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>zenodo18336159/20230407_plasma_2_NEG.mzML</td>
+<td>20230407_plasma_2_NEG</td>
+<td>Sample</td>
+<td>plasma</td>
+<td>DDA</td>
+<td>1</td>
+<td>6</td>
+<td>1</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>zenodo18336159/20230407_plasma_3_NEG.mzML</td>
+<td>20230407_plasma_3_NEG</td>
+<td>Sample</td>
+<td>plasma</td>
+<td>DDA</td>
+<td>1</td>
+<td>7</td>
+<td>1</td>
+<td>TRUE</td>
+</tr>
+</tbody>
+</table>
+<p>The first <strong>8</strong> columns of the header row must be <code>file_path, file_name, file_type, class_id, acquisition_type, batch_order, analytical_order, factor</code></p>
+<p>Information in 9th column and beyond will be ignored.</p>
+<p>The <code>file_path</code> column can contain either an absolute or relative path to the raw data. Relative paths will be relative to the <code>MSDIALCUI</code> file.</p>
+<p>The <code>-o</code> option specifies the output destination. The Console app at the path specified by the -o option outputs alignment results in <strong>3</strong> formats (mzTab, mdalign, mdmsp) and peak annotation results for each raw data set in <strong>2</strong> formats (mdpeak, mdmsp).</p>
+<p>If you give the zenodo18336159 dataset to the Console app, the output file will look like this:</p>
+<pre><code>20230406_blank_NEG_1.mdmsp   20230406_feces_2_NEG.mdmsp   20230407_plasma_1_NEG.mdmsp   20230407_plasma_3_NEG.mdmsp      AlignResult-20261221921.mzTab
+20230406_blank_NEG_1.mdpeak  20230406_feces_2_NEG.mdpeak  20230407_plasma_1_NEG.mdpeak  20230407_plasma_3_NEG.mdpeak     Project-2601220721.mdproject
+20230406_feces_1_NEG.mdmsp   20230406_feces_3_NEG.mdmsp   20230407_plasma_2_NEG.mdmsp   AlignResult-20261221921.mdalign
+20230406_feces_1_NEG.mdpeak  20230406_feces_3_NEG.mdpeak  20230407_plasma_2_NEG.mdpeak  AlignResult-20261221921.mdmsp</code></pre>
+<p>The -m option specifies the path to a configuration file called the method file.</p>
+<p>The important parts of the method file are the first few lines below.</p>
+<pre><code>MS1 data type: Centroid
+MS2 data type: Centroid
+Ion mode: Negative
+Target omics: Lipidomics
+Ionization: ESI
+Machine category: LCMS
+Instrument type:
+Instrument:
+Authors:
+License:
+Comment:
+Msp file path: ./zenodo18336159/MSMS-Public_all-neg-VS19.msp
+Lbm file path: ./zenodo18336159/Msp20241113163720_NCDK-TUAT-FastLC_converted_dev.lbm2
+Text DB file path: ./zenodo18336159/20200121_MsdialTxtDB_Neg_EquiSPLASH_rapid.txt
+Isotope text DB file path:
+Compounds library file path for target detection:
+Compounds library file path for RT correction:</code></pre>
+<p>Below we will explain some of the most important lines.</p>
+<pre><code>Ion mode: Negative</code></pre>
+<p>Please set the ion mode to either Positive or Negative. If the mode is different from the actual mode of the raw data, the process will not complete.</p>
+<pre><code>Msp file path: ./zenodo18336159/MSMS-Public_all-neg-VS19.msp
+Lbm file path: ./zenodo18336159/Msp20241113163720_NCDK-TUAT-FastLC_converted_dev.lbm2
+Text DB file path: ./zenodo18336159/20200121_MsdialTxtDB_Neg_EquiSPLASH_rapid.txt</code></pre>
+<p>Please set the path to the library used for metabolite or lipid annotation. Absolute and relative paths can be used for the library path. Relative paths are relative to the MSDIALCUI file. In addition to the well-known msp file format, MS-DIAL’s dedicated lbm file or a text file in a proprietary text format can be used. See <a href="https://systemsomicslab.github.io/compms/msdial/main.html#MSP">https://systemsomicslab.github.io/compms/msdial/main.html#MSP</a> for details on those file formats.</p>
+<p>This concludes the explanation of the Console app. If there is anything missing from the explanation, please add an issue to <a href="https://github.com/systemsomicslab/msdial5tutorial/issues">https://github.com/systemsomicslab/msdial5tutorial/issues</a>.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
