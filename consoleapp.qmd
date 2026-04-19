@@ -29,14 +29,30 @@ Download our demo mzML files and a Console app configuration file (we call it me
 
 (Below is an example of using the Console app for Linux.)
 
-1. Download Console app for Linux (MSDIAL5-Console-ubuntu-latest-net8.zip) from [MS-DIAL nightly build](https://github.com/systemsomicslab/MsdialWorkbench/actions/runs/20952439752/artifacts/5110082099)
-2. Run `mkdir msdial5console && mv MSDIAL5-Console-ubuntu-latest-net8.zip msdial5console/ && cd msdial5console/ && unzip MSDIAL5-Console-ubuntu-latest-net8.zip`
-3. Download the demo dataset from [https://zenodo.org/records/18336159](https://zenodo.org/records/18336159)
-4. Unzip the `zenodo18336159.zip`
-5. Run `mv zenodo18336159 msdial5console/ && cd msdial5console`
-6. Run `./MSDIALCUI lcms -i zenodo18336159/consoleapp_demo_csvimportfiles.csv -o zenodo18336159/output/ -m zenodo18336159/zenodo18336159_method.txt -p`
+1. Download the latest Console app for Linux ([https://github.com/systemsomicslab/MsdialWorkbench/releases/tag/MSDIAL-v5.5.260319](https://github.com/systemsomicslab/MsdialWorkbench/releases/tag/MSDIAL-v5.5.260319)) with running
 
-The `-i` option stands for input.
+    ```bash
+    curl -L -O https://github.com/systemsomicslab/MsdialWorkbench/releases/download/MSDIAL-v5.5.260319/MSDIAL.console.v5.5.260319-linux-net8.zip
+    ```
+
+2. Create a directory for the Console app and unzip the downloaded file with running
+
+    ```bash
+    mkdir msdial5console && mv MSDIAL.console.v5.5.260319-linux-net8.zip msdial5console/ && cd msdial5console/ && unzip MSDIAL.console.v5.5.260319-linux-net8.zip
+    ```
+
+3. Download the demo mzML raw datafiles zip ([https://doi.org/10.5281/zenodo.18336159](https://doi.org/10.5281/zenodo.18336159)) and unzip it with running
+  
+    ```bash
+    curl -L -C - -o zenodo18336159.zip "https://zenodo.org/records/18336159/files/zenodo18336159.zip?download=1" && unzip zenodo18336159.zip
+    ```
+
+6. Run the `MSDIALCUI` command:
+
+    ```bash
+    ./MSDIALCUI lcms -i zenodo18336159/consoleapp_demo_csvimportfiles.csv -o zenodo18336159/output/ -m zenodo18336159/zenodo18336159_method.txt -p
+    ```
+
 The `-i` option takes the path to the raw data and the path to the CSV file containing its metadata as arguments.
 The contents of the input CSV file will be as follows.
 
