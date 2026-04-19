@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Console app – MS-DIAL 5 tutorial</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -19,6 +22,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -32,15 +70,14 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-0b37c64f34216b628666a8dac638b53b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-3ab3c25880d787e734ee9f73ca06a7d1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -200,14 +237,16 @@ ul.task-list li input[type="checkbox"] {
 <p>Download our demo mzML files and a Console app configuration file (we call it method file) from <a href="https://zenodo.org/records/18336159">https://zenodo.org/records/18336159</a>.</p>
 <p>(Below is an example of using the Console app for Linux.)</p>
 <ol type="1">
-<li>Download Console app for Linux (MSDIAL5-Console-ubuntu-latest-net8.zip) from <a href="https://github.com/systemsomicslab/MsdialWorkbench/actions/runs/20952439752/artifacts/5110082099">MS-DIAL nightly build</a></li>
-<li>Run <code>mkdir msdial5console &amp;&amp; mv MSDIAL5-Console-ubuntu-latest-net8.zip msdial5console/ &amp;&amp; cd msdial5console/ &amp;&amp; unzip MSDIAL5-Console-ubuntu-latest-net8.zip</code></li>
-<li>Download the demo dataset from <a href="https://zenodo.org/records/18336159">https://zenodo.org/records/18336159</a></li>
-<li>Unzip the <code>zenodo18336159.zip</code></li>
-<li>Run <code>mv zenodo18336159 msdial5console/ &amp;&amp; cd msdial5console</code></li>
-<li>Run <code>./MSDIALCUI lcms -i zenodo18336159/consoleapp_demo_csvimportfiles.csv -o zenodo18336159/output/ -m zenodo18336159/zenodo18336159_method.txt -p</code></li>
+<li><p>Download the latest Console app for Linux (<a href="https://github.com/systemsomicslab/MsdialWorkbench/releases/tag/MSDIAL-v5.5.260319">https://github.com/systemsomicslab/MsdialWorkbench/releases/tag/MSDIAL-v5.5.260319</a>) with running</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> <span class="at">-L</span> <span class="at">-O</span> https://github.com/systemsomicslab/MsdialWorkbench/releases/download/MSDIAL-v5.5.260319/MSDIAL.console.v5.5.260319-linux-net8.zip</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>Create a directory for the Console app and unzip the downloaded file with running</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> msdial5console <span class="kw">&amp;&amp;</span> <span class="fu">mv</span> MSDIAL.console.v5.5.260319-linux-net8.zip msdial5console/ <span class="kw">&amp;&amp;</span> <span class="bu">cd</span> msdial5console/ <span class="kw">&amp;&amp;</span> <span class="fu">unzip</span> MSDIAL.console.v5.5.260319-linux-net8.zip</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>Download the demo mzML raw datafiles zip (<a href="https://doi.org/10.5281/zenodo.18336159">https://doi.org/10.5281/zenodo.18336159</a>) and unzip it with running</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> <span class="at">-L</span> <span class="at">-C</span> <span class="at">-</span> <span class="at">-o</span> zenodo18336159.zip <span class="st">"https://zenodo.org/records/18336159/files/zenodo18336159.zip?download=1"</span> <span class="kw">&amp;&amp;</span> <span class="fu">unzip</span> zenodo18336159.zip</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>Run the <code>MSDIALCUI</code> command:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">./MSDIALCUI</span> lcms <span class="at">-i</span> zenodo18336159/consoleapp_demo_csvimportfiles.csv <span class="at">-o</span> zenodo18336159/output/ <span class="at">-m</span> zenodo18336159/zenodo18336159_method.txt <span class="at">-p</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
 </ol>
-<p>The <code>-i</code> option stands for input. The <code>-i</code> option takes the path to the raw data and the path to the CSV file containing its metadata as arguments. The contents of the input CSV file will be as follows.</p>
+<p>The <code>-i</code> option takes the path to the raw data and the path to the CSV file containing its metadata as arguments. The contents of the input CSV file will be as follows.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 30%">
