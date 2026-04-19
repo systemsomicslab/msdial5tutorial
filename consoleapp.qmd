@@ -50,6 +50,7 @@ Download our demo mzML files and a Console app configuration file (we call it me
 6. Run the `MSDIALCUI` command:
 
     ```bash
+    chmod +x ./MSDIALCUI && \
     ./MSDIALCUI lcms -i zenodo18336159/consoleapp_demo_csvimportfiles.csv -o zenodo18336159/output/ -m zenodo18336159/zenodo18336159_method.txt -p
     ```
 
