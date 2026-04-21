@@ -28,7 +28,7 @@ the Console app allows users to perform high-throughput data processing across m
 1. Download the latest Console app for Linux ([https://github.com/systemsomicslab/MsdialWorkbench/releases/tag/MSDIAL-v5.5.260319](https://github.com/systemsomicslab/MsdialWorkbench/releases/tag/MSDIAL-v5.5.260319)) with running
 
     ```bash
-    curl -L -O https://github.com/systemsomicslab/MsdialWorkbench/releases/download/MSDIAL-v5.5.260319/MSDIAL.console.v5.5.260319-linux-net8.zip
+    curl -L -O https://github.com/systemsomicslab/MsdialWorkbench/releases/download/MSDIAL-v5.5.260319/MSDIAL.console.v5.5.260319-2-linux-net8.zip
     ```
 
 2. Create a directory for the Console app and unzip the downloaded file with running
