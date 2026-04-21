@@ -34,7 +34,7 @@ the Console app allows users to perform high-throughput data processing across m
 2. Create a directory for the Console app and unzip the downloaded file with running
 
     ```bash
-    mkdir msdial5console && mv MSDIAL.console.v5.5.260319-linux-net8.zip msdial5console/ && cd msdial5console/ && unzip MSDIAL.console.v5.5.260319-linux-net8.zip
+    mkdir msdial5console && mv MSDIAL.console.v5.5.260319-2-linux-net8.zip msdial5console/ && cd msdial5console/ && unzip MSDIAL.console.v5.5.260319-2-linux-net8.zip
     ```
 
 3. Download the demo mzML raw datafiles zip ([https://doi.org/10.5281/zenodo.18336159](https://doi.org/10.5281/zenodo.18336159)) and unzip it with running
