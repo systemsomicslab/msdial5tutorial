@@ -46,8 +46,7 @@ the Console app allows users to perform high-throughput data processing across m
 6. Run the `MSDIALCUI` command:
 
     ```bash
-    chmod +x ./MSDIALCUI && \
-    ./MSDIALCUI lcms -i zenodo18336159/consoleapp_demo_csvimportfiles.csv -o zenodo18336159/output/ -m zenodo18336159/zenodo18336159_method.txt -p
+    chmod +x ./MSDIALCUI && ./MSDIALCUI lcms -i zenodo18336159/consoleapp_demo_csvimportfiles.csv -o zenodo18336159/output/ -m zenodo18336159/zenodo18336159_method.txt -p
     ```
 
 The `-i` option takes the path to the raw data and the path to the CSV file containing its metadata as arguments.
